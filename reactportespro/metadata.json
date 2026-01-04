@@ -1,0 +1,8 @@
+
+{
+  "name": "PortesPro.es - Mudanzas Costa del Sol",
+  "description": "Una plataforma profesional y dinámica para servicios de portes y mudanzas en Marbella, Cala de Mijas y toda la Costa del Sol, con calculadora de precios inteligente y gestión de inventario.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
