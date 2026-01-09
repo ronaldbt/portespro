@@ -1,5 +1,5 @@
 <template>
-  <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
+  <nav v-if="crumbs.length > 0" aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
     <ol class="flex items-center space-x-2 text-sm">
       <li>
         <NuxtLink to="/" class="text-slate-500 hover:text-teal-600 transition-colors font-medium">
