@@ -214,6 +214,127 @@ const scrollToCalc = () => {
   }
 }
 
+// SEO Meta Tags
+const siteUrl = 'https://portespro.es'
+const currentUrl = `${siteUrl}/guardamuebles`
+const defaultImage = `${siteUrl}/og-image.jpg`
+
+useHead({
+  title: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes | Climatizados | PortesPro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online. Guardamuebles barato y económico en Marbella, Málaga y Costa del Sol.'
+    },
+    {
+      name: 'keywords',
+      content: 'guardamuebles marbella, trasteros marbella, guardamuebles barato, guardamuebles económico, guardamuebles climatizado, guardamuebles vigilado, guardamuebles 24 horas, trasteros barato, almacenes marbella'
+    },
+    // Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:title', content: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes | Climatizados' },
+    { property: 'og:description', content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online.' },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:site_name', content: 'PortesPro' },
+    { property: 'og:locale', content: 'es_ES' },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: currentUrl },
+    { name: 'twitter:title', content: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes' },
+    { name: 'twitter:description', content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h.' },
+    { name: 'twitter:image', content: defaultImage }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Guardamuebles y Trasteros',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'PortesPro',
+          url: siteUrl
+        },
+        areaServed: {
+          '@type': 'City',
+          name: ['Marbella', 'Málaga', 'Costa del Sol']
+        },
+        description: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h.',
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'EUR',
+          price: '45',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            priceCurrency: 'EUR',
+            price: '45',
+            unitText: 'mes'
+          }
+        }
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Guardamuebles y Trasteros',
+            item: currentUrl
+          }
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '¿Cuánto cuesta un guardamuebles o trastero en Marbella?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'El precio de guardamuebles y trasteros Marbella varía según el tamaño. Guardamuebles pequeño (5m²) desde 45€/mes, guardamuebles mediano (10m²) desde 85€/mes, guardamuebles grande (15m²) desde 120€/mes.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Los guardamuebles y trasteros están climatizados?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Qué seguridad tienen los guardamuebles y trasteros?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado.'
+            }
+          }
+        ]
+      })
+    }
+  ]
+})
+
 // Iconos
 const IconTemperature = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z' })

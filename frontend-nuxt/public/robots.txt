@@ -1,2 +1,12 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portespro.es/sitemap.xml
+
+# Disallow admin and dashboard pages
+Disallow: /dashboard-admin/
+Disallow: /dashboard-cliente/
+Disallow: /login
+Disallow: /register
+Disallow: /api/

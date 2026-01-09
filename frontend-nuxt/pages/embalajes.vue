@@ -194,6 +194,116 @@ const scrollToCalc = () => {
   }
 }
 
+// SEO Meta Tags
+const siteUrl = 'https://portespro.es'
+const currentUrl = `${siteUrl}/embalajes`
+const defaultImage = `${siteUrl}/og-image.jpg`
+
+useHead({
+  title: 'Embalaje Profesional Marbella | Servicio Completo con Materiales | PortesPro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles. Presupuesto gratis sin compromiso.'
+    },
+    {
+      name: 'keywords',
+      content: 'embalaje profesional marbella, servicio embalaje, embalaje mudanza, embalaje completo, embalaje cuidadoso, embalaje frágiles, materiales embalaje, cajas embalaje, papel burbuja'
+    },
+    // Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:title', content: 'Embalaje Profesional Marbella | Servicio Completo con Materiales' },
+    { property: 'og:description', content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles.' },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:site_name', content: 'PortesPro' },
+    { property: 'og:locale', content: 'es_ES' },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: currentUrl },
+    { name: 'twitter:title', content: 'Embalaje Profesional Marbella | Servicio Completo' },
+    { name: 'twitter:description', content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.' },
+    { name: 'twitter:image', content: defaultImage }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Embalaje Profesional',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'PortesPro',
+          url: siteUrl
+        },
+        areaServed: {
+          '@type': 'City',
+          name: ['Marbella', 'Málaga', 'Costa del Sol']
+        },
+        description: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.'
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Embalajes',
+            item: currentUrl
+          }
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '¿Qué incluye el servicio de embalaje profesional?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Nuestro servicio de embalaje profesional incluye que nuestros expertos vayan a tu domicilio con todos los materiales necesarios (cajas de cartón, papel burbuja, film plástico, mantas protección) y realicen el embalaje completo de tus objetos.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cuánto cuesta el servicio de embalaje?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'El precio del servicio de embalaje profesional varía según el tipo de mudanza y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Tienen que venir a mi casa para hacer el embalaje?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Sí, nuestro servicio de embalaje profesional se realiza en tu domicilio. Nuestro equipo acude con todos los materiales necesarios y realiza el embalaje completo in situ.'
+            }
+          }
+        ]
+      })
+    }
+  ]
+})
+
 // Iconos
 const IconBox = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' })

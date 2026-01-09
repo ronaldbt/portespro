@@ -254,6 +254,116 @@ const scrollToCalc = () => {
   }
 }
 
+// SEO Meta Tags
+const siteUrl = 'https://portespro.es'
+const currentUrl = `${siteUrl}/transporte-frio`
+const defaultImage = `${siteUrl}/og-image.jpg`
+
+useHead({
+  title: 'Transporte en Frío Marbella | Cadena Frío Garantizada | PortesPro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperatura controlada garantizada. Transporte frío local, provincial y nacional.'
+    },
+    {
+      name: 'keywords',
+      content: 'transporte frío marbella, transporte refrigerado, cadena frío, transporte frigorífico, transporte temperatura controlada, transporte alimentos, transporte farmacéutico, logística frío'
+    },
+    // Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:title', content: 'Transporte en Frío Marbella | Cadena Frío Garantizada' },
+    { property: 'og:description', content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperatura controlada garantizada.' },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:site_name', content: 'PortesPro' },
+    { property: 'og:locale', content: 'es_ES' },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: currentUrl },
+    { name: 'twitter:title', content: 'Transporte en Frío Marbella | Cadena Frío Garantizada' },
+    { name: 'twitter:description', content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.' },
+    { name: 'twitter:image', content: defaultImage }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Transporte en Frío',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'PortesPro',
+          url: siteUrl
+        },
+        areaServed: {
+          '@type': 'City',
+          name: ['Marbella', 'Málaga', 'Costa del Sol']
+        },
+        description: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.'
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Transporte en Frío',
+            item: currentUrl
+          }
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '¿Qué temperatura mantiene el transporte en frío?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Nuestro servicio de transporte en frío mantiene diferentes rangos de temperatura según el producto: transporte congelado a -18°C para congelados, transporte refrigerado a 0-4°C para productos frescos, y transporte temperatura controlada a 2-8°C para productos farmacéuticos.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Qué productos pueden transportarse en frío?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Transportamos productos perecederos como alimentos frescos, pescado, carne, lácteos, frutas y verduras. También ofrecemos transporte frío para productos farmacéuticos, medicamentos, flores, bebidas y helados.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cómo garantizan la cadena de frío?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Garantizamos la cadena frío con vehículos frigoríficos equipados con sistemas de temperatura controlada, monitoreo en tiempo real y registro de temperatura.'
+            }
+          }
+        ]
+      })
+    }
+  ]
+})
+
 // Iconos
 const IconSnowflake = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' })

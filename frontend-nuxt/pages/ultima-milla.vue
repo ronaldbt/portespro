@@ -246,6 +246,116 @@ const scrollToCalc = () => {
   }
 }
 
+// SEO Meta Tags
+const siteUrl = 'https://portespro.es'
+const currentUrl = `${siteUrl}/ultima-milla`
+const defaultImage = `${siteUrl}/og-image.jpg`
+
+useHead({
+  title: 'Última Milla Logística Marbella | Entrega Express Mismo Día | PortesPro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia. Tracking en tiempo real. Servicio última milla profesional.'
+    },
+    {
+      name: 'keywords',
+      content: 'última milla marbella, última milla logística, entrega última milla, última milla express, última milla mismo día, última milla ecommerce, última milla alimentación, última milla farmacia'
+    },
+    // Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:title', content: 'Última Milla Logística Marbella | Entrega Express Mismo Día' },
+    { property: 'og:description', content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia.' },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:site_name', content: 'PortesPro' },
+    { property: 'og:locale', content: 'es_ES' },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: currentUrl },
+    { name: 'twitter:title', content: 'Última Milla Logística Marbella | Entrega Express' },
+    { name: 'twitter:description', content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Tracking en tiempo real.' },
+    { name: 'twitter:image', content: defaultImage }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Última Milla Logística',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'PortesPro',
+          url: siteUrl
+        },
+        areaServed: {
+          '@type': 'City',
+          name: ['Marbella', 'Málaga', 'Costa del Sol']
+        },
+        description: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h.'
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Última Milla',
+            item: currentUrl
+          }
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '¿Qué es el servicio de última milla?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'El servicio de última milla es la fase final de la distribución, desde el almacén o centro de distribución hasta el destino final del cliente. Ofrecemos última milla logística, última milla distribución y entrega última milla para ecommerce, alimentación, farmacia y paquetería.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cuánto tiempo tarda la entrega última milla?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Ofrecemos última milla mismo día, última milla 24 horas y última milla express para entregas urgentes. También disponemos de última milla programada con horarios flexibles, última milla fin de semana y última milla nocturna.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: '¿Cómo funciona el tracking de última milla?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Nuestro servicio de última milla incluye última milla tracking y última milla seguimiento en tiempo real mediante última milla GPS. Disponemos de última milla app y última milla plataforma digital para que puedas seguir tu envío en cada momento.'
+            }
+          }
+        ]
+      })
+    }
+  ]
+})
+
 // Iconos
 const IconShopping = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z' })

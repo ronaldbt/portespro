@@ -65,6 +65,103 @@ const scrollToCalc = () => {
     document.getElementById('hero-calculator')?.scrollIntoView({ behavior: 'smooth' })
   }
 }
+
+// SEO Meta Tags
+const siteUrl = 'https://portespro.es'
+const siteName = 'PortesPro'
+const defaultImage = `${siteUrl}/og-image.jpg`
+
+useHead({
+  title: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online. Presupuesto gratis sin compromiso.'
+    },
+    {
+      name: 'keywords',
+      content: 'mudanzas marbella, mudanzas costa del sol, mudanzas baratas, portes marbella, empresa mudanzas, mudanzas profesionales, mudanzas económicas, mudanzas rápidas, mudanzas urgentes'
+    },
+    // Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: siteUrl },
+    { property: 'og:title', content: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro' },
+    { property: 'og:description', content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online.' },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:site_name', content: siteName },
+    { property: 'og:locale', content: 'es_ES' },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: siteUrl },
+    { name: 'twitter:title', content: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol' },
+    { name: 'twitter:description', content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío.' },
+    { name: 'twitter:image', content: defaultImage },
+    // Canonical
+    { rel: 'canonical', href: siteUrl }
+  ],
+  link: [
+    { rel: 'canonical', href: siteUrl }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        name: 'PortesPro',
+        image: defaultImage,
+        '@id': siteUrl,
+        url: siteUrl,
+        telephone: '+34-XXX-XXX-XXX',
+        priceRange: '€€',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Calle Ejemplo',
+          addressLocality: 'Marbella',
+          addressRegion: 'Málaga',
+          postalCode: '29600',
+          addressCountry: 'ES'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 36.5102,
+          longitude: -4.8860
+        },
+        openingHoursSpecification: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00'
+        },
+        areaServed: {
+          '@type': 'City',
+          name: ['Marbella', 'Málaga', 'Costa del Sol']
+        },
+        sameAs: [
+          'https://www.facebook.com/portespro',
+          'https://www.instagram.com/portespro'
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'PortesPro',
+        url: siteUrl,
+        logo: `${siteUrl}/logo.png`,
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+34-XXX-XXX-XXX',
+          contactType: 'customer service',
+          areaServed: 'ES',
+          availableLanguage: 'Spanish'
+        }
+      })
+    }
+  ]
+})
 </script>
 
 <style scoped>

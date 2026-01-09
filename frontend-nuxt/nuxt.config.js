@@ -26,7 +26,14 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       titleTemplate: '%s - PortesPro',
       meta: [
-        { name: 'description', content: 'PortesPro - Servicios de transporte y mudanzas' }
+        { name: 'description', content: 'PortesPro - Servicios de transporte y mudanzas profesionales en Marbella y Costa del Sol' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'PortesPro' },
+        { name: 'language', content: 'Spanish' },
+        { name: 'geo.region', content: 'ES-AN' },
+        { name: 'geo.placename', content: 'Marbella' },
+        { name: 'geo.position', content: '36.5102;-4.8860' },
+        { name: 'ICBM', content: '36.5102, -4.8860' }
       ]
     }
   }
