@@ -61,13 +61,13 @@ const features = [
   },
   {
     iconComponent: IconTruck,
-    title: 'Mudanzas de Lujo',
+    title: 'Portes y mudanzas',
     desc: 'Especialistas en Marbella, Puerto Banús y Cala de Mijas. Servicio VIP.',
     color: 'bg-slate-900 text-white'
   },
   {
     iconComponent: IconPackage,
-    title: 'Embalaje Superior',
+    title: 'Embalaje a pedido',
     desc: 'Protección máxima para antigüedades, arte y mobiliario delicado.',
     color: 'bg-teal-50 text-teal-600'
   },
@@ -79,13 +79,13 @@ const features = [
   },
   {
     iconComponent: IconShield,
-    title: 'Seguro Premium',
+    title: 'Seguro Premium a pedido',
     desc: 'Cobertura total de mercancías. Tu patrimonio está en buenas manos.',
     color: 'bg-teal-100 text-teal-700'
   },
   {
     iconComponent: IconClock,
-    title: 'Puntualidad Marbellí',
+    title: 'Puntualidad',
     desc: 'Sabemos que tu tiempo es valioso. Servicio puntual y discreto.',
     color: 'bg-slate-200 text-slate-900'
   }

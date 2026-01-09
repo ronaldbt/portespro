@@ -1,8 +1,10 @@
 <template>
-  <footer class="bg-slate-950 text-white py-16">
+  <footer class="bg-slate-950 text-white py-20">
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-12 mb-12">
-        <div class="space-y-6">
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+        <!-- Company Info -->
+        <div class="lg:col-span-2 space-y-6">
           <div class="flex items-center gap-2">
             <div class="bg-teal-600 p-2 rounded-lg">
               <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -13,16 +15,16 @@
               PORTES<span class="text-teal-400">PRO</span>.es
             </span>
           </div>
-          <p class="text-slate-400 leading-relaxed">
-            Servicios exclusivos de mudanzas y logística en Marbella, Cala de Mijas y toda la Costa del Sol. Compromiso y elegancia en cada porte.
+          <p class="text-slate-400 leading-relaxed text-sm">
+            Empresa de mudanzas profesionales en Marbella, Málaga y Costa del Sol. Servicios de portes, embalajes, guardamuebles, transporte en frío y última milla. Mudanzas baratas, económicas y rápidas con la máxima calidad.
           </p>
           <div class="flex gap-4">
-            <a href="#" class="bg-slate-900 p-2 rounded-full hover:bg-teal-600 transition-all shadow-lg">
+            <a href="#" class="bg-slate-900 p-2 rounded-full hover:bg-teal-600 transition-all shadow-lg" aria-label="Instagram">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
             </a>
-            <a href="#" class="bg-slate-900 p-2 rounded-full hover:bg-teal-600 transition-all shadow-lg">
+            <a href="#" class="bg-slate-900 p-2 rounded-full hover:bg-teal-600 transition-all shadow-lg" aria-label="Facebook">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
@@ -30,56 +32,244 @@
           </div>
         </div>
 
+        <!-- Servicios -->
         <div>
           <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Servicios</h4>
-          <ul class="space-y-4 text-slate-400">
-            <li><a href="#" class="hover:text-white transition-colors">Villas y Mansiones</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Traslado de Negocios</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Portes de Lujo</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Custodia Segura</a></li>
+          <ul class="space-y-3 text-slate-400">
+            <li>
+              <NuxtLink to="/mudanzas" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/particulares" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Particulares
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/empresas" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Empresas
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/oficinas" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Oficinas
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/internacionales" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Internacionales
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/urgentes" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Urgentes
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/embalajes" class="hover:text-teal-400 transition-colors text-sm">
+                Embalajes
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/guardamuebles" class="hover:text-teal-400 transition-colors text-sm">
+                Guardamuebles
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/transporte-frio" class="hover:text-teal-400 transition-colors text-sm">
+                Transporte en Frío
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/ultima-milla" class="hover:text-teal-400 transition-colors text-sm">
+                Última Milla
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
+        <!-- Zonas -->
         <div>
-          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Zonas VIP</h4>
-          <ul class="space-y-4 text-slate-400">
-            <li><a href="#" class="hover:text-white transition-colors">Milla de Oro (Marbella)</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">La Cala de Mijas</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Sotogrande / Estepona</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Malaga Capital</a></li>
+          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Zonas</h4>
+          <ul class="space-y-3 text-slate-400">
+            <li>
+              <NuxtLink to="/mudanzas-marbella" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Marbella
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-malaga" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Málaga
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-costa-del-sol" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Costa del Sol
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-estepona" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Estepona
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-fuengirola" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Fuengirola
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-mijas" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Mijas
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-benalmadena" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Benalmádena
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-torremolinos" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Torremolinos
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-velez-malaga" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Vélez-Málaga
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas-ronda" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Ronda
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
+        <!-- Servicios Especializados -->
         <div>
-          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Contacto Directo</h4>
+          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Especialidades</h4>
+          <ul class="space-y-3 text-slate-400">
+            <li>
+              <NuxtLink to="/mudanzas/piano" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Piano
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/antiguedades" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Antigüedades
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/mudanzas/obras-arte" class="hover:text-teal-400 transition-colors text-sm">
+                Mudanzas Obras de Arte
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/embalajes" class="hover:text-teal-400 transition-colors text-sm">
+                Embalaje Frágiles
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/guardamuebles" class="hover:text-teal-400 transition-colors text-sm">
+                Guardamuebles Climatizado
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/transporte-frio" class="hover:text-teal-400 transition-colors text-sm">
+                Transporte Refrigerado
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/ultima-milla" class="hover:text-teal-400 transition-colors text-sm">
+                Última Milla Ecommerce
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/ultima-milla" class="hover:text-teal-400 transition-colors text-sm">
+                Última Milla Alimentación
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/ultima-milla" class="hover:text-teal-400 transition-colors text-sm">
+                Última Milla Farmacia
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Contacto</h4>
           <ul class="space-y-4 text-slate-400">
-            <li class="flex items-center gap-3">
-              <svg class="text-teal-500 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3">
+              <svg class="text-teal-500 w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span class="font-bold text-white">+34 600 000 000</span>
+              <div>
+                <p class="font-bold text-white text-sm">Teléfono</p>
+                <a href="tel:+34600000000" class="hover:text-teal-400 transition-colors">+34 600 000 000</a>
+              </div>
             </li>
-            <li class="flex items-center gap-3">
-              <svg class="text-teal-500 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3">
+              <svg class="text-teal-500 w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <span>hola@portespro.es</span>
+              <div>
+                <p class="font-bold text-white text-sm">Email</p>
+                <a href="mailto:hola@portespro.es" class="hover:text-teal-400 transition-colors">hola@portespro.es</a>
+              </div>
             </li>
-            <li class="pt-4">
-              <button class="bg-teal-600 text-white w-full py-4 rounded-2xl font-black shadow-xl hover:bg-teal-700 transition-all transform hover:scale-[1.02]">
-                SOLICITAR LLAMADA
-              </button>
+            <li class="flex items-start gap-3">
+              <svg class="text-teal-500 w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <div>
+                <p class="font-bold text-white text-sm">Ubicación</p>
+                <p class="text-sm">Marbella, Málaga<br />Costa del Sol, España</p>
+              </div>
+            </li>
+            <li class="pt-2">
+              <NuxtLink
+                to="/"
+                class="bg-teal-600 text-white w-full py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all transform hover:scale-[1.02] block text-center"
+              >
+                Solicitar Presupuesto
+              </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
-        <p>© 2024 PortesPro.es - Servicio de Mudanzas de Calidad.</p>
-        <div class="flex gap-8 mt-4 md:mt-0">
-          <a href="#" class="hover:text-teal-400 transition-colors">Legal</a>
-          <a href="#" class="hover:text-teal-400 transition-colors">Privacidad</a>
-          <a href="#" class="hover:text-teal-400 transition-colors">Cookies</a>
+      <!-- SEO Text Section -->
+      <div class="border-t border-slate-900 pt-12 mb-12">
+        <div class="grid md:grid-cols-2 gap-8 text-slate-400 text-sm leading-relaxed">
+          <div>
+            <h5 class="text-white font-black mb-4 uppercase tracking-widest text-xs">Mudanzas y Portes en Marbella y Costa del Sol</h5>
+            <p>
+              PortesPro.es es una empresa de mudanzas profesionales especializada en mudanzas Marbella, mudanzas Málaga y mudanzas Costa del Sol. Ofrecemos servicios de mudanzas baratas, mudanzas económicas y mudanzas rápidas para particulares y empresas. Nuestros servicios incluyen mudanzas particulares, mudanzas empresas, mudanzas oficinas, mudanzas internacionales y mudanzas urgentes. También proporcionamos servicios de embalajes profesionales, guardamuebles Marbella, guardamuebles Málaga, transporte en frío y última milla logística.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-white font-black mb-4 uppercase tracking-widest text-xs">Servicios de Logística y Transporte</h5>
+            <p>
+              Además de mudanzas, ofrecemos embalajes para mudanza con materiales de embalaje profesionales como cajas cartón, papel burbuja y film plástico. Nuestros guardamuebles incluyen guardamuebles climatizado, guardamuebles seguro y guardamuebles con acceso 24 horas. Para productos perecederos, ofrecemos transporte refrigerado, transporte frío y logística de cadena frío. También proporcionamos servicio última milla para ecommerce, última milla alimentación y última milla farmacia con entrega última milla mismo día y última milla express.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-slate-600">
+          © 2024 PortesPro.es - Empresa de Mudanzas Profesionales en Marbella, Málaga y Costa del Sol. Todos los derechos reservados.
+        </p>
+        <div class="flex flex-wrap gap-6 text-xs text-slate-600">
+          <NuxtLink to="/legal" class="hover:text-teal-400 transition-colors">Aviso Legal</NuxtLink>
+          <NuxtLink to="/privacidad" class="hover:text-teal-400 transition-colors">Política de Privacidad</NuxtLink>
+          <NuxtLink to="/cookies" class="hover:text-teal-400 transition-colors">Política de Cookies</NuxtLink>
+          <NuxtLink to="/terminos" class="hover:text-teal-400 transition-colors">Términos y Condiciones</NuxtLink>
         </div>
       </div>
     </div>
@@ -88,6 +278,3 @@
 
 <script setup>
 </script>
-
-
-

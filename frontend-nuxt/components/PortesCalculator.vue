@@ -1,8 +1,8 @@
 <template>
-  <div :class="`max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row transition-all duration-700 ${isHero ? 'ring-[12px] ring-slate-200/40' : ''}`">
+  <div :class="`max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row transition-all duration-700 ${isHero ? 'ring-[10px] ring-slate-200/40' : ''}`">
     <!-- Left Panel -->
-    <div class="lg:w-2/3 p-5 md:p-8 bg-white">
-      <div class="flex gap-2 mb-8 overflow-x-auto pb-4 scrollbar-hide">
+    <div class="lg:w-2/3 p-4 md:p-6 bg-white">
+      <div class="flex gap-2 mb-6 overflow-x-auto pb-3 scrollbar-hide">
         <button
           v-for="s in [1, 2, 3]"
           :key="s"
@@ -25,63 +25,54 @@
         leave-to-class="opacity-0 translate-x-8"
       >
         <!-- Step 1: Route Selection -->
-        <div v-if="step === 1" key="step1" class="space-y-6">
-          <div class="grid md:grid-cols-2 gap-5">
+        <div v-if="step === 1" key="step1" class="space-y-5">
+          <div class="grid md:grid-cols-2 gap-4">
             <div class="space-y-3">
-              <label class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
+              <label for="origen" class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
                 <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 Origen
               </label>
-              <select 
+              <input
+                id="origen"
+                ref="origenInput"
                 v-model="origin"
-                class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm cursor-pointer text-sm"
-              >
-                <option v-for="loc in locations" :key="loc" :value="loc">{{ loc }}</option>
-              </select>
+                type="text"
+                placeholder="Escribe una dirección..."
+                class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm text-sm"
+              />
             </div>
             <div class="space-y-3">
-              <label class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
+              <label for="destino" class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
                 <svg class="w-4 h-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 Destino
               </label>
-              <select 
+              <input
+                id="destino"
+                ref="destinoInput"
                 v-model="destination"
-                class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm cursor-pointer text-sm"
-              >
-                <option v-for="loc in locations" :key="loc" :value="loc">{{ loc }}</option>
-              </select>
+                type="text"
+                placeholder="Escribe una dirección..."
+                class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm text-sm"
+              />
             </div>
           </div>
 
           <div class="relative aspect-[21/9] bg-slate-900 rounded-3xl overflow-hidden group border border-slate-800 shadow-inner">
-            <img 
-              src="https://images.unsplash.com/photo-1512413316925-fd4b93f31521?auto=format&fit=crop&q=80&w=1200" 
-              alt="Costa del Sol" 
-              class="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700 animate-zoom"
-            />
-            <div class="absolute inset-0 flex items-center justify-center p-8">
-              <div class="w-full h-1 bg-white/10 relative rounded-full">
-                <div class="absolute -top-3 w-10 h-6 bg-teal-500 rounded-full border-2 border-white shadow-[0_0_25px_rgba(20,184,166,0.6)] flex items-center justify-center animate-truck-move">
-                  <svg class="text-white w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[9px] text-white font-black tracking-widest uppercase">
-              Logística optimizada: {{ origin }} ➔ {{ destination }}
+            <div ref="mapContainer" class="w-full h-full"></div>
+            <div v-if="origin && destination" class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[9px] text-white font-black tracking-widest uppercase z-10 max-w-[calc(100%-2rem)] truncate">
+              Logística optimizada: {{ origin.split(',')[0] }} ➔ {{ destination.split(',')[0] }}
             </div>
           </div>
 
           <button 
             @click="step = 2"
-            class="w-full bg-slate-900 text-white py-4 rounded-xl font-black text-base shadow-2xl flex items-center justify-center gap-3 hover:bg-teal-600 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            class="w-full bg-slate-900 text-white py-3.5 rounded-xl font-black text-sm shadow-2xl flex items-center justify-center gap-3 hover:bg-teal-600 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             Configurar Carga
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,13 +82,13 @@
         </div>
 
         <!-- Step 2: Inventory -->
-        <div v-else-if="step === 2" key="step2" class="space-y-6">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-black text-slate-900">Inventario Digital</h3>
-            <span class="text-[10px] font-black text-teal-600 bg-teal-50 px-3 py-1.5 rounded-lg uppercase tracking-widest">Precisión Técnica</span>
+        <div v-else-if="step === 2" key="step2" class="space-y-5">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="text-xl font-black text-slate-900">Inventario Digital</h3>
+            <span class="text-[9px] font-black text-teal-600 bg-teal-50 px-2.5 py-1 rounded-lg uppercase tracking-widest">Precisión Técnica</span>
           </div>
           
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             <button
               v-for="preset in presets"
               :key="preset.name"
@@ -111,7 +102,7 @@
             </button>
           </div>
 
-          <div class="bg-slate-50 rounded-2xl p-5 h-[220px] overflow-y-auto space-y-2.5 border border-slate-200 shadow-inner custom-scrollbar">
+          <div class="bg-slate-50 rounded-2xl p-4 h-[180px] overflow-y-auto space-y-2 border border-slate-200 shadow-inner custom-scrollbar">
             <div v-if="items.length === 0" class="h-full flex flex-col items-center justify-center text-slate-300 gap-4 opacity-40">
               <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -165,14 +156,14 @@
           </div>
 
           <div class="flex gap-3">
-            <button @click="step = 1" class="px-8 bg-slate-100 text-slate-600 py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-slate-200 transition-colors">
+            <button @click="step = 1" class="px-6 bg-slate-100 text-slate-600 py-2.5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-slate-200 transition-colors">
               Atrás
             </button>
             <button 
               @click="step = 3"
               :disabled="items.length === 0"
               :class="items.length > 0 ? 'bg-slate-900 text-white shadow-slate-200 hover:bg-teal-600' : 'bg-slate-200 text-slate-400 cursor-not-allowed'"
-              class="flex-grow py-3 rounded-xl font-black text-base shadow-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              class="flex-grow py-2.5 rounded-xl font-black text-sm shadow-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
               Finalizar Presupuesto
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,56 +174,56 @@
         </div>
 
         <!-- Step 3: Final -->
-        <div v-else-if="step === 3" key="step3" class="text-center py-6">
-          <div class="w-20 h-20 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-5 shadow-sm border border-teal-100 animate-check-in">
+        <div v-else-if="step === 3" key="step3" class="text-center py-5">
+          <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm border border-teal-100 animate-check-in">
             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-3xl font-black text-slate-900 mb-2 tracking-tighter">Presupuesto Finalizado</h3>
-          <p class="text-slate-500 text-sm mb-8 font-medium tracking-tight">Cuidado artesanal garantizado en toda la Costa del Sol.</p>
+          <h3 class="text-2xl font-black text-slate-900 mb-2 tracking-tighter">Presupuesto Finalizado</h3>
+          <p class="text-slate-500 text-xs mb-6 font-medium tracking-tight">Cuidado artesanal garantizado en toda la Costa del Sol.</p>
           
-          <div class="bg-slate-950 p-10 rounded-3xl max-w-sm mx-auto shadow-2xl relative overflow-hidden group border border-slate-800 hover:scale-[1.02] transition-transform">
-            <div class="absolute top-0 right-0 p-6">
-              <svg class="text-teal-500/20 w-10 h-10 group-hover:text-teal-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="bg-slate-950 p-8 rounded-3xl max-w-xs mx-auto shadow-2xl relative overflow-hidden group border border-slate-800 hover:scale-[1.02] transition-transform">
+            <div class="absolute top-0 right-0 p-5">
+              <svg class="text-teal-500/20 w-8 h-8 group-hover:text-teal-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
             </div>
-            <p class="text-[10px] font-black text-teal-500 uppercase tracking-[0.4em] mb-4">Total Estimado PortesPro</p>
+            <p class="text-[9px] font-black text-teal-500 uppercase tracking-[0.4em] mb-3">Total Estimado PortesPro</p>
             <div class="flex items-center justify-center gap-1">
-              <span class="text-6xl font-black text-white tracking-tighter animate-price-in">{{ calculation.price }}</span>
-              <span class="text-2xl font-bold text-teal-500">€</span>
+              <span class="text-5xl font-black text-white tracking-tighter animate-price-in">{{ calculation.price }}</span>
+              <span class="text-xl font-bold text-teal-500">€</span>
             </div>
-            <div class="mt-8 pt-6 border-t border-slate-800 flex justify-between text-[10px] font-black text-slate-500 uppercase tracking-[0.3em]">
+            <div class="mt-6 pt-5 border-t border-slate-800 flex justify-between text-[9px] font-black text-slate-500 uppercase tracking-[0.3em]">
               <span>VILLA CARE</span>
               <span>PREMIUM</span>
             </div>
           </div>
 
-          <div class="mt-10 space-y-4">
-            <button class="w-full bg-teal-600 text-white py-5 rounded-2xl font-black text-xl shadow-2xl shadow-teal-500/30 hover:bg-teal-500 transition-all hover:scale-[1.05] active:scale-[0.95]">
+          <div class="mt-8 space-y-3">
+            <button class="w-full bg-teal-600 text-white py-4 rounded-2xl font-black text-lg shadow-2xl shadow-teal-500/30 hover:bg-teal-500 transition-all hover:scale-[1.05] active:scale-[0.95]">
               RESERVAR MI MUDANZA
             </button>
-            <p class="text-[10px] text-slate-400 font-black uppercase tracking-widest">Confirmación inmediata • Soporte 24/7</p>
+            <p class="text-[9px] text-slate-400 font-black uppercase tracking-widest">Confirmación inmediata • Soporte 24/7</p>
           </div>
         </div>
       </Transition>
     </div>
 
     <!-- Right Panel (Summary) -->
-    <div class="lg:w-1/3 bg-slate-950 p-6 md:p-10 text-white flex flex-col justify-between border-l border-slate-900 relative">
+    <div class="lg:w-1/3 bg-slate-950 p-5 md:p-8 text-white flex flex-col justify-between border-l border-slate-900 relative">
       <div class="absolute top-0 right-0 w-48 h-48 bg-teal-600/10 rounded-full blur-[80px] -z-10" />
       
-      <div class="space-y-10">
-        <div class="flex items-center justify-between border-b border-slate-900 pb-6">
-          <h4 class="text-lg font-black text-white tracking-tight">Resumen Ejecutivo</h4>
+      <div class="space-y-8">
+        <div class="flex items-center justify-between border-b border-slate-900 pb-5">
+          <h4 class="text-base font-black text-white tracking-tight">Resumen Ejecutivo</h4>
           <div class="flex gap-2">
             <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
             <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style="animation-delay: 0.5s" />
           </div>
         </div>
         
-          <div class="space-y-8">
+          <div class="space-y-6">
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center border border-slate-800 shadow-xl group">
               <svg class="text-teal-400 w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -271,22 +262,23 @@
         </div>
       </div>
 
-      <div class="mt-12 bg-white/[0.05] p-8 rounded-3xl border border-white/5 space-y-3 shadow-2xl">
+      <div class="mt-10 bg-white/[0.05] p-6 rounded-3xl border border-white/5 space-y-2.5 shadow-2xl">
         <div class="flex justify-between items-center">
-          <span class="text-slate-500 font-black text-[10px] uppercase tracking-widest">Cotización Premium</span>
-          <span class="text-4xl font-black text-white tracking-tighter">{{ calculation.price }}€</span>
+          <span class="text-slate-500 font-black text-[9px] uppercase tracking-widest">Precio</span>
+          <span class="text-3xl font-black text-white tracking-tighter">{{ calculation.price }}€</span>
         </div>
         <div class="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden">
           <div class="h-full w-1/4 bg-teal-500/60 shadow-[0_0_15px_rgba(20,184,166,0.5)] animate-progress" />
         </div>
-        <p class="text-[9px] text-slate-600 font-black text-center pt-3 tracking-[0.3em] uppercase">Marbella • Sotogrande • Mijas</p>
+        <p class="text-[8px] text-slate-600 font-black text-center pt-2 tracking-[0.3em] uppercase">Marbella • Sotogrande • Mijas</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, watch, nextTick } from 'vue'
+import { useRuntimeConfig } from '#app'
 
 const props = defineProps({
   isHero: {
@@ -295,12 +287,26 @@ const props = defineProps({
   }
 })
 
-const step = ref(1)
-const origin = ref('Marbella')
-const destination = ref('Cala de Mijas')
-const items = ref([])
+const config = useRuntimeConfig()
 
-const locations = ['Marbella', 'Cala de Mijas', 'Fuengirola', 'Estepona', 'Málaga', 'Benalmádena', 'Torremolinos', 'Otro']
+const step = ref(1)
+const origin = ref('')
+const destination = ref('')
+const items = ref([])
+const mapContainer = ref(null)
+const origenInput = ref(null)
+const destinoInput = ref(null)
+
+const origenPlace = ref(null)
+const destinoPlace = ref(null)
+const distancia = ref(null)
+const precio = ref(null)
+
+let mapInstance = null
+let directionsService = null
+let directionsRenderer = null
+let autocompleteOrigen = null
+let autocompleteDestino = null
 
 const presets = [
   { name: 'Caja Pequeña', category: 'Pequeño', volume: 0.1 },
@@ -334,24 +340,190 @@ const updateQuantity = (id, delta) => {
 
 const calculation = computed(() => {
   const totalVolume = items.value.reduce((acc, item) => acc + (item.volume * item.quantity), 0)
-  const zoneMultipliers = {
-    'Marbella': 1.3,
-    'Cala de Mijas': 1.0,
-    'Fuengirola': 1.0,
-    'Estepona': 1.5,
-    'Málaga': 1.4,
-    'Benalmádena': 1.1,
-    'Torremolinos': 1.1,
-    'Otro': 2.0
+  
+  // Fórmula de cálculo de precio en euros
+  // Si distancia <= 100 km: precio = 40 + (distancia × 3) EUR
+  // Si distancia > 100 km: precio = distancia × 2 EUR
+  let calculatedPrice = 0
+  if (precio.value !== null && precio.value > 0) {
+    calculatedPrice = precio.value
+  } else if (distancia.value !== null && distancia.value > 0) {
+    // Si hay distancia pero no precio calculado, calcularlo aquí
+    if (distancia.value <= 100) {
+      calculatedPrice = 40 + (distancia.value * 3)
+    } else {
+      calculatedPrice = distancia.value * 2
+    }
+    precio.value = calculatedPrice
   }
-  const baseDistancePrice = 45
-  const volumeRate = 18
-  const subtotal = baseDistancePrice + (totalVolume * volumeRate)
-  const multiplier = ((zoneMultipliers[origin.value] || 1.0) + (zoneMultipliers[destination.value] || 1.0)) / 2
+  
   return {
     totalVolume,
-    price: Math.round(subtotal * multiplier),
-    itemCount: items.value.reduce((acc, i) => acc + i.quantity, 0)
+    price: Math.round(calculatedPrice),
+    itemCount: items.value.reduce((acc, i) => acc + i.quantity, 0),
+    distancia: distancia.value
+  }
+})
+
+// Función para inicializar el mapa (simplificada como FleteCalculator)
+function initMap() {
+  if (!mapContainer.value || !process.client) return
+
+  const apiKey = encodeURIComponent(config.public.googleMapsApiKey || 'AIzaSyD6_IKXikaZ2YFx5R8yKVpFPUe_S6WOKJI')
+
+  if (window.google && window.google.maps) {
+    createMap()
+    return
+  }
+
+  if (document.getElementById('google-maps-script')) {
+    return
+  }
+
+  const googleScript = document.createElement('script')
+  googleScript.id = 'google-maps-script'
+  googleScript.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
+  googleScript.async = true
+  googleScript.defer = true
+
+  googleScript.onload = () => {
+    console.log('✅ Google Maps API cargada correctamente')
+    createMap()
+  }
+
+  googleScript.onerror = () => {
+    console.error('❌ Error al cargar Google Maps API')
+  }
+
+  document.head.appendChild(googleScript)
+}
+
+// Crear el mapa
+function createMap() {
+  if (!mapContainer.value || !window.google || !window.google.maps) {
+    return
+  }
+
+  // Centro en Marbella por defecto
+  const marbellaCenter = { lat: 36.5102, lng: -4.8861 }
+
+  mapInstance = new google.maps.Map(mapContainer.value, {
+    center: marbellaCenter,
+    zoom: 11
+  })
+
+  directionsService = new google.maps.DirectionsService()
+  directionsRenderer = new google.maps.DirectionsRenderer({
+    map: mapInstance,
+    suppressMarkers: false,
+    polylineOptions: {
+      strokeColor: '#14b8a6',
+      strokeWeight: 4,
+      strokeOpacity: 0.8
+    },
+    markerOptions: {
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: '#14b8a6',
+        fillOpacity: 1,
+        strokeColor: '#ffffff',
+        strokeWeight: 2
+      }
+    }
+  })
+
+  // Inicializar autocomplete directamente (como en FleteCalculator)
+  const inputOrigen = document.getElementById('origen')
+  const inputDestino = document.getElementById('destino')
+
+  if (inputOrigen && inputDestino) {
+    // Bounds para Costa del Sol
+    const costaDelSolBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(36.2, -5.3),
+      new google.maps.LatLng(36.8, -4.3)
+    )
+
+    autocompleteOrigen = new google.maps.places.Autocomplete(inputOrigen, {
+      bounds: costaDelSolBounds,
+      componentRestrictions: { country: 'es' }
+    })
+
+    autocompleteDestino = new google.maps.places.Autocomplete(inputDestino, {
+      bounds: costaDelSolBounds,
+      componentRestrictions: { country: 'es' }
+    })
+
+    autocompleteOrigen.addListener('place_changed', () => {
+      origenPlace.value = autocompleteOrigen.getPlace()
+      if (origenPlace.value && origenPlace.value.formatted_address) {
+        origin.value = origenPlace.value.formatted_address
+        calculateRoute()
+      }
+    })
+
+    autocompleteDestino.addListener('place_changed', () => {
+      destinoPlace.value = autocompleteDestino.getPlace()
+      if (destinoPlace.value && destinoPlace.value.formatted_address) {
+        destination.value = destinoPlace.value.formatted_address
+        calculateRoute()
+      }
+    })
+  }
+}
+
+
+// Calcular y mostrar la ruta
+function calculateRoute() {
+  if (!directionsService || !directionsRenderer || !origenPlace.value || !destinoPlace.value) {
+    return
+  }
+
+  const request = {
+    origin: { placeId: origenPlace.value.place_id },
+    destination: { placeId: destinoPlace.value.place_id },
+    travelMode: 'DRIVING'
+  }
+
+  directionsService.route(request, (result, status) => {
+    if (status === 'OK') {
+      directionsRenderer.setDirections(result)
+      
+      // Calcular distancia y precio usando la fórmula en euros
+      const leg = result.routes[0].legs[0]
+      distancia.value = leg.distance.value / 1000 // Convertir metros a kilómetros
+      
+      // Fórmula de cálculo de precio en euros
+      // Si distancia <= 100 km: precio = 40 + (distancia × 3) EUR
+      // Si distancia > 100 km: precio = distancia × 2 EUR
+      if (distancia.value <= 100) {
+        precio.value = 40 + (distancia.value * 3)
+      } else {
+        precio.value = distancia.value * 2
+      }
+      
+      console.log('📊 Precio calculado:', {
+        distancia: distancia.value,
+        precio: precio.value
+      })
+      
+      // Ajustar el zoom para que se vea toda la ruta
+      const bounds = new google.maps.LatLngBounds()
+      result.routes[0].legs.forEach(leg => {
+        bounds.extend(leg.start_location)
+        bounds.extend(leg.end_location)
+      })
+      mapInstance.fitBounds(bounds)
+    } else {
+      console.error('Error al calcular la ruta:', status)
+    }
+  })
+}
+
+// Inicializar el mapa cuando el componente se monte
+onMounted(() => {
+  if (process.client) {
+    initMap()
   }
 })
 </script>

@@ -13,22 +13,108 @@
       </NuxtLink>
 
       <!-- Desktop Links -->
-      <div class="hidden md:flex items-center gap-10">
-        <a 
-          v-for="link in navLinks"
-          :key="link.name"
-          :href="link.href" 
+      <div class="hidden md:flex items-center gap-4">
+        <!-- Mudanzas Dropdown -->
+        <div class="relative group">
+          <NuxtLink 
+            to="/mudanzas"
+            class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1"
+          >
+            Mudanzas
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </NuxtLink>
+          <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
+            <NuxtLink to="/mudanzas/particulares" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Particulares
+            </NuxtLink>
+            <NuxtLink to="/mudanzas/empresas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Empresas
+            </NuxtLink>
+            <NuxtLink to="/mudanzas/oficinas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Oficinas
+            </NuxtLink>
+            <NuxtLink to="/mudanzas/internacionales" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Internacionales
+            </NuxtLink>
+            <NuxtLink to="/mudanzas/urgentes" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Urgentes
+            </NuxtLink>
+          </div>
+        </div>
+
+        <!-- Embalajes -->
+        <NuxtLink 
+          to="/embalajes"
           class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          {{ link.name }}
+          Embalajes
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
-        </a>
-        <button 
-          @click="$emit('get-quote')"
-          class="bg-teal-600 hover:bg-slate-900 text-white px-8 py-3 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl shadow-teal-100 transition-all hover:scale-105 active:scale-95"
+        </NuxtLink>
+
+        <!-- Guardamuebles -->
+        <NuxtLink 
+          to="/guardamuebles"
+          class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          Presupuesto
-        </button>
+          Guardamuebles
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
+        </NuxtLink>
+
+        <!-- Transporte en Frío -->
+        <NuxtLink 
+          to="/transporte-frio"
+          class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
+        >
+          Transporte Frío
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
+        </NuxtLink>
+
+        <!-- Última Milla -->
+        <NuxtLink 
+          to="/ultima-milla"
+          class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
+        >
+          Última Milla
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
+        </NuxtLink>
+
+        <!-- Zonas Dropdown -->
+        <div class="relative group">
+          <button 
+            class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1"
+          >
+            Zonas
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
+            <NuxtLink to="/mudanzas-marbella" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Marbella
+            </NuxtLink>
+            <NuxtLink to="/mudanzas-malaga" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Málaga
+            </NuxtLink>
+            <NuxtLink to="/mudanzas-costa-del-sol" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Costa del Sol
+            </NuxtLink>
+            <NuxtLink to="/mudanzas-estepona" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Estepona
+            </NuxtLink>
+            <NuxtLink to="/mudanzas-fuengirola" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
+              Mudanzas Fuengirola
+            </NuxtLink>
+          </div>
+        </div>
+
+        <NuxtLink 
+          to="/login"
+          class="px-4 py-2 rounded-xl border-2 border-teal-600 text-teal-600 font-bold hover:bg-teal-50 transition-all"
+        >
+          Ingresar
+        </NuxtLink>
       </div>
 
       <!-- Mobile Toggle -->
@@ -52,23 +138,30 @@
       leave-to-class="opacity-0 max-h-0"
     >
       <div v-if="isOpen" class="md:hidden bg-white border-b absolute top-full w-full px-6 py-8 shadow-2xl overflow-hidden">
-        <div class="flex flex-col gap-6">
-          <a 
-            v-for="link in navLinks"
-            :key="link.name"
-            :href="link.href" 
-            @click="isOpen = false"
-            class="text-slate-900 font-black text-xl uppercase tracking-tighter"
-          >
-            {{ link.name }}
-          </a>
+        <div class="flex flex-col gap-4">
+          <NuxtLink to="/mudanzas" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+            Mudanzas
+          </NuxtLink>
+          <NuxtLink to="/embalajes" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+            Embalajes
+          </NuxtLink>
+          <NuxtLink to="/guardamuebles" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+            Guardamuebles
+          </NuxtLink>
+          <NuxtLink to="/transporte-frio" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+            Transporte Frío
+          </NuxtLink>
+          <NuxtLink to="/ultima-milla" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+            Última Milla
+          </NuxtLink>
           <div class="h-px bg-slate-100" />
-          <button 
-            @click="$emit('get-quote'); isOpen = false"
-            class="bg-teal-600 text-white py-4 rounded-2xl font-black text-sm uppercase shadow-lg shadow-teal-100"
+          <NuxtLink 
+            to="/login"
+            @click="isOpen = false"
+            class="border-2 border-teal-600 text-teal-600 py-3 rounded-xl font-bold text-center"
           >
-            Calculadora Online
-          </button>
+            Ingresar
+          </NuxtLink>
         </div>
       </div>
     </Transition>
@@ -82,12 +175,6 @@ defineEmits(['get-quote'])
 
 const scrolled = ref(false)
 const isOpen = ref(false)
-
-const navLinks = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Servicios', href: '#servicios' },
-  { name: 'Reseñas', href: '#testimonios' },
-]
 
 onMounted(() => {
   if (process.client) {

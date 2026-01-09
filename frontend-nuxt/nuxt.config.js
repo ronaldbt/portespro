@@ -12,6 +12,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   
+  // Runtime config para variables de entorno públicas
+  runtimeConfig: {
+    public: {
+      googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'AIzaSyD6_IKXikaZ2YFx5R8yKVpFPUe_S6WOKJI'
+    }
+  },
+  
   // Configuración de SEO
   app: {
     head: {

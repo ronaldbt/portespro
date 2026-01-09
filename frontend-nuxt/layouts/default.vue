@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="min-h-screen bg-white text-gray-900">
-    <Header v-if="!usuario" />
     <main>
       <slot />
     </main>
