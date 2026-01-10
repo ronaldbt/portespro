@@ -6,8 +6,9 @@
     <PortesOnlineAdvisor />
 
     <main class="flex-grow">
+      <Breadcrumbs />
       <!-- Hero Section -->
-      <section class="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-slate-50">
+      <section class="relative pt-8 pb-24 md:pt-12 md:pb-32 overflow-hidden bg-slate-50">
         <div class="absolute top-0 right-0 w-full h-full bg-teal-600/[0.02] -skew-y-3 origin-top-right -z-10" />
         
         <div class="container mx-auto px-4 relative z-10">

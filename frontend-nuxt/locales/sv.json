@@ -3,7 +3,24 @@
     "title": "Flytt och Transport",
     "subtitle": "Hantverksskicklighet och teknisk precision. Flytttjänster i Marbella och Costa del Sol.",
     "cta": "Begär Offer",
-    "learnMore": "Läs Mer"
+    "learnMore": "Läs Mer",
+    "contact": "Kontakta",
+    "call": "Ring",
+    "email": "E-post",
+    "address": "Adress",
+    "phone": "Telefon",
+    "open": "Öppna",
+    "close": "Stäng",
+    "readMore": "Läs Mer",
+    "seeMore": "Se Mer",
+    "less": "Mindre",
+    "all": "Alla",
+    "services": "Tjänster",
+    "about": "Om Oss",
+    "testimonials": "Testimonials",
+    "gallery": "Galleri",
+    "blog": "Blogg",
+    "news": "Nyheter"
   },
   "breadcrumbs": {
     "home": "Hem"
@@ -15,30 +32,485 @@
     "transporteFrio": "Kyltransport",
     "ultimaMilla": "Sista Milen",
     "zonas": "Områden",
-    "login": "Logga In"
+    "login": "Logga In",
+    "mudanzasParticulares": "Privat Flytt",
+    "mudanzasEmpresas": "Företags Flytt",
+    "mudanzasOficinas": "Kontors Flytt",
+    "mudanzasInternacionales": "Internationell Flytt",
+    "mudanzasUrgentes": "Akut Flytt",
+    "marbella": "Marbella",
+    "malaga": "Málaga",
+    "costaDelSol": "Costa del Sol",
+    "estepona": "Estepona",
+    "fuengirola": "Fuengirola"
   },
   "pages": {
     "index": {
       "heroTag": "Högklassig Flyttlogistik",
       "title": "Flytt och Transport",
-      "subtitle": "Hantverksskicklighet och teknisk precision. Flytttjänster i Marbella och Costa del Sol."
+      "subtitle": "Hantverksskicklighet och teknisk precision. Flytttjänster i Marbella och Costa del Sol.",
+      "description": "Professionella flytt- och transporttjänster i Marbella och Costa del Sol. Billiga flytttjänster, inpackning, förvaring och kyltransport. Online prisräknare. Gratis offert.",
+      "features": {
+        "title": "Varför Välja Oss",
+        "subtitle": "Professionella flytt- och transporttjänster i Marbella",
+        "feature1": {
+          "title": "Certifierade Profesionella",
+          "description": "Team av flyttexperter med års erfarenhet och professionella certifieringar."
+        },
+        "feature2": {
+          "title": "Transparenta Priser",
+          "description": "Online räknare för att känna till priset på din flytt utan åtagande."
+        },
+        "feature3": {
+          "title": "24/7 Tillgänglighet",
+          "description": "Tjänst tillgänglig alla dagar på året för akuta och planerade flyttar."
+        },
+        "feature4": {
+          "title": "Material Inkluderat",
+          "description": "Professionell inpackning med alla nödvändiga material inkluderat i priset."
+        },
+        "feature5": {
+          "title": "Komplett Försäkring",
+          "description": "Försäkringsskydd för att skydda dina tillhörigheter under transporten."
+        },
+        "feature6": {
+          "title": "Realtidsspårning",
+          "description": "Realtidsspårningssystem för att veta var din flytt befinner sig."
+        }
+      },
+      "stats": {
+        "title": "Siffror som Talar",
+        "stat1": {
+          "value": "5000+",
+          "label": "Genomförda Flyttar"
+        },
+        "stat2": {
+          "value": "98%",
+          "label": "Nöjda Kunder"
+        },
+        "stat3": {
+          "value": "24/7",
+          "label": "Tillgänglighet"
+        },
+        "stat4": {
+          "value": "15+",
+          "label": "Års Erfarenhet"
+        }
+      },
+      "process": {
+        "title": "Vår Process",
+        "subtitle": "Hur Vår Flytttjänst Fungerar",
+        "step1": {
+          "title": "Online Konsultation",
+          "description": "Beräkna priset på din flytt med vår online räknare eller begär en personlig offert."
+        },
+        "step2": {
+          "title": "Planering",
+          "description": "Vårt team planerar varje detalj i din flytt för att säkerställa perfekt service."
+        },
+        "step3": {
+          "title": "Inpackning",
+          "description": "Professionell inpackning av alla dina föremål med högkvalitativa material."
+        },
+        "step4": {
+          "title": "Transport",
+          "description": "Säker och omsorgsfull transport av dina tillhörigheter till deras nya destination."
+        },
+        "step5": {
+          "title": "Leverans",
+          "description": "Punktlig leverans och möbelmontage i ditt nya hem eller företag."
+        },
+        "step6": {
+          "title": "Spårning",
+          "description": "Realtidsspårning och bekräftelse av komplett leverans."
+        }
+      }
     },
     "guardamuebles": {
       "title": "Förvaringslokaler Marbella",
-      "subtitle": "Billigt, prisvärt och säkert förvar i Marbella, Málaga och Costa del Sol. Klimatstyrda lager med 24-timmars tillgång."
+      "subtitle": "Billigt, prisvärt och säkert förvar i Marbella, Málaga och Costa del Sol. Klimatstyrda lager med 24-timmars tillgång.",
+      "description": "Förvaringslokaler i Marbella från 45€/månad. Klimatstyrda lager, 24-timmars bevakning. Online förvaringsräknare. Gratis offert.",
+      "sizes": {
+        "title": "Tillgängliga Storlekar",
+        "subtitle": "Hitta det perfekta lagret för dina behov",
+        "size1": {
+          "title": "Liten Förvaring",
+          "description": "Ideal för mini förvaring. Perfekt för personliga föremål och små lådor.",
+          "price": "Från 45€"
+        },
+        "size2": {
+          "title": "Medium Förvaring",
+          "description": "Ideal för standard förvaring. Perfekt för tillfälliga flyttar och medellång sikt förvaring.",
+          "price": "Från 60€"
+        },
+        "size3": {
+          "title": "Stor Förvaring",
+          "description": "Ideal för komplett förvaring. Perfekt för stora flyttar och långsiktig förvaring.",
+          "price": "Från 90€"
+        },
+        "size4": {
+          "title": "Extra Stor Förvaring",
+          "description": "Ideal för industriell förvaring. Perfekt för företag och massförvaring.",
+          "price": "Från 150€"
+        }
+      },
+      "features": {
+        "title": "Funktioner",
+        "feature1": {
+          "title": "Klimatkontroll",
+          "description": "Klimatstyrda lager med kontrollerad temperatur och luftfuktighet."
+        },
+        "feature2": {
+          "title": "24/7 Säkerhet",
+          "description": "24-timmars bevakning, larm och säkerhetskameror."
+        },
+        "feature3": {
+          "title": "Enkel Åtkomst",
+          "description": "Enkel och bekväm åtkomst till dina tillhörigheter när du behöver dem."
+        },
+        "feature4": {
+          "title": "Försäkring Inkluderad",
+          "description": "Komplett försäkring inkluderad för att skydda dina förvarade föremål."
+        }
+      },
+      "faqs": {
+        "title": "Vanliga Frågor",
+        "faq1": {
+          "question": "Hur mycket kostar förvaring?",
+          "answer": "Förvaringspriset varierar beroende på storlek och förvaringslängd. Vi erbjuder förvaring från 45€/månad med rabatter för långsiktiga kontrakt."
+        },
+        "faq2": {
+          "question": "Är lagren klimatstyrda?",
+          "answer": "Ja, alla våra förvaringslokaler och lager är klimatstyrda med luftkonditionering och temperatursstyrning för att skydda dina tillhörigheter från värme och fukt."
+        },
+        "faq3": {
+          "question": "Vilken säkerhet har förvaringslokaler?",
+          "answer": "Våra säkra förvaringslokaler inkluderar 24-timmars bevakning, larm, säkerhetskameror och kontrollerad åtkomst."
+        },
+        "faq4": {
+          "question": "Kan jag komma åt mina föremål när jag vill?",
+          "answer": "Ja, våra förvaringslokaler erbjuder 24-timmars åtkomst, 7 dagar i veckan så att du kan komma åt dina tillhörigheter när du behöver dem."
+        },
+        "faq5": {
+          "question": "Inkluderar förvaringslokaler försäkring?",
+          "answer": "Ja, alla våra förvaringslokaler inkluderar komplett försäkring för att skydda dina förvarade föremål under förvaringsperioden."
+        },
+        "faq6": {
+          "question": "Vad är minsta kontrakteringsstorlek?",
+          "answer": "Minsta kontrakteringsstorlek är 2m³, även om vi rekommenderar minst 3m³ för större komfort och utnyttjande av utrymme."
+        }
+      }
     },
     "embalajes": {
       "title": "Professionell Inpackning Marbella",
-      "subtitle": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat."
+      "subtitle": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat.",
+      "description": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat. Omsorgsfull inpackning för bräckliga föremål. Gratis offert.",
+      "services": {
+        "title": "Inpackningstjänster",
+        "service1": {
+          "title": "Komplett Inpackning",
+          "description": "Komplett inpackning av hela hemmet med alla material inkluderade."
+        },
+        "service2": {
+          "title": "Delvis Inpackning",
+          "description": "Inpackning endast av bräckliga eller specifika föremål som behöver särskilt skydd."
+        },
+        "service3": {
+          "title": "Inpackning av Bräckliga Föremål",
+          "description": "Specialiserad inpackning för glas, porslin, konstverk och antikviteter."
+        },
+        "service4": {
+          "title": "Inpackning av Vitvaror",
+          "description": "Professionell inpackning av kylskåp, tvättmaskiner, tv-apparater och andra vitvaror."
+        }
+      },
+      "materials": {
+        "title": "Inkluderade Material",
+        "material1": {
+          "title": "Kartonglådor",
+          "description": "Motståndskraftiga kartonglådor i olika storlekar för alla typer av föremål."
+        },
+        "material2": {
+          "title": "Bubblplast",
+          "description": "Bubblplast och bubblplast för skydd av bräckliga föremål."
+        },
+        "material3": {
+          "title": "Sträckfolie",
+          "description": "Plastisk sträckfolie för att skydda möbler och stora föremål."
+        },
+        "material4": {
+          "title": "Skyddsfiltar",
+          "description": "Specialfiltar för att skydda möbler och vitvaror under transporten."
+        },
+        "material5": {
+          "title": "Separatorer och Hörnskydd",
+          "description": "Kartongseparatorer och hörnskydd för glas och speglar."
+        }
+      },
+      "faqs": {
+        "title": "Vanliga Frågor",
+        "faq1": {
+          "question": "Vad inkluderar den professionella inpackningstjänsten?",
+          "answer": "Vår professionella inpackningstjänst inkluderar att våra experter kommer till ditt hem med alla nödvändiga material (kartonglådor, bubblplast, plastfilm, skyddsfiltar) och utför komplett inpackning av dina föremål. Du behöver inte köpa något, vi tar med materialet och gör jobbet."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar inpackningstjänsten?",
+          "answer": "Priset för den professionella inpackningstjänsten varierar beroende på typ av flytt och antal föremål. Vi erbjuder komplett inpackning inkluderad i kompletta flyttar utan extra kostnad, eller delvis inpackning endast för bräckliga föremål. Begär en personlig offert utan åtagande."
+        },
+        "faq3": {
+          "question": "Inkluderar ni inpackning i flyttpriset?",
+          "answer": "Ja, vi erbjuder inpackning inkluderad utan extra kostnad i våra kompletta flyttpaket. Vårt professionella team kommer till ditt hem med alla material och utför komplett inpackning. Du kan också hyra komplett professionell inpackning eller delvis inpackning endast för bräckliga föremål."
+        },
+        "faq4": {
+          "question": "Hur packar ni bräckliga föremål som glas och porslin?",
+          "answer": "Vår professionella inpackningstjänst för bräckliga föremål inkluderar specifik flerskiktskydd: bubblplast eller bubblplast, kartongseparatorer och hörnskydd. Våra experter känner till de lämpliga teknikerna för att skydda glas, porslin, porslin och konstverk under transporten."
+        },
+        "faq5": {
+          "question": "Måste de komma till mitt hem för att göra inpackningen?",
+          "answer": "Ja, vår professionella inpackningstjänst utförs i ditt hem. Vårt team kommer med alla nödvändiga material (lådor, bubblplast, film, filtar) och utför komplett inpackning på plats. Du behöver inte köpa eller förbereda något, vi tar hand om allt."
+        },
+        "faq6": {
+          "question": "Vilken typ av inpackning gör ni för vitvaror?",
+          "answer": "För vitvaror som kylskåp, frysar och tvättmaskiner inkluderar vår professionella inpackningstjänst specialskyddsfodral, sträckfolie och möbelfiltar. Vi skyddar varje vitvaror med specifika material för att förhindra skador under transporten."
+        }
+      }
     },
     "transporteFrio": {
       "title": "Kyltransport Marbella",
-      "subtitle": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter."
+      "subtitle": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter.",
+      "description": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter. Kontrollerade temperaturer. Realtidsspårning. Gratis offert.",
+      "temperatures": {
+        "title": "Temperaturintervaller",
+        "range1": {
+          "title": "Frysning",
+          "description": "Transport vid -18°C för frysta produkter och glass.",
+          "temperature": "-18°C"
+        },
+        "range2": {
+          "title": "Kylt",
+          "description": "Transport mellan 2°C och 8°C för färska och kylda produkter.",
+          "temperature": "2°C - 8°C"
+        },
+        "range3": {
+          "title": "Farmaceutisk",
+          "description": "Farmaceutisk transport med strikt temperatursstyrning enligt föreskrifter.",
+          "temperature": "2°C - 8°C"
+        }
+      },
+      "products": {
+        "title": "Produkter Vi Transporterar",
+        "product1": {
+          "title": "Mat",
+          "description": "Färska, frysta och kylda livsmedelsprodukter."
+        },
+        "product2": {
+          "title": "Farmaceutisk",
+          "description": "Läkemedel, vacciner och farmaceutiska produkter som kräver kylkedja."
+        },
+        "product3": {
+          "title": "Förgängliga",
+          "description": "Frukt, grönsaker, fisk, kött och andra förgängliga produkter."
+        },
+        "product4": {
+          "title": "Blommor",
+          "description": "Kyltransport av blommor och växter för att bibehålla deras färskhet."
+        }
+      },
+      "coverage": {
+        "title": "Täckning",
+        "coverage1": {
+          "title": "Lokal",
+          "description": "Kyltransport i Marbella och omgivningarna."
+        },
+        "coverage2": {
+          "title": "Provinsiell",
+          "description": "Kyltransport i hela provinsen Málaga."
+        },
+        "coverage3": {
+          "title": "Nationell",
+          "description": "Kyltransport i hela Spanien med garanterad kylkedja."
+        }
+      },
+      "faqs": {
+        "title": "Vanliga Frågor",
+        "faq1": {
+          "question": "Vilka temperaturer hanterar ni för kyltransport?",
+          "answer": "Vi hanterar olika temperatursintervaller beroende på produkten: frysning vid -18°C, kylt mellan 2°C och 8°C, och kontrollerad temperatur för farmaceutiska produkter enligt föreskrifter."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar kyltransport?",
+          "answer": "Priset för kyltransport varierar beroende på avstånd, krävt temperatursintervall och produkttyp. Begär en personlig offert utan åtagande med vår online räknare."
+        },
+        "faq3": {
+          "question": "Har ni kylvagnar?",
+          "answer": "Ja, vi har en flotta av kylvagnar utrustade med temperatursstyrningssystem för att garantera kylkedjan hela tiden."
+        },
+        "faq4": {
+          "question": "Kan ni transportera farmaceutiska produkter?",
+          "answer": "Ja, vi erbjuder specialiserad farmaceutisk transport med strikt temperatursstyrning enligt gällande föreskrifter och komplett processspårning."
+        },
+        "faq5": {
+          "question": "Erbjuder ni realtidsspårning?",
+          "answer": "Ja, alla våra kyltransporter inkluderar realtidsspårning så att du kan känna till platsen och temperaturen för din leverans hela tiden."
+        },
+        "faq6": {
+          "question": "Vad garanterar ni för kylkedjan?",
+          "answer": "Vi garanterar kylkedjans upprätthållande under hela transporten med kontinuerliga temperaturkontroller, certifierade kylvagnar och dokumenterad processspårning."
+        }
+      }
     },
     "ultimaMilla": {
       "title": "Sista Milen Logistik Marbella",
-      "subtitle": "Sista milen logistik i Marbella. Express leverans samma dag och 24h."
+      "subtitle": "Sista milen logistik i Marbella. Express leverans samma dag och 24h.",
+      "description": "Sista milen logistik i Marbella. Express leverans samma dag och 24h. Sista milen ehandel, mat och apotek. Realtidsspårning. Professionell sista milen tjänst.",
+      "sectors": {
+        "title": "Sektorer",
+        "sector1": {
+          "title": "E-handel",
+          "description": "Sista milen leverans för online butiker och marknadsplatser."
+        },
+        "sector2": {
+          "title": "Mat",
+          "description": "Sista milen leverans för supermarknader och matbutiker."
+        },
+        "sector3": {
+          "title": "Apotek",
+          "description": "Sista milen leverans för apotek och farmaceutiska produkter."
+        },
+        "sector4": {
+          "title": "Restauranger",
+          "description": "Sista milen leverans för restauranger och hemleveranstjänster."
+        }
+      },
+      "deliveryTypes": {
+        "title": "Leveranstyper",
+        "type1": {
+          "title": "Express",
+          "description": "Express leverans på kortast möjliga tid."
+        },
+        "type2": {
+          "title": "Samma Dag",
+          "description": "Samma dag leverans för beställningar placerade före 14:00."
+        },
+        "type3": {
+          "title": "Schemalagd",
+          "description": "Schemalagd leverans enligt mottagarens tillgänglighet."
+        },
+        "type4": {
+          "title": "Natt",
+          "description": "Nattleverans för större kundkomfort."
+        }
+      },
+      "technology": {
+        "title": "Teknologi",
+        "tech1": {
+          "title": "Realtidsspårning",
+          "description": "Realtidsspårningssystem för att veta den exakta platsen för din leverans."
+        },
+        "tech2": {
+          "title": "Mobilapp",
+          "description": "Mobilapplikation för att hantera dina leveranser och ta emot realtidsmeddelanden."
+        },
+        "tech3": {
+          "title": "Ruttsystem",
+          "description": "Intelligent ruttoptimeringssystem för mer effektiva leveranser."
+        }
+      },
+      "zones": {
+        "title": "Täckningszoner",
+        "zone1": {
+          "title": "Stadscentrum",
+          "description": "Täckning i stadscentrum i Marbella och omgivningarna."
+        },
+        "zone2": {
+          "title": "Perifer",
+          "description": "Täckning i perifer zon och bostadsområden."
+        },
+        "zone3": {
+          "title": "Landsbygd",
+          "description": "Täckning i landsbygdsområden och mer avlägsna kärnor."
+        }
+      },
+      "faqs": {
+        "title": "Vanliga Frågor",
+        "faq1": {
+          "question": "Vad är sista milen logistik?",
+          "answer": "Sista milen logistik är den sista etappen i leveransprocessen, från distributionscentret till den slutliga mottagaren. Det är den mest kritiska och kostsamme fasen i logistikedjan."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar sista milen tjänsten?",
+          "answer": "Priset för sista milen tjänsten varierar beroende på avstånd, leveranstyp (express, samma dag, schemalagd) och sektor (ehandel, mat, apotek). Begär en personlig offert utan åtagande med vår online räknare."
+        },
+        "faq3": {
+          "question": "Erbjuder ni leverans samma dag?",
+          "answer": "Ja, vi erbjuder leverans samma dag för beställningar placerade före 14:00 i stadscentrum i Marbella och omgivningarna. Vi erbjuder också express tjänst för akuta leveranser."
+        },
+        "faq4": {
+          "question": "Har ni realtidsspårning?",
+          "answer": "Ja, alla våra sista milen tjänster inkluderar realtidsspårning så att du kan känna till den exakta platsen för din leverans hela tiden via vår app eller webbplattform."
+        },
+        "faq5": {
+          "question": "I vilka områden verkar ni?",
+          "answer": "Vi verkar i Marbella och Costa del Sol med stadscentrum, perifer och landsbygds täckning. Vi täcker bostadsområden, bostadsområden och mer avlägsna kärnor med olika leveranstider."
+        },
+        "faq6": {
+          "question": "Kan ni integrera er tjänst med mitt system?",
+          "answer": "Ja, vi erbjuder API-integration för att koppla vår sista milen tjänst till ditt hanteringssystem, online butik eller marknadsplats. Vårt tekniska team hjälper dig med implementeringen."
+        }
+      }
     }
+  },
+  "footer": {
+    "title": "PortesPro",
+    "description": "Professionellt flyttföretag i Marbella, Málaga och Costa del Sol. Tjänster för flytt, inpackning, förvaring, kyltransport och sista milen. Billiga, prisvärda och snabba flyttar med maximal kvalitet.",
+    "services": "Tjänster",
+    "zones": "Områden",
+    "legal": "Juridisk",
+    "privacy": "Integritet",
+    "terms": "Villkor",
+    "cookies": "Kakor",
+    "contact": "Kontakta",
+    "followUs": "Följ Oss",
+    "allRightsReserved": "Alla rättigheter förbehållna"
+  },
+  "buttons": {
+    "calculate": "Beräkna Pris",
+    "requestQuote": "Begär Offer",
+    "contact": "Kontakta",
+    "learnMore": "Läs Mer",
+    "book": "Boka",
+    "confirm": "Bekräfta",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "edit": "Redigera",
+    "delete": "Radera",
+    "close": "Stäng",
+    "next": "Nästa",
+    "previous": "Föregående",
+    "submit": "Skicka",
+    "search": "Sök",
+    "filter": "Filtrera",
+    "reset": "Återställ",
+    "apply": "Tillämpa"
+  },
+  "calculator": {
+    "title": "Prisräknare",
+    "subtitle": "Beräkna priset på din flytt på sekunder",
+    "step1": "Ursprung och Destination",
+    "step2": "Detaljer",
+    "step3": "Sammanfattning",
+    "origin": "Ursprung",
+    "destination": "Destination",
+    "distance": "Avstånd",
+    "volume": "Volym",
+    "items": "Föremål",
+    "price": "Pris",
+    "total": "Totalt",
+    "calculate": "Beräkna",
+    "reset": "Återställ",
+    "result": "Resultat",
+    "estimatedPrice": "Beräknat Pris",
+    "estimatedTime": "Beräknad Tid",
+    "getQuote": "Få Offer"
   }
 }
-

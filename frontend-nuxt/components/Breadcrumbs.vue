@@ -1,46 +1,44 @@
 <template>
-  <nav aria-label="Breadcrumb" class="bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm sticky top-[90px] md:top-[100px] z-[60] transition-all duration-300">
-    <div class="container mx-auto px-4 md:px-6 py-3">
-      <ol class="flex items-center space-x-2">
-        <li>
-          <NuxtLink 
-            :to="localePath('/')" 
-            :class="isHomePage 
-              ? 'text-teal-600 font-black' 
-              : 'text-slate-500 hover:text-teal-600 font-medium'"
-            class="text-xs uppercase tracking-widest transition-all duration-300 flex items-center gap-2 group"
+  <nav v-if="!isHomePage || crumbs.length > 0" aria-label="Breadcrumb" class="container mx-auto px-4 md:px-6 pt-24 pb-4">
+    <ol class="flex items-center space-x-2">
+      <li>
+        <NuxtLink 
+          :to="localePath('/')" 
+          :class="isHomePage 
+            ? 'text-teal-600 font-black' 
+            : 'text-slate-500 hover:text-teal-600 font-medium'"
+          class="text-xs uppercase tracking-widest transition-all duration-300 flex items-center gap-2 group"
+        >
+          <svg 
+            class="w-3.5 h-3.5 transition-transform duration-300 group-hover:scale-110" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
           >
-            <svg 
-              class="w-4 h-4 transition-transform duration-300 group-hover:scale-110" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-            </svg>
-            <span>{{ $t('breadcrumbs.home') }}</span>
-          </NuxtLink>
-        </li>
-        <li v-for="(crumb, index) in crumbs" :key="index" class="flex items-center">
-          <svg class="w-3 h-3 text-slate-300 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
-          <NuxtLink
-            v-if="index < crumbs.length - 1"
-            :to="localePath(crumb.path)"
-            class="text-xs uppercase tracking-widest text-slate-500 hover:text-teal-600 font-medium transition-all duration-300"
-          >
-            {{ crumb.name }}
-          </NuxtLink>
-          <span 
-            v-else 
-            class="text-xs uppercase tracking-widest text-slate-900 font-black"
-          >
-            {{ crumb.name }}
-          </span>
-        </li>
-      </ol>
-    </div>
+          <span>{{ $t('breadcrumbs.home') }}</span>
+        </NuxtLink>
+      </li>
+      <li v-for="(crumb, index) in crumbs" :key="index" class="flex items-center">
+        <svg class="w-3 h-3 text-slate-300 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        <NuxtLink
+          v-if="index < crumbs.length - 1"
+          :to="localePath(crumb.path)"
+          class="text-xs uppercase tracking-widest text-slate-500 hover:text-teal-600 font-medium transition-all duration-300"
+        >
+          {{ crumb.name }}
+        </NuxtLink>
+        <span 
+          v-else 
+          class="text-xs uppercase tracking-widest text-slate-900 font-black"
+        >
+          {{ crumb.name }}
+        </span>
+      </li>
+    </ol>
   </nav>
 </template>
 
