@@ -1,0 +1,44 @@
+{
+  "common": {
+    "title": "Portes y Mudanzas",
+    "subtitle": "Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol.",
+    "cta": "Solicitar Presupuesto",
+    "learnMore": "Saber Más"
+  },
+  "breadcrumbs": {
+    "home": "Inicio"
+  },
+  "nav": {
+    "mudanzas": "Mudanzas",
+    "embalajes": "Embalajes",
+    "guardamuebles": "Guardamuebles",
+    "transporteFrio": "Transporte Frío",
+    "ultimaMilla": "Última Milla",
+    "zonas": "Zonas",
+    "login": "Ingresar"
+  },
+  "pages": {
+    "index": {
+      "heroTag": "Logística de Mudanzas de Alto Standing",
+      "title": "Portes y Mudanzas",
+      "subtitle": "Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol."
+    },
+    "guardamuebles": {
+      "title": "Guardamuebles y Trasteros Marbella",
+      "subtitle": "Guardamuebles barato, económico y seguro en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas."
+    },
+    "embalajes": {
+      "title": "Embalaje Profesional Marbella",
+      "subtitle": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos."
+    },
+    "transporteFrio": {
+      "title": "Transporte en Frío Marbella",
+      "subtitle": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos."
+    },
+    "ultimaMilla": {
+      "title": "Última Milla Logística Marbella",
+      "subtitle": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h."
+    }
+  }
+}
+

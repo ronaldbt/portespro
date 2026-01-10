@@ -9,8 +9,30 @@ export default defineNuxtConfig({
   // Módulos
   modules: [
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n'
   ],
+  
+  // Configuración i18n
+  i18n: {
+    locales: [
+      { code: 'es', iso: 'es-ES', file: 'es.json', name: 'Español' },
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'sv', iso: 'sv-SE', file: 'sv.json', name: 'Svenska' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru.json', name: 'Русский' }
+    ],
+    lazy: true,
+    langDir: 'locales',
+    defaultLocale: 'es',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: false
+    },
+    vueI18n: './i18n.config.js'
+  },
   
   // Runtime config para variables de entorno públicas
   runtimeConfig: {

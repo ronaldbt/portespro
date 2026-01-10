@@ -1,9 +1,9 @@
 <template>
-  <nav v-if="crumbs.length > 0" aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
+  <nav v-if="showBreadcrumb" aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
     <ol class="flex items-center space-x-2 text-sm">
       <li>
-        <NuxtLink to="/" class="text-slate-500 hover:text-teal-600 transition-colors font-medium">
-          Inicio
+        <NuxtLink :to="localePath('/')" class="text-slate-500 hover:text-teal-600 transition-colors font-medium">
+          {{ $t('breadcrumbs.home') }}
         </NuxtLink>
       </li>
       <li v-for="(crumb, index) in crumbs" :key="index" class="flex items-center">
@@ -12,7 +12,7 @@
         </svg>
         <NuxtLink
           v-if="index < crumbs.length - 1"
-          :to="crumb.path"
+          :to="localePath(crumb.path)"
           class="text-slate-500 hover:text-teal-600 transition-colors font-medium"
         >
           {{ crumb.name }}
@@ -25,17 +25,30 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useRoute } from '#app'
 
+const { locale, locales } = useI18n()
 const route = useRoute()
+const localePath = useLocalePath()
 
 const crumbs = computed(() => {
+  // Filtrar el locale del path (es, en, sv, ru)
   const pathSegments = route.path.split('/').filter(Boolean)
-  const breadcrumbs = []
+  const localeCodes = ['es', 'en', 'sv', 'ru']
   
+  // Si el primer segmento es un locale, ignorarlo
+  const filteredSegments = localeCodes.includes(pathSegments[0]) 
+    ? pathSegments.slice(1) 
+    : pathSegments
+  
+  // Si no hay segmentos (estamos en la página principal), retornar vacío
+  if (filteredSegments.length === 0) {
+    return []
+  }
+  
+  const breadcrumbs = []
   let currentPath = ''
   
-  pathSegments.forEach((segment, index) => {
+  filteredSegments.forEach((segment, index) => {
     currentPath += `/${segment}`
     const name = segment
       .split('-')
@@ -49,6 +62,16 @@ const crumbs = computed(() => {
   })
   
   return breadcrumbs
+})
+
+// Ocultar breadcrumb completamente en la página principal
+const showBreadcrumb = computed(() => {
+  const pathSegments = route.path.split('/').filter(Boolean)
+  const localeCodes = ['es', 'en', 'sv', 'ru']
+  const filteredSegments = localeCodes.includes(pathSegments[0]) 
+    ? pathSegments.slice(1) 
+    : pathSegments
+  return filteredSegments.length > 0
 })
 </script>
 

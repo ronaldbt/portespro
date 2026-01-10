@@ -3,7 +3,7 @@
     <PortesNavbar @get-quote="scrollToCalc" />
     
     <!-- Floating Elements -->
-    <PortesLanguageSwitcher :current-lang="lang" @lang-change="lang = $event" />
+    <PortesLanguageSwitcher />
     <PortesOnlineAdvisor />
 
     <main class="flex-grow">
@@ -14,13 +14,13 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16 animate-fade-in">
             <span class="inline-block bg-white text-teal-700 px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm border border-slate-200">
-              Logística de Mudanzas de Alto Standing
+              {{ $t('pages.index.heroTag') }}
             </span>
             <h1 class="text-5xl md:text-8xl font-black text-slate-950 leading-[0.9] tracking-tighter mb-8">
-              Portes y Mudanzas
+              {{ $t('pages.index.title') }}
             </h1>
             <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
-              Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol.
+              {{ $t('pages.index.subtitle') }}
             </p>
           </div>
 
@@ -56,9 +56,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
 
-const lang = ref('es')
+const { locale, locales } = useI18n()
+const route = useRoute()
 
 const scrollToCalc = () => {
   if (process.client) {
@@ -71,36 +72,84 @@ const siteUrl = 'https://portespro.es'
 const siteName = 'PortesPro'
 const defaultImage = `${siteUrl}/og-image.jpg`
 
+// Obtener path sin locale para canonical
+const pathWithoutLocale = route.path.replace(/^\/(es|en|sv|ru)/, '') || '/'
+const canonicalUrl = locale.value === 'es' 
+  ? `${siteUrl}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+  : `${siteUrl}/${locale.value}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+
+// Hreflang links
+const alternateLinks = computed(() => {
+  const links = []
+  const pathWithoutLocale = route.path.replace(/^\/(es|en|sv|ru)/, '') || '/'
+  
+  locales.value.forEach((loc) => {
+    const localePath = loc.code === 'es' ? pathWithoutLocale : `/${loc.code}${pathWithoutLocale}`
+    const fullUrl = `${siteUrl}${localePath === '/' ? '' : localePath}`
+    
+    links.push({
+      rel: 'alternate',
+      hreflang: loc.iso || loc.code,
+      href: fullUrl
+    })
+    
+    // Agregar x-default para el idioma por defecto
+    if (loc.code === 'es') {
+      links.push({
+        rel: 'alternate',
+        hreflang: 'x-default',
+        href: fullUrl
+      })
+    }
+  })
+  
+  return links
+})
+
+// Locale mappings para OG
+const localeMap = {
+  'es': 'es_ES',
+  'en': 'en_US',
+  'sv': 'sv_SE',
+  'ru': 'ru_RU'
+}
+
 useHead({
-  title: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro',
+  title: locale.value === 'es' ? 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro' :
+        locale.value === 'en' ? 'Moving and Transport Marbella | Cheap Moving Services Costa del Sol | PortesPro' :
+        locale.value === 'sv' ? 'Flytt och Transport Marbella | Billiga Flytttjänster Costa del Sol | PortesPro' :
+        'Переезды и Перевозки Марбелья | Дешевые Услуги Переездов Коста-дель-Соль | PortesPro',
   meta: [
     {
       name: 'description',
-      content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online. Presupuesto gratis sin compromiso.'
+      content: locale.value === 'es' ? 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online. Presupuesto gratis sin compromiso.' :
+        locale.value === 'en' ? 'Professional moving and transport services in Marbella and Costa del Sol. Cheap moving services, packing, storage and cold transport. Online price calculator. Free quote.' :
+        locale.value === 'sv' ? 'Professionella flytt- och transporttjänster i Marbella och Costa del Sol. Billiga flytttjänster, inpackning, förvaring och kyltransport. Online prisräknare. Gratis offert.' :
+        'Профессиональные услуги переездов и перевозок в Марбелье и Коста-дель-Соль. Дешевые услуги переездов, упаковка, хранение и холодная перевозка. Онлайн калькулятор цен. Бесплатная оценка.'
     },
     {
       name: 'keywords',
-      content: 'mudanzas marbella, mudanzas costa del sol, mudanzas baratas, portes marbella, empresa mudanzas, mudanzas profesionales, mudanzas económicas, mudanzas rápidas, mudanzas urgentes'
+      content: locale.value === 'es' ? 'mudanzas marbella, mudanzas costa del sol, mudanzas baratas, portes marbella, empresa mudanzas, mudanzas profesionales, mudanzas económicas, mudanzas rápidas, mudanzas urgentes' :
+        locale.value === 'en' ? 'moves marbella, moving costa del sol, cheap moving, transport marbella, moving company, professional moving, affordable moving, fast moving, urgent moving' :
+        locale.value === 'sv' ? 'flytt marbella, flytt costa del sol, billig flytt, transport marbella, flyttfirma, professionell flytt, prisvärd flytt, snabb flytt, akut flytt' :
+        'переезды марбелья, переезды коста-дель-соль, дешевые переезды, перевозки марбелья, компания переездов, профессиональные переезды, экономичные переезды, быстрые переезды, срочные переезды'
     },
     // Open Graph
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: siteUrl },
-    { property: 'og:title', content: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro' },
-    { property: 'og:description', content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online.' },
+    { property: 'og:url', content: canonicalUrl },
+    { property: 'og:locale', content: localeMap[locale.value] || 'es_ES' },
     { property: 'og:image', content: defaultImage },
     { property: 'og:site_name', content: siteName },
-    { property: 'og:locale', content: 'es_ES' },
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:url', content: siteUrl },
-    { name: 'twitter:title', content: 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol' },
-    { name: 'twitter:description', content: 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío.' },
+    { name: 'twitter:url', content: canonicalUrl },
     { name: 'twitter:image', content: defaultImage },
     // Canonical
-    { rel: 'canonical', href: siteUrl }
+    { rel: 'canonical', href: canonicalUrl }
   ],
   link: [
-    { rel: 'canonical', href: siteUrl }
+    { rel: 'canonical', href: canonicalUrl },
+    ...alternateLinks.value
   ],
   script: [
     {

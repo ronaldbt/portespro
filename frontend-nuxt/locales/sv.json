@@ -1,0 +1,44 @@
+{
+  "common": {
+    "title": "Flytt och Transport",
+    "subtitle": "Hantverksskicklighet och teknisk precision. Flytttjänster i Marbella och Costa del Sol.",
+    "cta": "Begär Offer",
+    "learnMore": "Läs Mer"
+  },
+  "breadcrumbs": {
+    "home": "Hem"
+  },
+  "nav": {
+    "mudanzas": "Flytt",
+    "embalajes": "Inpackning",
+    "guardamuebles": "Förvaring",
+    "transporteFrio": "Kyltransport",
+    "ultimaMilla": "Sista Milen",
+    "zonas": "Områden",
+    "login": "Logga In"
+  },
+  "pages": {
+    "index": {
+      "heroTag": "Högklassig Flyttlogistik",
+      "title": "Flytt och Transport",
+      "subtitle": "Hantverksskicklighet och teknisk precision. Flytttjänster i Marbella och Costa del Sol."
+    },
+    "guardamuebles": {
+      "title": "Förvaringslokaler Marbella",
+      "subtitle": "Billigt, prisvärt och säkert förvar i Marbella, Málaga och Costa del Sol. Klimatstyrda lager med 24-timmars tillgång."
+    },
+    "embalajes": {
+      "title": "Professionell Inpackning Marbella",
+      "subtitle": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat."
+    },
+    "transporteFrio": {
+      "title": "Kyltransport Marbella",
+      "subtitle": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter."
+    },
+    "ultimaMilla": {
+      "title": "Sista Milen Logistik Marbella",
+      "subtitle": "Sista milen logistik i Marbella. Express leverans samma dag och 24h."
+    }
+  }
+}
+

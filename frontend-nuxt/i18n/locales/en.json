@@ -1,0 +1,44 @@
+{
+  "common": {
+    "title": "Moving and Transport",
+    "subtitle": "Artisanal care and technological precision. Moving services in Marbella and Costa del Sol.",
+    "cta": "Request Quote",
+    "learnMore": "Learn More"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "nav": {
+    "mudanzas": "Moving",
+    "embalajes": "Packing",
+    "guardamuebles": "Storage",
+    "transporteFrio": "Cold Transport",
+    "ultimaMilla": "Last Mile",
+    "zonas": "Areas",
+    "login": "Login"
+  },
+  "pages": {
+    "index": {
+      "heroTag": "High-End Moving Logistics",
+      "title": "Moving and Transport",
+      "subtitle": "Artisanal care and technological precision. Moving services in Marbella and Costa del Sol."
+    },
+    "guardamuebles": {
+      "title": "Storage Units Marbella",
+      "subtitle": "Cheap, affordable and secure storage in Marbella, Málaga and Costa del Sol. Climate-controlled warehouses with 24-hour access."
+    },
+    "embalajes": {
+      "title": "Professional Packing Marbella",
+      "subtitle": "Professional packing service in Marbella. Complete packing service for moves with materials included."
+    },
+    "transporteFrio": {
+      "title": "Cold Transport Marbella",
+      "subtitle": "Cold transport and cold chain in Marbella. Refrigerated transport for food, pharmaceutical products and perishables."
+    },
+    "ultimaMilla": {
+      "title": "Last Mile Logistics Marbella",
+      "subtitle": "Last mile logistics in Marbella. Last mile express delivery, same day and 24h."
+    }
+  }
+}
+

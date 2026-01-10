@@ -8,15 +8,15 @@
       </div>
       <div class="flex gap-1 pr-2">
         <button
-          v-for="lang in languages"
-          :key="lang"
-          @click="$emit('lang-change', lang.toLowerCase())"
-          :class="currentLang.toUpperCase() === lang 
+          v-for="lang in locales"
+          :key="lang.code"
+          @click="switchLanguage(lang.code)"
+          :class="locale === lang.code 
             ? 'bg-teal-600 text-white shadow-lg' 
             : 'text-slate-400 hover:text-slate-900 hover:bg-slate-100'"
           class="px-3 py-1.5 rounded-lg text-[10px] font-black tracking-widest transition-all"
         >
-          {{ lang }}
+          {{ languageMap[lang.code] || lang.code.toUpperCase() }}
         </button>
       </div>
     </div>
@@ -24,16 +24,19 @@
 </template>
 
 <script setup>
-defineProps({
-  currentLang: {
-    type: String,
-    default: 'es'
-  }
-})
+const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 
-defineEmits(['lang-change'])
+const languageMap = {
+  'es': 'ES',
+  'en': 'EN',
+  'sv': 'SV',
+  'ru': 'RU'
+}
 
-const languages = ['ES', 'EN', 'SV']
+const switchLanguage = (langCode) => {
+  navigateTo(switchLocalePath(langCode))
+}
 </script>
 
 
