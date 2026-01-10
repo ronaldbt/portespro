@@ -20,7 +20,9 @@
     "testimonials": "Testimonials",
     "gallery": "Gallery",
     "blog": "Blog",
-    "news": "News"
+    "news": "News",
+    "onlineAssistant": "Online Assistant",
+    "onlineAssistantTooltip": "Need help? Write to us on WhatsApp"
   },
   "breadcrumbs": {
     "home": "Home"
@@ -570,7 +572,22 @@
       "step4Desc": "We place each piece of furniture in its final location. Your home ready to live from the first minute."
     },
     "testimonials": {
-      "title": "Our Clients' Opinions"
+      "title": "Our Clients' Opinions",
+      "testimonial1": {
+        "name": "Alejandro Ruiz",
+        "role": "Move in Marbella",
+        "content": "Excellent treatment and care with the furniture. A 10/10 service in Puerto Banús."
+      },
+      "testimonial2": {
+        "name": "Marta Sánchez",
+        "role": "Move Cala de Mijas",
+        "content": "The website is super dynamic and the calculator gave me the exact price I paid. Very professional."
+      },
+      "testimonial3": {
+        "name": "David Smith",
+        "role": "Furniture Transport",
+        "content": "Punctual and very efficient. The team handled everything with care. Highly recommended."
+      }
     },
     "guardamueblesCalculator": {
       "title": "Storage Calculator",

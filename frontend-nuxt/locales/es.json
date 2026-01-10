@@ -20,7 +20,9 @@
     "testimonials": "Testimonios",
     "gallery": "Galería",
     "blog": "Blog",
-    "news": "Noticias"
+    "news": "Noticias",
+    "onlineAssistant": "Asistente en línea",
+    "onlineAssistantTooltip": "¿Necesitas ayuda? Escríbenos por WhatsApp"
   },
   "breadcrumbs": {
     "home": "Inicio"

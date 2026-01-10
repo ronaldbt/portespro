@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       { code: 'sv', iso: 'sv-SE', file: 'sv.json', name: 'Svenska' },
       { code: 'ru', iso: 'ru-RU', file: 'ru.json', name: 'Русский' }
     ],
-    lazy: true,
+    lazy: false,
     langDir: 'locales',
     defaultLocale: 'es',
     strategy: 'prefix_except_default',
@@ -34,8 +34,7 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
       alwaysRedirect: false
-    },
-    vueI18n: './i18n.config.js'
+    }
   },
   
   // Runtime config para variables de entorno públicas

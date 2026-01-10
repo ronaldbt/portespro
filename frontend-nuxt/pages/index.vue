@@ -4,7 +4,6 @@
     
     <!-- Floating Elements -->
     <PortesLanguageSwitcher />
-    <PortesOnlineAdvisor />
 
     <main class="flex-grow">
       <Breadcrumbs />

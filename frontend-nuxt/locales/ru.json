@@ -20,7 +20,9 @@
     "testimonials": "Отзывы",
     "gallery": "Галерея",
     "blog": "Блог",
-    "news": "Новости"
+    "news": "Новости",
+    "onlineAssistant": "Онлайн-помощник",
+    "onlineAssistantTooltip": "Нужна помощь? Напишите нам в WhatsApp"
   },
   "breadcrumbs": {
     "home": "Главная"

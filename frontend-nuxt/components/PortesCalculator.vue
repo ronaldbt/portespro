@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <div class="relative aspect-[21/9] bg-slate-900 rounded-3xl overflow-hidden group border border-slate-800 shadow-inner">
+          <div class="relative aspect-[3/2] bg-slate-900 rounded-3xl overflow-hidden group border border-slate-800 shadow-inner">
             <div ref="mapContainer" class="w-full h-full"></div>
             <div v-if="origin && destination" class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[9px] text-white font-black tracking-widest uppercase z-10 max-w-[calc(100%-2rem)] truncate">
               {{ $t('calculator.optimizedLogistics') }}: {{ origin.split(',')[0] }} ➔ {{ destination.split(',')[0] }}
@@ -522,29 +522,14 @@ function calculateRoute() {
   })
 }
 
-// Inicializar el mapa cuando el componente se monte y cargar traducciones si es necesario
-onMounted(async () => {
-  // Verificar si las traducciones están disponibles para la calculadora
+// Inicializar el mapa cuando el componente se monte
+// Con lazy: false, las traducciones están disponibles desde el inicio
+onMounted(() => {
   const testKey = 'calculator.step1'
   const testTranslation = t(testKey)
-  
-  if (testTranslation === testKey) {
-    console.warn('🟢 [PortesCalculator] Traducciones no disponibles, intentando cargar...')
-    
-    try {
-      const currentLocale = locale.value
-      const localeObj = locales.value?.find(l => l.code === currentLocale)
-      
-      if (localeObj && localeObj.file) {
-        const messages = await import(`~/locales/${localeObj.file}`).then(m => m.default || m)
-        await loadLocaleMessages(currentLocale, messages)
-        await setLocale(currentLocale)
-        console.log('🟢 [PortesCalculator] Traducciones cargadas manualmente')
-      }
-    } catch (e) {
-      console.error('🟢 [PortesCalculator] Error cargando traducciones:', e)
-    }
-  }
+  console.log('🟢 [PortesCalculator] Componente montado, traducción test:', testTranslation)
+  const nuxtApp = useNuxtApp()
+  console.log('🟢 [PortesCalculator] Mensajes disponibles:', nuxtApp.$i18n?.messages?.value?.[locale.value] ? Object.keys(nuxtApp.$i18n.messages.value[locale.value]) : 'no messages')
   
   if (process.client) {
     initMap()

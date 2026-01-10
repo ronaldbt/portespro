@@ -20,7 +20,9 @@
     "testimonials": "Testimonials",
     "gallery": "Galleri",
     "blog": "Blogg",
-    "news": "Nyheter"
+    "news": "Nyheter",
+    "onlineAssistant": "Online Assistent",
+    "onlineAssistantTooltip": "Behöver du hjälp? Skriv till oss på WhatsApp"
   },
   "breadcrumbs": {
     "home": "Hem"

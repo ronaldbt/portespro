@@ -3,7 +3,6 @@
     <PortesNavbar @get-quote="scrollToCalc" />
     
     <PortesLanguageSwitcher :current-lang="lang" @lang-change="lang = $event" />
-    <PortesOnlineAdvisor />
 
     <main class="flex-grow">
       <Breadcrumbs />

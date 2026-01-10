@@ -32,37 +32,12 @@ console.log('🟢 [PortesStats] i18n global:', $i18n ? 'exists' : 'missing')
 console.log('🟢 [PortesStats] i18n messages:', $i18n?.messages?.value ? Object.keys($i18n.messages.value) : 'no messages')
 console.log('🟢 [PortesStats] Current locale messages:', $i18n?.messages?.value?.[locale.value] ? Object.keys($i18n.messages.value[locale.value]).slice(0, 5) : 'no messages for locale')
 
-// Intentar cargar traducciones si no están disponibles
-onMounted(async () => {
-  console.log('🟢 [PortesStats] Componente montado')
-  
-  // Verificar si las traducciones están disponibles
+// Con lazy: false, las traducciones están disponibles desde el inicio
+onMounted(() => {
   const testKey = 'components.stats.movesCompleted'
   const testTranslation = t(testKey)
-  console.log('🟢 [PortesStats] Test translation en onMounted:', testTranslation)
-  
-  // Si la traducción es igual a la clave, no está cargada
-  if (testTranslation === testKey) {
-    console.warn('🟢 [PortesStats] Traducciones no disponibles, intentando cargar...')
-    
-    try {
-      const currentLocale = locale.value
-      const localeObj = locales.value?.find(l => l.code === currentLocale)
-      
-      if (localeObj && localeObj.file) {
-        const messages = await import(`~/locales/${localeObj.file}`).then(m => m.default || m)
-        await loadLocaleMessages(currentLocale, messages)
-        console.log('🟢 [PortesStats] Traducciones cargadas manualmente:', t(testKey))
-        
-        // Forzar actualización del locale
-        await setLocale(currentLocale)
-      }
-    } catch (e) {
-      console.error('🟢 [PortesStats] Error cargando traducciones:', e)
-    }
-  } else {
-    console.log('🟢 [PortesStats] Traducciones ya disponibles:', testTranslation)
-  }
+  console.log('🟢 [PortesStats] Componente montado, traducción test:', testTranslation)
+  console.log('🟢 [PortesStats] Mensajes disponibles:', $i18n?.messages?.value?.[locale.value] ? Object.keys($i18n.messages.value[locale.value]) : 'no messages')
 })
 
 const stats = computed(() => {
@@ -78,32 +53,13 @@ const stats = computed(() => {
   ]
 })
 
-// Watch locale changes y cargar traducciones si no están disponibles
-watch(locale, async (newLocale) => {
+// Watch locale changes - con lazy: false, las traducciones están disponibles desde el inicio
+watch(locale, (newLocale) => {
   console.log('🟢 [PortesStats] Locale cambió a:', newLocale)
-  
-  // Verificar si las traducciones están disponibles
   const testKey = 'components.stats.movesCompleted'
   const testTranslation = t(testKey)
   console.log('🟢 [PortesStats] Test translation después de cambio:', testTranslation)
-  
-  // Si la traducción es igual a la clave, no está cargada
-  if (testTranslation === testKey) {
-    console.warn('🟢 [PortesStats] Traducciones no disponibles para nuevo locale, cargando...')
-    
-    try {
-      const localeObj = locales.value?.find(l => l.code === newLocale)
-      
-      if (localeObj && localeObj.file) {
-        const messages = await import(`~/locales/${localeObj.file}`).then(m => m.default || m)
-        await loadLocaleMessages(newLocale, messages)
-        await setLocale(newLocale)
-        console.log('🟢 [PortesStats] Traducciones cargadas para nuevo locale:', t(testKey))
-      }
-    } catch (e) {
-      console.error('🟢 [PortesStats] Error cargando traducciones para nuevo locale:', e)
-    }
-  }
+  console.log('🟢 [PortesStats] Mensajes disponibles:', $i18n?.messages?.value?.[newLocale] ? Object.keys($i18n.messages.value[newLocale]) : 'no messages')
 }, { immediate: true })
 </script>
 

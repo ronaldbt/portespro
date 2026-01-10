@@ -3,7 +3,24 @@
     "title": "Portes y Mudanzas",
     "subtitle": "Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol.",
     "cta": "Solicitar Presupuesto",
-    "learnMore": "Saber Más"
+    "learnMore": "Saber Más",
+    "contact": "Contactar",
+    "call": "Llamar",
+    "email": "Email",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "open": "Abrir",
+    "close": "Cerrar",
+    "readMore": "Leer Más",
+    "seeMore": "Ver Más",
+    "less": "Menos",
+    "all": "Todos",
+    "services": "Servicios",
+    "about": "Sobre Nosotros",
+    "testimonials": "Testimonios",
+    "gallery": "Galería",
+    "blog": "Blog",
+    "news": "Noticias"
   },
   "breadcrumbs": {
     "home": "Inicio"
@@ -15,30 +32,632 @@
     "transporteFrio": "Transporte Frío",
     "ultimaMilla": "Última Milla",
     "zonas": "Zonas",
-    "login": "Ingresar"
+    "login": "Ingresar",
+    "mudanzasParticulares": "Mudanzas Particulares",
+    "mudanzasEmpresas": "Mudanzas Empresas",
+    "mudanzasOficinas": "Mudanzas Oficinas",
+    "mudanzasInternacionales": "Mudanzas Internacionales",
+    "mudanzasUrgentes": "Mudanzas Urgentes",
+    "marbella": "Marbella",
+    "malaga": "Málaga",
+    "costaDelSol": "Costa del Sol",
+    "estepona": "Estepona",
+    "fuengirola": "Fuengirola"
   },
   "pages": {
     "index": {
       "heroTag": "Logística de Mudanzas de Alto Standing",
       "title": "Portes y Mudanzas",
-      "subtitle": "Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol."
+      "subtitle": "Cuidado artesanal y precisión tecnológica. Mudanzas en Marbella y Costa del Sol.",
+      "description": "Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online. Presupuesto gratis sin compromiso.",
+      "features": {
+        "title": "Por Qué Elegirnos",
+        "subtitle": "Servicios profesionales de mudanzas y portes en Marbella",
+        "feature1": {
+          "title": "Profesionales Certificados",
+          "description": "Equipo de expertos en mudanzas con años de experiencia y certificaciones profesionales."
+        },
+        "feature2": {
+          "title": "Precios Transparentes",
+          "description": "Calculadora online para conocer el precio de tu mudanza sin compromiso."
+        },
+        "feature3": {
+          "title": "Disponibilidad 24/7",
+          "description": "Servicio disponible todos los días del año para mudanzas urgentes y programadas."
+        },
+        "feature4": {
+          "title": "Materiales Incluidos",
+          "description": "Embalaje profesional con todos los materiales necesarios incluidos en el precio."
+        },
+        "feature5": {
+          "title": "Seguro Completo",
+          "description": "Cobertura de seguro para proteger tus pertenencias durante el transporte."
+        },
+        "feature6": {
+          "title": "Tracking en Tiempo Real",
+          "description": "Sistema de seguimiento en tiempo real para conocer la ubicación de tu mudanza."
+        }
+      },
+      "stats": {
+        "title": "Números que Hablan",
+        "stat1": {
+          "value": "5000+",
+          "label": "Mudanzas Completadas"
+        },
+        "stat2": {
+          "value": "98%",
+          "label": "Clientes Satisfechos"
+        },
+        "stat3": {
+          "value": "24/7",
+          "label": "Disponibilidad"
+        },
+        "stat4": {
+          "value": "15+",
+          "label": "Años de Experiencia"
+        }
+      },
+      "process": {
+        "title": "Nuestro Proceso",
+        "subtitle": "Cómo Funciona Nuestro Servicio de Mudanzas",
+        "step1": {
+          "title": "Consulta Online",
+          "description": "Calcula el precio de tu mudanza con nuestra calculadora online o solicita un presupuesto personalizado."
+        },
+        "step2": {
+          "title": "Planificación",
+          "description": "Nuestro equipo planifica cada detalle de tu mudanza para asegurar un servicio perfecto."
+        },
+        "step3": {
+          "title": "Embalaje",
+          "description": "Embalaje profesional de todos tus objetos con materiales de alta calidad."
+        },
+        "step4": {
+          "title": "Transporte",
+          "description": "Transporte seguro y cuidadoso de tus pertenencias hasta su nuevo destino."
+        },
+        "step5": {
+          "title": "Entrega",
+          "description": "Entrega puntual y montaje de muebles en tu nuevo hogar o negocio."
+        },
+        "step6": {
+          "title": "Seguimiento",
+          "description": "Seguimiento en tiempo real y confirmación de entrega completa."
+        }
+      }
     },
     "guardamuebles": {
       "title": "Guardamuebles y Trasteros Marbella",
-      "subtitle": "Guardamuebles barato, económico y seguro en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas."
+      "subtitle": "Guardamuebles barato, económico y seguro en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas.",
+      "description": "Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online. Presupuesto gratis sin compromiso.",
+      "sizes": {
+        "title": "Tamaños Disponibles",
+        "subtitle": "Encuentra el almacén perfecto para tus necesidades",
+        "size1": {
+          "title": "Guardamuebles Pequeño",
+          "description": "Ideal para guardamuebles mini. Perfecto para objetos personales y cajas pequeñas.",
+          "price": "Desde 45€"
+        },
+        "size2": {
+          "title": "Guardamuebles Mediano",
+          "description": "Ideal para guardamuebles estándar. Perfecto para mudanzas temporales y almacenamiento a medio plazo.",
+          "price": "Desde 60€"
+        },
+        "size3": {
+          "title": "Guardamuebles Grande",
+          "description": "Ideal para guardamuebles completo. Perfecto para mudanzas grandes y almacenamiento a largo plazo.",
+          "price": "Desde 90€"
+        },
+        "size4": {
+          "title": "Guardamuebles Extra Grande",
+          "description": "Ideal para guardamuebles industrial. Perfecto para empresas y almacenamiento masivo.",
+          "price": "Desde 150€"
+        }
+      },
+      "features": {
+        "title": "Características",
+        "feature1": {
+          "title": "Climatización",
+          "description": "Almacenes climatizados con temperatura y humedad controladas."
+        },
+        "feature2": {
+          "title": "Seguridad 24/7",
+          "description": "Vigilancia 24 horas, alarmas y cámaras de seguridad."
+        },
+        "feature3": {
+          "title": "Acceso Fácil",
+          "description": "Acceso fácil y cómodo a tus pertenencias cuando lo necesites."
+        },
+        "feature4": {
+          "title": "Seguro Incluido",
+          "description": "Seguro completo incluido para proteger tus objetos almacenados."
+        }
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes",
+        "faq1": {
+          "question": "¿Cuánto cuesta el guardamuebles?",
+          "answer": "El precio del guardamuebles varía según el tamaño y la duración del almacenamiento. Ofrecemos guardamuebles desde 45€/mes con descuentos por contratos de larga duración."
+        },
+        "faq2": {
+          "question": "¿Los almacenes están climatizados?",
+          "answer": "Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad."
+        },
+        "faq3": {
+          "question": "¿Qué seguridad tienen los guardamuebles y trasteros?",
+          "answer": "Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado."
+        },
+        "faq4": {
+          "question": "¿Puedo acceder a mis objetos cuando quiera?",
+          "answer": "Sí, nuestros guardamuebles y trasteros ofrecen acceso 24 horas, 7 días a la semana para que puedas acceder a tus pertenencias cuando lo necesites."
+        },
+        "faq5": {
+          "question": "¿Incluyen seguro los guardamuebles?",
+          "answer": "Sí, todos nuestros guardamuebles y trasteros incluyen seguro completo para proteger tus objetos almacenados durante el período de almacenamiento."
+        },
+        "faq6": {
+          "question": "¿Cuál es el tamaño mínimo de contratación?",
+          "answer": "El tamaño mínimo de contratación es de 2m³, aunque recomendamos un mínimo de 3m³ para mayor comodidad y aprovechamiento del espacio."
+        }
+      }
     },
     "embalajes": {
       "title": "Embalaje Profesional Marbella",
-      "subtitle": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos."
+      "subtitle": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.",
+      "description": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles. Presupuesto gratis sin compromiso.",
+      "services": {
+        "title": "Servicios de Embalaje",
+        "service1": {
+          "title": "Embalaje Completo",
+          "description": "Embalaje completo de toda la vivienda con todos los materiales incluidos."
+        },
+        "service2": {
+          "title": "Embalaje Parcial",
+          "description": "Embalaje solo de objetos frágiles o específicos que necesiten protección especial."
+        },
+        "service3": {
+          "title": "Embalaje de Objetos Frágiles",
+          "description": "Embalaje especializado para cristales, porcelana, obras de arte y antigüedades."
+        },
+        "service4": {
+          "title": "Embalaje de Electrodomésticos",
+          "description": "Embalaje profesional de neveras, lavadoras, televisores y otros electrodomésticos."
+        }
+      },
+      "materials": {
+        "title": "Materiales Incluidos",
+        "material1": {
+          "title": "Cajas de Cartón",
+          "description": "Cajas de cartón resistentes en diferentes tamaños para todo tipo de objetos."
+        },
+        "material2": {
+          "title": "Papel Burbuja",
+          "description": "Papel burbuja y plástico burbuja para protección de objetos frágiles."
+        },
+        "material3": {
+          "title": "Film Estirable",
+          "description": "Film plástico estirable para proteger muebles y objetos grandes."
+        },
+        "material4": {
+          "title": "Mantas de Protección",
+          "description": "Mantas especiales para proteger muebles y electrodomésticos durante el transporte."
+        },
+        "material5": {
+          "title": "Separadores y Esquineras",
+          "description": "Separadores de cartón y esquineras de protección para cristales y espejos."
+        }
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes",
+        "faq1": {
+          "question": "¿Qué incluye el servicio de embalaje profesional?",
+          "answer": "Nuestro servicio de embalaje profesional incluye que nuestros expertos vayan a tu domicilio con todos los materiales necesarios (cajas de cartón, papel burbuja, film plástico, mantas protección) y realicen el embalaje completo de tus objetos. No necesitas comprar nada, nosotros traemos el material y hacemos el trabajo."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuesta el servicio de embalaje?",
+          "answer": "El precio del servicio de embalaje profesional varía según el tipo de mudanza y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles. Solicita un presupuesto personalizado sin compromiso."
+        },
+        "faq3": {
+          "question": "¿Incluyen el embalaje en el precio de la mudanza?",
+          "answer": "Sí, ofrecemos embalaje incluido sin coste adicional en nuestros paquetes de mudanza completa. Nuestro equipo profesional acude a tu domicilio con todos los materiales y realiza el embalaje completo. También puedes contratar embalaje profesional completo o embalaje parcial solo para objetos frágiles."
+        },
+        "faq4": {
+          "question": "¿Cómo embalan objetos frágiles como cristales y porcelana?",
+          "answer": "Nuestro servicio de embalaje profesional para objetos frágiles incluye protección multicapa específica: papel burbuja o plástico burbuja, separadores cartón y esquineras protección. Nuestros expertos conocen las técnicas adecuadas para proteger cristales, porcelana, vajillas y obras de arte durante el transporte."
+        },
+        "faq5": {
+          "question": "¿Tienen que venir a mi casa para hacer el embalaje?",
+          "answer": "Sí, nuestro servicio de embalaje profesional se realiza en tu domicilio. Nuestro equipo acude con todos los materiales necesarios (cajas, papel burbuja, film, mantas) y realiza el embalaje completo in situ. No necesitas comprar ni preparar nada, nosotros nos encargamos de todo."
+        },
+        "faq6": {
+          "question": "¿Qué tipo de embalaje hacen para electrodomésticos?",
+          "answer": "Para electrodomésticos como neveras, frigoríficos y lavadoras, nuestro servicio de embalaje profesional incluye fundas protección especiales, film estirable y mantas muebles. Protegemos cada electrodoméstico con materiales específicos para evitar daños durante el transporte."
+        }
+      }
     },
     "transporteFrio": {
       "title": "Transporte en Frío Marbella",
-      "subtitle": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos."
+      "subtitle": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.",
+      "description": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperaturas controladas. Tracking en tiempo real. Presupuesto gratis sin compromiso.",
+      "temperatures": {
+        "title": "Rangos de Temperatura",
+        "range1": {
+          "title": "Congelación",
+          "description": "Transporte a -18°C para productos congelados y helados.",
+          "temperature": "-18°C"
+        },
+        "range2": {
+          "title": "Refrigerado",
+          "description": "Transporte entre 2°C y 8°C para productos frescos y refrigerados.",
+          "temperature": "2°C - 8°C"
+        },
+        "range3": {
+          "title": "Farmacéutico",
+          "description": "Transporte farmacéutico con control estricto de temperatura según normativa.",
+          "temperature": "2°C - 8°C"
+        }
+      },
+      "products": {
+        "title": "Productos que Transportamos",
+        "product1": {
+          "title": "Alimentos",
+          "description": "Productos alimentarios frescos, congelados y refrigerados."
+        },
+        "product2": {
+          "title": "Farmacéuticos",
+          "description": "Medicamentos, vacunas y productos farmacéuticos que requieren cadena frío."
+        },
+        "product3": {
+          "title": "Perecederos",
+          "description": "Fruta, verdura, pescado, carne y otros productos perecederos."
+        },
+        "product4": {
+          "title": "Flores",
+          "description": "Transporte refrigerado de flores y plantas para mantener su frescura."
+        }
+      },
+      "coverage": {
+        "title": "Cobertura",
+        "coverage1": {
+          "title": "Local",
+          "description": "Transporte en frío en Marbella y alrededores."
+        },
+        "coverage2": {
+          "title": "Provincial",
+          "description": "Transporte en frío en toda la provincia de Málaga."
+        },
+        "coverage3": {
+          "title": "Nacional",
+          "description": "Transporte en frío en toda España con cadena frío garantizada."
+        }
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes",
+        "faq1": {
+          "question": "¿Qué temperaturas manejan para el transporte en frío?",
+          "answer": "Manejamos diferentes rangos de temperatura según el producto: congelación a -18°C, refrigerado entre 2°C y 8°C, y temperatura controlada para productos farmacéuticos según normativa."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuesta el transporte en frío?",
+          "answer": "El precio del transporte en frío varía según la distancia, el rango de temperatura requerido y el tipo de producto. Solicita un presupuesto personalizado sin compromiso con nuestra calculadora online."
+        },
+        "faq3": {
+          "question": "¿Tienen vehículos refrigerados?",
+          "answer": "Sí, contamos con una flota de vehículos refrigerados equipados con sistemas de control de temperatura para garantizar la cadena frío en todo momento."
+        },
+        "faq4": {
+          "question": "¿Pueden transportar productos farmacéuticos?",
+          "answer": "Sí, ofrecemos transporte farmacéutico especializado con control estricto de temperatura según normativa vigente y seguimiento completo del proceso."
+        },
+        "faq5": {
+          "question": "¿Ofrecen tracking en tiempo real?",
+          "answer": "Sí, todos nuestros transportes en frío incluyen tracking en tiempo real para que puedas conocer la ubicación y temperatura de tu envío en todo momento."
+        },
+        "faq6": {
+          "question": "¿Qué garantizan para la cadena frío?",
+          "answer": "Garantizamos el mantenimiento de la cadena frío durante todo el transporte con controles de temperatura continuos, vehículos refrigerados certificados y seguimiento documentado del proceso."
+        }
+      }
     },
     "ultimaMilla": {
       "title": "Última Milla Logística Marbella",
-      "subtitle": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h."
+      "subtitle": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h.",
+      "description": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia. Tracking en tiempo real. Servicio última milla profesional.",
+      "sectors": {
+        "title": "Sectores",
+        "sector1": {
+          "title": "Ecommerce",
+          "description": "Entrega última milla para tiendas online y marketplaces."
+        },
+        "sector2": {
+          "title": "Alimentación",
+          "description": "Entrega última milla para supermercados y tiendas de alimentación."
+        },
+        "sector3": {
+          "title": "Farmacia",
+          "description": "Entrega última milla para farmacias y productos farmacéuticos."
+        },
+        "sector4": {
+          "title": "Restaurantes",
+          "description": "Entrega última milla para restaurantes y servicios de comida a domicilio."
+        }
+      },
+      "deliveryTypes": {
+        "title": "Tipos de Entrega",
+        "type1": {
+          "title": "Express",
+          "description": "Entrega express en el menor tiempo posible."
+        },
+        "type2": {
+          "title": "Mismo Día",
+          "description": "Entrega el mismo día para pedidos realizados antes de las 14:00."
+        },
+        "type3": {
+          "title": "Programada",
+          "description": "Entrega programada según la disponibilidad del destinatario."
+        },
+        "type4": {
+          "title": "Nocturna",
+          "description": "Entrega nocturna para mayor comodidad del cliente."
+        }
+      },
+      "technology": {
+        "title": "Tecnología",
+        "tech1": {
+          "title": "Tracking en Tiempo Real",
+          "description": "Sistema de seguimiento en tiempo real para conocer la ubicación exacta de tu envío."
+        },
+        "tech2": {
+          "title": "App Móvil",
+          "description": "Aplicación móvil para gestionar tus envíos y recibir notificaciones en tiempo real."
+        },
+        "tech3": {
+          "title": "Sistema de Rutas",
+          "description": "Sistema inteligente de optimización de rutas para entregas más eficientes."
+        }
+      },
+      "zones": {
+        "title": "Zonas de Cobertura",
+        "zone1": {
+          "title": "Urbana",
+          "description": "Cobertura en zona urbana de Marbella y alrededores."
+        },
+        "zone2": {
+          "title": "Periférica",
+          "description": "Cobertura en zona periférica y urbanizaciones."
+        },
+        "zone3": {
+          "title": "Rural",
+          "description": "Cobertura en zona rural y núcleos más alejados."
+        }
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes",
+        "faq1": {
+          "question": "¿Qué es la última milla logística?",
+          "answer": "La última milla logística es el último tramo del proceso de entrega, desde el centro de distribución hasta el destinatario final. Es la fase más crítica y costosa de la cadena logística."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuesta el servicio de última milla?",
+          "answer": "El precio del servicio de última milla varía según la distancia, el tipo de entrega (express, mismo día, programada) y el sector (ecommerce, alimentación, farmacia). Solicita un presupuesto personalizado sin compromiso con nuestra calculadora online."
+        },
+        "faq3": {
+          "question": "¿Ofrecen entrega el mismo día?",
+          "answer": "Sí, ofrecemos entrega el mismo día para pedidos realizados antes de las 14:00 en zona urbana de Marbella y alrededores. También ofrecemos servicio express para entregas urgentes."
+        },
+        "faq4": {
+          "question": "¿Tienen tracking en tiempo real?",
+          "answer": "Sí, todos nuestros servicios de última milla incluyen tracking en tiempo real para que puedas conocer la ubicación exacta de tu envío en todo momento a través de nuestra app o plataforma web."
+        },
+        "faq5": {
+          "question": "¿En qué zonas operan?",
+          "answer": "Operamos en Marbella y Costa del Sol con cobertura urbana, periférica y rural. Cubrimos zonas residenciales, urbanizaciones y núcleos más alejados con diferentes tiempos de entrega."
+        },
+        "faq6": {
+          "question": "¿Pueden integrar su servicio con mi sistema?",
+          "answer": "Sí, ofrecemos integración API para conectar nuestro servicio de última milla con tu sistema de gestión, tienda online o marketplace. Nuestro equipo técnico te ayudará con la implementación."
+        }
+      }
+    }
+  },
+  "footer": {
+    "title": "PortesPro",
+    "description": "Empresa de mudanzas profesionales en Marbella, Málaga y Costa del Sol. Servicios de portes, embalajes, guardamuebles, transporte en frío y última milla. Mudanzas baratas, económicas y rápidas con la máxima calidad.",
+    "services": "Servicios",
+    "zones": "Zonas",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "buttons": {
+    "calculate": "Calcular Precio",
+    "requestQuote": "Solicitar Presupuesto",
+    "contact": "Contactar",
+    "learnMore": "Saber Más",
+    "book": "Reservar",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "reset": "Restablecer",
+    "apply": "Aplicar"
+  },
+  "calculator": {
+    "title": "Calculadora de Precio",
+    "subtitle": "Calcula el precio de tu mudanza en segundos",
+    "step1": "Ruta",
+    "step2": "Carga",
+    "step3": "Finalizar",
+    "step1Full": "Origen y Destino",
+    "step2Full": "Detalles",
+    "step3Full": "Resumen",
+    "origin": "Origen",
+    "destination": "Destino",
+    "originPlaceholder": "Escribe una dirección...",
+    "destinationPlaceholder": "Escribe una dirección...",
+    "distance": "Distancia",
+    "volume": "Volumen",
+    "items": "Objetos",
+    "price": "Precio",
+    "total": "Total",
+    "calculate": "Calcular",
+    "reset": "Reiniciar",
+    "result": "Resultado",
+    "estimatedPrice": "Precio Estimado",
+    "estimatedTime": "Tiempo Estimado",
+    "getQuote": "Obtener Presupuesto",
+    "configureLoad": "Configurar Carga",
+    "digitalInventory": "Inventario Digital",
+    "technicalPrecision": "Precisión Técnica",
+    "selectBelongings": "Selecciona tus pertenencias",
+    "back": "Atrás",
+    "finishQuote": "Finalizar Presupuesto",
+    "quoteFinished": "Presupuesto Finalizado",
+    "artisanalCareGuaranteed": "Cuidado artesanal garantizado en toda la Costa del Sol.",
+    "totalEstimatedPortesPro": "Total Estimado PortesPro",
+    "reserveMove": "RESERVAR MI MUDANZA",
+    "immediateConfirmation": "Confirmación inmediata • Soporte 24/7",
+    "executiveSummary": "Resumen Ejecutivo",
+    "routePlanning": "Planificación de Ruta",
+    "loadEstimation": "Estimación de Carga",
+    "attentionProtocol": "Protocolo de Atención",
+    "optimizedLogistics": "Logística optimizada"
+  },
+  "components": {
+    "stats": {
+      "movesCompleted": "Mudanzas Realizadas",
+      "yearsExperience": "Años de Experiencia",
+      "vipClients": "Clientes VIP",
+      "zonesCovered": "Zonas Cubiertas"
+    },
+    "features": {
+      "title": "La Diferencia PortesPro",
+      "trilingualDrivers": "Conductores Trilingües",
+      "trilingualDriversDesc": "Hablamos Español, Inglés y Sueco para tu comodidad y tranquilidad.",
+      "portesMudanzas": "Portes y mudanzas",
+      "portesMudanzasDesc": "Especialistas en Marbella, Puerto Banús y Cala de Mijas. Servicio VIP.",
+      "packingOnDemand": "Embalaje a pedido",
+      "packingOnDemandDesc": "Protección máxima para antigüedades, arte y mobiliario delicado.",
+      "flexibleCapacity": "Capacidad Flexible",
+      "flexibleCapacityDesc": "Desde pequeños bultos hasta villas de gran tamaño con la misma eficiencia.",
+      "insurance": "Seguro Premium a pedido",
+      "insuranceDesc": "Cobertura total de mercancías. Tu patrimonio está en buenas manos.",
+      "realTimeTracking": "Puntualidad",
+      "realTimeTrackingDesc": "Sabemos que tu tiempo es valioso. Servicio puntual y discreto."
+    },
+    "process": {
+      "tag": "Metodología PortesPro",
+      "title": "El estándar de oro en logística de mudanza.",
+      "subtitle": "Combinamos la tecnología de vanguardia con el trato personalizado de los artesanos de antaño.",
+      "step1Title": "Auditoría Digital",
+      "step1Desc": "Calculamos el volumen exacto con nuestra tecnología de precisión para un precio sin sorpresas.",
+      "step2Title": "Embalaje Artesanal",
+      "step2Desc": "Protección multicapa específica para cada objeto, desde arte hasta tecnología delicada.",
+      "step3Title": "Tránsito Premium",
+      "step3Desc": "Conductores trilingües y vehículos monitorizados por GPS en tiempo real por toda la costa.",
+      "step4Title": "Entrega en Mano",
+      "step4Desc": "Colocamos cada mueble en su ubicación final. Su hogar listo para vivir desde el primer minuto."
+    },
+    "testimonials": {
+      "title": "Opiniones de Nuestros Clientes",
+      "testimonial1": {
+        "name": "Alejandro Ruiz",
+        "role": "Mudanza en Marbella",
+        "content": "Excelente trato y cuidado con los muebles. Un servicio de 10 en Puerto Banús."
+      },
+      "testimonial2": {
+        "name": "Marta Sánchez",
+        "role": "Mudanza Cala de Mijas",
+        "content": "La web es súper dinámica y la calculadora me dio el precio exacto que pagué. Muy profesionales."
+      },
+      "testimonial3": {
+        "name": "David Smith",
+        "role": "Porte de Muebles",
+        "content": "Puntual y muy eficiente. El equipo manejó todo con cuidado. Muy recomendado."
+      }
+    },
+    "guardamueblesCalculator": {
+      "title": "Calculadora de Guardamuebles",
+      "subtitle": "Calcula el precio de tu guardamuebles en Marbella según el volumen de tus objetos",
+      "additionalServices": "Servicios Adicionales",
+      "duration": "Duración",
+      "calculationSummary": "Resumen del Cálculo",
+      "totalVolume": "Volumen Total",
+      "objects": "Objetos",
+      "stacking": "Apilamiento",
+      "minimum": "Mínimo 3 m³",
+      "containers": "Contenedores",
+      "perUnit": "c/u",
+      "basePrice": "Precio base",
+      "insurance": "Seguro",
+      "discount": "Descuento",
+      "monthly": "Mensual",
+      "total": "Total",
+      "requestQuote": "Solicitar Presupuesto",
+      "estimatedPriceNote": "* Precio estimado. Presupuesto final tras inspección."
+    },
+    "embalajesCalculator": {
+      "title": "Calculadora de Embalaje Profesional",
+      "subtitle": "Calcula el precio del servicio de embalaje profesional según tu tipo de vivienda",
+      "housingType": "Tipo de Vivienda",
+      "specialItems": "Objetos Especiales",
+      "serviceType": "Tipo de Servicio",
+      "calculationSummary": "Resumen del Cálculo",
+      "basePrice": "Precio Base",
+      "specialItemsPrice": "Objetos Especiales",
+      "service": "Servicio",
+      "totalPrice": "Precio Total",
+      "includesMaterials": "* Incluye todos los materiales",
+      "requestQuote": "Solicitar Presupuesto"
+    },
+    "transporteFrioCalculator": {
+      "title": "Calculadora de Transporte en Frío",
+      "subtitle": "Calcula el precio del transporte refrigerado según temperatura, distancia y tipo de producto",
+      "temperatureRange": "Rango de Temperatura",
+      "productType": "Tipo de Producto",
+      "distance": "Distancia (km)",
+      "distancePlaceholder": "Ingresa la distancia",
+      "distanceNote": "Distancia en kilómetros desde origen hasta destino",
+      "transportType": "Tipo de Transporte",
+      "calculationSummary": "Resumen del Cálculo",
+      "basePrice": "Precio Base",
+      "tariff": "Tarifa",
+      "temperature": "Temperatura",
+      "product": "Producto",
+      "type": "Tipo",
+      "totalPrice": "Precio Total",
+      "coldChainGuarantee": "* Incluye garantía de cadena frío",
+      "requestQuote": "Solicitar Presupuesto"
+    },
+    "ultimaMillaCalculator": {
+      "title": "Calculadora de Última Milla",
+      "subtitle": "Calcula el precio de entrega última milla según distancia, tipo de envío y urgencia",
+      "distance": "Distancia (km)",
+      "distancePlaceholder": "Ingresa la distancia",
+      "distanceNote": "Distancia en kilómetros desde origen hasta destino",
+      "shipmentType": "Tipo de Envío",
+      "deliveryType": "Tipo de Entrega",
+      "sector": "Sector",
+      "calculationSummary": "Resumen del Cálculo",
+      "basePrice": "Precio Base",
+      "tariff": "Tarifa",
+      "shipment": "Tipo de Envío",
+      "delivery": "Entrega",
+      "sectorLabel": "Sector",
+      "totalPrice": "Precio Total",
+      "estimatedTime": "* Tiempo estimado",
+      "requestQuote": "Solicitar Presupuesto"
     }
   }
 }
-
