@@ -41,16 +41,19 @@ const switchLanguage = (langCode) => {
   const localeCodes = ['es', 'en', 'sv', 'ru']
   const pathSegments = currentPath.split('/').filter(Boolean)
   
-  // Si el primer segmento es un locale, quitarlo
+  // Si el primer segmento es un locale, quitarlo para obtener la ruta base
   const pathWithoutLocale = localeCodes.includes(pathSegments[0])
     ? '/' + pathSegments.slice(1).join('/')
     : currentPath
   
-  // Si la ruta sin locale es solo '/', mantenerla
-  const targetPath = pathWithoutLocale === '/' ? '/' : pathWithoutLocale
+  // Si la ruta sin locale está vacía o es solo '/', usar '/'
+  const targetPath = !pathWithoutLocale || pathWithoutLocale === '/' ? '/' : pathWithoutLocale
   
   // Obtener la ruta con el nuevo locale
-  const newPath = switchLocalePath(targetPath, langCode)
+  // switchLocalePath obtiene automáticamente la ruta actual, pero necesitamos construir la ruta manualmente
+  const newPath = langCode === 'es' 
+    ? targetPath 
+    : `/${langCode}${targetPath === '/' ? '' : targetPath}`
   
   // Navegar a la nueva ruta
   navigateTo(newPath)
