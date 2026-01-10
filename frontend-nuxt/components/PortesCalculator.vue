@@ -279,7 +279,6 @@
 <script setup>
 import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import { useRuntimeConfig } from '#app'
-import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   isHero: {
@@ -287,6 +286,8 @@ const props = defineProps({
     default: false
   }
 })
+
+const { t, locale, locales, loadLocaleMessages, setLocale } = useI18n()
 
 const config = useRuntimeConfig()
 
@@ -523,8 +524,6 @@ function calculateRoute() {
 
 // Inicializar el mapa cuando el componente se monte y cargar traducciones si es necesario
 onMounted(async () => {
-  const { t, locale, locales, loadLocaleMessages, setLocale } = useI18n()
-  
   // Verificar si las traducciones están disponibles para la calculadora
   const testKey = 'calculator.step1'
   const testTranslation = t(testKey)
