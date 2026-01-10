@@ -86,19 +86,7 @@ const IconClock = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curr
 const features = computed(() => {
   // Forzar reactividad con locale.value
   const currentLocale = locale.value
-  console.log('🟢 [PortesFeatures] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
-  
-  // Si no está listo, retornar valores por defecto
-  if (!isReady.value) {
-    return [
-      { iconComponent: IconLanguages, title: '...', desc: '...', color: 'bg-teal-600 text-white' },
-      { iconComponent: IconTruck, title: '...', desc: '...', color: 'bg-slate-900 text-white' },
-      { iconComponent: IconPackage, title: '...', desc: '...', color: 'bg-teal-50 text-teal-600' },
-      { iconComponent: IconRuler, title: '...', desc: '...', color: 'bg-slate-100 text-slate-600' },
-      { iconComponent: IconShield, title: '...', desc: '...', color: 'bg-teal-100 text-teal-700' },
-      { iconComponent: IconClock, title: '...', desc: '...', color: 'bg-slate-200 text-slate-900' }
-    ]
-  }
+  console.log('🟢 [PortesFeatures] Computed recalculando, locale:', currentLocale)
   
   return [
     {

@@ -28,51 +28,22 @@
 </template>
 
 <script setup>
-import { computed, watch, ref, onMounted } from 'vue'
+import { computed, watch } from 'vue'
 
-const { t, locale, waitForPendingLocaleChange } = useI18n()
-const isReady = ref(false)
+const { t, locale } = useI18n()
 
 console.log('🟢 [PortesTestimonials] Locale actual:', locale.value)
+console.log('🟢 [PortesTestimonials] Traducción test:', t('components.testimonials.title'))
 
-// Esperar a que las traducciones se carguen
-onMounted(async () => {
-  try {
-    await waitForPendingLocaleChange()
-    isReady.value = true
-    console.log('🟢 [PortesTestimonials] Traducciones cargadas, test:', t('components.testimonials.title'))
-  } catch (e) {
-    console.error('🟢 [PortesTestimonials] Error cargando traducciones:', e)
-    isReady.value = true
-  }
-})
-
-// Watch locale changes y esperar a que se carguen las traducciones
-watch(locale, async (newLocale) => {
+// Watch locale changes - con lazy: false, las traducciones están disponibles inmediatamente
+watch(locale, (newLocale) => {
   console.log('🟢 [PortesTestimonials] Locale cambió a:', newLocale)
-  isReady.value = false
-  try {
-    await waitForPendingLocaleChange()
-    isReady.value = true
-    console.log('🟢 [PortesTestimonials] Nuevas traducciones cargadas para:', newLocale)
-  } catch (e) {
-    console.error('🟢 [PortesTestimonials] Error cargando traducciones:', e)
-    isReady.value = true
-  }
+  console.log('🟢 [PortesTestimonials] Test translation después de cambio:', t('components.testimonials.title'))
 }, { immediate: true })
 
 const testimonials = computed(() => {
   const currentLocale = locale.value
-  console.log('🟢 [PortesTestimonials] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
-  
-  // Si no está listo, retornar valores por defecto
-  if (!isReady.value) {
-    return [
-      { name: '...', role: '...', content: '...', rating: 5 },
-      { name: '...', role: '...', content: '...', rating: 5 },
-      { name: '...', role: '...', content: '...', rating: 5 }
-    ]
-  }
+  console.log('🟢 [PortesTestimonials] Computed recalculando, locale:', currentLocale)
   
   return [
     {
