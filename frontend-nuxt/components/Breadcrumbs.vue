@@ -1,5 +1,5 @@
 <template>
-  <nav aria-label="Breadcrumb" class="bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm relative z-[60] transition-all duration-300">
+  <nav aria-label="Breadcrumb" class="bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm relative z-[60] transition-all duration-300 pt-24 md:pt-28">
     <div class="container mx-auto px-4 md:px-6 py-3">
       <ol class="flex items-center space-x-2">
         <li>
