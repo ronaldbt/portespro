@@ -11,7 +11,7 @@
           class="flex items-center gap-2 whitespace-nowrap px-5 py-2.5 rounded-xl font-bold transition-all duration-300 text-sm"
         >
           <span :class="step === s ? 'border-teal-500' : 'border-slate-300'" class="w-6 h-6 rounded-full text-[10px] flex items-center justify-center border-2">{{ s }}</span>
-          {{ s === 1 ? 'Ruta' : s === 2 ? 'Carga' : 'Finalizar' }}
+          {{ s === 1 ? $t('calculator.step1') : s === 2 ? $t('calculator.step2') : $t('calculator.step3') }}
         </button>
       </div>
 
@@ -33,14 +33,14 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Origen
+                {{ $t('calculator.origin') }}
               </label>
               <input
                 id="origen"
                 ref="origenInput"
                 v-model="origin"
                 type="text"
-                placeholder="Escribe una dirección..."
+                :placeholder="$t('calculator.originPlaceholder')"
                 class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm text-sm"
               />
             </div>
@@ -50,14 +50,14 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Destino
+                {{ $t('calculator.destination') }}
               </label>
               <input
                 id="destino"
                 ref="destinoInput"
                 v-model="destination"
                 type="text"
-                placeholder="Escribe una dirección..."
+                :placeholder="$t('calculator.originPlaceholder')"
                 class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm text-sm"
               />
             </div>
@@ -66,7 +66,7 @@
           <div class="relative aspect-[21/9] bg-slate-900 rounded-3xl overflow-hidden group border border-slate-800 shadow-inner">
             <div ref="mapContainer" class="w-full h-full"></div>
             <div v-if="origin && destination" class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-[9px] text-white font-black tracking-widest uppercase z-10 max-w-[calc(100%-2rem)] truncate">
-              Logística optimizada: {{ origin.split(',')[0] }} ➔ {{ destination.split(',')[0] }}
+              {{ $t('calculator.optimizedLogistics') }}: {{ origin.split(',')[0] }} ➔ {{ destination.split(',')[0] }}
             </div>
           </div>
 
@@ -74,7 +74,7 @@
             @click="step = 2"
             class="w-full bg-slate-900 text-white py-3.5 rounded-xl font-black text-sm shadow-2xl flex items-center justify-center gap-3 hover:bg-teal-600 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            Configurar Carga
+            {{ $t('calculator.configureLoad') }}
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
@@ -84,8 +84,8 @@
         <!-- Step 2: Inventory -->
         <div v-else-if="step === 2" key="step2" class="space-y-5">
           <div class="flex justify-between items-center mb-3">
-            <h3 class="text-xl font-black text-slate-900">Inventario Digital</h3>
-            <span class="text-[9px] font-black text-teal-600 bg-teal-50 px-2.5 py-1 rounded-lg uppercase tracking-widest">Precisión Técnica</span>
+            <h3 class="text-xl font-black text-slate-900">{{ $t('calculator.digitalInventory') }}</h3>
+            <span class="text-[9px] font-black text-teal-600 bg-teal-50 px-2.5 py-1 rounded-lg uppercase tracking-widest">{{ $t('calculator.technicalPrecision') }}</span>
           </div>
           
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
@@ -107,7 +107,7 @@
               <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
               </svg>
-              <p class="font-black text-xs uppercase tracking-widest">Selecciona tus pertenencias</p>
+              <p class="font-black text-xs uppercase tracking-widest">{{ $t('calculator.selectBelongings') }}</p>
             </div>
             <TransitionGroup
               v-else
@@ -157,7 +157,7 @@
 
           <div class="flex gap-3">
             <button @click="step = 1" class="px-6 bg-slate-100 text-slate-600 py-2.5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-slate-200 transition-colors">
-              Atrás
+              {{ $t('calculator.back') }}
             </button>
             <button 
               @click="step = 3"
@@ -165,7 +165,7 @@
               :class="items.length > 0 ? 'bg-slate-900 text-white shadow-slate-200 hover:bg-teal-600' : 'bg-slate-200 text-slate-400 cursor-not-allowed'"
               class="flex-grow py-2.5 rounded-xl font-black text-sm shadow-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Finalizar Presupuesto
+              {{ $t('calculator.finishQuote') }}
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -180,8 +180,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-black text-slate-900 mb-2 tracking-tighter">Presupuesto Finalizado</h3>
-          <p class="text-slate-500 text-xs mb-6 font-medium tracking-tight">Cuidado artesanal garantizado en toda la Costa del Sol.</p>
+          <h3 class="text-2xl font-black text-slate-900 mb-2 tracking-tighter">{{ $t('calculator.quoteFinished') }}</h3>
+          <p class="text-slate-500 text-xs mb-6 font-medium tracking-tight">{{ $t('calculator.artisanalCareGuaranteed') }}</p>
           
           <div class="bg-slate-950 p-8 rounded-3xl max-w-xs mx-auto shadow-2xl relative overflow-hidden group border border-slate-800 hover:scale-[1.02] transition-transform">
             <div class="absolute top-0 right-0 p-5">
@@ -189,7 +189,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
             </div>
-            <p class="text-[9px] font-black text-teal-500 uppercase tracking-[0.4em] mb-3">Total Estimado PortesPro</p>
+            <p class="text-[9px] font-black text-teal-500 uppercase tracking-[0.4em] mb-3">{{ $t('calculator.totalEstimatedPortesPro') }}</p>
             <div class="flex items-center justify-center gap-1">
               <span class="text-5xl font-black text-white tracking-tighter animate-price-in">{{ calculation.price }}</span>
               <span class="text-xl font-bold text-teal-500">€</span>
@@ -202,9 +202,9 @@
 
           <div class="mt-8 space-y-3">
             <button class="w-full bg-teal-600 text-white py-4 rounded-2xl font-black text-lg shadow-2xl shadow-teal-500/30 hover:bg-teal-500 transition-all hover:scale-[1.05] active:scale-[0.95]">
-              RESERVAR MI MUDANZA
+              {{ $t('calculator.reserveMove') }}
             </button>
-            <p class="text-[9px] text-slate-400 font-black uppercase tracking-widest">Confirmación inmediata • Soporte 24/7</p>
+            <p class="text-[9px] text-slate-400 font-black uppercase tracking-widest">{{ $t('calculator.immediateConfirmation') }}</p>
           </div>
         </div>
       </Transition>
@@ -216,7 +216,7 @@
       
       <div class="space-y-8">
         <div class="flex items-center justify-between border-b border-slate-900 pb-5">
-          <h4 class="text-base font-black text-white tracking-tight">Resumen Ejecutivo</h4>
+          <h4 class="text-base font-black text-white tracking-tight">{{ $t('calculator.executiveSummary') }}</h4>
           <div class="flex gap-2">
             <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
             <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style="animation-delay: 0.5s" />
@@ -232,7 +232,7 @@
               </svg>
             </div>
             <div>
-              <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Planificación de Ruta</p>
+              <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">{{ $t('calculator.routePlanning') }}</p>
               <p class="font-black text-base leading-none text-white">{{ origin }} <span class="text-teal-500 px-2">➔</span> {{ destination }}</p>
             </div>
           </div>
@@ -244,13 +244,13 @@
               </svg>
             </div>
             <div>
-              <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Estimación de Carga</p>
+              <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">{{ $t('calculator.loadEstimation') }}</p>
               <p class="font-black text-lg leading-none text-white">{{ calculation.totalVolume.toFixed(2) }} m³</p>
             </div>
           </div>
 
             <div class="p-6 bg-white/[0.03] border border-white/5 rounded-2xl backdrop-blur-xl">
-            <p class="text-teal-500 text-[9px] font-black uppercase tracking-[0.3em] mb-6 text-center">Protocolo de Atención</p>
+            <p class="text-teal-500 text-[9px] font-black uppercase tracking-[0.3em] mb-6 text-center">{{ $t('calculator.attentionProtocol') }}</p>
             <div class="grid grid-cols-3 gap-3">
               <div v-for="l in ['ES', 'EN', 'SV']" :key="l" class="flex flex-col items-center gap-2">
                 <span class="text-xs font-black bg-slate-900 w-full text-center py-2.5 rounded-xl border border-slate-800 text-slate-300">
@@ -264,7 +264,7 @@
 
       <div class="mt-10 bg-white/[0.05] p-6 rounded-3xl border border-white/5 space-y-2.5 shadow-2xl">
         <div class="flex justify-between items-center">
-          <span class="text-slate-500 font-black text-[9px] uppercase tracking-widest">Precio</span>
+          <span class="text-slate-500 font-black text-[9px] uppercase tracking-widest">{{ $t('calculator.price') }}</span>
           <span class="text-3xl font-black text-white tracking-tighter">{{ calculation.price }}€</span>
         </div>
         <div class="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden">

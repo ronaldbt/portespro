@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="min-h-screen bg-white text-gray-900">
     <main>
-      <Breadcrumbs />
       <slot />
     </main>
     <WhatsAppButton />

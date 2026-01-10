@@ -20,26 +20,26 @@
             to="/mudanzas"
             class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1"
           >
-            Mudanzas
+            {{ $t('nav.mudanzas') }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </NuxtLink>
           <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
             <NuxtLink to="/mudanzas/particulares" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Particulares
+              {{ $t('nav.mudanzas') }} Particulares
             </NuxtLink>
             <NuxtLink to="/mudanzas/empresas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Empresas
+              {{ $t('nav.mudanzas') }} Empresas
             </NuxtLink>
             <NuxtLink to="/mudanzas/oficinas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Oficinas
+              {{ $t('nav.mudanzas') }} Oficinas
             </NuxtLink>
             <NuxtLink to="/mudanzas/internacionales" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Internacionales
+              {{ $t('nav.mudanzas') }} Internacionales
             </NuxtLink>
             <NuxtLink to="/mudanzas/urgentes" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Urgentes
+              {{ $t('nav.mudanzas') }} Urgentes
             </NuxtLink>
           </div>
         </div>
@@ -49,7 +49,7 @@
           to="/embalajes"
           class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          Embalajes
+          {{ $t('nav.embalajes') }}
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
         </NuxtLink>
 
@@ -58,7 +58,7 @@
           to="/guardamuebles"
           class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          Guardamuebles
+          {{ $t('nav.guardamuebles') }}
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
         </NuxtLink>
 
@@ -67,7 +67,7 @@
           to="/transporte-frio"
           class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          Transporte Frío
+          {{ $t('nav.transporteFrio') }}
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
         </NuxtLink>
 
@@ -76,7 +76,7 @@
           to="/ultima-milla"
           class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative group"
         >
-          Última Milla
+          {{ $t('nav.ultimaMilla') }}
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all duration-300" />
         </NuxtLink>
 
@@ -85,26 +85,26 @@
           <button 
             class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1"
           >
-            Zonas
+            {{ $t('nav.zonas') }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
             <NuxtLink to="/mudanzas-marbella" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Marbella
+              {{ $t('nav.mudanzas') }} Marbella
             </NuxtLink>
             <NuxtLink to="/mudanzas-malaga" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Málaga
+              {{ $t('nav.mudanzas') }} Málaga
             </NuxtLink>
             <NuxtLink to="/mudanzas-costa-del-sol" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Costa del Sol
+              {{ $t('nav.mudanzas') }} Costa del Sol
             </NuxtLink>
             <NuxtLink to="/mudanzas-estepona" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Estepona
+              {{ $t('nav.mudanzas') }} Estepona
             </NuxtLink>
             <NuxtLink to="/mudanzas-fuengirola" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              Mudanzas Fuengirola
+              {{ $t('nav.mudanzas') }} Fuengirola
             </NuxtLink>
           </div>
         </div>
@@ -140,7 +140,7 @@
       <div v-if="isOpen" class="md:hidden bg-white border-b absolute top-full w-full px-6 py-8 shadow-2xl overflow-hidden">
         <div class="flex flex-col gap-4">
           <NuxtLink to="/mudanzas" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
-            Mudanzas
+            {{ $t('nav.mudanzas') }}
           </NuxtLink>
           <NuxtLink to="/embalajes" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
             Embalajes
@@ -160,7 +160,7 @@
             @click="isOpen = false"
             class="border-2 border-teal-600 text-teal-600 py-3 rounded-xl font-bold text-center"
           >
-            Ingresar
+            {{ $t('nav.login') }}
           </NuxtLink>
         </div>
       </div>
