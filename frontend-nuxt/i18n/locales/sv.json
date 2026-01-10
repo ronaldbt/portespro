@@ -124,6 +124,42 @@
           "title": "Spårning",
           "description": "Realtidsspårning och bekräftelse av komplett leverans."
         }
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Flytt och Transport",
+        "subtitle": "Vi svarar på dina frågor om flytttjänster, transport och logistik i Marbella och Costa del Sol",
+        "faq1": {
+          "question": "Hur mycket kostar en flytt?",
+          "answer": "Priset på en flytt varierar beroende på flera faktorer: typ av fastighet (lägenhet, hus, kontor), avstånd, volym av föremål, extra tjänster (inpackning, montering) och brådska. Använd vår online-räknare för att få en gratis ungefärlig offert utan åtagande, eller begär en detaljerad personlig offert."
+        },
+        "faq2": {
+          "question": "Hur beräknar man priset på en flytt?",
+          "answer": "Du kan beräkna priset på din flytt med vår online-räknare på huvudsidan. Du behöver bara ange rutten (ursprung och destination), typ av fastighet, speciella föremål (pianon, konstverk) och extra tjänster. Du kan också begära en gratis personlig offert utan åtagande för att få ett exakt pris."
+        },
+        "faq3": {
+          "question": "Vad inkluderar den professionella flyttjänsten?",
+          "answer": "Vår kompletta professionella flyttjänst inkluderar: professionell inpackning med alla material, lastning och lossning, säker transport med lämpliga fordon, möbelmontering vid destination, komplett försäkring för dina tillhörigheter och realtidsspårning. Vi erbjuder också partiella tjänster enligt dina behov."
+        },
+        "faq4": {
+          "question": "Hur anlitar man en flytt?",
+          "answer": "För att anlita en flytt med PortesPro kan du använda vår online-räknare för att få en ungefärlig offert, begära en gratis personlig offert eller kontakta oss direkt via telefon eller WhatsApp. När offerten är överenskommen planerar vi flyttdatum och våra yrkesmän tar hand om hela processen."
+        },
+        "faq5": {
+          "question": "Inkluderar ni inpackning i flyttpriset?",
+          "answer": "Ja, i våra kompletta flyttpaket ingår professionell inpackning utan extra kostnad. Vårt team kommer till ditt hem med alla nödvändiga material (lådor, bubbelplast, film, filtar) och utför komplett inpackning av dina föremål. Du kan också anlita endast inpackningstjänsten om du gör flytten själv."
+        },
+        "faq6": {
+          "question": "Hur lång tid tar en flytt?",
+          "answer": "Tiden för en flytt beror på volymen av föremål, avstånd och komplexitet. En lokal flytt (Marbella, Málaga, Costa del Sol) kan ta 4 till 8 timmar för ett standardhem. Interprovinsiella eller nationella flyttar kan ta 1 till 3 dagar. Vi tillhandahåller en uppskattad tidtabell när vi planerar din flytt."
+        },
+        "faq7": {
+          "question": "Erbjuder ni akuta flyttar?",
+          "answer": "Ja, vi erbjuder akuta flyttar och expressflyttar 24 timmar för situationer som kräver omedelbar omplacering. Vårt team är tillgängligt dygnet runt för akuta flyttar i Marbella och Costa del Sol. Kontakta oss för en akut offert och vi hjälper dig så snart som möjligt."
+        },
+        "faq8": {
+          "question": "Vilka garantier har flytterna?",
+          "answer": "Alla våra flyttar inkluderar komplett försäkring för att skydda dina tillhörigheter under transporten. Dessutom erbjuder vi garantier på nöjdhet och civilansvar. Vårt team består av certifierade yrkesmän med års erfarenhet. Om någon skada uppstår täcker vår försäkringspolice transporterade föremål enligt våra villkor."
+        }
       }
     },
     "guardamuebles": {

@@ -126,6 +126,42 @@
           "title": "Tracking",
           "description": "Real-time tracking and delivery completion confirmation."
         }
+      },
+      "faqs": {
+        "title": "Frequently Asked Questions about Moving and Transport",
+        "subtitle": "We answer your questions about moving services, transport and logistics in Marbella and Costa del Sol",
+        "faq1": {
+          "question": "How much does a move cost?",
+          "answer": "The price of a move varies depending on several factors: type of property (apartment, house, office), distance, volume of items, additional services (packing, assembly) and urgency. Use our online calculator to get a free approximate quote with no obligation, or request a detailed personalized quote."
+        },
+        "faq2": {
+          "question": "How do I calculate the price of a move?",
+          "answer": "You can calculate the price of your move using our online calculator on the main page. You just need to indicate the route (origin and destination), type of property, special items (pianos, works of art) and additional services. You can also request a free personalized quote with no obligation to get an exact price."
+        },
+        "faq3": {
+          "question": "What does professional moving service include?",
+          "answer": "Our complete professional moving service includes: professional packing with all materials, loading and unloading, safe transport with appropriate vehicles, furniture assembly at destination, complete insurance for your belongings and real-time tracking. We also offer partial services according to your needs."
+        },
+        "faq4": {
+          "question": "How do I hire a moving company?",
+          "answer": "To hire a move with PortesPro, you can use our online calculator to get an approximate quote, request a free personalized quote, or contact us directly by phone or WhatsApp. Once the quote is agreed, we plan the move date and our professionals take care of the entire process."
+        },
+        "faq5": {
+          "question": "Do you include packing in the move price?",
+          "answer": "Yes, in our complete moving packages we include professional packing at no additional cost. Our team comes to your home with all necessary materials (boxes, bubble wrap, film, blankets) and performs complete packing of your items. You can also hire only the packing service if you do the move yourself."
+        },
+        "faq6": {
+          "question": "How long does a move take?",
+          "answer": "The time of a move depends on the volume of items, distance and complexity. A local move (Marbella, Málaga, Costa del Sol) can take 4 to 8 hours for a standard home. Interprovincial or national moves can take 1 to 3 days. We provide an estimated schedule when we plan your move."
+        },
+        "faq7": {
+          "question": "Do you offer urgent moves?",
+          "answer": "Yes, we offer urgent moves and 24-hour express moves for situations that require immediate relocation. Our team is available 24/7 for urgent moves in Marbella and Costa del Sol. Contact us for an urgent quote and we will help you as soon as possible."
+        },
+        "faq8": {
+          "question": "What guarantees do the moves have?",
+          "answer": "All our moves include complete insurance to protect your belongings during transport. In addition, we offer satisfaction guarantee and civil liability. Our team consists of certified professionals with years of experience. If any damage occurs, our insurance policy covers the transported items according to our conditions."
+        }
       }
     },
     "guardamuebles": {

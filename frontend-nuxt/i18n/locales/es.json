@@ -124,6 +124,42 @@
           "title": "Seguimiento",
           "description": "Seguimiento en tiempo real y confirmación de entrega completa."
         }
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Portes y Mudanzas",
+        "subtitle": "Resolvemos tus dudas sobre servicios de mudanzas, portes y transporte en Marbella y Costa del Sol",
+        "faq1": {
+          "question": "¿Cuánto cuesta una mudanza?",
+          "answer": "El precio de una mudanza varía según varios factores: tipo de vivienda (piso, casa, oficina), distancia, volumen de objetos, servicios adicionales (embalaje, montaje) y urgencia. Utiliza nuestra calculadora online para obtener un presupuesto aproximado gratis sin compromiso, o solicita un presupuesto personalizado detallado."
+        },
+        "faq2": {
+          "question": "¿Cómo calcular el precio de una mudanza?",
+          "answer": "Puedes calcular el precio de tu mudanza usando nuestra calculadora online en la página principal. Solo necesitas indicar la ruta (origen y destino), el tipo de vivienda, objetos especiales (pianos, obras de arte) y servicios adicionales. También puedes solicitar un presupuesto personalizado gratuito y sin compromiso para obtener un precio exacto."
+        },
+        "faq3": {
+          "question": "¿Qué incluye el servicio de mudanza profesional?",
+          "answer": "Nuestro servicio de mudanza profesional completo incluye: embalaje profesional con todos los materiales, carga y descarga, transporte seguro con vehículos adecuados, montaje de muebles en el destino, seguro completo de tus pertenencias y seguimiento en tiempo real. También ofrecemos servicios parciales según tus necesidades."
+        },
+        "faq4": {
+          "question": "¿Cómo contratar una mudanza?",
+          "answer": "Para contratar una mudanza con PortesPro, puedes usar nuestra calculadora online para obtener un presupuesto aproximado, solicitar un presupuesto personalizado gratuito, o contactarnos directamente por teléfono o WhatsApp. Una vez acordado el presupuesto, planificamos la fecha de la mudanza y nuestros profesionales se encargan de todo el proceso."
+        },
+        "faq5": {
+          "question": "¿Incluyen el embalaje en el precio de la mudanza?",
+          "answer": "Sí, en nuestros paquetes de mudanza completa incluimos el embalaje profesional sin coste adicional. Nuestro equipo acude a tu domicilio con todos los materiales necesarios (cajas, papel burbuja, film, mantas) y realiza el embalaje completo de tus objetos. También puedes contratar solo el servicio de embalaje si haces la mudanza tú mismo."
+        },
+        "faq6": {
+          "question": "¿Cuánto tiempo tarda una mudanza?",
+          "answer": "El tiempo de una mudanza depende del volumen de objetos, la distancia y la complejidad. Una mudanza local (Marbella, Málaga, Costa del Sol) puede durar de 4 a 8 horas para una vivienda estándar. Mudanzas interprovinciales o nacionales pueden durar de 1 a 3 días. Te proporcionamos un horario estimado cuando planificamos tu mudanza."
+        },
+        "faq7": {
+          "question": "¿Ofrecen mudanzas urgentes?",
+          "answer": "Sí, ofrecemos mudanzas urgentes y mudanzas express 24 horas para situaciones que requieren reubicación inmediata. Nuestro equipo está disponible 24/7 para mudanzas urgentes en Marbella y Costa del Sol. Contacta con nosotros para una cotización urgente y te ayudaremos lo antes posible."
+        },
+        "faq8": {
+          "question": "¿Qué garantías tienen las mudanzas?",
+          "answer": "Todas nuestras mudanzas incluyen seguro completo para proteger tus pertenencias durante el transporte. Además, ofrecemos garantía de satisfacción y responsabilidad civil. Nuestro equipo está formado por profesionales certificados con años de experiencia. Si ocurre algún daño, nuestra póliza de seguro cubre los objetos transportados según nuestras condiciones."
+        }
       }
     },
     "guardamuebles": {

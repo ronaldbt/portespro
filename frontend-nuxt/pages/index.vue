@@ -43,6 +43,55 @@
       <PortesQualityCommitment />
       
       <PortesTestimonials />
+
+      <!-- FAQs Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.index.faqs.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.index.faqs.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div
+              v-for="(faq, idx) in faqs"
+              :key="idx"
+              class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden"
+            >
+              <button
+                @click="toggleFaq(idx)"
+                class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-slate-100 transition-all"
+              >
+                <h3 class="text-lg font-black text-slate-900 pr-8">{{ faq.question }}</h3>
+                <svg
+                  :class="['w-6 h-6 text-teal-600 transition-transform flex-shrink-0', faq.open ? 'rotate-180' : '']"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <Transition
+                enter-active-class="transition-all duration-300"
+                enter-from-class="opacity-0 max-h-0"
+                enter-to-class="opacity-100 max-h-screen"
+                leave-active-class="transition-all duration-300"
+                leave-from-class="opacity-100 max-h-screen"
+                leave-to-class="opacity-0 max-h-0"
+              >
+                <div v-if="faq.open" class="px-8 pb-6">
+                  <p class="text-slate-600 leading-relaxed font-medium">{{ faq.answer }}</p>
+                </div>
+              </Transition>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <PortesFooter />
@@ -56,15 +105,47 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
-const { locale, locales } = useI18n()
+const { locale, locales, t } = useI18n()
 const route = useRoute()
 
 const scrollToCalc = () => {
   if (process.client) {
     document.getElementById('hero-calculator')?.scrollIntoView({ behavior: 'smooth' })
   }
+}
+
+// Estado de apertura de FAQs
+const faqOpenStates = ref([false, false, false, false, false, false, false, false])
+
+// FAQs con traducciones - computed para reactividad al cambio de locale y estado de apertura
+const faqs = computed(() => {
+  // Forzar reactividad al cambio de locale y estado de apertura
+  const currentLocale = locale.value
+  const openStates = faqOpenStates.value
+  
+  const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8']
+  
+  const result = faqKeys.map((key, index) => {
+    const questionKey = `pages.index.faqs.${key}.question`
+    const answerKey = `pages.index.faqs.${key}.answer`
+    const question = t(questionKey)
+    const answer = t(answerKey)
+    
+    return {
+      question,
+      answer,
+      open: openStates[index]
+    }
+  })
+  
+  return result
+})
+
+// Función para alternar el estado de apertura de un FAQ
+const toggleFaq = (index) => {
+  faqOpenStates.value[index] = !faqOpenStates.value[index]
 }
 
 // SEO Meta Tags

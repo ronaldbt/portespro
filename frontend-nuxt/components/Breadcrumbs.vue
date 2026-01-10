@@ -1,5 +1,5 @@
 <template>
-  <nav v-if="!isHomePage || crumbs.length > 0" aria-label="Breadcrumb" class="container mx-auto px-4 md:px-6 pt-24 pb-4">
+  <nav aria-label="Breadcrumb" class="container mx-auto px-4 md:px-6 pt-24 pb-4">
     <ol class="flex items-center space-x-2">
       <li>
         <NuxtLink 
