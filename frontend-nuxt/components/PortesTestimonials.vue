@@ -62,9 +62,17 @@ watch(locale, async (newLocale) => {
 }, { immediate: true })
 
 const testimonials = computed(() => {
-  // Forzar reactividad con locale.value
   const currentLocale = locale.value
-  console.log('🟢 [PortesTestimonials] Computed recalculando, locale:', currentLocale)
+  console.log('🟢 [PortesTestimonials] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
+  
+  // Si no está listo, retornar valores por defecto
+  if (!isReady.value) {
+    return [
+      { name: '...', role: '...', content: '...', rating: 5 },
+      { name: '...', role: '...', content: '...', rating: 5 },
+      { name: '...', role: '...', content: '...', rating: 5 }
+    ]
+  }
   
   return [
     {
