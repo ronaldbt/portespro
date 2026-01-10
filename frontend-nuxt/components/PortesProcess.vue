@@ -34,16 +34,37 @@
 </template>
 
 <script setup>
-import { h, computed, watch } from 'vue'
+import { h, computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale } = useI18n()
+const { t, locale, waitForPendingLocaleChange } = useI18n()
+const isReady = ref(false)
 
 console.log('🟢 [PortesProcess] Locale actual:', locale.value)
-console.log('🟢 [PortesProcess] Traducción test:', t('components.process.title'))
 
-// Watch locale changes
-watch(locale, (newLocale) => {
+// Esperar a que las traducciones se carguen
+onMounted(async () => {
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesProcess] Traducciones cargadas, test:', t('components.process.title'))
+  } catch (e) {
+    console.error('🟢 [PortesProcess] Error cargando traducciones:', e)
+    isReady.value = true
+  }
+})
+
+// Watch locale changes y esperar a que se carguen las traducciones
+watch(locale, async (newLocale) => {
   console.log('🟢 [PortesProcess] Locale cambió a:', newLocale)
+  isReady.value = false
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesProcess] Nuevas traducciones cargadas para:', newLocale)
+  } catch (e) {
+    console.error('🟢 [PortesProcess] Error cargando traducciones:', e)
+    isReady.value = true
+  }
 }, { immediate: true })
 
 const createIcon = (path) => (props) => h('svg', { class: `w-${props.size || 6} h-${props.size || 6}`, fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -58,7 +79,17 @@ const IconKey = createIcon('M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2
 const steps = computed(() => {
   // Forzar reactividad con locale.value
   const currentLocale = locale.value
-  console.log('🟢 [PortesProcess] Computed recalculando, locale:', currentLocale)
+  console.log('🟢 [PortesProcess] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
+  
+  // Si no está listo, retornar valores por defecto
+  if (!isReady.value) {
+    return [
+      { iconComponent: IconClipboardCheck, title: '...', desc: '...' },
+      { iconComponent: IconPackageSearch, title: '...', desc: '...' },
+      { iconComponent: IconTruck, title: '...', desc: '...' },
+      { iconComponent: IconKey, title: '...', desc: '...' }
+    ]
+  }
   
   return [
     {

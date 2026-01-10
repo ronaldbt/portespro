@@ -25,6 +25,10 @@ export default defineNuxtConfig({
     langDir: 'locales',
     defaultLocale: 'es',
     strategy: 'prefix_except_default',
+    compilation: {
+      strictMessage: false,
+      escapeHtml: false
+    },
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',

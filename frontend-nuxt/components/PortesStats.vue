@@ -20,17 +20,40 @@
 </template>
 
 <script setup>
-import { computed, watch } from 'vue'
+import { computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale } = useI18n()
+const { t, locale, setLocale, waitForPendingLocaleChange } = useI18n()
+
+const isReady = ref(false)
 
 console.log('🟢 [PortesStats] Locale actual:', locale.value)
-console.log('🟢 [PortesStats] Traducción test:', t('components.stats.movesCompleted'))
+
+// Esperar a que las traducciones se carguen
+onMounted(async () => {
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesStats] Traducciones cargadas, test:', t('components.stats.movesCompleted'))
+  } catch (e) {
+    console.error('🟢 [PortesStats] Error cargando traducciones:', e)
+    isReady.value = true // Fallback
+  }
+})
 
 const stats = computed(() => {
   // Forzar reactividad con locale.value
   const currentLocale = locale.value
-  console.log('🟢 [PortesStats] Computed recalculando, locale:', currentLocale)
+  console.log('🟢 [PortesStats] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
+  
+  // Si no está listo, retornar valores por defecto
+  if (!isReady.value) {
+    return [
+      { label: '...', value: '12k+' },
+      { label: '...', value: '15+' },
+      { label: '...', value: '4k+' },
+      { label: '...', value: '100%' },
+    ]
+  }
   
   return [
     { label: t('components.stats.movesCompleted'), value: '12k+' },
@@ -40,9 +63,18 @@ const stats = computed(() => {
   ]
 })
 
-// Watch locale changes
-watch(locale, (newLocale) => {
+// Watch locale changes y esperar a que se carguen las traducciones
+watch(locale, async (newLocale) => {
   console.log('🟢 [PortesStats] Locale cambió a:', newLocale)
+  isReady.value = false
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesStats] Nuevas traducciones cargadas para:', newLocale)
+  } catch (e) {
+    console.error('🟢 [PortesStats] Error cargando traducciones:', e)
+    isReady.value = true // Fallback
+  }
 }, { immediate: true })
 </script>
 

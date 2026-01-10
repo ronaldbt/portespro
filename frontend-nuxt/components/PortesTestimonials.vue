@@ -28,16 +28,37 @@
 </template>
 
 <script setup>
-import { computed, watch } from 'vue'
+import { computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale } = useI18n()
+const { t, locale, waitForPendingLocaleChange } = useI18n()
+const isReady = ref(false)
 
 console.log('🟢 [PortesTestimonials] Locale actual:', locale.value)
-console.log('🟢 [PortesTestimonials] Traducción test:', t('components.testimonials.title'))
 
-// Watch locale changes
-watch(locale, (newLocale) => {
+// Esperar a que las traducciones se carguen
+onMounted(async () => {
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesTestimonials] Traducciones cargadas, test:', t('components.testimonials.title'))
+  } catch (e) {
+    console.error('🟢 [PortesTestimonials] Error cargando traducciones:', e)
+    isReady.value = true
+  }
+})
+
+// Watch locale changes y esperar a que se carguen las traducciones
+watch(locale, async (newLocale) => {
   console.log('🟢 [PortesTestimonials] Locale cambió a:', newLocale)
+  isReady.value = false
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesTestimonials] Nuevas traducciones cargadas para:', newLocale)
+  } catch (e) {
+    console.error('🟢 [PortesTestimonials] Error cargando traducciones:', e)
+    isReady.value = true
+  }
 }, { immediate: true })
 
 const testimonials = computed(() => {

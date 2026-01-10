@@ -26,16 +26,37 @@
 </template>
 
 <script setup>
-import { h, computed, watch } from 'vue'
+import { h, computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale } = useI18n()
+const { t, locale, waitForPendingLocaleChange } = useI18n()
+const isReady = ref(false)
 
 console.log('🟢 [PortesFeatures] Locale actual:', locale.value)
-console.log('🟢 [PortesFeatures] Traducción test:', t('components.features.title'))
 
-// Watch locale changes
-watch(locale, (newLocale) => {
+// Esperar a que las traducciones se carguen
+onMounted(async () => {
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesFeatures] Traducciones cargadas, test:', t('components.features.title'))
+  } catch (e) {
+    console.error('🟢 [PortesFeatures] Error cargando traducciones:', e)
+    isReady.value = true
+  }
+})
+
+// Watch locale changes y esperar a que se carguen las traducciones
+watch(locale, async (newLocale) => {
   console.log('🟢 [PortesFeatures] Locale cambió a:', newLocale)
+  isReady.value = false
+  try {
+    await waitForPendingLocaleChange()
+    isReady.value = true
+    console.log('🟢 [PortesFeatures] Nuevas traducciones cargadas para:', newLocale)
+  } catch (e) {
+    console.error('🟢 [PortesFeatures] Error cargando traducciones:', e)
+    isReady.value = true
+  }
 }, { immediate: true })
 
 const IconLanguages = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -65,7 +86,19 @@ const IconClock = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curr
 const features = computed(() => {
   // Forzar reactividad con locale.value
   const currentLocale = locale.value
-  console.log('🟢 [PortesFeatures] Computed recalculando, locale:', currentLocale)
+  console.log('🟢 [PortesFeatures] Computed recalculando, locale:', currentLocale, 'ready:', isReady.value)
+  
+  // Si no está listo, retornar valores por defecto
+  if (!isReady.value) {
+    return [
+      { iconComponent: IconLanguages, title: '...', desc: '...', color: 'bg-teal-600 text-white' },
+      { iconComponent: IconTruck, title: '...', desc: '...', color: 'bg-slate-900 text-white' },
+      { iconComponent: IconPackage, title: '...', desc: '...', color: 'bg-teal-50 text-teal-600' },
+      { iconComponent: IconRuler, title: '...', desc: '...', color: 'bg-slate-100 text-slate-600' },
+      { iconComponent: IconShield, title: '...', desc: '...', color: 'bg-teal-100 text-teal-700' },
+      { iconComponent: IconClock, title: '...', desc: '...', color: 'bg-slate-200 text-slate-900' }
+    ]
+  }
   
   return [
     {
