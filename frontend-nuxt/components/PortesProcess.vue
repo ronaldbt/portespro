@@ -34,9 +34,17 @@
 </template>
 
 <script setup>
-import { h, computed } from 'vue'
+import { h, computed, watch } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+console.log('🟢 [PortesProcess] Locale actual:', locale.value)
+console.log('🟢 [PortesProcess] Traducción test:', t('components.process.title'))
+
+// Watch locale changes
+watch(locale, (newLocale) => {
+  console.log('🟢 [PortesProcess] Locale cambió a:', newLocale)
+}, { immediate: true })
 
 const createIcon = (path) => (props) => h('svg', { class: `w-${props.size || 6} h-${props.size || 6}`, fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: path })
@@ -47,28 +55,34 @@ const IconPackageSearch = createIcon('M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L
 const IconTruck = createIcon('M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
 const IconKey = createIcon('M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z')
 
-const steps = computed(() => [
-  {
-    iconComponent: IconClipboardCheck,
-    title: t('components.process.step1Title'),
-    desc: t('components.process.step1Desc')
-  },
-  {
-    iconComponent: IconPackageSearch,
-    title: t('components.process.step2Title'),
-    desc: t('components.process.step2Desc')
-  },
-  {
-    iconComponent: IconTruck,
-    title: t('components.process.step3Title'),
-    desc: t('components.process.step3Desc')
-  },
-  {
-    iconComponent: IconKey,
-    title: t('components.process.step4Title'),
-    desc: t('components.process.step4Desc')
-  }
-])
+const steps = computed(() => {
+  // Forzar reactividad con locale.value
+  const currentLocale = locale.value
+  console.log('🟢 [PortesProcess] Computed recalculando, locale:', currentLocale)
+  
+  return [
+    {
+      iconComponent: IconClipboardCheck,
+      title: t('components.process.step1Title'),
+      desc: t('components.process.step1Desc')
+    },
+    {
+      iconComponent: IconPackageSearch,
+      title: t('components.process.step2Title'),
+      desc: t('components.process.step2Desc')
+    },
+    {
+      iconComponent: IconTruck,
+      title: t('components.process.step3Title'),
+      desc: t('components.process.step3Desc')
+    },
+    {
+      iconComponent: IconKey,
+      title: t('components.process.step4Title'),
+      desc: t('components.process.step4Desc')
+    }
+  ]
+})
 </script>
 
 

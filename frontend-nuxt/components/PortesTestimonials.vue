@@ -28,30 +28,44 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
-const testimonials = computed(() => [
-  {
-    name: t('components.testimonials.testimonial1.name'),
-    role: t('components.testimonials.testimonial1.role'),
-    content: t('components.testimonials.testimonial1.content'),
-    rating: 5
-  },
-  {
-    name: t('components.testimonials.testimonial2.name'),
-    role: t('components.testimonials.testimonial2.role'),
-    content: t('components.testimonials.testimonial2.content'),
-    rating: 5
-  },
-  {
-    name: t('components.testimonials.testimonial3.name'),
-    role: t('components.testimonials.testimonial3.role'),
-    content: t('components.testimonials.testimonial3.content'),
-    rating: 5
-  }
-])
+console.log('🟢 [PortesTestimonials] Locale actual:', locale.value)
+console.log('🟢 [PortesTestimonials] Traducción test:', t('components.testimonials.title'))
+
+// Watch locale changes
+watch(locale, (newLocale) => {
+  console.log('🟢 [PortesTestimonials] Locale cambió a:', newLocale)
+}, { immediate: true })
+
+const testimonials = computed(() => {
+  // Forzar reactividad con locale.value
+  const currentLocale = locale.value
+  console.log('🟢 [PortesTestimonials] Computed recalculando, locale:', currentLocale)
+  
+  return [
+    {
+      name: t('components.testimonials.testimonial1.name'),
+      role: t('components.testimonials.testimonial1.role'),
+      content: t('components.testimonials.testimonial1.content'),
+      rating: 5
+    },
+    {
+      name: t('components.testimonials.testimonial2.name'),
+      role: t('components.testimonials.testimonial2.role'),
+      content: t('components.testimonials.testimonial2.content'),
+      rating: 5
+    },
+    {
+      name: t('components.testimonials.testimonial3.name'),
+      role: t('components.testimonials.testimonial3.role'),
+      content: t('components.testimonials.testimonial3.content'),
+      rating: 5
+    }
+  ]
+})
 </script>
 
 

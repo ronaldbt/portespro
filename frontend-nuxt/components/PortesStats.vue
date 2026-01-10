@@ -20,14 +20,30 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
+import { computed, watch } from 'vue'
 
-const stats = computed(() => [
-  { label: t('components.stats.movesCompleted'), value: '12k+' },
-  { label: t('components.stats.yearsExperience'), value: '15+' },
-  { label: t('components.stats.vipClients'), value: '4k+' },
-  { label: t('components.stats.zonesCovered'), value: '100%' },
-])
+const { t, locale } = useI18n()
+
+console.log('🟢 [PortesStats] Locale actual:', locale.value)
+console.log('🟢 [PortesStats] Traducción test:', t('components.stats.movesCompleted'))
+
+const stats = computed(() => {
+  // Forzar reactividad con locale.value
+  const currentLocale = locale.value
+  console.log('🟢 [PortesStats] Computed recalculando, locale:', currentLocale)
+  
+  return [
+    { label: t('components.stats.movesCompleted'), value: '12k+' },
+    { label: t('components.stats.yearsExperience'), value: '15+' },
+    { label: t('components.stats.vipClients'), value: '4k+' },
+    { label: t('components.stats.zonesCovered'), value: '100%' },
+  ]
+})
+
+// Watch locale changes
+watch(locale, (newLocale) => {
+  console.log('🟢 [PortesStats] Locale cambió a:', newLocale)
+}, { immediate: true })
 </script>
 
 

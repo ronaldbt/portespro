@@ -26,9 +26,17 @@
 </template>
 
 <script setup>
-import { h, computed } from 'vue'
+import { h, computed, watch } from 'vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+console.log('🟢 [PortesFeatures] Locale actual:', locale.value)
+console.log('🟢 [PortesFeatures] Traducción test:', t('components.features.title'))
+
+// Watch locale changes
+watch(locale, (newLocale) => {
+  console.log('🟢 [PortesFeatures] Locale cambió a:', newLocale)
+}, { immediate: true })
 
 const IconLanguages = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129' })
@@ -54,44 +62,50 @@ const IconClock = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curr
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' })
 ])
 
-const features = computed(() => [
-  {
-    iconComponent: IconLanguages,
-    title: t('components.features.trilingualDrivers'),
-    desc: t('components.features.trilingualDriversDesc'),
-    color: 'bg-teal-600 text-white'
-  },
-  {
-    iconComponent: IconTruck,
-    title: t('components.features.portesMudanzas'),
-    desc: t('components.features.portesMudanzasDesc'),
-    color: 'bg-slate-900 text-white'
-  },
-  {
-    iconComponent: IconPackage,
-    title: t('components.features.packingOnDemand'),
-    desc: t('components.features.packingOnDemandDesc'),
-    color: 'bg-teal-50 text-teal-600'
-  },
-  {
-    iconComponent: IconRuler,
-    title: t('components.features.flexibleCapacity'),
-    desc: t('components.features.flexibleCapacityDesc'),
-    color: 'bg-slate-100 text-slate-600'
-  },
-  {
-    iconComponent: IconShield,
-    title: t('components.features.insurance'),
-    desc: t('components.features.insuranceDesc'),
-    color: 'bg-teal-100 text-teal-700'
-  },
-  {
-    iconComponent: IconClock,
-    title: t('components.features.realTimeTracking'),
-    desc: t('components.features.realTimeTrackingDesc'),
-    color: 'bg-slate-200 text-slate-900'
-  }
-])
+const features = computed(() => {
+  // Forzar reactividad con locale.value
+  const currentLocale = locale.value
+  console.log('🟢 [PortesFeatures] Computed recalculando, locale:', currentLocale)
+  
+  return [
+    {
+      iconComponent: IconLanguages,
+      title: t('components.features.trilingualDrivers'),
+      desc: t('components.features.trilingualDriversDesc'),
+      color: 'bg-teal-600 text-white'
+    },
+    {
+      iconComponent: IconTruck,
+      title: t('components.features.portesMudanzas'),
+      desc: t('components.features.portesMudanzasDesc'),
+      color: 'bg-slate-900 text-white'
+    },
+    {
+      iconComponent: IconPackage,
+      title: t('components.features.packingOnDemand'),
+      desc: t('components.features.packingOnDemandDesc'),
+      color: 'bg-teal-50 text-teal-600'
+    },
+    {
+      iconComponent: IconRuler,
+      title: t('components.features.flexibleCapacity'),
+      desc: t('components.features.flexibleCapacityDesc'),
+      color: 'bg-slate-100 text-slate-600'
+    },
+    {
+      iconComponent: IconShield,
+      title: t('components.features.insurance'),
+      desc: t('components.features.insuranceDesc'),
+      color: 'bg-teal-100 text-teal-700'
+    },
+    {
+      iconComponent: IconClock,
+      title: t('components.features.realTimeTracking'),
+      desc: t('components.features.realTimeTrackingDesc'),
+      color: 'bg-slate-200 text-slate-900'
+    }
+  ]
+})
 </script>
 
 
