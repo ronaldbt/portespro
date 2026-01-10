@@ -160,7 +160,7 @@
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">
-            * {{ $t('calculator.estimatedPrice') }}. {{ $t('buttons.requestQuote') }} final tras inspección.
+            * {{ $t('calculator.estimatedPrice') }}. Presupuesto final tras inspección.
           </p>
         </div>
       </div>
