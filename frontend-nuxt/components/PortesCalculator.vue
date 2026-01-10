@@ -279,6 +279,7 @@
 <script setup>
 import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import { useRuntimeConfig } from '#app'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   isHero: {
@@ -520,8 +521,32 @@ function calculateRoute() {
   })
 }
 
-// Inicializar el mapa cuando el componente se monte
-onMounted(() => {
+// Inicializar el mapa cuando el componente se monte y cargar traducciones si es necesario
+onMounted(async () => {
+  const { t, locale, locales, loadLocaleMessages, setLocale } = useI18n()
+  
+  // Verificar si las traducciones están disponibles para la calculadora
+  const testKey = 'calculator.step1'
+  const testTranslation = t(testKey)
+  
+  if (testTranslation === testKey) {
+    console.warn('🟢 [PortesCalculator] Traducciones no disponibles, intentando cargar...')
+    
+    try {
+      const currentLocale = locale.value
+      const localeObj = locales.value?.find(l => l.code === currentLocale)
+      
+      if (localeObj && localeObj.file) {
+        const messages = await import(`~/locales/${localeObj.file}`).then(m => m.default || m)
+        await loadLocaleMessages(currentLocale, messages)
+        await setLocale(currentLocale)
+        console.log('🟢 [PortesCalculator] Traducciones cargadas manualmente')
+      }
+    } catch (e) {
+      console.error('🟢 [PortesCalculator] Error cargando traducciones:', e)
+    }
+  }
+  
   if (process.client) {
     initMap()
   }
