@@ -2,8 +2,8 @@
   <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
     <!-- Header -->
     <div class="bg-gradient-to-r from-teal-600 to-slate-900 p-4 md:p-6 text-white">
-      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">Calculadora de Embalaje Profesional</h2>
-      <p class="text-sm text-teal-100">Calcula el precio del servicio de embalaje profesional según tu tipo de vivienda</p>
+      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">{{ $t('components.embalajesCalculator.title') }}</h2>
+      <p class="text-sm text-teal-100">{{ $t('components.embalajesCalculator.subtitle') }}</p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6">
@@ -12,7 +12,7 @@
         <!-- Tipo de Vivienda -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Vivienda</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.embalajesCalculator.housingType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -41,7 +41,7 @@
             @click="toggleCategory('especiales')"
             class="w-full px-3 py-2 flex items-center justify-between bg-slate-50 hover:bg-teal-50 transition-all"
           >
-            <span class="font-black text-slate-900 text-xs">Objetos Especiales</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.embalajesCalculator.specialItems') }}</span>
             <svg
               :class="['w-4 h-4 text-slate-400 transition-transform', openCategories['especiales'] ? 'rotate-180' : '']"
               fill="none"
@@ -93,7 +93,7 @@
         <!-- Tipo de Servicio -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Servicio</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.embalajesCalculator.serviceType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -120,12 +120,12 @@
       <!-- Right Panel: Resumen y Cálculo -->
       <div class="lg:sticky lg:top-6 h-fit">
         <div class="bg-slate-900 rounded-2xl p-4 md:p-6 text-white space-y-4">
-          <h3 class="text-lg md:text-xl font-black mb-2">Resumen del Cálculo</h3>
+          <h3 class="text-lg md:text-xl font-black mb-2">{{ $t('components.embalajesCalculator.calculationSummary') }}</h3>
           
           <!-- Precio Base -->
           <div class="bg-slate-800 rounded-xl p-3">
             <div class="flex justify-between items-center mb-1">
-              <span class="text-slate-300 text-xs font-medium">Precio Base</span>
+              <span class="text-slate-300 text-xs font-medium">{{ $t('components.embalajesCalculator.basePrice') }}</span>
               <span class="text-xl font-black text-teal-400">{{ basePrice.toFixed(2) }}€</span>
             </div>
             <div class="text-[10px] text-slate-400 space-y-0.5">
@@ -135,7 +135,7 @@
 
           <!-- Objetos Especiales -->
           <div v-if="extrasPrice > 0" class="bg-slate-800 rounded-xl p-3">
-            <p class="text-xs text-slate-300 mb-0.5">Objetos Especiales</p>
+            <p class="text-xs text-slate-300 mb-0.5">{{ $t('components.embalajesCalculator.specialItemsPrice') }}</p>
             <p class="text-lg font-black text-teal-400">{{ extrasPrice.toFixed(2) }}€</p>
             <div class="text-[10px] text-slate-400 mt-0.5 space-y-0.5">
               <p v-for="extra in selectedExtras" :key="extra.id">
@@ -147,13 +147,13 @@
           <!-- Desglose de Precios -->
           <div class="space-y-1.5 border-t border-slate-700 pt-3">
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Servicio {{ getServicioName() }}</span>
+              <span class="text-slate-300">{{ $t('components.embalajesCalculator.service') }} {{ getServicioName() }}</span>
               <span class="font-bold">{{ servicioPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="border-t border-slate-700 pt-2 mt-2">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-bold">Precio Total</span>
+                <span class="text-xs font-bold">{{ $t('components.embalajesCalculator.totalPrice') }}</span>
                 <span class="text-2xl font-black text-teal-400">{{ totalPrice.toFixed(2) }}€</span>
               </div>
               <p class="text-[10px] text-slate-400 mt-1">
@@ -167,7 +167,7 @@
             @click="requestQuote"
             class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl transition-all transform hover:scale-105 mt-3"
           >
-            Solicitar Presupuesto
+            {{ $t('components.embalajesCalculator.requestQuote') }}
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">

@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-extrabold text-slate-900 mb-4">
-          La Diferencia PortesPro
+          {{ $t('components.features.title') }}
         </h2>
         <div class="h-1.5 bg-teal-500 mx-auto rounded-full w-24" />
       </div>
@@ -26,7 +26,9 @@
 </template>
 
 <script setup>
-import { h } from 'vue'
+import { h, computed } from 'vue'
+
+const { t } = useI18n()
 
 const IconLanguages = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129' })
@@ -52,44 +54,44 @@ const IconClock = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curr
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' })
 ])
 
-const features = [
+const features = computed(() => [
   {
     iconComponent: IconLanguages,
-    title: 'Conductores Trilingües',
-    desc: 'Hablamos Español, Inglés y Sueco para tu comodidad y tranquilidad.',
+    title: t('components.features.trilingualDrivers'),
+    desc: t('components.features.trilingualDriversDesc'),
     color: 'bg-teal-600 text-white'
   },
   {
     iconComponent: IconTruck,
-    title: 'Portes y mudanzas',
-    desc: 'Especialistas en Marbella, Puerto Banús y Cala de Mijas. Servicio VIP.',
+    title: t('components.features.portesMudanzas'),
+    desc: t('components.features.portesMudanzasDesc'),
     color: 'bg-slate-900 text-white'
   },
   {
     iconComponent: IconPackage,
-    title: 'Embalaje a pedido',
-    desc: 'Protección máxima para antigüedades, arte y mobiliario delicado.',
+    title: t('components.features.packingOnDemand'),
+    desc: t('components.features.packingOnDemandDesc'),
     color: 'bg-teal-50 text-teal-600'
   },
   {
     iconComponent: IconRuler,
-    title: 'Capacidad Flexible',
-    desc: 'Desde pequeños bultos hasta villas de gran tamaño con la misma eficiencia.',
+    title: t('components.features.flexibleCapacity'),
+    desc: t('components.features.flexibleCapacityDesc'),
     color: 'bg-slate-100 text-slate-600'
   },
   {
     iconComponent: IconShield,
-    title: 'Seguro Premium a pedido',
-    desc: 'Cobertura total de mercancías. Tu patrimonio está en buenas manos.',
+    title: t('components.features.insurance'),
+    desc: t('components.features.insuranceDesc'),
     color: 'bg-teal-100 text-teal-700'
   },
   {
     iconComponent: IconClock,
-    title: 'Puntualidad',
-    desc: 'Sabemos que tu tiempo es valioso. Servicio puntual y discreto.',
+    title: t('components.features.realTimeTracking'),
+    desc: t('components.features.realTimeTrackingDesc'),
     color: 'bg-slate-200 text-slate-900'
   }
-]
+])
 </script>
 
 

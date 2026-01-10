@@ -12,7 +12,7 @@
         <!-- Distancia -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Distancia (km)</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.ultimaMillaCalculator.distance') }}</span>
           </div>
           <div class="p-3 bg-white">
             <input
@@ -20,17 +20,17 @@
               v-model.number="distancia"
               min="0"
               step="1"
-              placeholder="Ingresa la distancia"
+              :placeholder="$t('components.ultimaMillaCalculator.distancePlaceholder')"
               class="w-full px-3 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-600 focus:border-teal-600 text-slate-900 font-medium text-sm"
             />
-            <p class="text-[10px] text-slate-500 mt-1">Distancia en kilómetros desde origen hasta destino</p>
+            <p class="text-[10px] text-slate-500 mt-1">{{ $t('components.ultimaMillaCalculator.distanceNote') }}</p>
           </div>
         </div>
 
         <!-- Tipo de Envío -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Envío</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.ultimaMillaCalculator.shipmentType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -56,7 +56,7 @@
         <!-- Tipo de Entrega -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Entrega</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.ultimaMillaCalculator.deliveryType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -82,7 +82,7 @@
         <!-- Sector -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Sector</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.ultimaMillaCalculator.sector') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -109,12 +109,12 @@
       <!-- Right Panel: Resumen y Cálculo -->
       <div class="lg:sticky lg:top-6 h-fit">
         <div class="bg-slate-900 rounded-2xl p-4 md:p-6 text-white space-y-4">
-          <h3 class="text-lg md:text-xl font-black mb-2">Resumen del Cálculo</h3>
+          <h3 class="text-lg md:text-xl font-black mb-2">{{ $t('components.ultimaMillaCalculator.calculationSummary') }}</h3>
           
           <!-- Precio Base -->
           <div class="bg-slate-800 rounded-xl p-3">
             <div class="flex justify-between items-center mb-1">
-              <span class="text-slate-300 text-xs font-medium">Precio Base</span>
+              <span class="text-slate-300 text-xs font-medium">{{ $t('components.ultimaMillaCalculator.basePrice') }}</span>
               <span class="text-xl font-black text-teal-400">{{ basePrice.toFixed(2) }}€</span>
             </div>
             <div class="text-[10px] text-slate-400 space-y-0.5">
@@ -126,27 +126,27 @@
           <!-- Desglose de Precios -->
           <div class="space-y-1.5 border-t border-slate-700 pt-3">
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Tipo de Envío ({{ getEnvioName() }})</span>
+              <span class="text-slate-300">{{ $t('components.ultimaMillaCalculator.shipment') }} ({{ getEnvioName() }})</span>
               <span class="font-bold">{{ envioPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Entrega ({{ getEntregaName() }})</span>
+              <span class="text-slate-300">{{ $t('components.ultimaMillaCalculator.delivery') }} ({{ getEntregaName() }})</span>
               <span class="font-bold">{{ entregaPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Sector ({{ getSectorName() }})</span>
+              <span class="text-slate-300">{{ $t('components.ultimaMillaCalculator.sectorLabel') }} ({{ getSectorName() }})</span>
               <span class="font-bold">{{ sectorPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="border-t border-slate-700 pt-2 mt-2">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-bold">Precio Total</span>
+                <span class="text-xs font-bold">{{ $t('components.ultimaMillaCalculator.totalPrice') }}</span>
                 <span class="text-2xl font-black text-teal-400">{{ totalPrice.toFixed(2) }}€</span>
               </div>
               <p class="text-[10px] text-slate-400 mt-1">
-                * Tiempo estimado: {{ estimatedTime }}
+                {{ $t('components.ultimaMillaCalculator.estimatedTime') }}: {{ estimatedTime }}
               </p>
             </div>
           </div>
@@ -156,11 +156,11 @@
             @click="requestQuote"
             class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl transition-all transform hover:scale-105 mt-3"
           >
-            Solicitar Última Milla
+            {{ $t('components.ultimaMillaCalculator.requestQuote') }}
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">
-            * Precio estimado. Presupuesto final tras inspección.
+            * {{ $t('calculator.estimatedPrice') }}. {{ $t('buttons.requestQuote') }} final tras inspección.
           </p>
         </div>
       </div>

@@ -16,7 +16,7 @@
             </span>
           </div>
           <p class="text-slate-400 leading-relaxed text-sm">
-            Empresa de mudanzas profesionales en Marbella, Málaga y Costa del Sol. Servicios de portes, embalajes, guardamuebles, transporte en frío y última milla. Mudanzas baratas, económicas y rápidas con la máxima calidad.
+            {{ $t('footer.description') }}
           </p>
           <div class="flex gap-4">
             <a href="#" class="bg-slate-900 p-2 rounded-full hover:bg-teal-600 transition-all shadow-lg" aria-label="Instagram">
@@ -34,56 +34,56 @@
 
         <!-- Servicios -->
         <div>
-          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Servicios</h4>
+          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">{{ $t('footer.services') }}</h4>
           <ul class="space-y-3 text-slate-400">
             <li>
               <NuxtLink to="/mudanzas" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas
+                {{ $t('nav.mudanzas') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas/particulares" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Particulares
+                {{ $t('nav.mudanzasParticulares') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas/empresas" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Empresas
+                {{ $t('nav.mudanzasEmpresas') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas/oficinas" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Oficinas
+                {{ $t('nav.mudanzasOficinas') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas/internacionales" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Internacionales
+                {{ $t('nav.mudanzasInternacionales') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas/urgentes" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Urgentes
+                {{ $t('nav.mudanzasUrgentes') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/embalajes" class="hover:text-teal-400 transition-colors text-sm">
-                Embalajes
+                {{ $t('nav.embalajes') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/guardamuebles" class="hover:text-teal-400 transition-colors text-sm">
-                Guardamuebles
+                {{ $t('nav.guardamuebles') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/transporte-frio" class="hover:text-teal-400 transition-colors text-sm">
-                Transporte en Frío
+                {{ $t('nav.transporteFrio') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/ultima-milla" class="hover:text-teal-400 transition-colors text-sm">
-                Última Milla
+                {{ $t('nav.ultimaMilla') }}
               </NuxtLink>
             </li>
           </ul>
@@ -91,31 +91,31 @@
 
         <!-- Zonas -->
         <div>
-          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">Zonas</h4>
+          <h4 class="text-lg font-black mb-6 uppercase tracking-widest text-teal-500">{{ $t('footer.zones') }}</h4>
           <ul class="space-y-3 text-slate-400">
             <li>
               <NuxtLink to="/mudanzas-marbella" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Marbella
+                {{ $t('nav.mudanzas') }} {{ $t('nav.marbella') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas-malaga" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Málaga
+                {{ $t('nav.mudanzas') }} {{ $t('nav.malaga') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas-costa-del-sol" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Costa del Sol
+                {{ $t('nav.mudanzas') }} {{ $t('nav.costaDelSol') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas-estepona" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Estepona
+                {{ $t('nav.mudanzas') }} {{ $t('nav.estepona') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/mudanzas-fuengirola" class="hover:text-teal-400 transition-colors text-sm">
-                Mudanzas Fuengirola
+                {{ $t('nav.mudanzas') }} {{ $t('nav.fuengirola') }}
               </NuxtLink>
             </li>
             <li>
@@ -207,7 +207,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               <div>
-                <p class="font-bold text-white text-sm">Teléfono</p>
+                <p class="font-bold text-white text-sm">{{ $t('common.phone') }}</p>
                 <a href="tel:+34600000000" class="hover:text-teal-400 transition-colors">+34 600 000 000</a>
               </div>
             </li>
@@ -216,7 +216,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <div>
-                <p class="font-bold text-white text-sm">Email</p>
+                <p class="font-bold text-white text-sm">{{ $t('common.email') }}</p>
                 <a href="mailto:hola@portespro.es" class="hover:text-teal-400 transition-colors">hola@portespro.es</a>
               </div>
             </li>
@@ -226,8 +226,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <div>
-                <p class="font-bold text-white text-sm">Ubicación</p>
-                <p class="text-sm">Marbella, Málaga<br />Costa del Sol, España</p>
+                <p class="font-bold text-white text-sm">{{ $t('common.address') }}</p>
+                <p class="text-sm">{{ $t('nav.marbella') }}, {{ $t('nav.malaga') }}<br />{{ $t('nav.costaDelSol') }}, España</p>
               </div>
             </li>
             <li class="pt-2">
@@ -235,7 +235,7 @@
                 to="/"
                 class="bg-teal-600 text-white w-full py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all transform hover:scale-[1.02] block text-center"
               >
-                Solicitar Presupuesto
+                {{ $t('common.cta') }}
               </NuxtLink>
             </li>
           </ul>
@@ -262,14 +262,14 @@
 
       <!-- Bottom Bar -->
       <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs text-slate-600">
-          © 2024 PortesPro.es - Empresa de Mudanzas Profesionales en Marbella, Málaga y Costa del Sol. Todos los derechos reservados.
+          <p class="text-xs text-slate-600">
+          © 2024 PortesPro.es - {{ $t('footer.description') }}. {{ $t('footer.allRightsReserved') }}
         </p>
         <div class="flex flex-wrap gap-6 text-xs text-slate-600">
-          <NuxtLink to="/legal" class="hover:text-teal-400 transition-colors">Aviso Legal</NuxtLink>
-          <NuxtLink to="/privacidad" class="hover:text-teal-400 transition-colors">Política de Privacidad</NuxtLink>
-          <NuxtLink to="/cookies" class="hover:text-teal-400 transition-colors">Política de Cookies</NuxtLink>
-          <NuxtLink to="/terminos" class="hover:text-teal-400 transition-colors">Términos y Condiciones</NuxtLink>
+          <NuxtLink to="/legal" class="hover:text-teal-400 transition-colors">{{ $t('footer.legal') }}</NuxtLink>
+          <NuxtLink to="/privacidad" class="hover:text-teal-400 transition-colors">{{ $t('footer.privacy') }}</NuxtLink>
+          <NuxtLink to="/cookies" class="hover:text-teal-400 transition-colors">{{ $t('footer.cookies') }}</NuxtLink>
+          <NuxtLink to="/terminos" class="hover:text-teal-400 transition-colors">{{ $t('footer.terms') }}</NuxtLink>
         </div>
       </div>
     </div>

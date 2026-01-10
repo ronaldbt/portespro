@@ -2,8 +2,8 @@
   <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
     <!-- Header -->
     <div class="bg-gradient-to-r from-teal-600 to-slate-900 p-4 md:p-6 text-white">
-      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">Calculadora de Transporte en Frío</h2>
-      <p class="text-sm text-teal-100">Calcula el precio del transporte refrigerado según temperatura, distancia y tipo de producto</p>
+      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">{{ $t('components.transporteFrioCalculator.title') }}</h2>
+      <p class="text-sm text-teal-100">{{ $t('components.transporteFrioCalculator.subtitle') }}</p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6">
@@ -12,7 +12,7 @@
         <!-- Rango de Temperatura -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Rango de Temperatura</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.transporteFrioCalculator.temperatureRange') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -38,7 +38,7 @@
         <!-- Tipo de Producto -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Producto</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.transporteFrioCalculator.productType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -64,7 +64,7 @@
         <!-- Distancia -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Distancia (km)</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.transporteFrioCalculator.distance') }}</span>
           </div>
           <div class="p-3 bg-white">
             <input
@@ -72,17 +72,17 @@
               v-model.number="distancia"
               min="0"
               step="1"
-              placeholder="Ingresa la distancia"
+              :placeholder="$t('components.transporteFrioCalculator.distancePlaceholder')"
               class="w-full px-3 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-600 focus:border-teal-600 text-slate-900 font-medium text-sm"
             />
-            <p class="text-[10px] text-slate-500 mt-1">Distancia en kilómetros desde origen hasta destino</p>
+            <p class="text-[10px] text-slate-500 mt-1">{{ $t('components.transporteFrioCalculator.distanceNote') }}</p>
           </div>
         </div>
 
         <!-- Tipo de Transporte -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
           <div class="px-3 py-2 bg-slate-50">
-            <span class="font-black text-slate-900 text-xs">Tipo de Transporte</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.transporteFrioCalculator.transportType') }}</span>
           </div>
           <div class="p-2 space-y-1.5 bg-white">
             <label
@@ -109,12 +109,12 @@
       <!-- Right Panel: Resumen y Cálculo -->
       <div class="lg:sticky lg:top-6 h-fit">
         <div class="bg-slate-900 rounded-2xl p-4 md:p-6 text-white space-y-4">
-          <h3 class="text-lg md:text-xl font-black mb-2">Resumen del Cálculo</h3>
+          <h3 class="text-lg md:text-xl font-black mb-2">{{ $t('components.transporteFrioCalculator.calculationSummary') }}</h3>
           
           <!-- Precio Base -->
           <div class="bg-slate-800 rounded-xl p-3">
             <div class="flex justify-between items-center mb-1">
-              <span class="text-slate-300 text-xs font-medium">Precio Base</span>
+              <span class="text-slate-300 text-xs font-medium">{{ $t('components.transporteFrioCalculator.basePrice') }}</span>
               <span class="text-xl font-black text-teal-400">{{ basePrice.toFixed(2) }}€</span>
             </div>
             <div class="text-[10px] text-slate-400 space-y-0.5">
@@ -131,22 +131,22 @@
             </div>
 
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Producto ({{ getProductoName() }})</span>
+              <span class="text-slate-300">{{ $t('components.transporteFrioCalculator.product') }} ({{ getProductoName() }})</span>
               <span class="font-bold">{{ productoPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Tipo ({{ getTipoName() }})</span>
+              <span class="text-slate-300">{{ $t('components.transporteFrioCalculator.type') }} ({{ getTipoName() }})</span>
               <span class="font-bold">{{ tipoPrice.toFixed(2) }}€</span>
             </div>
 
             <div class="border-t border-slate-700 pt-2 mt-2">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-bold">Precio Total</span>
+                <span class="text-xs font-bold">{{ $t('components.transporteFrioCalculator.totalPrice') }}</span>
                 <span class="text-2xl font-black text-teal-400">{{ totalPrice.toFixed(2) }}€</span>
               </div>
               <p class="text-[10px] text-slate-400 mt-1">
-                * Incluye garantía de cadena frío
+                {{ $t('components.transporteFrioCalculator.coldChainGuarantee') }}
               </p>
             </div>
           </div>
@@ -156,7 +156,7 @@
             @click="requestQuote"
             class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl transition-all transform hover:scale-105 mt-3"
           >
-            Solicitar Presupuesto
+            {{ $t('components.transporteFrioCalculator.requestQuote') }}
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">

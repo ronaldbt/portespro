@@ -3,13 +3,13 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col lg:flex-row items-end justify-between mb-20 gap-8">
         <div class="max-w-2xl">
-          <span class="text-teal-600 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">Metodología PortesPro</span>
+          <span class="text-teal-600 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">{{ $t('components.process.tag') }}</span>
           <h2 class="text-4xl md:text-6xl font-black text-slate-950 tracking-tighter leading-none">
-            El estándar de oro en <br /> logística de mudanza.
+            {{ $t('components.process.title') }}
           </h2>
         </div>
         <p class="text-slate-500 font-medium max-w-sm lg:text-right">
-          Combinamos la tecnología de vanguardia con el trato personalizado de los artesanos de antaño.
+          {{ $t('components.process.subtitle') }}
         </p>
       </div>
 
@@ -34,7 +34,9 @@
 </template>
 
 <script setup>
-import { h } from 'vue'
+import { h, computed } from 'vue'
+
+const { t } = useI18n()
 
 const createIcon = (path) => (props) => h('svg', { class: `w-${props.size || 6} h-${props.size || 6}`, fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: path })
@@ -45,28 +47,28 @@ const IconPackageSearch = createIcon('M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L
 const IconTruck = createIcon('M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z')
 const IconKey = createIcon('M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z')
 
-const steps = [
+const steps = computed(() => [
   {
     iconComponent: IconClipboardCheck,
-    title: 'Auditoría Digital',
-    desc: 'Calculamos el volumen exacto con nuestra tecnología de precisión para un precio sin sorpresas.'
+    title: t('components.process.step1Title'),
+    desc: t('components.process.step1Desc')
   },
   {
     iconComponent: IconPackageSearch,
-    title: 'Embalaje Artesanal',
-    desc: 'Protección multicapa específica para cada objeto, desde arte hasta tecnología delicada.'
+    title: t('components.process.step2Title'),
+    desc: t('components.process.step2Desc')
   },
   {
     iconComponent: IconTruck,
-    title: 'Tránsito Premium',
-    desc: 'Conductores trilingües y vehículos monitorizados por GPS en tiempo real por toda la costa.'
+    title: t('components.process.step3Title'),
+    desc: t('components.process.step3Desc')
   },
   {
     iconComponent: IconKey,
-    title: 'Entrega en Mano',
-    desc: 'Colocamos cada mueble en su ubicación final. Su hogar listo para vivir desde el primer minuto.'
+    title: t('components.process.step4Title'),
+    desc: t('components.process.step4Desc')
   }
-]
+])
 </script>
 
 

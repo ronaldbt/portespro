@@ -20,12 +20,14 @@
 </template>
 
 <script setup>
-const stats = [
-  { label: 'Mudanzas Realizadas', value: '12k+' },
-  { label: 'Años de Experiencia', value: '15+' },
-  { label: 'Clientes VIP', value: '4k+' },
-  { label: 'Zonas Cubiertas', value: '100%' },
-]
+const { t } = useI18n()
+
+const stats = computed(() => [
+  { label: t('components.stats.movesCompleted'), value: '12k+' },
+  { label: t('components.stats.yearsExperience'), value: '15+' },
+  { label: t('components.stats.vipClients'), value: '4k+' },
+  { label: t('components.stats.zonesCovered'), value: '100%' },
+])
 </script>
 
 

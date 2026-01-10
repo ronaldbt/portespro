@@ -551,10 +551,10 @@
       "packingOnDemandDesc": "Protección máxima para antigüedades, arte y mobiliario delicado.",
       "flexibleCapacity": "Capacidad Flexible",
       "flexibleCapacityDesc": "Desde pequeños bultos hasta villas de gran tamaño con la misma eficiencia.",
-      "insurance": "Seguro Completo",
-      "insuranceDesc": "Cobertura total para proteger todas tus pertenencias durante el transporte.",
-      "realTimeTracking": "Tracking en Tiempo Real",
-      "realTimeTrackingDesc": "Monitoreo constante de tu mudanza desde origen hasta destino."
+      "insurance": "Seguro Premium a pedido",
+      "insuranceDesc": "Cobertura total de mercancías. Tu patrimonio está en buenas manos.",
+      "realTimeTracking": "Puntualidad",
+      "realTimeTrackingDesc": "Sabemos que tu tiempo es valioso. Servicio puntual y discreto."
     },
     "process": {
       "tag": "Metodología PortesPro",
@@ -570,7 +570,22 @@
       "step4Desc": "Colocamos cada mueble en su ubicación final. Su hogar listo para vivir desde el primer minuto."
     },
     "testimonials": {
-      "title": "Opiniones de Nuestros Clientes"
+      "title": "Opiniones de Nuestros Clientes",
+      "testimonial1": {
+        "name": "Alejandro Ruiz",
+        "role": "Mudanza en Marbella",
+        "content": "Excelente trato y cuidado con los muebles. Un servicio de 10 en Puerto Banús."
+      },
+      "testimonial2": {
+        "name": "Marta Sánchez",
+        "role": "Mudanza Cala de Mijas",
+        "content": "La web es súper dinámica y la calculadora me dio el precio exacto que pagué. Muy profesionales."
+      },
+      "testimonial3": {
+        "name": "David Smith",
+        "role": "Porte de Muebles",
+        "content": "Puntual y muy eficiente. El equipo manejó todo con cuidado. Muy recomendado."
+      }
     },
     "guardamueblesCalculator": {
       "title": "Calculadora de Guardamuebles",

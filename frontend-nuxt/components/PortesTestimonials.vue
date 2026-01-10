@@ -1,7 +1,7 @@
 <template>
   <section id="testimonios" class="py-24 bg-slate-50 overflow-hidden">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-extrabold text-slate-900 text-center mb-16">Opiniones de Nuestros Clientes</h2>
+      <h2 class="text-4xl font-extrabold text-slate-900 text-center mb-16">{{ $t('components.testimonials.title') }}</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div
           v-for="(t, i) in testimonials"
@@ -28,26 +28,30 @@
 </template>
 
 <script setup>
-const testimonials = [
+import { computed } from 'vue'
+
+const { t } = useI18n()
+
+const testimonials = computed(() => [
   {
-    name: "Alejandro Ruiz",
-    role: "Mudanza en Marbella",
-    content: "Excelente trato y cuidado con los muebles. Un servicio de 10 en Puerto Banús.",
+    name: t('components.testimonials.testimonial1.name'),
+    role: t('components.testimonials.testimonial1.role'),
+    content: t('components.testimonials.testimonial1.content'),
     rating: 5
   },
   {
-    name: "Marta Sánchez",
-    role: "Mudanza Cala de Mijas",
-    content: "La web es súper dinámica y la calculadora me dio el precio exacto que pagué. Muy profesionales.",
+    name: t('components.testimonials.testimonial2.name'),
+    role: t('components.testimonials.testimonial2.role'),
+    content: t('components.testimonials.testimonial2.content'),
     rating: 5
   },
   {
-    name: "David Smith",
-    role: "Porte de Muebles",
-    content: "Punctual and very efficient. The team handled everything with care. Highly recommend.",
+    name: t('components.testimonials.testimonial3.name'),
+    role: t('components.testimonials.testimonial3.role'),
+    content: t('components.testimonials.testimonial3.content'),
     rating: 5
   }
-]
+])
 </script>
 
 

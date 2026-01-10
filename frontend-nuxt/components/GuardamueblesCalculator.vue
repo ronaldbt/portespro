@@ -2,8 +2,8 @@
   <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
     <!-- Header -->
     <div class="bg-gradient-to-r from-teal-600 to-slate-900 p-4 md:p-6 text-white">
-      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">Calculadora de Guardamuebles</h2>
-      <p class="text-sm text-teal-100">Calcula el precio de tu guardamuebles en Marbella según el volumen de tus objetos</p>
+      <h2 class="text-xl md:text-2xl font-black mb-1 tracking-tighter">{{ $t('components.guardamueblesCalculator.title') }}</h2>
+      <p class="text-sm text-teal-100">{{ $t('components.guardamueblesCalculator.subtitle') }}</p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6">
@@ -77,7 +77,7 @@
             @click="toggleCategory('servicios')"
             class="w-full px-3 py-2 flex items-center justify-between bg-slate-50 hover:bg-teal-50 transition-all"
           >
-            <span class="font-black text-slate-900 text-xs">Servicios Adicionales</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.guardamueblesCalculator.additionalServices') }}</span>
             <svg
               :class="['w-4 h-4 text-slate-400 transition-transform', openCategories['servicios'] ? 'rotate-180' : '']"
               fill="none"
@@ -121,7 +121,7 @@
             @click="toggleCategory('duracion')"
             class="w-full px-3 py-2 flex items-center justify-between bg-slate-50 hover:bg-teal-50 transition-all"
           >
-            <span class="font-black text-slate-900 text-xs">Duración</span>
+            <span class="font-black text-slate-900 text-xs">{{ $t('components.guardamueblesCalculator.duration') }}</span>
             <span class="text-[10px] text-slate-500 bg-white px-1.5 py-0.5 rounded-full">
               {{ getDurationLabel() }}
             </span>
@@ -162,41 +162,41 @@
       <!-- Right Panel: Resumen y Cálculo (Compacto) -->
       <div class="lg:sticky lg:top-6 h-fit">
         <div class="bg-slate-900 rounded-2xl p-4 md:p-6 text-white space-y-4">
-          <h3 class="text-lg md:text-xl font-black mb-2">Resumen del Cálculo</h3>
+          <h3 class="text-lg md:text-xl font-black mb-2">{{ $t('components.guardamueblesCalculator.calculationSummary') }}</h3>
           
           <!-- Volumen Total -->
           <div class="bg-slate-800 rounded-xl p-3">
             <div class="flex justify-between items-center mb-1">
-              <span class="text-slate-300 text-xs font-medium">Volumen Total</span>
+              <span class="text-slate-300 text-xs font-medium">{{ $t('components.guardamueblesCalculator.totalVolume') }}</span>
               <span class="text-xl font-black text-teal-400">{{ totalVolume.toFixed(2) }} m³</span>
             </div>
             <div class="text-[10px] text-slate-400 space-y-0.5">
-              <p>Objetos: {{ rawVolume.toFixed(2) }} m³</p>
-              <p>Apilamiento: +{{ (rawVolume * 0.15).toFixed(2) }} m³</p>
+              <p>{{ $t('components.guardamueblesCalculator.objects') }}: {{ rawVolume.toFixed(2) }} m³</p>
+              <p>{{ $t('components.guardamueblesCalculator.stacking') }}: +{{ (rawVolume * 0.15).toFixed(2) }} m³</p>
               <p v-if="needsMinimum" class="text-yellow-400">
-                ⚠️ Mínimo 3 m³
+                ⚠️ {{ $t('components.guardamueblesCalculator.minimum') }}
               </p>
             </div>
           </div>
 
           <!-- Contenedores -->
           <div v-if="containersNeeded > 0" class="bg-slate-800 rounded-xl p-3">
-            <p class="text-[10px] text-slate-300 mb-0.5">Contenedores</p>
+            <p class="text-[10px] text-slate-300 mb-0.5">{{ $t('components.guardamueblesCalculator.containers') }}</p>
             <p class="text-lg font-black text-teal-400">{{ containersNeeded }} unidades</p>
             <p class="text-[10px] text-slate-400 mt-0.5">
-              ({{ containerSize }} m³ c/u)
+              ({{ containerSize }} m³ {{ $t('components.guardamueblesCalculator.perUnit') }})
             </p>
           </div>
 
           <!-- Desglose de Precios -->
           <div class="space-y-1.5 border-t border-slate-700 pt-3">
             <div class="flex justify-between text-xs">
-              <span class="text-slate-300">Precio base</span>
+              <span class="text-slate-300">{{ $t('components.guardamueblesCalculator.basePrice') }}</span>
               <span class="font-bold">{{ basePrice.toFixed(2) }}€</span>
             </div>
 
             <div v-if="insurancePrice > 0" class="flex justify-between text-xs">
-              <span class="text-slate-300">Seguro</span>
+              <span class="text-slate-300">{{ $t('components.guardamueblesCalculator.insurance') }}</span>
               <span class="font-bold">{{ insurancePrice.toFixed(2) }}€</span>
             </div>
 
@@ -206,13 +206,13 @@
             </div>
 
             <div v-if="discount > 0" class="flex justify-between text-xs text-teal-400">
-              <span>Descuento ({{ discount }}%)</span>
+              <span>{{ $t('components.guardamueblesCalculator.discount') }} ({{ discount }}%)</span>
               <span class="font-bold">-{{ discountAmount.toFixed(2) }}€</span>
             </div>
 
             <div class="border-t border-slate-700 pt-2 mt-2">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-bold">Mensual</span>
+                <span class="text-xs font-bold">{{ $t('components.guardamueblesCalculator.monthly') }}</span>
                 <span class="text-xl font-black text-teal-400">{{ monthlyPrice.toFixed(2) }}€</span>
               </div>
               <div class="flex justify-between items-center">
@@ -227,11 +227,11 @@
             @click="requestQuote"
             class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-xl transition-all transform hover:scale-105 mt-3"
           >
-            Solicitar Presupuesto
+            {{ $t('components.guardamueblesCalculator.requestQuote') }}
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">
-            * Precio estimado. Presupuesto final tras inspección.
+            {{ $t('components.guardamueblesCalculator.estimatedPriceNote') }}
           </p>
         </div>
       </div>

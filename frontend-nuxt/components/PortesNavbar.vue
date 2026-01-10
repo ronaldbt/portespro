@@ -27,19 +27,19 @@
           </NuxtLink>
           <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
             <NuxtLink to="/mudanzas/particulares" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              {{ $t('nav.mudanzas') }} Particulares
+              {{ $t('nav.mudanzasParticulares') }}
             </NuxtLink>
             <NuxtLink to="/mudanzas/empresas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              {{ $t('nav.mudanzas') }} Empresas
+              {{ $t('nav.mudanzasEmpresas') }}
             </NuxtLink>
             <NuxtLink to="/mudanzas/oficinas" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              {{ $t('nav.mudanzas') }} Oficinas
+              {{ $t('nav.mudanzasOficinas') }}
             </NuxtLink>
             <NuxtLink to="/mudanzas/internacionales" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              {{ $t('nav.mudanzas') }} Internacionales
+              {{ $t('nav.mudanzasInternacionales') }}
             </NuxtLink>
             <NuxtLink to="/mudanzas/urgentes" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
-              {{ $t('nav.mudanzas') }} Urgentes
+              {{ $t('nav.mudanzasUrgentes') }}
             </NuxtLink>
           </div>
         </div>
@@ -113,7 +113,7 @@
           to="/login"
           class="px-4 py-2 rounded-xl border-2 border-teal-600 text-teal-600 font-bold hover:bg-teal-50 transition-all"
         >
-          Ingresar
+          {{ $t('nav.login') }}
         </NuxtLink>
       </div>
 
