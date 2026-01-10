@@ -24,7 +24,8 @@
 </template>
 
 <script setup>
-const { locale, locales } = useI18n()
+const { locale, locales, setLocale } = useI18n()
+const route = useRoute()
 const switchLocalePath = useSwitchLocalePath()
 
 const languageMap = {
@@ -35,7 +36,24 @@ const languageMap = {
 }
 
 const switchLanguage = (langCode) => {
-  navigateTo(switchLocalePath(langCode))
+  // Obtener la ruta actual sin el locale
+  const currentPath = route.path
+  const localeCodes = ['es', 'en', 'sv', 'ru']
+  const pathSegments = currentPath.split('/').filter(Boolean)
+  
+  // Si el primer segmento es un locale, quitarlo
+  const pathWithoutLocale = localeCodes.includes(pathSegments[0])
+    ? '/' + pathSegments.slice(1).join('/')
+    : currentPath
+  
+  // Si la ruta sin locale es solo '/', mantenerla
+  const targetPath = pathWithoutLocale === '/' ? '/' : pathWithoutLocale
+  
+  // Obtener la ruta con el nuevo locale
+  const newPath = switchLocalePath(targetPath, langCode)
+  
+  // Navegar a la nueva ruta
+  navigateTo(newPath)
 }
 </script>
 

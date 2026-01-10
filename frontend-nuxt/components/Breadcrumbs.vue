@@ -68,9 +68,23 @@ const crumbs = computed(() => {
 const showBreadcrumb = computed(() => {
   const pathSegments = route.path.split('/').filter(Boolean)
   const localeCodes = ['es', 'en', 'sv', 'ru']
+  
+  // Si no hay segmentos, estamos en la raíz (/)
+  if (pathSegments.length === 0) {
+    return false
+  }
+  
+  // Si solo hay un segmento y es un locale, estamos en la página principal
+  if (pathSegments.length === 1 && localeCodes.includes(pathSegments[0])) {
+    return false
+  }
+  
+  // Si el primer segmento es un locale y no hay más segmentos, estamos en la página principal
   const filteredSegments = localeCodes.includes(pathSegments[0]) 
     ? pathSegments.slice(1) 
     : pathSegments
+  
+  // Si después de filtrar no hay segmentos, estamos en la página principal
   return filteredSegments.length > 0
 })
 </script>
