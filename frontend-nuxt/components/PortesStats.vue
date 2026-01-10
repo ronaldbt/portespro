@@ -22,17 +22,47 @@
 <script setup>
 import { computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale, locales } = useI18n()
-
-const isReady = ref(true) // Con lazy: false, las traducciones están disponibles inmediatamente
+const { t, locale, locales, loadLocaleMessages, setLocale } = useI18n()
+const { $i18n } = useNuxtApp()
 
 console.log('🟢 [PortesStats] Locale actual:', locale.value)
 console.log('🟢 [PortesStats] Available locales:', locales.value?.map(l => l.code) || [])
 console.log('🟢 [PortesStats] Test translation:', t('components.stats.movesCompleted'))
+console.log('🟢 [PortesStats] i18n global:', $i18n ? 'exists' : 'missing')
+console.log('🟢 [PortesStats] i18n messages:', $i18n?.messages?.value ? Object.keys($i18n.messages.value) : 'no messages')
+console.log('🟢 [PortesStats] Current locale messages:', $i18n?.messages?.value?.[locale.value] ? Object.keys($i18n.messages.value[locale.value]).slice(0, 5) : 'no messages for locale')
 
-// Con lazy: false, las traducciones están disponibles inmediatamente
-onMounted(() => {
-  console.log('🟢 [PortesStats] Componente montado, traducciones disponibles:', t('components.stats.movesCompleted'))
+// Intentar cargar traducciones si no están disponibles
+onMounted(async () => {
+  console.log('🟢 [PortesStats] Componente montado')
+  
+  // Verificar si las traducciones están disponibles
+  const testKey = 'components.stats.movesCompleted'
+  const testTranslation = t(testKey)
+  console.log('🟢 [PortesStats] Test translation en onMounted:', testTranslation)
+  
+  // Si la traducción es igual a la clave, no está cargada
+  if (testTranslation === testKey) {
+    console.warn('🟢 [PortesStats] Traducciones no disponibles, intentando cargar...')
+    
+    try {
+      const currentLocale = locale.value
+      const localeObj = locales.value?.find(l => l.code === currentLocale)
+      
+      if (localeObj && localeObj.file) {
+        const messages = await import(`~/locales/${localeObj.file}`).then(m => m.default || m)
+        await loadLocaleMessages(currentLocale, messages)
+        console.log('🟢 [PortesStats] Traducciones cargadas manualmente:', t(testKey))
+        
+        // Forzar actualización del locale
+        await setLocale(currentLocale)
+      }
+    } catch (e) {
+      console.error('🟢 [PortesStats] Error cargando traducciones:', e)
+    }
+  } else {
+    console.log('🟢 [PortesStats] Traducciones ya disponibles:', testTranslation)
+  }
 })
 
 const stats = computed(() => {
