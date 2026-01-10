@@ -22,18 +22,47 @@
 <script setup>
 import { computed, watch, ref, onMounted } from 'vue'
 
-const { t, locale, setLocale, waitForPendingLocaleChange } = useI18n()
+const { t, locale, loadLocaleMessages, availableLocales } = useI18n()
+const app = useNuxtApp()
 
 const isReady = ref(false)
 
 console.log('🟢 [PortesStats] Locale actual:', locale.value)
+console.log('🟢 [PortesStats] Available locales:', availableLocales.value.map(l => l.code))
 
 // Esperar a que las traducciones se carguen
 onMounted(async () => {
   try {
-    await waitForPendingLocaleChange()
-    isReady.value = true
-    console.log('🟢 [PortesStats] Traducciones cargadas, test:', t('components.stats.movesCompleted'))
+    // Intentar cargar las traducciones manualmente si no están disponibles
+    const currentLocale = locale.value
+    const localeObj = availableLocales.value.find(l => l.code === currentLocale)
+    
+    if (localeObj) {
+      try {
+        await loadLocaleMessages(currentLocale, await import(`~/locales/${localeObj.file}`).then(m => m.default))
+        console.log('🟢 [PortesStats] Traducciones cargadas manualmente')
+      } catch (e) {
+        console.warn('🟢 [PortesStats] No se pudieron cargar traducciones manualmente, esperando...', e)
+      }
+    }
+    
+    // Esperar un poco para que las traducciones se carguen
+    await new Promise(resolve => setTimeout(resolve, 100))
+    
+    // Verificar si las traducciones están disponibles
+    const testTranslation = t('components.stats.movesCompleted')
+    console.log('🟢 [PortesStats] Test translation después de cargar:', testTranslation)
+    console.log('🟢 [PortesStats] Test translation === key?', testTranslation === 'components.stats.movesCompleted')
+    
+    // Si la traducción es diferente de la clave, están cargadas
+    isReady.value = testTranslation !== 'components.stats.movesCompleted'
+    
+    if (!isReady.value) {
+      console.warn('🟢 [PortesStats] Traducciones no disponibles después de intentar cargar, usando fallback')
+      // Esperar un poco más
+      await new Promise(resolve => setTimeout(resolve, 500))
+      isReady.value = true // Fallback: usar aunque no estén disponibles
+    }
   } catch (e) {
     console.error('🟢 [PortesStats] Error cargando traducciones:', e)
     isReady.value = true // Fallback
@@ -67,10 +96,33 @@ const stats = computed(() => {
 watch(locale, async (newLocale) => {
   console.log('🟢 [PortesStats] Locale cambió a:', newLocale)
   isReady.value = false
+  
   try {
-    await waitForPendingLocaleChange()
-    isReady.value = true
-    console.log('🟢 [PortesStats] Nuevas traducciones cargadas para:', newLocale)
+    // Intentar cargar las traducciones manualmente
+    const localeObj = availableLocales.value.find(l => l.code === newLocale)
+    
+    if (localeObj) {
+      try {
+        await loadLocaleMessages(newLocale, await import(`~/locales/${localeObj.file}`).then(m => m.default))
+        console.log('🟢 [PortesStats] Nuevas traducciones cargadas manualmente para:', newLocale)
+      } catch (e) {
+        console.warn('🟢 [PortesStats] No se pudieron cargar traducciones manualmente:', e)
+      }
+    }
+    
+    // Esperar un poco para que las traducciones se carguen
+    await new Promise(resolve => setTimeout(resolve, 100))
+    
+    // Verificar si las traducciones están disponibles
+    const testTranslation = t('components.stats.movesCompleted')
+    isReady.value = testTranslation !== 'components.stats.movesCompleted'
+    
+    if (!isReady.value) {
+      await new Promise(resolve => setTimeout(resolve, 500))
+      isReady.value = true // Fallback
+    }
+    
+    console.log('🟢 [PortesStats] Nuevas traducciones cargadas para:', newLocale, 'ready:', isReady.value)
   } catch (e) {
     console.error('🟢 [PortesStats] Error cargando traducciones:', e)
     isReady.value = true // Fallback
