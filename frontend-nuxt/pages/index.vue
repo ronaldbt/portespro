@@ -152,12 +152,14 @@ const toggleFaq = (index) => {
 const siteUrl = 'https://portespro.es'
 const siteName = 'PortesPro'
 const defaultImage = `${siteUrl}/og-image.jpg`
+const logoUrl = `${siteUrl}/logo.png`
 
-// Obtener path sin locale para canonical
+// Obtener path sin locale para canonical (con barra final estandarizada)
 const pathWithoutLocale = route.path.replace(/^\/(es|en|sv|ru)/, '') || '/'
-const canonicalUrl = locale.value === 'es' 
-  ? `${siteUrl}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
-  : `${siteUrl}/${locale.value}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+const canonicalPath = locale.value === 'es' 
+  ? (pathWithoutLocale === '/' ? '/' : pathWithoutLocale)
+  : `/${locale.value}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+const canonicalUrl = `${siteUrl}${canonicalPath}`
 
 // Hreflang links
 const alternateLinks = computed(() => {
@@ -165,8 +167,10 @@ const alternateLinks = computed(() => {
   const pathWithoutLocale = route.path.replace(/^\/(es|en|sv|ru)/, '') || '/'
   
   locales.value.forEach((loc) => {
-    const localePath = loc.code === 'es' ? pathWithoutLocale : `/${loc.code}${pathWithoutLocale}`
-    const fullUrl = `${siteUrl}${localePath === '/' ? '' : localePath}`
+    const localePath = loc.code === 'es' 
+      ? (pathWithoutLocale === '/' ? '/' : pathWithoutLocale)
+      : `/${loc.code}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+    const fullUrl = `${siteUrl}${localePath}`
     
     links.push({
       rel: 'alternate',
@@ -195,103 +199,265 @@ const localeMap = {
   'ru': 'ru_RU'
 }
 
-useHead({
-  title: locale.value === 'es' ? 'Portes y Mudanzas Marbella | Mudanzas Baratas Costa del Sol | PortesPro' :
-        locale.value === 'en' ? 'Moving and Transport Marbella | Cheap Moving Services Costa del Sol | PortesPro' :
-        locale.value === 'sv' ? 'Flytt och Transport Marbella | Billiga Flytttjänster Costa del Sol | PortesPro' :
-        'Переезды и Перевозки Марбелья | Дешевые Услуги Переездов Коста-дель-Соль | PortesPro',
-  meta: [
+// Titles optimizados (sin duplicación de marca, mejor CTR)
+// Nota: No incluir "| PortesPro" porque el titleTemplate en app.vue ya lo agrega
+const pageTitle = computed(() => {
+  if (locale.value === 'es') return 'Mudanzas en Marbella desde 45€'
+  if (locale.value === 'en') return 'Moving Services Marbella from 45€'
+  if (locale.value === 'sv') return 'Flytttjänster Marbella från 45€'
+  return 'Переезды Марбелья от 45€'
+})
+
+// Meta descriptions optimizadas (150-160 caracteres)
+const pageDescription = computed(() => {
+  if (locale.value === 'es') return 'Mudanzas profesionales en Marbella desde 45€. Calculadora de precio online, embalajes y guardamuebles. Presupuesto gratis. ☎ +34 600 000 000'
+  if (locale.value === 'en') return 'Professional moving services in Marbella from 45€. Online price calculator, packing and storage. Free quote. ☎ +34 600 000 000'
+  if (locale.value === 'sv') return 'Professionella flytttjänster i Marbella från 45€. Online prisräknare, inpackning och förvaring. Gratis offert. ☎ +34 600 000 000'
+  return 'Профессиональные услуги переездов в Марбелье от 45€. Онлайн калькулятор цен, упаковка и хранение. Бесплатная оценка. ☎ +34 600 000 000'
+})
+
+// OG Titles y Descriptions
+const ogTitle = computed(() => {
+  if (locale.value === 'es') return 'Portes y Mudanzas Marbella | PortesPro'
+  if (locale.value === 'en') return 'Moving and Transport Marbella | PortesPro'
+  if (locale.value === 'sv') return 'Flytt och Transport Marbella | PortesPro'
+  return 'Переезды и Перевозки Марбелья | PortesPro'
+})
+
+const ogDescription = computed(() => {
+  if (locale.value === 'es') return 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Calculadora de precio online. Presupuesto gratis sin compromiso.'
+  if (locale.value === 'en') return 'Professional moving and transport services in Marbella and Costa del Sol. Online price calculator. Free quote.'
+  if (locale.value === 'sv') return 'Professionella flytt- och transporttjänster i Marbella och Costa del Sol. Online prisräknare. Gratis offert.'
+  return 'Профессиональные услуги переездов и перевозок в Марбелье и Коста-дель-Соль. Онлайн калькулятор цен. Бесплатная оценка.'
+})
+
+// BreadcrumbList Schema
+const breadcrumbSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
     {
-      name: 'description',
-      content: locale.value === 'es' ? 'Mudanzas y portes profesionales en Marbella y Costa del Sol. Servicios de mudanzas baratas, embalajes, guardamuebles y transporte en frío. Calculadora de precio online. Presupuesto gratis sin compromiso.' :
-        locale.value === 'en' ? 'Professional moving and transport services in Marbella and Costa del Sol. Cheap moving services, packing, storage and cold transport. Online price calculator. Free quote.' :
-        locale.value === 'sv' ? 'Professionella flytt- och transporttjänster i Marbella och Costa del Sol. Billiga flytttjänster, inpackning, förvaring och kyltransport. Online prisräknare. Gratis offert.' :
-        'Профессиональные услуги переездов и перевозок в Марбелье и Коста-дель-Соль. Дешевые услуги переездов, упаковка, хранение и холодная перевозка. Онлайн калькулятор цен. Бесплатная оценка.'
+      '@type': 'ListItem',
+      position: 1,
+      name: t('breadcrumbs.home'),
+      item: locale.value === 'es' ? siteUrl : `${siteUrl}/${locale.value}`
+    }
+  ]
+}))
+
+// FAQPage Schema
+const faqSchema = computed(() => {
+  const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8']
+  const mainEntity = faqKeys.map((key, index) => ({
+    '@type': 'Question',
+    name: t(`pages.index.faqs.${key}.question`),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: t(`pages.index.faqs.${key}.answer`)
+    }
+  }))
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity
+  }
+})
+
+// MovingCompany Schema (corregido y completo)
+const movingCompanySchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'MovingCompany',
+  name: 'PortesPro',
+  url: siteUrl,
+  logo: logoUrl,
+  image: defaultImage,
+  description: ogDescription.value,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Marbella',
+    addressRegion: 'Andalucía',
+    addressCountry: 'ES',
+    postalCode: '29600'
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '36.5102',
+    longitude: '-4.8860'
+  },
+  telephone: '+34-600-000-000',
+  priceRange: '$$',
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: {
+      '@type': 'GeoCoordinates',
+      latitude: '36.5102',
+      longitude: '-4.8860'
     },
+    geoRadius: {
+      '@type': 'Distance',
+      value: '50000',
+      unitCode: 'MTR'
+    }
+  },
+  openingHoursSpecification: [
     {
-      name: 'keywords',
-      content: locale.value === 'es' ? 'mudanzas marbella, mudanzas costa del sol, mudanzas baratas, portes marbella, empresa mudanzas, mudanzas profesionales, mudanzas económicas, mudanzas rápidas, mudanzas urgentes' :
-        locale.value === 'en' ? 'moves marbella, moving costa del sol, cheap moving, transport marbella, moving company, professional moving, affordable moving, fast moving, urgent moving' :
-        locale.value === 'sv' ? 'flytt marbella, flytt costa del sol, billig flytt, transport marbella, flyttfirma, professionell flytt, prisvärd flytt, snabb flytt, akut flytt' :
-        'переезды марбелья, переезды коста-дель-соль, дешевые переезды, перевозки марбелья, компания переездов, профессиональные переезды, экономичные переезды, быстрые переезды, срочные переезды'
-    },
-    // Open Graph
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: canonicalUrl },
-    { property: 'og:locale', content: localeMap[locale.value] || 'es_ES' },
-    { property: 'og:image', content: defaultImage },
-    { property: 'og:site_name', content: siteName },
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:url', content: canonicalUrl },
-    { name: 'twitter:image', content: defaultImage },
-    // Canonical
-    { rel: 'canonical', href: canonicalUrl }
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00'
+    }
   ],
-  link: [
-    { rel: 'canonical', href: canonicalUrl },
-    ...alternateLinks.value
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'PortesPro',
-        image: defaultImage,
-        '@id': siteUrl,
-        url: siteUrl,
-        telephone: '+34-XXX-XXX-XXX',
-        priceRange: '€€',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Calle Ejemplo',
-          addressLocality: 'Marbella',
-          addressRegion: 'Málaga',
-          postalCode: '29600',
-          addressCountry: 'ES'
-        },
-        geo: {
+  sameAs: [
+    'https://www.facebook.com/portespro',
+    'https://www.instagram.com/portespro'
+  ]
+}))
+
+// Head tags reactivos usando computed
+useHead(computed(() => {
+  try {
+    const currentLocale = locale.value
+    const currentPathWithoutLocale = route.path.replace(/^\/(es|en|sv|ru)/, '') || '/'
+    const currentCanonicalPath = currentLocale === 'es' 
+      ? (currentPathWithoutLocale === '/' ? '/' : currentPathWithoutLocale)
+      : `/${currentLocale}${currentPathWithoutLocale === '/' ? '' : currentPathWithoutLocale}`
+    const currentCanonicalUrl = `${siteUrl}${currentCanonicalPath}`
+    
+    // Construir schemas directamente aquí dentro del computed
+    const movingCompany = {
+      '@context': 'https://schema.org',
+      '@type': 'MovingCompany',
+      name: 'PortesPro',
+      url: siteUrl,
+      logo: logoUrl,
+      image: defaultImage,
+      description: ogDescription.value,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Marbella',
+        addressRegion: 'Andalucía',
+        addressCountry: 'ES',
+        postalCode: '29600'
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '36.5102',
+        longitude: '-4.8860'
+      },
+      telephone: '+34-600-000-000',
+      priceRange: '$$',
+      areaServed: {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
           '@type': 'GeoCoordinates',
-          latitude: 36.5102,
-          longitude: -4.8860
+          latitude: '36.5102',
+          longitude: '-4.8860'
         },
-        openingHoursSpecification: {
+        geoRadius: {
+          '@type': 'Distance',
+          value: '50000',
+          unitCode: 'MTR'
+        }
+      },
+      openingHoursSpecification: [
+        {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
           opens: '09:00',
           closes: '18:00'
-        },
-        areaServed: {
-          '@type': 'City',
-          name: ['Marbella', 'Málaga', 'Costa del Sol']
-        },
-        sameAs: [
-          'https://www.facebook.com/portespro',
-          'https://www.instagram.com/portespro'
-        ]
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'PortesPro',
-        url: siteUrl,
-        logo: `${siteUrl}/logo.png`,
-        contactPoint: {
-          '@type': 'ContactPoint',
-          telephone: '+34-XXX-XXX-XXX',
-          contactType: 'customer service',
-          areaServed: 'ES',
-          availableLanguage: 'Spanish'
         }
-      })
+      ],
+      sameAs: [
+        'https://www.facebook.com/portespro',
+        'https://www.instagram.com/portespro'
+      ]
     }
-  ]
-})
+
+    const breadcrumb = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: t('breadcrumbs.home'),
+          item: currentLocale === 'es' ? siteUrl : `${siteUrl}/${currentLocale}`
+        }
+      ]
+    }
+
+    const faqKeys = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8']
+    const faq = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqKeys.map((key) => ({
+        '@type': 'Question',
+        name: t(`pages.index.faqs.${key}.question`),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: t(`pages.index.faqs.${key}.answer`)
+        }
+      }))
+    }
+    
+    return {
+      title: pageTitle.value,
+      meta: [
+        {
+          name: 'description',
+          content: pageDescription.value
+        },
+        {
+          name: 'keywords',
+          content: currentLocale === 'es' ? 'mudanzas marbella, mudanzas costa del sol, mudanzas baratas, portes marbella, empresa mudanzas, mudanzas profesionales, mudanzas económicas, mudanzas rápidas, mudanzas urgentes' :
+            currentLocale === 'en' ? 'moves marbella, moving costa del sol, cheap moving, transport marbella, moving company, professional moving, affordable moving, fast moving, urgent moving' :
+            currentLocale === 'sv' ? 'flytt marbella, flytt costa del sol, billig flytt, transport marbella, flyttfirma, professionell flytt, prisvärd flytt, snabb flytt, akut flytt' :
+            'переезды марбелья, переезды коста-дель-соль, дешевые переезды, перевозки марбелья, компания переездов, профессиональные переезды, экономичные переезды, быстрые переезды, срочные переезды'
+        },
+        // Open Graph
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: currentCanonicalUrl },
+        { property: 'og:title', content: ogTitle.value },
+        { property: 'og:description', content: ogDescription.value },
+        { property: 'og:locale', content: localeMap[currentLocale] || 'es_ES' },
+        { property: 'og:image', content: defaultImage },
+        { property: 'og:site_name', content: siteName },
+        // Twitter Card
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:url', content: currentCanonicalUrl },
+        { name: 'twitter:title', content: ogTitle.value },
+        { name: 'twitter:description', content: ogDescription.value },
+        { name: 'twitter:image', content: defaultImage }
+      ],
+      link: [
+        { rel: 'canonical', href: currentCanonicalUrl },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'preconnect', href: 'https://www.google-analytics.com' },
+        { rel: 'sitemap', type: 'application/xml', title: 'Sitemap', href: '/sitemap.xml' },
+        ...alternateLinks.value
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(movingCompany)
+        },
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(breadcrumb)
+        },
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(faq)
+        }
+      ]
+    }
+  } catch (error) {
+    console.error('Error generando head tags:', error)
+    return {}
+  }
+}))
 </script>
 
 <style scoped>

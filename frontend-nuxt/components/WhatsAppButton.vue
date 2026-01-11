@@ -107,7 +107,7 @@ const whatsappUrl = computed(() => {
   // Forzar reactividad usando locale.value
   const currentLocale = locale.value
   const message = tooltipText.value
-  return `https://wa.me/573226106143?text=${encodeURIComponent(message)}`
+  return `https://wa.me/34655422990?text=${encodeURIComponent(message)}`
 })
 
 // Watch locale changes para reactividad

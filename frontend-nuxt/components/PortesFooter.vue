@@ -86,6 +86,11 @@
                 {{ $t('nav.ultimaMilla') }}
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/blog" class="hover:text-teal-400 transition-colors text-sm">
+                {{ $t('common.blog') }}
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
@@ -230,6 +235,11 @@
                 <p class="text-sm">{{ $t('nav.marbella') }}, {{ $t('nav.malaga') }}<br />{{ $t('nav.costaDelSol') }}, España</p>
               </div>
             </li>
+            <li>
+              <NuxtLink to="/contacto" class="hover:text-teal-400 transition-colors text-sm">
+                Contacto
+              </NuxtLink>
+            </li>
             <li class="pt-2">
               <NuxtLink
                 to="/"
@@ -266,6 +276,8 @@
           © 2024 PortesPro.es - {{ $t('footer.description') }}. {{ $t('footer.allRightsReserved') }}
         </p>
         <div class="flex flex-wrap gap-6 text-xs text-slate-600">
+          <NuxtLink to="/contacto" class="hover:text-teal-400 transition-colors">Contacto</NuxtLink>
+          <NuxtLink to="/blog" class="hover:text-teal-400 transition-colors">Blog</NuxtLink>
           <NuxtLink to="/legal" class="hover:text-teal-400 transition-colors">{{ $t('footer.legal') }}</NuxtLink>
           <NuxtLink to="/privacidad" class="hover:text-teal-400 transition-colors">{{ $t('footer.privacy') }}</NuxtLink>
           <NuxtLink to="/cookies" class="hover:text-teal-400 transition-colors">{{ $t('footer.cookies') }}</NuxtLink>
