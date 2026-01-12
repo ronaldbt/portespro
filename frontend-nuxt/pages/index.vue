@@ -557,10 +557,10 @@ const localeMap = {
 // Titles optimizados (sin duplicación de marca, mejor CTR)
 // Nota: No incluir "| PortesPro" porque el titleTemplate en app.vue ya lo agrega
 const pageTitle = computed(() => {
-  if (locale.value === 'es') return 'Mudanzas en Marbella desde 45€'
-  if (locale.value === 'en') return 'Moving Services Marbella from 45€'
-  if (locale.value === 'sv') return 'Flytttjänster Marbella från 45€'
-  return 'Переезды Марбелья от 45€'
+  if (locale.value === 'es') return 'Mudanzas y Portes Profesionales'
+  if (locale.value === 'en') return 'Professional Moving Services'
+  if (locale.value === 'sv') return 'Professionella Flytttjänster'
+  return 'Профессиональные Услуги Переездов'
 })
 
 // Meta descriptions optimizadas (150-160 caracteres)

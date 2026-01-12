@@ -101,6 +101,52 @@
           "label": "Years of Experience"
         }
       },
+      "servicesTypes": {
+        "title": "Types of Moves and Services",
+        "subtitle": "Complete moving, transport and freight services for individuals and businesses",
+        "type1": {
+          "title": "Residential Moves",
+          "description": "Residential moves and small moves with complete service for homes and families. Ideal for affordable residential moves and cheap small moves.",
+          "feature1": "Complete residential moves",
+          "feature2": "Small moves for studios and apartments",
+          "feature3": "Local moves in Marbella and Costa del Sol"
+        },
+        "type2": {
+          "title": "Business and Office Moves",
+          "description": "Business moves, office moves and corporate moves with specialized service for businesses. Professional moving companies for office moves.",
+          "feature1": "Business moves with complete planning",
+          "feature2": "Office moves without interrupting your business",
+          "feature3": "Corporate moves with precise coordination"
+        },
+        "type3": {
+          "title": "National and International Moves",
+          "description": "National and international moves with complete service. Safe moving transport for competitive national move prices and adapted international move prices.",
+          "feature1": "National moves throughout Spain",
+          "feature2": "International moves with documentation included",
+          "feature3": "Safe and professional moving transport"
+        },
+        "type4": {
+          "title": "Freight and Transport",
+          "description": "Freight and moves with cheap transport and cheap freight for individuals. Affordable freight and moving services with trucks for moves of all sizes.",
+          "feature1": "Cheap freight and affordable freight",
+          "feature2": "Cheap transport for individuals",
+          "feature3": "Moving trucks and trucks for moves"
+        },
+        "type5": {
+          "title": "Furniture Transport",
+          "description": "Furniture transport, loose furniture transport and furniture relocation. Professional moving transport service for individual items and furniture.",
+          "feature1": "Loose furniture transport",
+          "feature2": "Safe furniture relocation",
+          "feature3": "Moving transport for specific items"
+        },
+        "type6": {
+          "title": "Relocations and Moves",
+          "description": "Relocations, relocations and moves with complete service. National relocation company for shared moves and consolidated moves.",
+          "feature1": "Affordable and fast relocations",
+          "feature2": "Combined relocations and moves",
+          "feature3": "Shared moves to reduce costs"
+        }
+      },
       "process": {
         "title": "Our Process",
         "subtitle": "How Our Moving Service Works",
@@ -128,6 +174,28 @@
           "title": "Tracking",
           "description": "Real-time tracking and delivery completion confirmation."
         }
+      },
+      "pricing": {
+        "title": "Moving Prices and Quotes",
+        "subtitle": "Total transparency in moving prices with online move quote and free move quote",
+        "price1": {
+          "title": "Moving Price per Hour",
+          "description": "Our moving price per hour is competitive and transparent. For local moves, the moving price per hour ranges between 25€ and 40€ depending on the type of service. Get an approximate moving price with our online calculator."
+        },
+        "price2": {
+          "title": "Approximate Moving Price",
+          "description": "Calculate the approximate moving price instantly with our online calculator. The approximate moving price includes all basic services. For an exact price, request a free personalized moving quote."
+        },
+        "price3": {
+          "title": "Moving Price per Km",
+          "description": "For national moves, we apply moving price per km calculated according to distance. The moving price per kilometer is competitive and adjusts according to the volume transported. Quote national move online to know the price per kilometer."
+        },
+        "price4": {
+          "title": "Adapted Moving Prices",
+          "description": "Moving prices vary according to type (small moves, large moves), distance and services. Average moving price from 45€ for cheap small moves. Quote move online for free to know all available moving prices."
+        },
+        "ctaText": "Use our online calculator to quote move and get an instant online moving quote, or request a free personalized moving quote.",
+        "ctaButton": "Quote Move Online"
       },
       "faqs": {
         "title": "Frequently Asked Questions about Moving and Transport",
@@ -1185,7 +1253,23 @@
     "routePlanning": "Route Planning",
     "loadEstimation": "Load Estimation",
     "attentionProtocol": "Attention Protocol",
-    "optimizedLogistics": "Optimized logistics"
+    "optimizedLogistics": "Optimized logistics",
+    "presets": {
+      "smallBox": "Small Box",
+      "largeBox": "Large Box",
+      "sofa3Seats": "3-Seat Sofa",
+      "refrigerator": "Refrigerator",
+      "washingMachine": "Washing Machine",
+      "doubleBed": "Double Bed",
+      "diningTable": "Dining Table",
+      "chair": "Chair"
+    },
+    "categories": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "special": "Special"
+    }
   },
   "components": {
     "stats": {

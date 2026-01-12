@@ -2,10 +2,13 @@
   <nav :class="`fixed w-full z-[70] transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-xl shadow-lg py-3' : 'bg-transparent py-6'}`">
     <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
       <NuxtLink to="/" class="flex items-center gap-2 group">
-        <div class="bg-slate-900 p-2 rounded-xl group-hover:bg-teal-600 transition-all duration-300 transform group-hover:rotate-12 shadow-lg">
-          <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+        <div class="bg-white p-2 rounded-xl group-hover:bg-teal-50 border-2 border-slate-200 group-hover:border-teal-600 transition-all duration-300 transform group-hover:rotate-12 shadow-lg flex items-center justify-center">
+          <img 
+            src="/logo-portespro.png" 
+            alt="PortesPro Logo" 
+            class="w-12 h-12 object-contain"
+            loading="eager"
+          />
         </div>
         <span class="text-2xl font-black tracking-tighter text-slate-900">
           PORTES<span class="text-teal-600">PRO</span>.es

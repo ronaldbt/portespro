@@ -101,6 +101,52 @@
           "label": "Års Erfarenhet"
         }
       },
+      "servicesTypes": {
+        "title": "Typer av Flyttar och Tjänster",
+        "subtitle": "Kompletta flytt-, transport- och frakttjänster för privatpersoner och företag",
+        "type1": {
+          "title": "Bostadsflyttar",
+          "description": "Bostadsflyttar och små flyttar med komplett service för hem och familjer. Ideal för prisvärda bostadsflyttar och billiga små flyttar.",
+          "feature1": "Kompletta bostadsflyttar",
+          "feature2": "Små flyttar för studior och lägenheter",
+          "feature3": "Lokala flyttar i Marbella och Costa del Sol"
+        },
+        "type2": {
+          "title": "Företags- och Kontorsflyttar",
+          "description": "Företagsflyttar, kontorsflyttar och företagsflyttar med specialiserad service för företag. Professionella flyttföretag för kontorsflyttar.",
+          "feature1": "Företagsflyttar med komplett planering",
+          "feature2": "Kontorsflyttar utan att störa ditt företag",
+          "feature3": "Företagsflyttar med exakt koordinering"
+        },
+        "type3": {
+          "title": "Nationella och Internationella Flyttar",
+          "description": "Nationella och internationella flyttar med komplett service. Säker flytttransport för konkurrenskraftiga nationella flyttpriser och anpassade internationella flyttpriser.",
+          "feature1": "Nationella flyttar i hela Spanien",
+          "feature2": "Internationella flyttar med dokumentation inkluderad",
+          "feature3": "Säker och professionell flytttransport"
+        },
+        "type4": {
+          "title": "Frakt och Transport",
+          "description": "Frakt och flyttar med billig transport och billig frakt för privatpersoner. Prisvärda frakt- och flytttjänster med lastbilar för flyttar i alla storlekar.",
+          "feature1": "Billig frakt och prisvärd frakt",
+          "feature2": "Billig transport för privatpersoner",
+          "feature3": "Flyttlastbilar och lastbilar för flyttar"
+        },
+        "type5": {
+          "title": "Möbeltransport",
+          "description": "Möbeltransport, lös möbeltransport och möbelflytt. Professionell flytttransporttjänst för enskilda föremål och möbler.",
+          "feature1": "Lös möbeltransport",
+          "feature2": "Säker möbelflytt",
+          "feature3": "Flytttransport för specifika föremål"
+        },
+        "type6": {
+          "title": "Omflyttningar och Flyttar",
+          "description": "Omflyttningar, omflyttningar och flyttar med komplett service. Nationellt omflyttningsföretag för delade flyttar och konsoliderade flyttar.",
+          "feature1": "Prisvärda och snabba omflyttningar",
+          "feature2": "Kombinerade omflyttningar och flyttar",
+          "feature3": "Delade flyttar för att minska kostnader"
+        }
+      },
       "process": {
         "title": "Vår Process",
         "subtitle": "Hur Vår Flytttjänst Fungerar",
@@ -128,6 +174,28 @@
           "title": "Spårning",
           "description": "Realtidsspårning och bekräftelse av komplett leverans."
         }
+      },
+      "pricing": {
+        "title": "Flyttpriser och Offerter",
+        "subtitle": "Total transparens i flyttpriser med online flyttoffer och gratis flyttoffer",
+        "price1": {
+          "title": "Flyttpris per Timme",
+          "description": "Vårt flyttpris per timme är konkurrenskraftigt och transparent. För lokala flyttar varierar flyttpriset per timme mellan 25€ och 40€ beroende på typ av tjänst. Få ett ungefärligt flyttpris med vår online-räknare."
+        },
+        "price2": {
+          "title": "Ungefärligt Flyttpris",
+          "description": "Beräkna det ungefärliga flyttpriset direkt med vår online-räknare. Det ungefärliga flyttpriset inkluderar alla grundläggande tjänster. För ett exakt pris, begär en gratis personlig flyttoffer."
+        },
+        "price3": {
+          "title": "Flyttpris per Km",
+          "description": "För nationella flyttar tillämpar vi flyttpris per km beräknat enligt avstånd. Flyttpriset per kilometer är konkurrenskraftigt och justeras enligt den transporterade volymen. Offerera nationell flytt online för att känna priset per kilometer."
+        },
+        "price4": {
+          "title": "Anpassade Flyttpriser",
+          "description": "Flyttpriser varierar enligt typ (små flyttar, stora flyttar), avstånd och tjänster. Genomsnittligt flyttpris från 45€ för billiga små flyttar. Offerera flytt online gratis för att känna alla tillgängliga flyttpriser."
+        },
+        "ctaText": "Använd vår online-räknare för att offerera flytt och få en omedelbar online flyttoffer, eller begär en gratis personlig flyttoffer.",
+        "ctaButton": "Offerera Flytt Online"
       },
       "faqs": {
         "title": "Vanliga Frågor om Flytt och Transport",
@@ -1180,7 +1248,23 @@
     "routePlanning": "Ruttplanering",
     "loadEstimation": "Lastuppskattning",
     "attentionProtocol": "Behandlingsprotokoll",
-    "optimizedLogistics": "Optimerad logistik"
+    "optimizedLogistics": "Optimerad logistik",
+    "presets": {
+      "smallBox": "Liten Låda",
+      "largeBox": "Stor Låda",
+      "sofa3Seats": "3-Sits Sofa",
+      "refrigerator": "Kylskåp",
+      "washingMachine": "Tvättmaskin",
+      "doubleBed": "Dubbelsäng",
+      "diningTable": "Matsalsbord",
+      "chair": "Stol"
+    },
+    "categories": {
+      "small": "Liten",
+      "medium": "Medium",
+      "large": "Stor",
+      "special": "Special"
+    }
   },
   "components": {
     "stats": {

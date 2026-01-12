@@ -57,7 +57,7 @@
                 ref="destinoInput"
                 v-model="destination"
                 type="text"
-                :placeholder="$t('calculator.originPlaceholder')"
+                :placeholder="$t('calculator.destinationPlaceholder')"
                 class="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 font-bold text-slate-900 focus:border-teal-500 focus:bg-white outline-none transition-all shadow-sm text-sm"
               />
             </div>
@@ -91,7 +91,7 @@
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             <button
               v-for="preset in presets"
-              :key="preset.name"
+              :key="preset.key"
               @click="addItem(preset)"
               class="p-4 bg-slate-50 border-2 border-slate-100 rounded-xl hover:border-teal-500 hover:bg-white hover:shadow-xl transition-all text-left flex flex-col gap-2 group hover:scale-105 hover:-translate-y-0.5 active:scale-95"
             >
@@ -310,19 +310,19 @@ let directionsRenderer = null
 let autocompleteOrigen = null
 let autocompleteDestino = null
 
-const presets = [
-  { name: 'Caja Pequeña', category: 'Pequeño', volume: 0.1 },
-  { name: 'Caja Grande', category: 'Mediano', volume: 0.3 },
-  { name: 'Sofá 3 Plazas', category: 'Grande', volume: 2.5 },
-  { name: 'Nevera', category: 'Grande', volume: 1.5 },
-  { name: 'Lavadora', category: 'Mediano', volume: 0.8 },
-  { name: 'Cama Matrimonio', category: 'Especial', volume: 3.0 },
-  { name: 'Mesa Comedor', category: 'Mediano', volume: 1.2 },
-  { name: 'Silla', category: 'Pequeño', volume: 0.2 },
-]
+const presets = computed(() => [
+  { name: t('calculator.presets.smallBox'), category: t('calculator.categories.small'), volume: 0.1, key: 'smallBox' },
+  { name: t('calculator.presets.largeBox'), category: t('calculator.categories.medium'), volume: 0.3, key: 'largeBox' },
+  { name: t('calculator.presets.sofa3Seats'), category: t('calculator.categories.large'), volume: 2.5, key: 'sofa3Seats' },
+  { name: t('calculator.presets.refrigerator'), category: t('calculator.categories.large'), volume: 1.5, key: 'refrigerator' },
+  { name: t('calculator.presets.washingMachine'), category: t('calculator.categories.medium'), volume: 0.8, key: 'washingMachine' },
+  { name: t('calculator.presets.doubleBed'), category: t('calculator.categories.special'), volume: 3.0, key: 'doubleBed' },
+  { name: t('calculator.presets.diningTable'), category: t('calculator.categories.medium'), volume: 1.2, key: 'diningTable' },
+  { name: t('calculator.presets.chair'), category: t('calculator.categories.small'), volume: 0.2, key: 'chair' },
+])
 
 const addItem = (preset) => {
-  const existing = items.value.find(i => i.name === preset.name)
+  const existing = items.value.find(i => i.key === preset.key)
   if (existing) {
     existing.quantity++
   } else {

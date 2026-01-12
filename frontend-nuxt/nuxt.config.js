@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
   
   // Configuración i18n
@@ -51,6 +52,11 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       titleTemplate: '%s - PortesPro',
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/logo-portespro.png' },
+        { rel: 'shortcut icon', type: 'image/png', href: '/logo-portespro.png' },
+        { rel: 'apple-touch-icon', href: '/logo-portespro.png' }
+      ],
       meta: [
         { name: 'description', content: 'PortesPro - Servicios de transporte y mudanzas profesionales en Marbella y Costa del Sol' },
         { name: 'robots', content: 'index, follow' },
@@ -61,6 +67,39 @@ export default defineNuxtConfig({
         { name: 'geo.position', content: '36.5102;-4.8860' },
         { name: 'ICBM', content: '36.5102, -4.8860' }
       ]
+    }
+  },
+  
+  // Configuración de Sitemap
+  sitemap: {
+    hostname: 'https://portespro.es',
+    gzip: true,
+    exclude: [
+      '/dashboard-admin/**',
+      '/dashboard-cliente/**',
+      '/dashboard-conductor/**',
+      '/login',
+      '/register',
+      '/cliente/**',
+      '/conductor/**',
+      '/test',
+      '/no-disponible',
+      '/api/**'
+    ],
+    routes: async () => {
+      try {
+        const { $content } = require('@nuxt/content')
+        const posts = await $content('blog').only(['slug']).fetch()
+        return posts.map((post) => `/blog/${post.slug}`)
+      } catch (e) {
+        // Si no hay posts o hay error, retornar array vacío
+        return []
+      }
+    },
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
     }
   }
 })

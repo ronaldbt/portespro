@@ -1792,7 +1792,23 @@
     "routePlanning": "Planificación de Ruta",
     "loadEstimation": "Estimación de Carga",
     "attentionProtocol": "Protocolo de Atención",
-    "optimizedLogistics": "Logística optimizada"
+    "optimizedLogistics": "Logística optimizada",
+    "presets": {
+      "smallBox": "Caja Pequeña",
+      "largeBox": "Caja Grande",
+      "sofa3Seats": "Sofá 3 Plazas",
+      "refrigerator": "Nevera",
+      "washingMachine": "Lavadora",
+      "doubleBed": "Cama Matrimonio",
+      "diningTable": "Mesa Comedor",
+      "chair": "Silla"
+    },
+    "categories": {
+      "small": "Pequeño",
+      "medium": "Mediano",
+      "large": "Grande",
+      "special": "Especial"
+    }
   },
   "components": {
     "stats": {
