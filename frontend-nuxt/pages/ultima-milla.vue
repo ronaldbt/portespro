@@ -13,13 +13,13 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
             <span class="inline-block bg-white text-teal-700 px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm border border-slate-200">
-              Logística de Última Milla y Entrega Final
+              {{ $t('pages.ultimaMilla.hero.badge') }}
             </span>
             <h1 class="text-5xl md:text-8xl font-black text-slate-950 leading-[0.9] tracking-tighter mb-8">
-              Última Milla
+              {{ $t('pages.ultimaMilla.hero.title') }}
             </h1>
             <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
-              Servicio última milla, logística última milla y distribución última milla en Marbella, Málaga y Costa del Sol. Entrega última milla express y mismo día.
+              {{ $t('pages.ultimaMilla.hero.subtitle') }}
             </p>
           </div>
 
@@ -34,10 +34,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Última Milla por Sector
+              {{ $t('pages.ultimaMilla.sectors.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Especialistas en última milla para ecommerce, alimentación, farmacia y más sectores
+              {{ $t('pages.ultimaMilla.sectors.subtitle') }}
             </p>
           </div>
 
@@ -70,10 +70,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Tipos de Entrega Última Milla
+              {{ $t('pages.ultimaMilla.deliveryTypes.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Última milla mismo día, express, urgente y programada según tus necesidades
+              {{ $t('pages.ultimaMilla.deliveryTypes.subtitle') }}
             </p>
           </div>
 
@@ -96,10 +96,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Tecnología Última Milla
+              {{ $t('pages.ultimaMilla.technology.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Última milla digital con tracking, seguimiento GPS y plataforma avanzada
+              {{ $t('pages.ultimaMilla.technology.subtitle') }}
             </p>
           </div>
 
@@ -122,10 +122,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Cobertura Última Milla
+              {{ $t('pages.ultimaMilla.zones.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Última milla local, urbana y rural en Marbella, Málaga y toda la Costa del Sol
+              {{ $t('pages.ultimaMilla.zones.subtitle') }}
             </p>
           </div>
 
@@ -143,6 +143,108 @@
         </div>
       </section>
 
+      <!-- Ecommerce Shipping Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.ultimaMilla.ecommerceShipping.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.ultimaMilla.ecommerceShipping.subtitle') }}
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              v-for="(service, idx) in ecommerceShipping"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-slate-50 shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="service.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ service.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ service.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Companies Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.ultimaMilla.companies.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.ultimaMilla.companies.subtitle') }}
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              v-for="(company, idx) in companies"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="company.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ company.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ company.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.ultimaMilla.pricing.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.ultimaMilla.pricing.subtitle') }}
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+              v-for="(price, idx) in pricing"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:border-teal-600 hover:shadow-xl transition-all"
+            >
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ price.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ price.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Concept Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.ultimaMilla.concept.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.ultimaMilla.concept.subtitle') }}
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div
+              v-for="(item, idx) in concept"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all"
+            >
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ item.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ item.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- CTA Section -->
       <section id="hero-calculator" class="relative py-24 bg-slate-900 text-white overflow-hidden">
         <div class="absolute top-0 right-0 w-full h-full bg-teal-600/[0.05] -skew-y-3 origin-top-right -z-10" />
@@ -150,23 +252,23 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">
-              ¿Necesitas Servicio de Última Milla?
+              {{ $t('pages.ultimaMilla.cta.title') }}
             </h2>
             <p class="text-xl text-slate-300 mb-12 font-medium">
-              Logística última milla, distribución última milla y entrega última milla en Marbella, Málaga y Costa del Sol. Última milla ecommerce, alimentación y farmacia.
+              {{ $t('pages.ultimaMilla.cta.subtitle') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <NuxtLink
-                to="/"
+              <button
+                @click="scrollToCalc"
                 class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Contratar Última Milla
-              </NuxtLink>
+                {{ $t('pages.ultimaMilla.cta.button1') }}
+              </button>
               <button
                 @click="scrollToCalc"
                 class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Solicitar Presupuesto
+                {{ $t('pages.ultimaMilla.cta.button2') }}
               </button>
             </div>
           </div>
@@ -178,10 +280,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Preguntas Frecuentes sobre Última Milla
+              {{ $t('pages.ultimaMilla.faqs.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Resolvemos tus dudas sobre última milla logística, entrega última milla y distribución última milla en Marbella y Costa del Sol
+              {{ $t('pages.ultimaMilla.faqs.subtitle') }}
             </p>
           </div>
 
@@ -236,8 +338,10 @@
 </template>
 
 <script setup>
-import { ref, h } from 'vue'
+import { ref, h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const lang = ref('es')
 
 const scrollToCalc = () => {
@@ -248,37 +352,29 @@ const scrollToCalc = () => {
 
 // SEO Meta Tags
 const siteUrl = 'https://portespro.es'
-const currentUrl = `${siteUrl}/ultima-milla`
+const currentUrl = computed(() => `${siteUrl}/ultima-milla`)
 const defaultImage = `${siteUrl}/og-image.jpg`
 
-useHead({
-  title: 'Última Milla Logística Marbella | Entrega Express Mismo Día | PortesPro',
+useHead(computed(() => ({
+  title: t('pages.ultimaMilla.seo.title'),
   meta: [
-    {
-      name: 'description',
-      content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia. Tracking en tiempo real. Servicio última milla profesional.'
-    },
-    {
-      name: 'keywords',
-      content: 'última milla marbella, última milla logística, entrega última milla, última milla express, última milla mismo día, última milla ecommerce, última milla alimentación, última milla farmacia'
-    },
-    // Open Graph
+    { name: 'description', content: t('pages.ultimaMilla.seo.description') },
+    { name: 'keywords', content: t('pages.ultimaMilla.seo.keywords') },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: currentUrl },
-    { property: 'og:title', content: 'Última Milla Logística Marbella | Entrega Express Mismo Día' },
-    { property: 'og:description', content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia.' },
+    { property: 'og:url', content: currentUrl.value },
+    { property: 'og:title', content: t('pages.ultimaMilla.seo.ogTitle') },
+    { property: 'og:description', content: t('pages.ultimaMilla.seo.ogDescription') },
     { property: 'og:image', content: defaultImage },
     { property: 'og:site_name', content: 'PortesPro' },
     { property: 'og:locale', content: 'es_ES' },
-    // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:url', content: currentUrl },
-    { name: 'twitter:title', content: 'Última Milla Logística Marbella | Entrega Express' },
-    { name: 'twitter:description', content: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Tracking en tiempo real.' },
+    { name: 'twitter:url', content: currentUrl.value },
+    { name: 'twitter:title', content: t('pages.ultimaMilla.seo.twitterTitle') },
+    { name: 'twitter:description', content: t('pages.ultimaMilla.seo.twitterDescription') },
     { name: 'twitter:image', content: defaultImage }
   ],
   link: [
-    { rel: 'canonical', href: currentUrl }
+    { rel: 'canonical', href: currentUrl.value }
   ],
   script: [
     {
@@ -286,7 +382,7 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Service',
-        serviceType: 'Última Milla Logística',
+        serviceType: t('pages.ultimaMilla.seo.schemaServiceType'),
         provider: {
           '@type': 'LocalBusiness',
           name: 'PortesPro',
@@ -296,7 +392,7 @@ useHead({
           '@type': 'City',
           name: ['Marbella', 'Málaga', 'Costa del Sol']
         },
-        description: 'Última milla logística en Marbella. Entrega última milla express, mismo día y 24h.'
+        description: t('pages.ultimaMilla.seo.schemaDescription')
       })
     },
     {
@@ -308,14 +404,14 @@ useHead({
           {
             '@type': 'ListItem',
             position: 1,
-            name: 'Inicio',
+            name: t('breadcrumbs.home'),
             item: siteUrl
           },
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Última Milla',
-            item: currentUrl
+            name: t('breadcrumbs.ultimaMilla'),
+            item: currentUrl.value
           }
         ]
       })
@@ -325,36 +421,18 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: '¿Qué es el servicio de última milla?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'El servicio de última milla es la fase final de la distribución, desde el almacén o centro de distribución hasta el destino final del cliente. Ofrecemos última milla logística, última milla distribución y entrega última milla para ecommerce, alimentación, farmacia y paquetería.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Cuánto tiempo tarda la entrega última milla?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Ofrecemos última milla mismo día, última milla 24 horas y última milla express para entregas urgentes. También disponemos de última milla programada con horarios flexibles, última milla fin de semana y última milla nocturna.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Cómo funciona el tracking de última milla?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Nuestro servicio de última milla incluye última milla tracking y última milla seguimiento en tiempo real mediante última milla GPS. Disponemos de última milla app y última milla plataforma digital para que puedas seguir tu envío en cada momento.'
-            }
+        mainEntity: faqs.value.map(faq => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer
           }
-        ]
+        }))
       })
     }
   ]
-})
+})))
 
 // Iconos
 const IconShopping = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -377,157 +455,308 @@ const IconRestaurant = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' })
 ])
 
-const sectores = [
+const IconDelivery = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M13 10V3L4 14h7v7l9-11h-7z' })
+])
+
+const IconBuilding = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' })
+])
+
+const IconTruck = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' })
+])
+
+const IconGlobe = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' })
+])
+
+const IconCurrency = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z' })
+])
+
+const sectores = computed(() => [
   {
     icon: IconShopping,
-    title: 'Última Milla Ecommerce',
-    desc: 'Última milla comercio electrónico y tiendas online. Entrega última milla para ecommerce y retail online.',
+    title: t('pages.ultimaMilla.sectors.sector1.title'),
+    desc: t('pages.ultimaMilla.sectors.sector1.description'),
     features: [
-      'Última milla tiendas online',
-      'Última milla retail',
-      'Entrega paquetes ecommerce',
-      'Tracking en tiempo real'
+      t('pages.ultimaMilla.sectors.sector1.feature1'),
+      t('pages.ultimaMilla.sectors.sector1.feature2'),
+      t('pages.ultimaMilla.sectors.sector1.feature3'),
+      t('pages.ultimaMilla.sectors.sector1.feature4')
     ]
   },
   {
     icon: IconFood,
-    title: 'Última Milla Alimentación',
-    desc: 'Última milla supermercados y distribución alimentaria. Entrega de productos frescos y perecederos.',
+    title: t('pages.ultimaMilla.sectors.sector2.title'),
+    desc: t('pages.ultimaMilla.sectors.sector2.description'),
     features: [
-      'Última milla supermercados',
-      'Entrega productos frescos',
-      'Horarios flexibles',
-      'Cadena frío garantizada'
+      t('pages.ultimaMilla.sectors.sector2.feature1'),
+      t('pages.ultimaMilla.sectors.sector2.feature2'),
+      t('pages.ultimaMilla.sectors.sector2.feature3'),
+      t('pages.ultimaMilla.sectors.sector2.feature4')
     ]
   },
   {
     icon: IconRestaurant,
-    title: 'Última Milla Restaurantes',
-    desc: 'Última milla comida a domicilio y delivery. Servicio express para restaurantes y servicios de comida.',
+    title: t('pages.ultimaMilla.sectors.sector3.title'),
+    desc: t('pages.ultimaMilla.sectors.sector3.description'),
     features: [
-      'Última milla comida a domicilio',
-      'Entrega express restaurantes',
-      'Horarios ampliados',
-      'Temperatura controlada'
+      t('pages.ultimaMilla.sectors.sector3.feature1'),
+      t('pages.ultimaMilla.sectors.sector3.feature2'),
+      t('pages.ultimaMilla.sectors.sector3.feature3'),
+      t('pages.ultimaMilla.sectors.sector3.feature4')
     ]
   },
   {
     icon: IconPill,
-    title: 'Última Milla Farmacia',
-    desc: 'Última milla productos farmacéuticos y medicamentos. Entrega urgente y programada para farmacias.',
+    title: t('pages.ultimaMilla.sectors.sector4.title'),
+    desc: t('pages.ultimaMilla.sectors.sector4.description'),
     features: [
-      'Última milla farmacia',
-      'Entrega medicamentos',
-      'Servicio urgente disponible',
-      'Cumplimiento normativo'
+      t('pages.ultimaMilla.sectors.sector4.feature1'),
+      t('pages.ultimaMilla.sectors.sector4.feature2'),
+      t('pages.ultimaMilla.sectors.sector4.feature3'),
+      t('pages.ultimaMilla.sectors.sector4.feature4')
     ]
   },
   {
     icon: IconPackage,
-    title: 'Última Milla Paquetería',
-    desc: 'Última milla paquetes y mensajería. Entrega de envíos y paquetería general.',
+    title: t('pages.ultimaMilla.sectors.sector5.title'),
+    desc: t('pages.ultimaMilla.sectors.sector5.description'),
     features: [
-      'Última milla paquetes',
-      'Mensajería última milla',
-      'Entrega flexible',
-      'Seguimiento completo'
+      t('pages.ultimaMilla.sectors.sector5.feature1'),
+      t('pages.ultimaMilla.sectors.sector5.feature2'),
+      t('pages.ultimaMilla.sectors.sector5.feature3'),
+      t('pages.ultimaMilla.sectors.sector5.feature4')
     ]
   }
-]
+])
 
-const tiposEntrega = [
+const tiposEntrega = computed(() => [
   {
     icon: '⚡',
-    title: 'Última Milla Mismo Día',
-    desc: 'Entrega última milla mismo día para urgencias'
+    title: t('pages.ultimaMilla.deliveryTypes.type1.title'),
+    desc: t('pages.ultimaMilla.deliveryTypes.type1.description')
   },
   {
     icon: '🚀',
-    title: 'Última Milla Express',
-    desc: 'Última milla express y 24 horas disponible'
+    title: t('pages.ultimaMilla.deliveryTypes.type2.title'),
+    desc: t('pages.ultimaMilla.deliveryTypes.type2.description')
   },
   {
     icon: '📅',
-    title: 'Última Milla Programada',
-    desc: 'Última milla programada con horarios flexibles'
+    title: t('pages.ultimaMilla.deliveryTypes.type3.title'),
+    desc: t('pages.ultimaMilla.deliveryTypes.type3.description')
   },
   {
     icon: '🌙',
-    title: 'Última Milla Nocturna',
-    desc: 'Última milla nocturna y entrega tarde disponible'
+    title: t('pages.ultimaMilla.deliveryTypes.type4.title'),
+    desc: t('pages.ultimaMilla.deliveryTypes.type4.description')
   }
-]
+])
 
-const tecnologia = [
+const tecnologia = computed(() => [
   {
     number: '01',
-    title: 'Última Milla Tracking',
-    desc: 'Última milla seguimiento y tracking GPS en tiempo real. Monitoreo completo de cada entrega.'
+    title: t('pages.ultimaMilla.technology.tech1.title'),
+    desc: t('pages.ultimaMilla.technology.tech1.description')
   },
   {
     number: '02',
-    title: 'Última Milla App',
-    desc: 'Última milla digital con app móvil y plataforma web. Gestión completa desde tu dispositivo.'
+    title: t('pages.ultimaMilla.technology.tech2.title'),
+    desc: t('pages.ultimaMilla.technology.tech2.description')
   },
   {
     number: '03',
-    title: 'Última Milla Sistema',
-    desc: 'Última milla plataforma avanzada con integración API. Sistema completo de logística última milla.'
+    title: t('pages.ultimaMilla.technology.tech3.title'),
+    desc: t('pages.ultimaMilla.technology.tech3.description')
   }
-]
+])
 
-const zonas = [
+const zonas = computed(() => [
   {
     icon: '🏙️',
-    title: 'Última Milla Urbana',
-    desc: 'Última milla local en Marbella, Málaga y ciudades principales'
+    title: t('pages.ultimaMilla.zones.zone1.title'),
+    desc: t('pages.ultimaMilla.zones.zone1.description')
   },
   {
     icon: '🌆',
-    title: 'Última Milla Periférica',
-    desc: 'Última milla en zonas periféricas y áreas residenciales'
+    title: t('pages.ultimaMilla.zones.zone2.title'),
+    desc: t('pages.ultimaMilla.zones.zone2.description')
   },
   {
     icon: '🌳',
-    title: 'Última Milla Rural',
-    desc: 'Última milla rural y zonas menos accesibles de la Costa del Sol'
+    title: t('pages.ultimaMilla.zones.zone3.title'),
+    desc: t('pages.ultimaMilla.zones.zone3.description')
   }
-]
+])
 
-const faqs = ref([
+const ecommerceShipping = computed(() => [
   {
-    question: '¿Qué es el servicio de última milla?',
-    answer: 'El servicio de última milla es la fase final de la distribución, desde el almacén o centro de distribución hasta el destino final del cliente. Ofrecemos última milla logística, última milla distribución y entrega última milla para ecommerce, alimentación, farmacia y paquetería en Marbella y Costa del Sol.',
+    icon: IconShopping,
+    title: t('pages.ultimaMilla.ecommerceShipping.service1.title'),
+    desc: t('pages.ultimaMilla.ecommerceShipping.service1.description')
+  },
+  {
+    icon: IconPackage,
+    title: t('pages.ultimaMilla.ecommerceShipping.service2.title'),
+    desc: t('pages.ultimaMilla.ecommerceShipping.service2.description')
+  },
+  {
+    icon: IconDelivery,
+    title: t('pages.ultimaMilla.ecommerceShipping.service3.title'),
+    desc: t('pages.ultimaMilla.ecommerceShipping.service3.description')
+  },
+  {
+    icon: IconGlobe,
+    title: t('pages.ultimaMilla.ecommerceShipping.service4.title'),
+    desc: t('pages.ultimaMilla.ecommerceShipping.service4.description')
+  }
+])
+
+const companies = computed(() => [
+  {
+    icon: IconBuilding,
+    title: t('pages.ultimaMilla.companies.company1.title'),
+    desc: t('pages.ultimaMilla.companies.company1.description')
+  },
+  {
+    icon: IconTruck,
+    title: t('pages.ultimaMilla.companies.company2.title'),
+    desc: t('pages.ultimaMilla.companies.company2.description')
+  },
+  {
+    icon: IconDelivery,
+    title: t('pages.ultimaMilla.companies.company3.title'),
+    desc: t('pages.ultimaMilla.companies.company3.description')
+  },
+  {
+    icon: IconGlobe,
+    title: t('pages.ultimaMilla.companies.company4.title'),
+    desc: t('pages.ultimaMilla.companies.company4.description')
+  }
+])
+
+const pricing = computed(() => [
+  {
+    title: t('pages.ultimaMilla.pricing.price1.title'),
+    desc: t('pages.ultimaMilla.pricing.price1.description')
+  },
+  {
+    title: t('pages.ultimaMilla.pricing.price2.title'),
+    desc: t('pages.ultimaMilla.pricing.price2.description')
+  },
+  {
+    title: t('pages.ultimaMilla.pricing.price3.title'),
+    desc: t('pages.ultimaMilla.pricing.price3.description')
+  }
+])
+
+const concept = computed(() => [
+  {
+    title: t('pages.ultimaMilla.concept.concept1.title'),
+    desc: t('pages.ultimaMilla.concept.concept1.description')
+  },
+  {
+    title: t('pages.ultimaMilla.concept.concept2.title'),
+    desc: t('pages.ultimaMilla.concept.concept2.description')
+  },
+  {
+    title: t('pages.ultimaMilla.concept.concept3.title'),
+    desc: t('pages.ultimaMilla.concept.concept3.description')
+  }
+])
+
+const faqs = computed(() => [
+  {
+    question: t('pages.ultimaMilla.faqs.faq1.question'),
+    answer: t('pages.ultimaMilla.faqs.faq1.answer'),
     open: false
   },
   {
-    question: '¿Cuánto tiempo tarda la entrega última milla?',
-    answer: 'Ofrecemos última milla mismo día, última milla 24 horas y última milla express para entregas urgentes. También disponemos de última milla programada con horarios flexibles, última milla fin de semana y última milla nocturna. El tiempo de entrega última milla depende del tipo de servicio contratado.',
+    question: t('pages.ultimaMilla.faqs.faq2.question'),
+    answer: t('pages.ultimaMilla.faqs.faq2.answer'),
     open: false
   },
   {
-    question: '¿Qué sectores cubre el servicio de última milla?',
-    answer: 'Cubrimos última milla ecommerce y última milla comercio electrónico para tiendas online, última milla alimentación y última milla supermercados, última milla restaurantes y última milla comida a domicilio, última milla farmacia, última milla paquetería y última milla retail.',
+    question: t('pages.ultimaMilla.faqs.faq3.question'),
+    answer: t('pages.ultimaMilla.faqs.faq3.answer'),
     open: false
   },
   {
-    question: '¿Cómo funciona el tracking de última milla?',
-    answer: 'Nuestro servicio de última milla incluye última milla tracking y última milla seguimiento en tiempo real mediante última milla GPS. Disponemos de última milla app y última milla plataforma digital para que puedas seguir tu envío en cada momento. El última milla sistema te notifica cada actualización.',
+    question: t('pages.ultimaMilla.faqs.faq4.question'),
+    answer: t('pages.ultimaMilla.faqs.faq4.answer'),
     open: false
   },
   {
-    question: '¿Cuánto cuesta el servicio de última milla?',
-    answer: 'El precio de última milla varía según la zona (última milla urbana, última milla periférica o última milla rural), tipo de entrega y urgencia. Ofrecemos última milla local en Marbella, última milla Málaga y última milla Costa del Sol. Solicita un presupuesto personalizado sin compromiso.',
+    question: t('pages.ultimaMilla.faqs.faq5.question'),
+    answer: t('pages.ultimaMilla.faqs.faq5.answer'),
     open: false
   },
   {
-    question: '¿Hacen reparto última milla los fines de semana?',
-    answer: 'Sí, ofrecemos última milla fin de semana y última milla flexible con horarios adaptados a tus necesidades. El servicio de reparto última milla está disponible de lunes a domingo según el plan contratado.',
+    question: t('pages.ultimaMilla.faqs.faq6.question'),
+    answer: t('pages.ultimaMilla.faqs.faq6.answer'),
     open: false
   },
   {
-    question: '¿Qué diferencia hay entre última milla y mensajería tradicional?',
-    answer: 'La última milla logística se enfoca en la eficiencia y rapidez de la entrega final, con tecnología avanzada de tracking, rutas optimizadas y flexibilidad horaria. Nuestro servicio de mensajería última milla combina la velocidad del delivery última milla con la profesionalidad del transporte última milla.',
+    question: t('pages.ultimaMilla.faqs.faq7.question'),
+    answer: t('pages.ultimaMilla.faqs.faq7.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq8.question'),
+    answer: t('pages.ultimaMilla.faqs.faq8.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq9.question'),
+    answer: t('pages.ultimaMilla.faqs.faq9.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq10.question'),
+    answer: t('pages.ultimaMilla.faqs.faq10.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq11.question'),
+    answer: t('pages.ultimaMilla.faqs.faq11.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq12.question'),
+    answer: t('pages.ultimaMilla.faqs.faq12.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq13.question'),
+    answer: t('pages.ultimaMilla.faqs.faq13.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq14.question'),
+    answer: t('pages.ultimaMilla.faqs.faq14.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq15.question'),
+    answer: t('pages.ultimaMilla.faqs.faq15.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq16.question'),
+    answer: t('pages.ultimaMilla.faqs.faq16.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq17.question'),
+    answer: t('pages.ultimaMilla.faqs.faq17.answer'),
+    open: false
+  },
+  {
+    question: t('pages.ultimaMilla.faqs.faq18.question'),
+    answer: t('pages.ultimaMilla.faqs.faq18.answer'),
     open: false
   }
 ])

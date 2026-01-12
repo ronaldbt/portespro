@@ -16,15 +16,14 @@
       <div class="hidden md:flex items-center gap-4">
         <!-- Mudanzas Dropdown -->
         <div class="relative group">
-          <NuxtLink 
-            to="/mudanzas"
-            class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1"
+          <button 
+            class="text-sm font-black uppercase tracking-widest text-slate-500 hover:text-teal-600 transition-all relative flex items-center gap-1 cursor-pointer"
           >
             {{ $t('nav.mudanzas') }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
-          </NuxtLink>
+          </button>
           <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100 overflow-hidden z-50">
             <NuxtLink to="/mudanzas/particulares" class="block px-6 py-4 text-sm font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-all">
               {{ $t('nav.mudanzasParticulares') }}
@@ -139,8 +138,23 @@
     >
       <div v-if="isOpen" class="md:hidden bg-white border-b absolute top-full w-full px-6 py-8 shadow-2xl overflow-hidden">
         <div class="flex flex-col gap-4">
-          <NuxtLink to="/mudanzas" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
+          <div class="text-slate-900 font-black text-lg uppercase tracking-tighter mb-2">
             {{ $t('nav.mudanzas') }}
+          </div>
+          <NuxtLink to="/mudanzas/particulares" @click="isOpen = false" class="text-slate-600 font-bold text-base pl-4 hover:text-teal-600 transition-all">
+            {{ $t('nav.mudanzasParticulares') }}
+          </NuxtLink>
+          <NuxtLink to="/mudanzas/empresas" @click="isOpen = false" class="text-slate-600 font-bold text-base pl-4 hover:text-teal-600 transition-all">
+            {{ $t('nav.mudanzasEmpresas') }}
+          </NuxtLink>
+          <NuxtLink to="/mudanzas/oficinas" @click="isOpen = false" class="text-slate-600 font-bold text-base pl-4 hover:text-teal-600 transition-all">
+            {{ $t('nav.mudanzasOficinas') }}
+          </NuxtLink>
+          <NuxtLink to="/mudanzas/internacionales" @click="isOpen = false" class="text-slate-600 font-bold text-base pl-4 hover:text-teal-600 transition-all">
+            {{ $t('nav.mudanzasInternacionales') }}
+          </NuxtLink>
+          <NuxtLink to="/mudanzas/urgentes" @click="isOpen = false" class="text-slate-600 font-bold text-base pl-4 hover:text-teal-600 transition-all mb-2">
+            {{ $t('nav.mudanzasUrgentes') }}
           </NuxtLink>
           <NuxtLink to="/embalajes" @click="isOpen = false" class="text-slate-900 font-black text-lg uppercase tracking-tighter">
             Embalajes

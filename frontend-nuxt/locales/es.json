@@ -25,7 +25,8 @@
     "onlineAssistantTooltip": "¿Necesitas ayuda? Escríbenos por WhatsApp"
   },
   "breadcrumbs": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "ultimaMilla": "Última Milla"
   },
   "nav": {
     "mudanzas": "Mudanzas",
@@ -250,77 +251,240 @@
       }
     },
     "guardamuebles": {
-      "title": "Guardamuebles y Trasteros Marbella",
-      "subtitle": "Guardamuebles barato, económico y seguro en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas.",
-      "description": "Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online. Presupuesto gratis sin compromiso.",
+      "description": "Guardamuebles y trasteros en Marbella desde 35€/mes. Almacenes climatizados, vigilados 24h. Servicio de recogida a domicilio incluido. Acceso online con usuario y contraseña. Calculadora de guardamuebles online. Presupuesto gratis sin compromiso.",
+      "hero": {
+        "badge": "Almacenamiento Seguro y Climatizado",
+        "title": "Guardamuebles y Trasteros cerca de ti en Marbella",
+        "subtitle": "Guardamuebles y trasteros baratos, económicos y seguros en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas. Servicio de recogida a domicilio incluido. Acceso online con usuario y contraseña para verificar tus pertenencias siempre."
+      },
+      "pickupService": {
+        "title": "Servicio de Recogida a Domicilio",
+        "subtitle": "No necesitas transportar tus muebles, nosotros vamos a buscarlos",
+        "feature1": "Recogemos tus muebles y pertenencias en tu domicilio",
+        "feature2": "No necesitas transportarlos, nosotros vamos a buscarlos",
+        "feature3": "Servicio de guardamuebles a domicilio incluido",
+        "feature4": "Trasteros a domicilio para tu comodidad"
+      },
+      "onlinePlatform": {
+        "title": "Plataforma Online de Gestión",
+        "subtitle": "Accede a tu guardamuebles desde cualquier dispositivo",
+        "feature1": "Acceso online 24/7 con usuario y contraseña",
+        "feature2": "Verifica siempre qué tienes guardado",
+        "feature3": "Consulta tu inventario desde cualquier dispositivo",
+        "feature4": "Gestión completa de tu guardamuebles online"
+      },
       "sizes": {
-        "title": "Tamaños Disponibles",
-        "subtitle": "Encuentra el almacén perfecto para tus necesidades",
+        "title": "Guardamuebles y Trasteros por Tamaño",
+        "subtitle": "Desde trasteros pequeños hasta guardamuebles extra grandes. Elige el tamaño perfecto para tus necesidades",
         "size1": {
-          "title": "Guardamuebles Pequeño",
-          "description": "Ideal para guardamuebles mini. Perfecto para objetos personales y cajas pequeñas.",
-          "price": "Desde 45€"
+          "metros": "1-2m²",
+          "title": "Mini Trastero",
+          "description": "Ideal para mini almacenes y trasteros pequeños. Perfecto para objetos personales y cajas pequeñas.",
+          "price": "Desde 35€"
         },
         "size2": {
-          "title": "Guardamuebles Mediano",
-          "description": "Ideal para guardamuebles estándar. Perfecto para mudanzas temporales y almacenamiento a medio plazo.",
-          "price": "Desde 60€"
+          "metros": "3-4m²",
+          "title": "Trastero Pequeño",
+          "description": "Trastero pequeño perfecto para el contenido de un estudio. Ideal para mini almacenes.",
+          "price": "Desde 45€"
         },
         "size3": {
-          "title": "Guardamuebles Grande",
-          "description": "Ideal para guardamuebles completo. Perfecto para mudanzas grandes y almacenamiento a largo plazo.",
-          "price": "Desde 90€"
+          "metros": "5-6m²",
+          "title": "Guardamuebles Pequeño",
+          "description": "Guardamuebles pequeño ideal para apartamentos pequeños. Trastero 5 metros cuadrados disponible.",
+          "price": "Desde 60€"
         },
         "size4": {
+          "metros": "8-10m²",
+          "title": "Guardamuebles Mediano",
+          "description": "Guardamuebles mediano ideal para pisos de 2-3 habitaciones. Trastero 10m2 disponible.",
+          "price": "Desde 85€"
+        },
+        "size5": {
+          "metros": "15m²",
+          "title": "Guardamuebles Grande",
+          "description": "Guardamuebles grande perfecto para el contenido de un piso completo de 2-3 habitaciones.",
+          "price": "Desde 120€"
+        },
+        "size6": {
+          "metros": "20m²+",
           "title": "Guardamuebles Extra Grande",
-          "description": "Ideal para guardamuebles industrial. Perfecto para empresas y almacenamiento masivo.",
-          "price": "Desde 150€"
+          "description": "Guardamuebles extra grande para casas, chalets o almacenamiento de negocios. Trastero 20m2 disponible.",
+          "price": "Desde 180€"
         }
+      },
+      "types": {
+        "title": "Tipos de Guardamuebles y Trasteros",
+        "subtitle": "Encuentra el tipo de almacenamiento perfecto para tus necesidades",
+        "type1": {
+          "title": "Mini Almacenes",
+          "description": "Mini almacenes y mini trasteros para almacenamiento compacto y económico."
+        },
+        "type2": {
+          "title": "Trasteros Particulares",
+          "description": "Trasteros particulares ideales para uso doméstico y personal."
+        },
+        "type3": {
+          "title": "Trasteros para Empresas",
+          "description": "Trasteros para empresas y almacenamiento comercial con acceso flexible."
+        },
+        "type4": {
+          "title": "Trasteros Modulares",
+          "description": "Trasteros modulares que se adaptan a tus necesidades cambiantes."
+        },
+        "type5": {
+          "title": "Trasteros Self Storage",
+          "description": "Trasteros self storage con acceso independiente y gestión personal."
+        }
+      },
+      "pricing": {
+        "title": "Precios y Tarifas de Guardamuebles",
+        "subtitle": "Guardamuebles y trasteros precios transparentes. Precio guardamuebles mes desde 35€",
+        "info1": "Precio guardamuebles mes desde 35€",
+        "info2": "Precio trastero metro cuadrado competitivo",
+        "info3": "Tarifas guardamuebles flexibles según duración",
+        "info4": "Descuentos por contratos de largo plazo"
       },
       "features": {
-        "title": "Características",
+        "title": "Características de Nuestros Guardamuebles y Trasteros",
+        "subtitle": "Guardamuebles y trasteros seguro, vigilado y climatizado para la máxima protección de tus pertenencias",
         "feature1": {
-          "title": "Climatización",
-          "description": "Almacenes climatizados con temperatura y humedad controladas."
+          "title": "Guardamuebles Climatizado",
+          "description": "Guardamuebles con aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad."
         },
         "feature2": {
-          "title": "Seguridad 24/7",
-          "description": "Vigilancia 24 horas, alarmas y cámaras de seguridad."
+          "title": "Guardamuebles Seguro",
+          "description": "Guardamuebles vigilado con seguridad 24 horas, alarma y cámaras de vigilancia para máxima protección."
         },
         "feature3": {
-          "title": "Acceso Fácil",
-          "description": "Acceso fácil y cómodo a tus pertenencias cuando lo necesites."
+          "title": "Trasteros 24 Horas",
+          "description": "Trasteros 24 horas con acceso fácil y horarios flexibles. Acceso disponible cuando lo necesites."
         },
         "feature4": {
-          "title": "Seguro Incluido",
-          "description": "Seguro completo incluido para proteger tus objetos almacenados."
+          "title": "Trasteros Económicos",
+          "description": "Trasteros económicos y guardamuebles barato con las mejores tarifas del mercado."
+        },
+        "feature5": {
+          "title": "Temporal o Largo Plazo",
+          "description": "Guardamuebles temporal para reformas o guardamuebles largo plazo. Flexibilidad total en contratos."
+        },
+        "feature6": {
+          "title": "Guardamuebles Interior",
+          "description": "Guardamuebles cubierto e interior. Protección total contra elementos externos y condiciones climáticas."
         }
       },
+      "useCases": {
+        "title": "Guardamuebles y Trasteros Temporal y de Largo Plazo",
+        "subtitle": "Perfecto para mudanzas, reformas, obras o almacenamiento temporal. Guardamuebles y trasteros en Marbella.",
+        "case1": {
+          "title": "Guardamuebles Mudanza",
+          "description": "Guardamuebles mientras mudanza. Almacenamiento temporal durante el proceso de traslado. Guardamuebles con mudanza incluido disponible."
+        },
+        "case2": {
+          "title": "Guardamuebles Reforma",
+          "description": "Guardamuebles reforma y obras. Protege tus muebles durante las obras de renovación."
+        },
+        "case3": {
+          "title": "Guardamuebles por Días",
+          "description": "Trasteros por días para almacenamiento temporal corto. Perfecto para necesidades puntuales."
+        },
+        "case4": {
+          "title": "Guardamuebles Verano",
+          "description": "Guardamuebles verano e invierno. Almacenamiento estacional para temporadas vacacionales."
+        }
+      },
+      "zones": {
+        "title": "Zonas donde Ofrecemos Guardamuebles y Trasteros",
+        "subtitle": "Trasteros cerca de ti en toda la Costa del Sol",
+        "zone1": "Marbella",
+        "zone2": "Málaga",
+        "zone3": "Costa del Sol",
+        "zone4": "Estepona",
+        "zone5": "Fuengirola",
+        "zone6": "Torremolinos",
+        "zone7": "Benalmádena",
+        "zone8": "Mijas"
+      },
+      "cta": {
+        "title": "Alquila tu Guardamuebles o Trastero Ahora",
+        "subtitle": "Guardamuebles y trasteros Marbella, Málaga y Costa del Sol. Guardamuebles con mudanza incluido disponible. Trasteros para alquilar desde 35€/mes.",
+        "button1": "Alquilar Trastero",
+        "button2": "Solicitar Presupuesto"
+      },
       "faqs": {
-        "title": "Preguntas Frecuentes",
+        "title": "Preguntas Frecuentes sobre Guardamuebles y Trasteros",
+        "subtitle": "Resolvemos tus dudas sobre guardamuebles y trasteros en Marbella, Málaga y Costa del Sol",
         "faq1": {
-          "question": "¿Cuánto cuesta el guardamuebles?",
-          "answer": "El precio del guardamuebles varía según el tamaño y la duración del almacenamiento. Ofrecemos guardamuebles desde 45€/mes con descuentos por contratos de larga duración."
+          "question": "¿Cuánto cuesta alquilar un trastero?",
+          "answer": "El precio de alquilar trastero varía según el tamaño. Mini trasteros desde 35€/mes, trasteros pequeños desde 45€/mes, guardamuebles mediano desde 85€/mes. Ofrecemos trasteros baratos y guardamuebles económico con diferentes opciones de pago. El precio mensual incluye el alquiler del espacio."
         },
         "faq2": {
-          "question": "¿Los almacenes están climatizados?",
-          "answer": "Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad."
+          "question": "¿Cuál es el precio del trastero por metro cuadrado?",
+          "answer": "El precio trastero metro cuadrado varía según el tamaño total. Para trasteros pequeños (1-4m²) el precio es aproximadamente 10-12€/m²/mes. Para guardamuebles medianos (5-10m²) el precio es aproximadamente 8-10€/m²/mes. Para guardamuebles grandes (15m²+) el precio es aproximadamente 6-8€/m²/mes."
         },
         "faq3": {
-          "question": "¿Qué seguridad tienen los guardamuebles y trasteros?",
-          "answer": "Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado."
+          "question": "¿Ofrecen servicio de guardamuebles a domicilio?",
+          "answer": "Sí, ofrecemos servicio de guardamuebles a domicilio. Recogemos tus muebles y pertenencias en tu domicilio, no necesitas transportarlos. Nuestro equipo acude a tu casa con el vehículo adecuado y realiza la recogida completa. Trasteros a domicilio incluido en el servicio."
         },
         "faq4": {
-          "question": "¿Puedo acceder a mis objetos cuando quiera?",
-          "answer": "Sí, nuestros guardamuebles y trasteros ofrecen acceso 24 horas, 7 días a la semana para que puedas acceder a tus pertenencias cuando lo necesites."
+          "question": "¿Puedo verificar mis pertenencias online?",
+          "answer": "Sí, con nuestro servicio de guardamuebles online puedes acceder a tu cuenta con usuario y contraseña para verificar siempre qué tienes guardado. La plataforma online de guardamuebles te permite consultar tu inventario desde cualquier dispositivo, las 24 horas del día."
         },
         "faq5": {
-          "question": "¿Incluyen seguro los guardamuebles?",
-          "answer": "Sí, todos nuestros guardamuebles y trasteros incluyen seguro completo para proteger tus objetos almacenados durante el período de almacenamiento."
+          "question": "¿Cómo funciona la plataforma online de guardamuebles?",
+          "answer": "Nuestra plataforma online de guardamuebles te permite acceder con usuario y contraseña para gestionar tu guardamuebles. Puedes verificar tu inventario, consultar tus pertenencias, ver el estado de tu almacén y gestionar tu cuenta. Acceso online 24/7 desde cualquier dispositivo."
         },
         "faq6": {
-          "question": "¿Cuál es el tamaño mínimo de contratación?",
-          "answer": "El tamaño mínimo de contratación es de 2m³, aunque recomendamos un mínimo de 3m³ para mayor comodidad y aprovechamiento del espacio."
+          "question": "¿Qué es un mini almacén o mini trastero?",
+          "answer": "Un mini almacén o mini trastero es un espacio de almacenamiento pequeño, ideal para objetos personales, cajas pequeñas o pertenencias que no ocupan mucho espacio. Nuestros mini almacenes van desde 1-2m² y son perfectos para almacenamiento compacto y económico."
+        },
+        "faq7": {
+          "question": "¿Ofrecen trasteros para empresas?",
+          "answer": "Sí, ofrecemos trasteros para empresas y almacenamiento comercial. Nuestros trasteros para empresas incluyen acceso flexible, espacios modulares y gestión online. Perfecto para empresas que necesitan almacenamiento temporal o permanente de archivos, material de oficina o productos."
+        },
+        "faq8": {
+          "question": "¿Puedo alquilar un trastero por días?",
+          "answer": "Sí, ofrecemos trasteros por días para almacenamiento temporal corto. Perfecto si necesitas un trastero temporal para unos días o semanas. Los trasteros por días tienen tarifas flexibles y puedes contratarlos por el tiempo que necesites."
+        },
+        "faq9": {
+          "question": "¿Qué diferencia hay entre trasteros particulares y para empresas?",
+          "answer": "Los trasteros particulares están diseñados para uso doméstico y personal, mientras que los trasteros para empresas ofrecen características adicionales como acceso flexible, gestión online avanzada y espacios modulares. Ambos tipos incluyen las mismas garantías de seguridad y climatización."
+        },
+        "faq10": {
+          "question": "¿Los trasteros son modulares o prefabricados?",
+          "answer": "Ofrecemos trasteros modulares que se adaptan a tus necesidades cambiantes. Los trasteros modulares te permiten ampliar o reducir el espacio según necesites, mientras que también tenemos opciones de trasteros prefabricados para necesidades específicas."
+        },
+        "faq11": {
+          "question": "¿Ofrecen trasteros self storage?",
+          "answer": "Sí, ofrecemos trasteros self storage con acceso independiente y gestión personal. Los trasteros self storage te permiten acceder a tu espacio cuando lo necesites, con tu propia llave y control total sobre tu almacenamiento."
+        },
+        "faq12": {
+          "question": "¿Necesito un trastero, cómo puedo contratarlo?",
+          "answer": "Si necesitas un trastero, puedes contratarlo fácilmente. Utiliza nuestra calculadora online para obtener un presupuesto, o contacta con nosotros para una consulta personalizada. Ofrecemos trasteros para alquilar desde 35€/mes con diferentes tamaños disponibles."
+        },
+        "faq13": {
+          "question": "¿Cuáles son las tarifas de guardamuebles?",
+          "answer": "Las tarifas guardamuebles varían según el tamaño y duración. Mini trasteros desde 35€/mes, guardamuebles pequeño desde 60€/mes, guardamuebles mediano desde 85€/mes, guardamuebles grande desde 120€/mes. Ofrecemos descuentos por contratos de largo plazo. Las tarifas trasteros son competitivas y transparentes."
+        },
+        "faq14": {
+          "question": "¿El servicio incluye recogida a domicilio?",
+          "answer": "Sí, nuestro servicio de guardamuebles incluye recogida a domicilio. No necesitas transportar tus muebles, nuestro equipo acude a tu domicilio con el vehículo adecuado y realiza la recogida completa. Servicio de guardamuebles a domicilio incluido sin coste adicional."
+        },
+        "faq15": {
+          "question": "¿Puedo acceder a mi guardamuebles online las 24 horas?",
+          "answer": "Sí, con nuestro servicio de guardamuebles online puedes acceder a tu cuenta las 24 horas del día, 7 días a la semana. Con usuario y contraseña puedes verificar tu inventario, consultar tus pertenencias y gestionar tu guardamuebles desde cualquier dispositivo con conexión a internet."
+        },
+        "faq16": {
+          "question": "¿Los guardamuebles y trasteros están climatizados?",
+          "answer": "Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad. El guardamuebles temperatura controlada es ideal para objetos sensibles como muebles de madera fina, obras de arte o documentos importantes."
+        },
+        "faq17": {
+          "question": "¿Qué seguridad tienen los guardamuebles y trasteros?",
+          "answer": "Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado. El guardamuebles vigilado y guardamuebles con seguridad garantizan la máxima protección de tus pertenencias. También ofrecemos seguro de contenido opcional para mayor tranquilidad."
+        },
+        "faq18": {
+          "question": "¿Puedo acceder a mi guardamuebles o trastero 24 horas?",
+          "answer": "Sí, ofrecemos guardamuebles y trasteros 24 horas con acceso fácil según el plan elegido. El guardamuebles acceso está disponible en diferentes horarios según tus necesidades. Algunos planes incluyen acceso ilimitado, mientras que otros tienen horarios específicos."
         }
       }
     },
@@ -515,405 +679,1058 @@
       }
     },
     "transporteFrio": {
-      "title": "Transporte en Frío Marbella",
-      "subtitle": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.",
-      "description": "Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperaturas controladas. Tracking en tiempo real. Presupuesto gratis sin compromiso.",
+      "hero": {
+        "badge": "Logística Refrigerada y Cadena de Frío",
+        "title": "Transporte en Frío y Refrigerado",
+        "subtitle": "Empresa de transporte en frío en Marbella, Málaga y Costa del Sol. Transporte refrigerado, transporte frigorífico y logística de cadena frío. Transporte con temperatura controlada garantizada. Transporte de frios y congelados, transporte de alimentos frios y transporte de carga fria."
+      },
+      "vehicleTypes": {
+        "title": "Vehículos y Equipamiento de Transporte Frío",
+        "subtitle": "Flota especializada en transporte frío con vehículos isotermos y contenedores para mantener frío",
+        "vehicle1": {
+          "title": "Camión Isotermo con Frío",
+          "description": "Camiones isotermos con frío para transporte refrigerado y transporte con temperatura controlada. Equipados con sistemas de frío para camión."
+        },
+        "vehicle2": {
+          "title": "Camión Frío Congelación",
+          "description": "Camiones frío congelación para transporte de frios y congelados. Transporte ultracongelado a -18°C garantizado."
+        },
+        "vehicle3": {
+          "title": "Camión con Frío para Reparto",
+          "description": "Vehículos con frío para reparto refrigerado. Camión con frío para reparto local y distribución frío en Marbella y Costa del Sol."
+        },
+        "vehicle4": {
+          "title": "Contenedores para Mantener Frío",
+          "description": "Contenedores para mantener frío durante el transporte. Equipamiento especializado para cadena de frio transporte."
+        }
+      },
+      "specializedServices": {
+        "title": "Servicios Especializados de Transporte Frío",
+        "subtitle": "Mensajería en frío, envío de paquetes fríos y transporte frío express para particulares y empresas",
+        "service1": {
+          "title": "Mensajería en Frío",
+          "description": "Servicio de mensajería en frío y mensajería frío para envíos urgentes con temperatura controlada."
+        },
+        "service2": {
+          "title": "Envío de Paquetes Fríos",
+          "description": "Envío de paquetes fríos y envio paquete frio con cadena frío garantizada. Envíos a temperatura controlada."
+        },
+        "service3": {
+          "title": "Transporte Frío Particulares",
+          "description": "Transporte frío particulares para particulares que necesitan transportar productos en frío. Precio transporte frío competitivo."
+        },
+        "service4": {
+          "title": "Transporte Frío Express",
+          "description": "Transporte frío express para entregas urgentes. Transporte frio express con cadena frío garantizada."
+        }
+      },
       "temperatures": {
-        "title": "Rangos de Temperatura",
+        "title": "Transporte por Temperatura Controlada",
+        "subtitle": "Transporte con temperatura controlada para diferentes rangos según tus necesidades",
         "range1": {
-          "title": "Congelación",
-          "description": "Transporte a -18°C para productos congelados y helados.",
+          "title": "Transporte Congelación",
+          "description": "Transporte a -18°C para productos congelados y helados. Transporte de frios y congelados garantizado.",
           "temperature": "-18°C"
         },
         "range2": {
-          "title": "Refrigerado",
-          "description": "Transporte entre 2°C y 8°C para productos frescos y refrigerados.",
-          "temperature": "2°C - 8°C"
+          "title": "Transporte Refrigerado",
+          "description": "Transporte entre 0-4°C para productos frescos y refrigerados. Transporte refrigerado estándar.",
+          "temperature": "0-4°C"
         },
         "range3": {
-          "title": "Farmacéutico",
-          "description": "Transporte farmacéutico con control estricto de temperatura según normativa.",
+          "title": "Transporte Farmacéutico",
+          "description": "Transporte entre 2°C y 8°C para productos farmacéuticos. Transporte con temperatura controlada según normativa.",
           "temperature": "2°C - 8°C"
         }
       },
       "products": {
-        "title": "Productos que Transportamos",
+        "title": "Transporte Frío por Tipo de Producto",
+        "subtitle": "Especialistas en transporte de alimentos frios, productos farmacéuticos y perecederos",
         "product1": {
-          "title": "Alimentos",
-          "description": "Productos alimentarios frescos, congelados y refrigerados."
+          "title": "Transporte de Alimentos Frios",
+          "description": "Transporte de alimentos frios y productos frescos. Transporte refrigerado para supermercados y restaurantes."
         },
         "product2": {
-          "title": "Farmacéuticos",
-          "description": "Medicamentos, vacunas y productos farmacéuticos que requieren cadena frío."
+          "title": "Transporte de Carga Fria",
+          "description": "Transporte de carga fria y transporte carga fria para empresas. Logística frío completa."
         },
         "product3": {
-          "title": "Perecederos",
-          "description": "Fruta, verdura, pescado, carne y otros productos perecederos."
+          "title": "Transporte Frío Farmacéutico",
+          "description": "Transporte frío productos farmacéuticos y medicamentos. Cadena frío garantizada según normativa."
         },
         "product4": {
-          "title": "Flores",
-          "description": "Transporte refrigerado de flores y plantas para mantener su frescura."
+          "title": "Transporte Frío Perecederos",
+          "description": "Transporte de productos perecederos con cadena frío. Fruta, verdura, pescado y carne fresca."
+        },
+        "product5": {
+          "title": "Transporte Frío Flores",
+          "description": "Transporte refrigerado de flores y plantas. Temperatura controlada para mantener frescura."
+        },
+        "product6": {
+          "title": "Transporte Frío Bebidas",
+          "description": "Transporte bebidas y productos líquidos refrigerados. Logística especializada en transporte frío."
         }
       },
+      "services": {
+        "title": "Servicios de Transporte Frío",
+        "subtitle": "Empresa transporte frío con servicios completos de logística frío y cadena de frio transporte",
+        "service1": {
+          "title": "Transporte Refrigerado",
+          "description": "Servicio de transporte frío con vehículos frigoríficos y temperatura controlada",
+          "feature1": "Vehículos frigoríficos certificados",
+          "feature2": "Temperatura controlada en tiempo real",
+          "feature3": "Monitoreo GPS y temperatura",
+          "feature4": "Cadena frío garantizada"
+        },
+        "service2": {
+          "title": "Almacenaje Frío",
+          "description": "Cámaras frío y almacenaje refrigerado para productos perecederos",
+          "feature1": "Cámaras refrigeración",
+          "feature2": "Almacenaje refrigerado",
+          "feature3": "Control de temperatura 24/7",
+          "feature4": "Distribución frío incluida"
+        },
+        "service3": {
+          "title": "Transporte Cadena de Frío",
+          "description": "Transporte cadena de frio con garantía completa. Cadena de frio transporte certificada.",
+          "feature1": "Cadena frío garantizada",
+          "feature2": "Control continuo de temperatura",
+          "feature3": "Documentación completa",
+          "feature4": "Certificación de cadena frío"
+        },
+        "service4": {
+          "title": "Envíos a Temperatura Controlada",
+          "description": "Envíos a temperatura controlada y envios temperatura controlada para cualquier tipo de producto",
+          "feature1": "Temperatura controlada garantizada",
+          "feature2": "Envíos nacionales e internacionales",
+          "feature3": "Tracking en tiempo real",
+          "feature4": "Documentación completa"
+        }
+      },
+      "companies": {
+        "title": "Empresas de Transporte en Frío",
+        "subtitle": "Somos una empresa transporte frío especializada en transporte con cadena de frío y temperatura controlada",
+        "info1": "Empresa transporte frío certificada",
+        "info2": "Empresas de transporte en frio con experiencia",
+        "info3": "Empresas de transporte con cadena de frío",
+        "info4": "Empresas de transporte temperatura controlada",
+        "info5": "Empresas logistica frio especializada"
+      },
       "coverage": {
-        "title": "Cobertura",
+        "title": "Cobertura de Transporte Frío",
+        "subtitle": "Transporte frío local, provincial, interprovincial, transporte frio nacional e internacional",
         "coverage1": {
-          "title": "Local",
-          "description": "Transporte en frío en Marbella y alrededores."
+          "title": "Transporte Frío Local",
+          "description": "Transporte en frío en Marbella, Málaga y Costa del Sol."
         },
         "coverage2": {
-          "title": "Provincial",
+          "title": "Transporte Frío Provincial",
           "description": "Transporte en frío en toda la provincia de Málaga."
         },
         "coverage3": {
-          "title": "Nacional",
-          "description": "Transporte en frío en toda España con cadena frío garantizada."
+          "title": "Transporte Frío Nacional",
+          "description": "Transporte frio nacional en toda España con cadena frío garantizada."
+        },
+        "coverage4": {
+          "title": "Transporte Frío Internacional",
+          "description": "Transporte frio internacional para Europa y Unión Europea con documentación completa."
         }
       },
+      "cta": {
+        "title": "¿Necesitas Transporte Refrigerado o Transporte en Frío?",
+        "subtitle": "Empresa transporte frío en Marbella, Málaga y Costa del Sol. Transporte refrigerado profesional con cadena frío garantizada. Precio transporte frío competitivo. Presupuesto gratis.",
+        "button1": "Solicitar Transporte Frío",
+        "button2": "Presupuesto Gratis"
+      },
       "faqs": {
-        "title": "Preguntas Frecuentes",
+        "title": "Preguntas Frecuentes sobre Transporte en Frío",
+        "subtitle": "Resolvemos tus dudas sobre transporte refrigerado, cadena frío, mensajería en frío y logística frío",
         "faq1": {
-          "question": "¿Qué temperaturas manejan para el transporte en frío?",
-          "answer": "Manejamos diferentes rangos de temperatura según el producto: congelación a -18°C, refrigerado entre 2°C y 8°C, y temperatura controlada para productos farmacéuticos según normativa."
+          "question": "¿Qué temperatura mantiene el transporte en frío?",
+          "answer": "Nuestro servicio de transporte en frío mantiene diferentes rangos de temperatura según el producto: transporte congelado a -18°C para congelados, transporte refrigerado a 0-4°C para productos frescos, y transporte temperatura controlada a 2-8°C para productos farmacéuticos. El transporte cadena frío está garantizado durante todo el trayecto."
         },
         "faq2": {
           "question": "¿Cuánto cuesta el transporte en frío?",
-          "answer": "El precio del transporte en frío varía según la distancia, el rango de temperatura requerido y el tipo de producto. Solicita un presupuesto personalizado sin compromiso con nuestra calculadora online."
+          "answer": "El precio del transporte en frío varía según la distancia, temperatura requerida y tipo de producto. Ofrecemos transporte frío local en Marbella y Málaga, transporte frío provincial en Costa del Sol, transporte frío interprovincial y transporte frio nacional. El precio transporte frío es competitivo. Solicita un presupuesto personalizado sin compromiso."
         },
         "faq3": {
-          "question": "¿Tienen vehículos refrigerados?",
-          "answer": "Sí, contamos con una flota de vehículos refrigerados equipados con sistemas de control de temperatura para garantizar la cadena frío en todo momento."
+          "question": "¿Qué productos pueden transportarse en frío?",
+          "answer": "Transportamos productos perecederos como alimentos frescos, pescado, carne, lácteos, frutas y verduras. También ofrecemos transporte frío para productos farmacéuticos, medicamentos, flores, bebidas y helados. El transporte refrigerado es ideal para cualquier producto que requiera cadena frío. Transportamos transporte de frios y congelados, transporte de alimentos frios y transporte de carga fria."
         },
         "faq4": {
-          "question": "¿Pueden transportar productos farmacéuticos?",
-          "answer": "Sí, ofrecemos transporte farmacéutico especializado con control estricto de temperatura según normativa vigente y seguimiento completo del proceso."
+          "question": "¿Cómo garantizan la cadena de frío?",
+          "answer": "Garantizamos la cadena frío con vehículos frigoríficos equipados con sistemas de temperatura controlada, monitoreo en tiempo real y registro de temperatura. El transporte cadena frío está certificado y cumple con todas las normativas de seguridad alimentaria y farmacéutica. Nuestro servicio de cadena de frio transporte garantiza la temperatura durante todo el proceso."
         },
         "faq5": {
-          "question": "¿Ofrecen tracking en tiempo real?",
-          "answer": "Sí, todos nuestros transportes en frío incluyen tracking en tiempo real para que puedas conocer la ubicación y temperatura de tu envío en todo momento."
+          "question": "¿Hacen transporte en frío internacional?",
+          "answer": "Sí, ofrecemos transporte frio internacional para productos que requieren cadena frío. El transporte refrigerado internacional incluye documentación aduanera, certificados sanitarios y seguimiento completo. Cubrimos rutas internacionales con garantía de temperatura controlada."
         },
         "faq6": {
-          "question": "¿Qué garantizan para la cadena frío?",
-          "answer": "Garantizamos el mantenimiento de la cadena frío durante todo el transporte con controles de temperatura continuos, vehículos refrigerados certificados y seguimiento documentado del proceso."
+          "question": "¿Qué diferencia hay entre transporte frío y transporte refrigerado?",
+          "answer": "El transporte frío generalmente se refiere a temperaturas bajo cero (congelación), mientras que el transporte refrigerado mantiene temperaturas positivas (0-4°C). Ambos servicios garantizan la cadena frío y están disponibles según las necesidades de tu producto."
+        },
+        "faq7": {
+          "question": "¿Ofrecen mensajería en frío?",
+          "answer": "Sí, ofrecemos servicio de mensajería en frío y mensajería frío para envíos urgentes con temperatura controlada. Nuestro servicio de mensajería en frío garantiza la cadena frío durante todo el trayecto."
+        },
+        "faq8": {
+          "question": "¿Puedo enviar paquetes fríos?",
+          "answer": "Sí, ofrecemos envío de paquetes fríos y envio paquete frio con cadena frío garantizada. Nuestro servicio de envío de paquetes fríos incluye temperatura controlada y tracking en tiempo real."
+        },
+        "faq9": {
+          "question": "¿Ofrecen transporte frío para particulares?",
+          "answer": "Sí, ofrecemos transporte frío particulares para particulares que necesitan transportar productos en frío. El precio transporte frío para particulares es competitivo y adaptado a tus necesidades."
+        },
+        "faq10": {
+          "question": "¿Qué tipos de vehículos utilizan para transporte frío?",
+          "answer": "Utilizamos camión isotermo con frío, camión frío congelación, camión con frío para reparto y contenedores para mantener frío. Nuestra flota está equipada con sistemas de frío para camión y garantiza la cadena frío durante todo el transporte."
+        },
+        "faq11": {
+          "question": "¿Son una empresa de transporte en frío certificada?",
+          "answer": "Sí, somos una empresa transporte frío certificada especializada en transporte con cadena de frío. Como empresas de transporte en frio, cumplimos con todas las normativas de seguridad alimentaria y farmacéutica. Somos empresas de transporte con cadena de frío y empresas de transporte temperatura controlada."
+        },
+        "faq12": {
+          "question": "¿Ofrecen transporte frío express?",
+          "answer": "Sí, ofrecemos transporte frío express para entregas urgentes. El transporte frio express garantiza la cadena frío con entrega rápida y temperatura controlada."
+        },
+        "faq13": {
+          "question": "¿Qué es el transporte cadena de frío?",
+          "answer": "El transporte cadena de frio es el proceso de mantener productos a temperatura controlada durante todo el transporte. Nuestro servicio de cadena de frio transporte garantiza que los productos mantengan su temperatura desde el origen hasta el destino."
+        },
+        "faq14": {
+          "question": "¿Transportan carga fría?",
+          "answer": "Sí, ofrecemos transporte de carga fria y transporte carga fria para empresas. Nuestro servicio de transporte de carga fria incluye vehículos especializados y cadena frío garantizada."
+        },
+        "faq15": {
+          "question": "¿Qué significa transporte con temperatura controlada?",
+          "answer": "El transporte con temperatura controlada es un servicio que mantiene productos a una temperatura específica durante todo el transporte. Ofrecemos transporte con temperatura controlada y transporte de temperatura controlada para diferentes rangos según el producto."
+        },
+        "faq16": {
+          "question": "¿Ofrecen envíos a temperatura controlada?",
+          "answer": "Sí, ofrecemos envíos a temperatura controlada y envios temperatura controlada para cualquier tipo de producto. Nuestro servicio garantiza la temperatura durante todo el proceso de envío."
+        },
+        "faq17": {
+          "question": "¿Qué servicios de logística frío ofrecen?",
+          "answer": "Como empresas logistica frio, ofrecemos transporte refrigerado, almacenaje frío, distribución frío y reparto refrigerado. Nuestro servicio completo de logística frío incluye cadena frío garantizada y temperatura controlada."
+        },
+        "faq18": {
+          "question": "¿Transportan productos congelados?",
+          "answer": "Sí, ofrecemos transporte de frios y congelados con temperatura de -18°C garantizada. Nuestro servicio de transporte de frios y congelados utiliza camión frío congelación y garantiza la cadena frío durante todo el proceso."
         }
+      },
+      "seo": {
+        "title": "Transporte en Frío Marbella | Empresa Transporte Frío | Cadena Frío Garantizada | PortesPro",
+        "description": "Empresa de transporte en frío en Marbella, Málaga y Costa del Sol. Transporte refrigerado, transporte frigorífico y logística de cadena frío. Transporte con temperatura controlada. Transporte de frios y congelados, transporte de alimentos frios. Precio transporte frío competitivo. Presupuesto gratis.",
+        "keywords": "transporte en frio, transporte frio, transporte refrigerado, cadena frío, transporte frigorífico, transporte temperatura controlada, transporte alimentos, transporte farmacéutico, logística frío, transporte frío local, transporte frío provincial, transporte frio nacional, transporte frio internacional, transporte de frios y congelados, transporte frío particulares, envios temperatura controlada, transporte frío precio, envio paquete frio, empresas de transporte en frio, cadena de frio transporte, camion frio congelacion, camion isotermo con frio, camión con frio para reparto, contenedores para mantener frio, empresa transporte frio, empresas de transporte con cadena de frío, empresas de transporte temperatura controlada, empresas logistica frio, envio de paquetes frios, envios a temperatura controlada, mensajeria en frio, mensajeria frio, precio transporte frio, transporte cadena de frio, transporte carga fria, transporte con temperatura controlada, transporte de alimentos frios, transporte de carga fria, transporte de temperatura controlada, transporte frio express, transporte frios, transportes refrigerados"
       }
     },
     "ultimaMilla": {
-      "title": "Última Milla Logística Marbella",
-      "subtitle": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h.",
-      "description": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Última milla ecommerce, alimentación y farmacia. Tracking en tiempo real. Servicio última milla profesional.",
+      "hero": {
+        "badge": "Logística de Última Milla y Entrega Final",
+        "title": "Última Milla",
+        "subtitle": "Servicio última milla, logística última milla y distribución última milla en Marbella, Málaga y Costa del Sol. Entrega última milla express y mismo día. Envíos para ecommerce, tiendas online y paquetería ecommerce."
+      },
       "sectors": {
-        "title": "Sectores",
+        "title": "Última Milla por Sector",
+        "subtitle": "Especialistas en última milla para ecommerce, alimentación, farmacia y más sectores",
         "sector1": {
-          "title": "Ecommerce",
-          "description": "Entrega última milla para tiendas online y marketplaces."
+          "title": "Última Milla Ecommerce",
+          "description": "Última milla comercio electrónico y tiendas online. Entrega última milla para ecommerce y retail online. Envíos para tiendas online y envios para ecommerce.",
+          "feature1": "Última milla tiendas online",
+          "feature2": "Última milla retail",
+          "feature3": "Entrega paquetes ecommerce",
+          "feature4": "Tracking en tiempo real"
         },
         "sector2": {
-          "title": "Alimentación",
-          "description": "Entrega última milla para supermercados y tiendas de alimentación."
+          "title": "Última Milla Alimentación",
+          "description": "Última milla supermercados y distribución alimentaria. Entrega de productos frescos y perecederos.",
+          "feature1": "Última milla supermercados",
+          "feature2": "Entrega productos frescos",
+          "feature3": "Horarios flexibles",
+          "feature4": "Cadena frío garantizada"
         },
         "sector3": {
-          "title": "Farmacia",
-          "description": "Entrega última milla para farmacias y productos farmacéuticos."
+          "title": "Última Milla Restaurantes",
+          "description": "Última milla comida a domicilio y delivery. Servicio express para restaurantes y servicios de comida.",
+          "feature1": "Última milla comida a domicilio",
+          "feature2": "Entrega express restaurantes",
+          "feature3": "Horarios ampliados",
+          "feature4": "Temperatura controlada"
         },
         "sector4": {
-          "title": "Restaurantes",
-          "description": "Entrega última milla para restaurantes y servicios de comida a domicilio."
+          "title": "Última Milla Farmacia",
+          "description": "Última milla productos farmacéuticos y medicamentos. Entrega urgente y programada para farmacias.",
+          "feature1": "Última milla farmacia",
+          "feature2": "Entrega medicamentos",
+          "feature3": "Servicio urgente disponible",
+          "feature4": "Cumplimiento normativo"
+        },
+        "sector5": {
+          "title": "Última Milla Paquetería",
+          "description": "Última milla paquetes y mensajería. Entrega de envíos y paquetería general. Paqueteria ecommerce y paqueteria para ecommerce.",
+          "feature1": "Última milla paquetes",
+          "feature2": "Mensajería última milla",
+          "feature3": "Entrega flexible",
+          "feature4": "Seguimiento completo"
         }
       },
       "deliveryTypes": {
-        "title": "Tipos de Entrega",
+        "title": "Tipos de Entrega Última Milla",
+        "subtitle": "Última milla mismo día, express, urgente y programada según tus necesidades",
         "type1": {
-          "title": "Express",
-          "description": "Entrega express en el menor tiempo posible."
+          "title": "Última Milla Mismo Día",
+          "description": "Entrega última milla mismo día para urgencias"
         },
         "type2": {
-          "title": "Mismo Día",
-          "description": "Entrega el mismo día para pedidos realizados antes de las 14:00."
+          "title": "Última Milla Express",
+          "description": "Última milla express y 24 horas disponible"
         },
         "type3": {
-          "title": "Programada",
-          "description": "Entrega programada según la disponibilidad del destinatario."
+          "title": "Última Milla Programada",
+          "description": "Última milla programada con horarios flexibles"
         },
         "type4": {
-          "title": "Nocturna",
-          "description": "Entrega nocturna para mayor comodidad del cliente."
+          "title": "Última Milla Nocturna",
+          "description": "Última milla nocturna y entrega tarde disponible"
         }
       },
       "technology": {
-        "title": "Tecnología",
+        "title": "Tecnología Última Milla",
+        "subtitle": "Última milla digital con tracking, seguimiento GPS y plataforma avanzada",
         "tech1": {
-          "title": "Tracking en Tiempo Real",
-          "description": "Sistema de seguimiento en tiempo real para conocer la ubicación exacta de tu envío."
+          "title": "Última Milla Tracking",
+          "description": "Última milla seguimiento y tracking GPS en tiempo real. Monitoreo completo de cada entrega."
         },
         "tech2": {
-          "title": "App Móvil",
-          "description": "Aplicación móvil para gestionar tus envíos y recibir notificaciones en tiempo real."
+          "title": "Última Milla App",
+          "description": "Última milla digital con app móvil y plataforma web. Gestión completa desde tu dispositivo."
         },
         "tech3": {
-          "title": "Sistema de Rutas",
-          "description": "Sistema inteligente de optimización de rutas para entregas más eficientes."
+          "title": "Última Milla Sistema",
+          "description": "Última milla plataforma avanzada con integración API. Sistema completo de logística última milla."
         }
       },
       "zones": {
-        "title": "Zonas de Cobertura",
+        "title": "Cobertura Última Milla",
+        "subtitle": "Última milla local, urbana y rural en Marbella, Málaga y toda la Costa del Sol",
         "zone1": {
-          "title": "Urbana",
-          "description": "Cobertura en zona urbana de Marbella y alrededores."
+          "title": "Última Milla Urbana",
+          "description": "Última milla local en Marbella, Málaga y ciudades principales"
         },
         "zone2": {
-          "title": "Periférica",
-          "description": "Cobertura en zona periférica y urbanizaciones."
+          "title": "Última Milla Periférica",
+          "description": "Última milla en zonas periféricas y áreas residenciales"
         },
         "zone3": {
-          "title": "Rural",
-          "description": "Cobertura en zona rural y núcleos más alejados."
+          "title": "Última Milla Rural",
+          "description": "Última milla rural y zonas menos accesibles de la Costa del Sol"
         }
+      },
+      "ecommerceShipping": {
+        "title": "Envíos para Ecommerce y Tiendas Online",
+        "subtitle": "Servicio de envíos para ecommerce, tiendas online y paquetería ecommerce con última milla garantizada",
+        "service1": {
+          "title": "Envíos para Tiendas Online",
+          "description": "Envíos para tiendas online con última milla logística. Servicio de entrega última milla para tu tienda online."
+        },
+        "service2": {
+          "title": "Envíos para Ecommerce",
+          "description": "Envíos para ecommerce y envios ecommerce con logística última milla. Transporte ecommerce y paqueteria ecommerce."
+        },
+        "service3": {
+          "title": "Mensajería Ecommerce",
+          "description": "Mensajería ecommerce y mensajeria para ecommerce. Servicio de mensajería última milla para comercio electrónico."
+        },
+        "service4": {
+          "title": "Envíos Internacionales Ecommerce",
+          "description": "Envíos internacionales ecommerce con última milla. Logística internacional para tiendas online."
+        }
+      },
+      "companies": {
+        "title": "Empresas y Proveedores de Última Milla",
+        "subtitle": "Somos tu empresa de transporte ecommerce y proveedor de última milla especializado",
+        "company1": {
+          "title": "Empresas de Envío para Ecommerce",
+          "description": "Empresas de envio para ecommerce y empresas de envios para tiendas online. Servicio profesional de última milla."
+        },
+        "company2": {
+          "title": "Empresas de Transporte Ecommerce",
+          "description": "Empresas de transporte ecommerce y empresas transporte ecommerce. Logística especializada para comercio electrónico."
+        },
+        "company3": {
+          "title": "Proveedor de Última Milla",
+          "description": "Proveedor de ultima milla y proveedor ultima milla. Servicio de última milla logística profesional."
+        },
+        "company4": {
+          "title": "Empresas de Última Milla",
+          "description": "Empresas de ultima milla y empresas ultima milla. Soluciones logísticas de última milla para ecommerce."
+        }
+      },
+      "pricing": {
+        "title": "Tarifas y Precios de Envíos Ecommerce",
+        "subtitle": "Tarifas envíos ecommerce, precios envios ecommerce y tarifa plana envios ecommerce competitivos",
+        "price1": {
+          "title": "Tarifas Envíos Ecommerce",
+          "description": "Tarifas envios ecommerce y tarifas envíos ecommerce competitivas. Precios adaptados a tu volumen de envíos."
+        },
+        "price2": {
+          "title": "Precios Envíos Ecommerce",
+          "description": "Precios envios ecommerce y envios ecommerce baratos. Envíos baratos para ecommerce y envíos baratos para tienda online."
+        },
+        "price3": {
+          "title": "Tarifa Plana Envíos Ecommerce",
+          "description": "Tarifa plana envios ecommerce para múltiples envíos. Solución económica para tiendas online."
+        }
+      },
+      "concept": {
+        "title": "Concepto y Definición de Última Milla",
+        "subtitle": "Qué es la última milla, concepto de última milla y la última milla en logística",
+        "concept1": {
+          "title": "Qué es la Última Milla",
+          "description": "La última milla es la fase final de la distribución, desde el almacén hasta el cliente final. Concepto ultima milla y ultima milla que es explicado."
+        },
+        "concept2": {
+          "title": "Concepto de Última Milla",
+          "description": "Concepto de ultima milla y concepto ultima milla logistica. La última milla en logística es crucial para el éxito del ecommerce."
+        },
+        "concept3": {
+          "title": "La Última Milla en Logística",
+          "description": "La ultima milla en logistica y la última milla logística. Logística de última milla y logística de la última milla para ecommerce."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Servicio de Última Milla?",
+        "subtitle": "Logística última milla, distribución última milla y entrega última milla en Marbella, Málaga y Costa del Sol. Última milla ecommerce, alimentación y farmacia. Envíos para ecommerce y tiendas online.",
+        "button1": "Contratar Última Milla",
+        "button2": "Solicitar Presupuesto"
       },
       "faqs": {
-        "title": "Preguntas Frecuentes",
+        "title": "Preguntas Frecuentes sobre Última Milla",
+        "subtitle": "Resolvemos tus dudas sobre última milla logística, entrega última milla, envíos para ecommerce y distribución última milla",
         "faq1": {
-          "question": "¿Qué es la última milla logística?",
-          "answer": "La última milla logística es el último tramo del proceso de entrega, desde el centro de distribución hasta el destinatario final. Es la fase más crítica y costosa de la cadena logística."
+          "question": "¿Qué es el servicio de última milla?",
+          "answer": "El servicio de última milla es la fase final de la distribución, desde el almacén o centro de distribución hasta el destino final del cliente. Ofrecemos última milla logística, última milla distribución y entrega última milla para ecommerce, alimentación, farmacia y paquetería en Marbella y Costa del Sol. La última milla logística es crucial para el éxito de las tiendas online."
         },
         "faq2": {
-          "question": "¿Cuánto cuesta el servicio de última milla?",
-          "answer": "El precio del servicio de última milla varía según la distancia, el tipo de entrega (express, mismo día, programada) y el sector (ecommerce, alimentación, farmacia). Solicita un presupuesto personalizado sin compromiso con nuestra calculadora online."
+          "question": "¿Cuánto tiempo tarda la entrega última milla?",
+          "answer": "Ofrecemos última milla mismo día, última milla 24 horas y última milla express para entregas urgentes. También disponemos de última milla programada con horarios flexibles, última milla fin de semana y última milla nocturna. El tiempo de entrega última milla depende del tipo de servicio contratado."
         },
         "faq3": {
-          "question": "¿Ofrecen entrega el mismo día?",
-          "answer": "Sí, ofrecemos entrega el mismo día para pedidos realizados antes de las 14:00 en zona urbana de Marbella y alrededores. También ofrecemos servicio express para entregas urgentes."
+          "question": "¿Qué sectores cubre el servicio de última milla?",
+          "answer": "Cubrimos última milla ecommerce y última milla comercio electrónico para tiendas online, última milla alimentación y última milla supermercados, última milla restaurantes y última milla comida a domicilio, última milla farmacia, última milla paquetería y última milla retail."
         },
         "faq4": {
-          "question": "¿Tienen tracking en tiempo real?",
-          "answer": "Sí, todos nuestros servicios de última milla incluyen tracking en tiempo real para que puedas conocer la ubicación exacta de tu envío en todo momento a través de nuestra app o plataforma web."
+          "question": "¿Cómo funciona el tracking de última milla?",
+          "answer": "Nuestro servicio de última milla incluye última milla tracking y última milla seguimiento en tiempo real mediante última milla GPS. Disponemos de última milla app y última milla plataforma digital para que puedas seguir tu envío en cada momento. El última milla sistema te notifica cada actualización."
         },
         "faq5": {
-          "question": "¿En qué zonas operan?",
-          "answer": "Operamos en Marbella y Costa del Sol con cobertura urbana, periférica y rural. Cubrimos zonas residenciales, urbanizaciones y núcleos más alejados con diferentes tiempos de entrega."
+          "question": "¿Cuánto cuesta el servicio de última milla?",
+          "answer": "El precio de última milla varía según la zona (última milla urbana, última milla periférica o última milla rural), tipo de entrega y urgencia. Ofrecemos última milla local en Marbella, última milla Málaga y última milla Costa del Sol. Las tarifas envíos ecommerce y precios envios ecommerce son competitivos. Solicita un presupuesto personalizado sin compromiso."
         },
         "faq6": {
-          "question": "¿Pueden integrar su servicio con mi sistema?",
-          "answer": "Sí, ofrecemos integración API para conectar nuestro servicio de última milla con tu sistema de gestión, tienda online o marketplace. Nuestro equipo técnico te ayudará con la implementación."
+          "question": "¿Hacen reparto última milla los fines de semana?",
+          "answer": "Sí, ofrecemos última milla fin de semana y última milla flexible con horarios adaptados a tus necesidades. El servicio de reparto última milla y reparto de ultima milla está disponible de lunes a domingo según el plan contratado."
+        },
+        "faq7": {
+          "question": "¿Qué diferencia hay entre última milla y mensajería tradicional?",
+          "answer": "La última milla logística se enfoca en la eficiencia y rapidez de la entrega final, con tecnología avanzada de tracking, rutas optimizadas y flexibilidad horaria. Nuestro servicio de mensajería última milla y mensajeria ecommerce combina la velocidad del delivery última milla con la profesionalidad del transporte última milla."
+        },
+        "faq8": {
+          "question": "¿Ofrecen envíos para ecommerce?",
+          "answer": "Sí, ofrecemos envíos para ecommerce y envios para tiendas online. Nuestro servicio de transporte ecommerce y paqueteria ecommerce está especializado en última milla logística para comercio electrónico. Somos empresas de envio para ecommerce y empresas de envios para tiendas online."
+        },
+        "faq9": {
+          "question": "¿Qué es la paquetería ecommerce?",
+          "answer": "La paquetería ecommerce y paqueteria para ecommerce es el servicio de envío de paquetes para tiendas online. Ofrecemos paqueteria para tiendas online, paquetería e commerce y ecommerce paqueteria con última milla garantizada. También ofrecemos paqueteria ultima milla y paqueteria de ultima milla."
+        },
+        "faq10": {
+          "question": "¿Cuáles son las tarifas envíos ecommerce?",
+          "answer": "Las tarifas envios ecommerce y tarifas envíos ecommerce varían según el volumen, distancia y tipo de entrega. Ofrecemos precios envios ecommerce competitivos, envios ecommerce baratos y tarifa plana envios ecommerce para múltiples envíos. También disponemos de envios baratos para ecommerce y envíos baratos para tienda online."
+        },
+        "faq11": {
+          "question": "¿Qué es la logística de última milla?",
+          "answer": "La logística de ultima milla y logística de última milla es la gestión del último tramo de la cadena de suministro, desde el centro de distribución hasta el cliente final. Incluye logistica ultima milla, logistica envios ecommerce y logistica de ultima milla. También abarca la logística de distribución ultima milla y la logística de la última milla."
+        },
+        "faq12": {
+          "question": "¿Son una empresa de transporte ecommerce?",
+          "answer": "Sí, somos empresas de transporte ecommerce y empresas transporte ecommerce especializadas en última milla. También somos empresas de transporte ultima milla y empresas de ultima milla. Ofrecemos transporte para ecommerce y transporte ultima milla profesional."
+        },
+        "faq13": {
+          "question": "¿Qué es un proveedor de última milla?",
+          "answer": "Un proveedor de ultima milla y proveedor ultima milla es una empresa que ofrece servicios de entrega última milla. Como proveedor última milla, ofrecemos soluciones de entrega de última milla y servicios de entrega de última milla para ecommerce y tiendas online."
+        },
+        "faq14": {
+          "question": "¿Qué es el concepto de última milla?",
+          "answer": "El concepto de ultima milla y concepto ultima milla se refiere a la fase final del proceso de distribución. El concepto ultima milla logistica incluye entregas ultima milla, entregas de ultima milla y entrega de la ultima milla. La ultima milla concepto y ultima milla definicion es crucial para entender la logística moderna."
+        },
+        "faq15": {
+          "question": "¿Qué es la distribución de última milla?",
+          "answer": "La distribucion de ultima milla y distribucion ultima milla es el proceso de entrega final de productos. Incluye distribucion de la ultima milla y operaciones de ultima milla. También abarca el proceso de ultima milla, proceso ultima milla y procesos ultima milla."
+        },
+        "faq16": {
+          "question": "¿Ofrecen soluciones logísticas para ecommerce?",
+          "answer": "Sí, ofrecemos soluciones logisticas para ecommerce y soluciones envios ecommerce. También disponemos de soluciones de ultima milla, soluciones de entrega de última milla y soluciones ultima milla. Somos especialistas en logística para tiendas online."
+        },
+        "faq17": {
+          "question": "¿Qué es la última milla en logística?",
+          "answer": "La ultima milla en logistica y última milla en logística es el último tramo del proceso de entrega. La logística de la última milla y la última milla logística son fundamentales para el éxito del ecommerce. También incluye la ultima milla logistica que es y ultima milla logistica que es."
+        },
+        "faq18": {
+          "question": "¿Qué significa última milla?",
+          "answer": "La ultima milla significado y ultima milla que es se refiere a la fase final de la distribución. La ultima milla definicion y ultima milla concepto incluyen entregas ultima milla, envios ultima milla y envios de ultima milla. También abarca la ultima milla empresa y ultima milla paqueteria."
         }
-      }
-    }
-  },
-  "footer": {
-    "title": "PortesPro",
-    "description": "Empresa de mudanzas profesionales en Marbella, Málaga y Costa del Sol. Servicios de portes, embalajes, guardamuebles, transporte en frío y última milla. Mudanzas baratas, económicas y rápidas con la máxima calidad.",
-    "services": "Servicios",
-    "zones": "Zonas",
-    "legal": "Legal",
-    "privacy": "Privacidad",
-    "terms": "Términos",
-    "cookies": "Cookies",
-    "contact": "Contacto",
-    "followUs": "Síguenos",
-    "allRightsReserved": "Todos los derechos reservados"
-  },
-  "buttons": {
-    "calculate": "Calcular Precio",
-    "requestQuote": "Solicitar Presupuesto",
-    "contact": "Contactar",
-    "learnMore": "Saber Más",
-    "book": "Reservar",
-    "confirm": "Confirmar",
-    "cancel": "Cancelar",
-    "save": "Guardar",
-    "edit": "Editar",
-    "delete": "Eliminar",
-    "close": "Cerrar",
-    "next": "Siguiente",
-    "previous": "Anterior",
-    "submit": "Enviar",
-    "search": "Buscar",
-    "filter": "Filtrar",
-    "reset": "Restablecer",
-    "apply": "Aplicar"
-  },
-  "calculator": {
-    "title": "Calculadora de Precio",
-    "subtitle": "Calcula el precio de tu mudanza en segundos",
-    "step1": "Ruta",
-    "step2": "Carga",
-    "step3": "Finalizar",
-    "step1Full": "Origen y Destino",
-    "step2Full": "Detalles",
-    "step3Full": "Resumen",
-    "origin": "Origen",
-    "destination": "Destino",
-    "originPlaceholder": "Escribe una dirección...",
-    "destinationPlaceholder": "Escribe una dirección...",
-    "distance": "Distancia",
-    "volume": "Volumen",
-    "items": "Objetos",
-    "price": "Precio",
-    "total": "Total",
-    "calculate": "Calcular",
-    "reset": "Reiniciar",
-    "result": "Resultado",
-    "estimatedPrice": "Precio Estimado",
-    "estimatedTime": "Tiempo Estimado",
-    "getQuote": "Obtener Presupuesto",
-    "configureLoad": "Configurar Carga",
-    "digitalInventory": "Inventario Digital",
-    "technicalPrecision": "Precisión Técnica",
-    "selectBelongings": "Selecciona tus pertenencias",
-    "back": "Atrás",
-    "finishQuote": "Finalizar Presupuesto",
-    "quoteFinished": "Presupuesto Finalizado",
-    "artisanalCareGuaranteed": "Cuidado artesanal garantizado en toda la Costa del Sol.",
-    "totalEstimatedPortesPro": "Total Estimado PortesPro",
-    "reserveMove": "RESERVAR MI MUDANZA",
-    "immediateConfirmation": "Confirmación inmediata • Soporte 24/7",
-    "executiveSummary": "Resumen Ejecutivo",
-    "routePlanning": "Planificación de Ruta",
-    "loadEstimation": "Estimación de Carga",
-    "attentionProtocol": "Protocolo de Atención",
-    "optimizedLogistics": "Logística optimizada"
-  },
-  "components": {
-    "stats": {
-      "movesCompleted": "Mudanzas Realizadas",
-      "yearsExperience": "Años de Experiencia",
-      "vipClients": "Clientes VIP",
-      "zonesCovered": "Zonas Cubiertas"
-    },
-    "features": {
-      "title": "La Diferencia PortesPro",
-      "trilingualDrivers": "Conductores Trilingües",
-      "trilingualDriversDesc": "Hablamos Español, Inglés y Sueco para tu comodidad y tranquilidad.",
-      "portesMudanzas": "Portes y mudanzas",
-      "portesMudanzasDesc": "Especialistas en Marbella, Puerto Banús y Cala de Mijas. Servicio VIP.",
-      "packingOnDemand": "Embalaje a pedido",
-      "packingOnDemandDesc": "Protección máxima para antigüedades, arte y mobiliario delicado.",
-      "flexibleCapacity": "Capacidad Flexible",
-      "flexibleCapacityDesc": "Desde pequeños bultos hasta villas de gran tamaño con la misma eficiencia.",
-      "insurance": "Seguro Premium a pedido",
-      "insuranceDesc": "Cobertura total de mercancías. Tu patrimonio está en buenas manos.",
-      "realTimeTracking": "Puntualidad",
-      "realTimeTrackingDesc": "Sabemos que tu tiempo es valioso. Servicio puntual y discreto."
-    },
-    "process": {
-      "tag": "Metodología PortesPro",
-      "title": "El estándar de oro en logística de mudanza.",
-      "subtitle": "Combinamos la tecnología de vanguardia con el trato personalizado de los artesanos de antaño.",
-      "step1Title": "Consulta Online",
-      "step1Desc": "Cotizar mudanza online con nuestra calculadora o solicita un presupuesto mudanza personalizado. Precio mudanza aproximado al instante para mudanzas particulares, empresas u oficinas.",
-      "step2Title": "Planificación",
-      "step2Desc": "Nuestro equipo de empresas de mudanzas profesionales planifica cada detalle de tu mudanza nacional o internacional para asegurar un servicio perfecto.",
-      "step3Title": "Transporte",
-      "step3Desc": "Transporte de muebles y traslado de muebles seguro con camiones de mudanza adecuados. Servicio de transporte de mudanza profesional y cuidadoso.",
-      "step4Title": "Entrega",
-      "step4Desc": "Entrega puntual en tu nuevo destino. Completamos tu mudanza con el servicio de mudanza completo que contrataste."
-    },
-    "testimonials": {
-      "title": "Opiniones de Nuestros Clientes",
-      "testimonial1": {
-        "name": "Alejandro Ruiz",
-        "role": "Mudanza en Marbella",
-        "content": "Excelente trato y cuidado con los muebles. Un servicio de 10 en Puerto Banús."
       },
-      "testimonial2": {
-        "name": "Marta Sánchez",
-        "role": "Mudanza Cala de Mijas",
-        "content": "La web es súper dinámica y la calculadora me dio el precio exacto que pagué. Muy profesionales."
-      },
-      "testimonial3": {
-        "name": "David Smith",
-        "role": "Porte de Muebles",
-        "content": "Puntual y muy eficiente. El equipo manejó todo con cuidado. Muy recomendado."
+      "seo": {
+        "title": "Última Milla Logística Marbella | Envíos para Ecommerce y Tiendas Online | PortesPro",
+        "description": "Última milla logística en Marbella, Málaga y Costa del Sol. Envíos para ecommerce, tiendas online y paquetería ecommerce. Empresas de transporte ecommerce y proveedor de última milla. Tarifas envíos ecommerce competitivas. Presupuesto gratis.",
+        "keywords": "ultima milla, última milla, ultima milla logistica, última milla logística, envios para tiendas online, envios para ecommerce, envios ecommerce, envio ecommerce, transporte ecommerce, paqueteria ecommerce, empresas de envio para ecommerce, tarifas envíos ecommerce, tarifa plana envios ecommerce, envios ecommerce baratos, ecommerce envios, transporte para ecommerce, envios baratos ecommerce, transporte ultima milla, paqueteria para ecommerce, logistica ultima milla, empresas de envios para tiendas online, empresas de transporte ecommerce, logistica envios ecommerce, logistica de ultima milla, paquetería e commerce, última milla logística, la ultima milla, envios para empresas online, servicio ultima milla, envíos baratos para tienda online, precios envios ecommerce, empresas de ultima milla, empresas ultima milla, reparto ultima milla, última milla transporte, empresas transporte ecommerce, paqueteria ultima milla, envios internacionales ecommerce, servicio de ultima milla, mensajeria ecommerce, proveedor de ultima milla, proveedor ultima milla, envios baratos para ecommerce, envios ultima milla, tarifas envios ecommerce, mensajeria para ecommerce, transporte de ultima milla, empresas de transporte ultima milla, ecommerce paqueteria, entregas ultima milla, la ultima milla en logistica, soluciones envios ecommerce, entregas de ultima milla, envios de ultima milla, empresas de paqueteria para ecommerce, reparto de ultima milla, logística de última milla, paqueteria para tiendas online, e commerce paqueteria, ultima milla en logistica, paquetería para tiendas online, mensajeria para tienda online, distribucion de ultima milla, distribucion ultima milla, mejor paqueteria para ecommerce, concepto de ultima milla, concepto ultima milla, concepto ultima milla logistica, distribucion de la ultima milla, empresas de mensajeria para tienda online, entrega de la ultima milla, envios para mi tienda online, envío de comercio electrónico, envío ecommerce, la logística de la última milla, la ultima milla logistica, la ultima milla que es, la última milla logística, logistica de distribución ultima milla, logistica de la ultima milla, logistica de ultima milla que es, logística de la última milla, logística de última milla definición, logística de última milla ejemplo, operaciones de ultima milla, paquete e commerce, paqueteria de ultima milla, paqueteria para e commerce, paqueteria tienda online, paquetería e commerce que es, paquetes de ecommerce, proceso de ultima milla, proceso ultima milla, procesos ultima milla, proveedor última milla, servicio de última milla, servicios de entrega de última milla, soluciones de entrega de última milla, soluciones de ultima milla, soluciones logisticas para ecommerce, soluciones ultima milla, tiendas online envio gratis, ultima milla concepto, ultima milla definicion, ultima milla empresa, ultima milla logistica que es, ultima milla paqueteria, ultima milla que es, ultima milla significado, ultima milla sostenible, ultimamilla, última milla en logística, última milla logística que es, última milla que es",
+        "ogTitle": "Última Milla Logística Marbella | Envíos para Ecommerce",
+        "ogDescription": "Última milla logística en Marbella, Málaga y Costa del Sol. Envíos para ecommerce, tiendas online y paquetería ecommerce. Empresas de transporte ecommerce y proveedor de última milla.",
+        "twitterTitle": "Última Milla Logística | Envíos Ecommerce",
+        "twitterDescription": "Última milla logística en Marbella. Envíos para ecommerce, tiendas online y paquetería ecommerce. Tarifas competitivas.",
+        "schemaServiceType": "Última Milla Logística",
+        "schemaDescription": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Envíos para ecommerce y tiendas online."
       }
     },
-    "quality": {
-      "title": "Nuestra obsesión:",
-      "titleHighlight": "La Perfección en el Trato.",
-      "insuranceTitle": "Seguro a Todo Riesgo",
-      "insuranceDesc": "Pólizas exclusivas para objetos de valor y antigüedades sin letra pequeña.",
-      "digitalTitle": "Eficiencia Digital",
-      "digitalDesc": "Inventarios en la nube para que sepa dónde está cada caja en todo momento.",
-      "artisanTitle": "Cuidado Artesanal",
-      "artisanDesc": "Tratamos sus pertenencias como si fueran obras de arte. Nuestros operarios son formados en el manejo de materiales nobles y montajes complejos.",
-      "ctaButton": "Conoce al equipo"
+    "mudanzasParticulares": {
+      "hero": {
+        "badge": "Mudanzas para Particulares y Familias",
+        "title": "Mudanzas Particulares",
+        "subtitle": "Mudanzas particulares y mudanza pequeña en Marbella, Málaga y Costa del Sol. Servicio completo de mudanzas baratas particulares para hogares y familias. Presupuesto gratis."
+      },
+      "services": {
+        "title": "Servicios de Mudanzas Particulares",
+        "subtitle": "Mudanzas particulares completas con servicio profesional para tu hogar",
+        "service1": {
+          "title": "Mudanzas Particulares Completas",
+          "description": "Mudanzas particulares y mudanza pequeña con servicio completo. Ideal para mudanzas baratas particulares y mudanzas pequeñas baratas."
+        },
+        "service2": {
+          "title": "Embalaje y Desembalaje",
+          "description": "Servicio de embalaje profesional incluido en mudanzas particulares. Protección completa de tus pertenencias."
+        },
+        "service3": {
+          "title": "Seguro y Garantía",
+          "description": "Mudanzas particulares con seguro completo y garantía de satisfacción. Tranquilidad total en tu mudanza."
+        }
+      },
+      "benefits": {
+        "title": "Ventajas de Mudanzas Particulares",
+        "subtitle": "Por qué elegir nuestras mudanzas particulares",
+        "benefit1": {
+          "title": "Precios Competitivos",
+          "description": "Mudanzas baratas particulares y mudanzas pequeñas baratas con precios desde 45€."
+        },
+        "benefit2": {
+          "title": "Servicio Rápido",
+          "description": "Mudanzas particulares con entrega rápida y eficiente. Sin esperas innecesarias."
+        },
+        "benefit3": {
+          "title": "Protección Total",
+          "description": "Mudanzas particulares con seguro completo y cuidado profesional de tus pertenencias."
+        },
+        "benefit4": {
+          "title": "Embalaje Incluido",
+          "description": "Mudanzas particulares con servicio de embalaje profesional incluido sin coste adicional."
+        }
+      },
+      "process": {
+        "title": "Proceso de Mudanzas Particulares",
+        "subtitle": "Cómo trabajamos en tus mudanzas particulares",
+        "step1": {
+          "title": "Presupuesto Gratis",
+          "description": "Solicita presupuesto para mudanzas particulares sin compromiso. Cotización online instantánea."
+        },
+        "step2": {
+          "title": "Planificación",
+          "description": "Planificamos tu mudanza pequeña o mudanza particular con detalle y profesionalidad."
+        },
+        "step3": {
+          "title": "Embalaje y Carga",
+          "description": "Embalaje profesional y carga segura en mudanzas particulares. Cuidado máximo."
+        },
+        "step4": {
+          "title": "Entrega y Desembalaje",
+          "description": "Entrega puntual y desembalaje en destino. Mudanzas particulares completas."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Mudanzas Particulares?",
+        "subtitle": "Mudanzas particulares y mudanza pequeña en Marbella, Málaga y Costa del Sol. Mudanzas baratas particulares con servicio completo. Presupuesto gratis.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Calcular Precio Online"
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Mudanzas Particulares",
+        "subtitle": "Resolvemos tus dudas sobre mudanzas particulares y mudanza pequeña",
+        "faq1": {
+          "question": "¿Qué incluyen las mudanzas particulares?",
+          "answer": "Las mudanzas particulares incluyen servicio completo: embalaje profesional, carga, transporte seguro, descarga y desembalaje. Ideal para mudanza pequeña y mudanzas baratas particulares."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuestan las mudanzas particulares?",
+          "answer": "El precio de mudanzas particulares varía según volumen y distancia. Ofrecemos mudanzas baratas particulares desde 45€. Mudanzas pequeñas baratas con precios competitivos. Solicita presupuesto gratis."
+        },
+        "faq3": {
+          "question": "¿Qué es una mudanza pequeña?",
+          "answer": "Una mudanza pequeña es ideal para estudios, apartamentos pequeños o mudanzas particulares con pocos muebles. Ofrecemos mudanzas pequeñas baratas con servicio completo."
+        },
+        "faq4": {
+          "question": "¿Incluyen embalaje en mudanzas particulares?",
+          "answer": "Sí, nuestras mudanzas particulares incluyen servicio de embalaje profesional sin coste adicional. Protección completa de tus pertenencias en mudanza pequeña o mudanza particular."
+        },
+        "faq5": {
+          "question": "¿Ofrecen seguro en mudanzas particulares?",
+          "answer": "Sí, todas nuestras mudanzas particulares incluyen seguro completo. Mudanzas baratas particulares con protección total de tus pertenencias."
+        },
+        "faq6": {
+          "question": "¿Cuánto tiempo tardan las mudanzas particulares?",
+          "answer": "El tiempo de mudanzas particulares depende del volumen. Para mudanza pequeña, el proceso suele ser de 4-6 horas. Mudanzas particulares completas pueden tardar 1-2 días."
+        }
+      },
+      "seo": {
+        "title": "Mudanzas Particulares Marbella | Mudanza Pequeña | Mudanzas Baratas Particulares | PortesPro",
+        "description": "Mudanzas particulares y mudanza pequeña en Marbella, Málaga y Costa del Sol. Mudanzas baratas particulares y mudanzas pequeñas baratas con servicio completo. Presupuesto gratis.",
+        "keywords": "mudanzas particulares, mudanza pequeña, mudanzas baratas particulares, mudanzas pequeñas baratas, mudanza particular, mudanzas para particulares, mudanzas hogar, mudanzas familia, mudanzas vivienda, mudanzas casa, mudanzas piso, mudanzas apartamento, mudanzas estudio, mudanzas baratas, mudanzas económicas, presupuesto mudanzas particulares, cotizar mudanza particular, precio mudanzas particulares, empresa mudanzas particulares, servicio mudanzas particulares",
+        "ogTitle": "Mudanzas Particulares Marbella | Mudanza Pequeña",
+        "ogDescription": "Mudanzas particulares y mudanza pequeña en Marbella, Málaga y Costa del Sol. Mudanzas baratas particulares con servicio completo.",
+        "twitterTitle": "Mudanzas Particulares | Mudanza Pequeña",
+        "twitterDescription": "Mudanzas particulares y mudanza pequeña en Marbella. Mudanzas baratas particulares con servicio completo.",
+        "schemaServiceType": "Mudanzas Particulares",
+        "schemaDescription": "Mudanzas particulares y mudanza pequeña en Marbella, Málaga y Costa del Sol. Servicio completo de mudanzas baratas particulares."
+      }
     },
-    "guardamueblesCalculator": {
-      "title": "Calculadora de Guardamuebles",
-      "subtitle": "Calcula el precio de tu guardamuebles en Marbella según el volumen de tus objetos",
-      "additionalServices": "Servicios Adicionales",
-      "duration": "Duración",
-      "calculationSummary": "Resumen del Cálculo",
-      "totalVolume": "Volumen Total",
-      "objects": "Objetos",
-      "stacking": "Apilamiento",
-      "minimum": "Mínimo 3 m³",
-      "containers": "Contenedores",
-      "perUnit": "c/u",
-      "basePrice": "Precio base",
-      "insurance": "Seguro",
-      "discount": "Descuento",
-      "monthly": "Mensual",
-      "total": "Total",
-      "requestQuote": "Solicitar Presupuesto",
-      "estimatedPriceNote": "* Precio estimado. Presupuesto final tras inspección."
+    "mudanzasEmpresas": {
+      "hero": {
+        "badge": "Mudanzas para Empresas y Negocios",
+        "title": "Mudanzas Empresas",
+        "subtitle": "Mudanzas empresas y mudanzas corporativas en Marbella, Málaga y Costa del Sol. Servicio especializado de mudanzas de oficinas para empresas. Presupuesto gratis."
+      },
+      "services": {
+        "title": "Servicios de Mudanzas Empresas",
+        "subtitle": "Mudanzas empresas y mudanzas corporativas con servicio profesional especializado",
+        "service1": {
+          "title": "Mudanzas Corporativas",
+          "description": "Mudanzas empresas y mudanzas corporativas completas. Servicio especializado para empresas de todos los tamaños."
+        },
+        "service2": {
+          "title": "Planificación Empresarial",
+          "description": "Mudanzas empresas con planificación detallada para minimizar interrupciones en tu negocio."
+        },
+        "service3": {
+          "title": "Horarios Flexibles",
+          "description": "Mudanzas empresas con horarios adaptados a tus necesidades. Incluso fines de semana y horarios nocturnos."
+        }
+      },
+      "benefits": {
+        "title": "Ventajas de Mudanzas Empresas",
+        "subtitle": "Por qué elegir nuestras mudanzas empresas",
+        "benefit1": {
+          "title": "Sin Interrupciones",
+          "description": "Mudanzas empresas planificadas para minimizar el impacto en tu actividad empresarial."
+        },
+        "benefit2": {
+          "title": "Equipos Especializados",
+          "description": "Mudanzas empresas con equipos profesionales especializados en mudanzas corporativas."
+        },
+        "benefit3": {
+          "title": "Documentación Completa",
+          "description": "Mudanzas empresas con toda la documentación necesaria y seguros empresariales."
+        },
+        "benefit4": {
+          "title": "Soporte 24/7",
+          "description": "Mudanzas empresas con soporte continuo durante todo el proceso de mudanza."
+        }
+      },
+      "process": {
+        "title": "Proceso de Mudanzas Empresas",
+        "subtitle": "Cómo trabajamos en tus mudanzas empresas",
+        "step1": {
+          "title": "Análisis y Presupuesto",
+          "description": "Análisis detallado de tus necesidades para mudanzas empresas. Presupuesto personalizado."
+        },
+        "step2": {
+          "title": "Planificación Estratégica",
+          "description": "Planificación estratégica de mudanzas corporativas para minimizar interrupciones."
+        },
+        "step3": {
+          "title": "Ejecución Profesional",
+          "description": "Ejecución profesional de mudanzas empresas con equipos especializados."
+        },
+        "step4": {
+          "title": "Instalación y Verificación",
+          "description": "Instalación completa y verificación en destino. Mudanzas empresas finalizadas."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Mudanzas Empresas?",
+        "subtitle": "Mudanzas empresas y mudanzas corporativas en Marbella, Málaga y Costa del Sol. Servicio especializado de mudanzas de oficinas. Presupuesto gratis.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Calcular Precio Online"
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Mudanzas Empresas",
+        "subtitle": "Resolvemos tus dudas sobre mudanzas empresas y mudanzas corporativas",
+        "faq1": {
+          "question": "¿Qué incluyen las mudanzas empresas?",
+          "answer": "Las mudanzas empresas incluyen servicio completo: planificación estratégica, embalaje profesional, transporte seguro, instalación y verificación. Mudanzas corporativas con servicio especializado."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuestan las mudanzas empresas?",
+          "answer": "El precio de mudanzas empresas varía según el tamaño de la empresa y complejidad. Ofrecemos presupuestos personalizados para mudanzas corporativas. Solicita cotización sin compromiso."
+        },
+        "faq3": {
+          "question": "¿Pueden hacer mudanzas empresas en horario nocturno?",
+          "answer": "Sí, ofrecemos mudanzas empresas con horarios flexibles, incluyendo horarios nocturnos y fines de semana para minimizar interrupciones en mudanzas corporativas."
+        },
+        "faq4": {
+          "question": "¿Qué documentación necesito para mudanzas empresas?",
+          "answer": "Para mudanzas empresas necesitarás documentación básica de la empresa. Nuestro equipo te ayudará con toda la documentación necesaria para mudanzas corporativas."
+        },
+        "faq5": {
+          "question": "¿Ofrecen seguro para mudanzas empresas?",
+          "answer": "Sí, todas nuestras mudanzas empresas incluyen seguro empresarial completo. Mudanzas corporativas con protección total de equipos y mobiliario."
+        },
+        "faq6": {
+          "question": "¿Cuánto tiempo tardan las mudanzas empresas?",
+          "answer": "El tiempo de mudanzas empresas depende del tamaño. Mudanzas corporativas pequeñas pueden tardar 1 día, mientras que mudanzas empresas grandes pueden requerir varios días."
+        }
+      },
+      "seo": {
+        "title": "Mudanzas Empresas Marbella | Mudanzas Corporativas | Mudanzas de Oficinas | PortesPro",
+        "description": "Mudanzas empresas y mudanzas corporativas en Marbella, Málaga y Costa del Sol. Servicio especializado de mudanzas de oficinas para empresas. Presupuesto gratis.",
+        "keywords": "mudanzas empresas, mudanzas corporativas, mudanzas de oficinas, mudanzas empresariales, mudanzas negocios, mudanzas locales comerciales, mudanzas tiendas, mudanzas almacenes, mudanzas empresas Marbella, mudanzas empresas Málaga, mudanzas corporativas Costa del Sol, servicio mudanzas empresas, empresa mudanzas corporativas, presupuesto mudanzas empresas, cotizar mudanzas empresas, precio mudanzas empresas",
+        "ogTitle": "Mudanzas Empresas Marbella | Mudanzas Corporativas",
+        "ogDescription": "Mudanzas empresas y mudanzas corporativas en Marbella, Málaga y Costa del Sol. Servicio especializado de mudanzas de oficinas.",
+        "twitterTitle": "Mudanzas Empresas | Mudanzas Corporativas",
+        "twitterDescription": "Mudanzas empresas y mudanzas corporativas en Marbella. Servicio especializado de mudanzas de oficinas.",
+        "schemaServiceType": "Mudanzas Empresas",
+        "schemaDescription": "Mudanzas empresas y mudanzas corporativas en Marbella, Málaga y Costa del Sol. Servicio especializado de mudanzas de oficinas."
+      }
     },
-    "embalajesCalculator": {
-      "title": "Calculadora de Embalaje Profesional",
-      "subtitle": "Calcula el precio del servicio de embalaje profesional según tu tipo de vivienda",
-      "housingType": "Tipo de Vivienda",
-      "specialItems": "Objetos Especiales",
-      "serviceType": "Tipo de Servicio",
-      "calculationSummary": "Resumen del Cálculo",
-      "basePrice": "Precio Base",
-      "specialItemsPrice": "Objetos Especiales",
-      "service": "Servicio",
-      "totalPrice": "Precio Total",
-      "includesMaterials": "* Incluye todos los materiales",
-      "requestQuote": "Solicitar Presupuesto"
+    "mudanzasOficinas": {
+      "hero": {
+        "badge": "Mudanzas de Oficinas Profesionales",
+        "title": "Mudanzas Oficinas",
+        "subtitle": "Mudanzas oficinas y mudanzas de oficinas en Marbella, Málaga y Costa del Sol. Servicio especializado para mudanzas de oficinas sin interrumpir tu negocio. Presupuesto gratis."
+      },
+      "services": {
+        "title": "Servicios de Mudanzas Oficinas",
+        "subtitle": "Mudanzas oficinas y mudanzas de oficinas con servicio profesional especializado",
+        "service1": {
+          "title": "Mudanzas de Oficinas Completas",
+          "description": "Mudanzas oficinas y mudanzas de oficinas con servicio completo. Especialistas en mudanzas de oficinas."
+        },
+        "service2": {
+          "title": "Desmontaje y Montaje",
+          "description": "Mudanzas oficinas con servicio de desmontaje y montaje de mobiliario de oficina incluido."
+        },
+        "service3": {
+          "title": "Reubicación de Equipos",
+          "description": "Mudanzas oficinas con reubicación profesional de equipos informáticos y tecnología."
+        }
+      },
+      "benefits": {
+        "title": "Ventajas de Mudanzas Oficinas",
+        "subtitle": "Por qué elegir nuestras mudanzas oficinas",
+        "benefit1": {
+          "title": "Sin Interrupciones",
+          "description": "Mudanzas oficinas planificadas para que tu negocio siga funcionando durante la mudanza."
+        },
+        "benefit2": {
+          "title": "Equipos Especializados",
+          "description": "Mudanzas oficinas con equipos profesionales especializados en mudanzas de oficinas."
+        },
+        "benefit3": {
+          "title": "Horarios Flexibles",
+          "description": "Mudanzas oficinas con horarios adaptados: fines de semana, horarios nocturnos."
+        },
+        "benefit4": {
+          "title": "Instalación Completa",
+          "description": "Mudanzas oficinas con instalación completa de mobiliario y equipos en destino."
+        }
+      },
+      "process": {
+        "title": "Proceso de Mudanzas Oficinas",
+        "subtitle": "Cómo trabajamos en tus mudanzas oficinas",
+        "step1": {
+          "title": "Evaluación y Presupuesto",
+          "description": "Evaluación detallada de tus necesidades para mudanzas oficinas. Presupuesto personalizado."
+        },
+        "step2": {
+          "title": "Planificación Minuciosa",
+          "description": "Planificación detallada de mudanzas de oficinas para minimizar interrupciones."
+        },
+        "step3": {
+          "title": "Ejecución Profesional",
+          "description": "Ejecución profesional de mudanzas oficinas con equipos especializados."
+        },
+        "step4": {
+          "title": "Instalación y Configuración",
+          "description": "Instalación completa y configuración en destino. Mudanzas oficinas finalizadas."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Mudanzas Oficinas?",
+        "subtitle": "Mudanzas oficinas y mudanzas de oficinas en Marbella, Málaga y Costa del Sol. Servicio especializado sin interrumpir tu negocio. Presupuesto gratis.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Calcular Precio Online"
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Mudanzas Oficinas",
+        "subtitle": "Resolvemos tus dudas sobre mudanzas oficinas y mudanzas de oficinas",
+        "faq1": {
+          "question": "¿Qué incluyen las mudanzas oficinas?",
+          "answer": "Las mudanzas oficinas incluyen servicio completo: desmontaje, embalaje, transporte, montaje e instalación. Mudanzas de oficinas con servicio especializado."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuestan las mudanzas oficinas?",
+          "answer": "El precio de mudanzas oficinas varía según el tamaño de la oficina. Ofrecemos presupuestos personalizados para mudanzas de oficinas. Solicita cotización sin compromiso."
+        },
+        "faq3": {
+          "question": "¿Pueden hacer mudanzas oficinas en fin de semana?",
+          "answer": "Sí, ofrecemos mudanzas oficinas con horarios flexibles, incluyendo fines de semana y horarios nocturnos para no interrumpir tu actividad en mudanzas de oficinas."
+        },
+        "faq4": {
+          "question": "¿Incluyen desmontaje y montaje en mudanzas oficinas?",
+          "answer": "Sí, nuestras mudanzas oficinas incluyen servicio completo de desmontaje y montaje de mobiliario. Mudanzas de oficinas con instalación profesional."
+        },
+        "faq5": {
+          "question": "¿Qué pasa con los equipos informáticos en mudanzas oficinas?",
+          "answer": "En mudanzas oficinas, nuestros especialistas se encargan de la reubicación segura de equipos informáticos. Mudanzas de oficinas con cuidado especial de tecnología."
+        },
+        "faq6": {
+          "question": "¿Cuánto tiempo tardan las mudanzas oficinas?",
+          "answer": "El tiempo de mudanzas oficinas depende del tamaño. Mudanzas de oficinas pequeñas pueden tardar 1 día, mientras que mudanzas oficinas grandes pueden requerir 2-3 días."
+        }
+      },
+      "seo": {
+        "title": "Mudanzas Oficinas Marbella | Mudanzas de Oficinas | Servicio Especializado | PortesPro",
+        "description": "Mudanzas oficinas y mudanzas de oficinas en Marbella, Málaga y Costa del Sol. Servicio especializado para mudanzas de oficinas sin interrumpir tu negocio. Presupuesto gratis.",
+        "keywords": "mudanzas oficinas, mudanzas de oficinas, mudanzas oficina, mudanzas despachos, mudanzas espacios trabajo, mudanzas oficinas Marbella, mudanzas oficinas Málaga, mudanzas oficinas Costa del Sol, servicio mudanzas oficinas, empresa mudanzas oficinas, presupuesto mudanzas oficinas, cotizar mudanzas oficinas, precio mudanzas oficinas, mudanzas oficinas fin de semana, mudanzas oficinas nocturnas",
+        "ogTitle": "Mudanzas Oficinas Marbella | Mudanzas de Oficinas",
+        "ogDescription": "Mudanzas oficinas y mudanzas de oficinas en Marbella, Málaga y Costa del Sol. Servicio especializado sin interrumpir tu negocio.",
+        "twitterTitle": "Mudanzas Oficinas | Mudanzas de Oficinas",
+        "twitterDescription": "Mudanzas oficinas y mudanzas de oficinas en Marbella. Servicio especializado sin interrumpir tu negocio.",
+        "schemaServiceType": "Mudanzas Oficinas",
+        "schemaDescription": "Mudanzas oficinas y mudanzas de oficinas en Marbella, Málaga y Costa del Sol. Servicio especializado sin interrumpir tu negocio."
+      }
     },
-    "transporteFrioCalculator": {
-      "title": "Calculadora de Transporte en Frío",
-      "subtitle": "Calcula el precio del transporte refrigerado según temperatura, distancia y tipo de producto",
-      "temperatureRange": "Rango de Temperatura",
-      "productType": "Tipo de Producto",
-      "distance": "Distancia (km)",
-      "distancePlaceholder": "Ingresa la distancia",
-      "distanceNote": "Distancia en kilómetros desde origen hasta destino",
-      "transportType": "Tipo de Transporte",
-      "calculationSummary": "Resumen del Cálculo",
-      "basePrice": "Precio Base",
-      "tariff": "Tarifa",
-      "temperature": "Temperatura",
-      "product": "Producto",
-      "type": "Tipo",
-      "totalPrice": "Precio Total",
-      "coldChainGuarantee": "* Incluye garantía de cadena frío",
-      "requestQuote": "Solicitar Presupuesto",
-      "estimatedPriceNote": "* Precio estimado. Presupuesto final tras inspección."
+    "mudanzasInternacionales": {
+      "hero": {
+        "badge": "Mudanzas Internacionales Profesionales",
+        "title": "Mudanzas Internacionales",
+        "subtitle": "Mudanzas internacionales y mudanzas al extranjero en Marbella, Málaga y Costa del Sol. Servicio completo de mudanzas internacionales con documentación incluida. Presupuesto gratis."
+      },
+      "services": {
+        "title": "Servicios de Mudanzas Internacionales",
+        "subtitle": "Mudanzas internacionales y mudanzas al extranjero con servicio profesional completo",
+        "service1": {
+          "title": "Mudanzas al Extranjero",
+          "description": "Mudanzas internacionales y mudanzas al extranjero a cualquier destino. Servicio completo de mudanzas internacionales."
+        },
+        "service2": {
+          "title": "Documentación Completa",
+          "description": "Mudanzas internacionales con toda la documentación aduanera y legal incluida."
+        },
+        "service3": {
+          "title": "Seguro Internacional",
+          "description": "Mudanzas internacionales con seguro completo para mudanzas al extranjero."
+        }
+      },
+      "benefits": {
+        "title": "Ventajas de Mudanzas Internacionales",
+        "subtitle": "Por qué elegir nuestras mudanzas internacionales",
+        "benefit1": {
+          "title": "Cobertura Mundial",
+          "description": "Mudanzas internacionales a cualquier destino. Mudanzas al extranjero con cobertura completa."
+        },
+        "benefit2": {
+          "title": "Documentación Incluida",
+          "description": "Mudanzas internacionales con toda la documentación aduanera y legal incluida sin coste adicional."
+        },
+        "benefit3": {
+          "title": "Seguro Completo",
+          "description": "Mudanzas internacionales con seguro completo para mudanzas al extranjero."
+        },
+        "benefit4": {
+          "title": "Seguimiento 24/7",
+          "description": "Mudanzas internacionales con seguimiento completo durante todo el proceso de mudanzas al extranjero."
+        }
+      },
+      "process": {
+        "title": "Proceso de Mudanzas Internacionales",
+        "subtitle": "Cómo trabajamos en tus mudanzas internacionales",
+        "step1": {
+          "title": "Consulta y Presupuesto",
+          "description": "Consulta inicial para mudanzas internacionales. Presupuesto detallado para mudanzas al extranjero."
+        },
+        "step2": {
+          "title": "Documentación y Trámites",
+          "description": "Gestión completa de documentación para mudanzas internacionales. Trámites aduaneros incluidos."
+        },
+        "step3": {
+          "title": "Embalaje y Embarque",
+          "description": "Embalaje profesional y embarque seguro para mudanzas al extranjero."
+        },
+        "step4": {
+          "title": "Transporte y Entrega",
+          "description": "Transporte seguro y entrega en destino. Mudanzas internacionales completadas."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Mudanzas Internacionales?",
+        "subtitle": "Mudanzas internacionales y mudanzas al extranjero en Marbella, Málaga y Costa del Sol. Servicio completo con documentación incluida. Presupuesto gratis.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Calcular Precio Online"
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Mudanzas Internacionales",
+        "subtitle": "Resolvemos tus dudas sobre mudanzas internacionales y mudanzas al extranjero",
+        "faq1": {
+          "question": "¿Qué incluyen las mudanzas internacionales?",
+          "answer": "Las mudanzas internacionales incluyen servicio completo: embalaje, documentación aduanera, transporte seguro, seguro internacional y entrega en destino. Mudanzas al extranjero con servicio profesional."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuestan las mudanzas internacionales?",
+          "answer": "El precio de mudanzas internacionales varía según destino y volumen. Mudanzas al extranjero con precios competitivos. Solicita presupuesto personalizado para mudanzas internacionales."
+        },
+        "faq3": {
+          "question": "¿Qué documentación necesito para mudanzas internacionales?",
+          "answer": "Para mudanzas internacionales necesitarás documentación básica. Nosotros gestionamos toda la documentación aduanera para mudanzas al extranjero."
+        },
+        "faq4": {
+          "question": "¿Cuánto tiempo tardan las mudanzas internacionales?",
+          "answer": "El tiempo de mudanzas internacionales depende del destino. Mudanzas al extranjero dentro de Europa suelen tardar 7-14 días. Mudanzas internacionales a otros continentes pueden tardar 3-6 semanas."
+        },
+        "faq5": {
+          "question": "¿Ofrecen seguro para mudanzas internacionales?",
+          "answer": "Sí, todas nuestras mudanzas internacionales incluyen seguro completo. Mudanzas al extranjero con protección total durante todo el trayecto."
+        },
+        "faq6": {
+          "question": "¿A qué países hacen mudanzas internacionales?",
+          "answer": "Ofrecemos mudanzas internacionales a cualquier destino mundial. Mudanzas al extranjero dentro y fuera de Europa. Consulta disponibilidad para mudanzas internacionales a tu destino."
+        }
+      },
+      "seo": {
+        "title": "Mudanzas Internacionales Marbella | Mudanzas al Extranjero | Servicio Completo | PortesPro",
+        "description": "Mudanzas internacionales y mudanzas al extranjero en Marbella, Málaga y Costa del Sol. Servicio completo de mudanzas internacionales con documentación incluida. Presupuesto gratis.",
+        "keywords": "mudanzas internacionales, mudanzas al extranjero, mudanzas fuera España, mudanzas Europa, mudanzas internacionales precios, mudanzas internacionales Marbella, mudanzas internacionales Málaga, mudanzas internacionales Costa del Sol, servicio mudanzas internacionales, empresa mudanzas internacionales, presupuesto mudanzas internacionales, cotizar mudanzas internacionales, precio mudanzas internacionales, mudanzas a estados unidos, mudanzas a reino unido, mudanzas a francia, mudanzas a alemania, mudanzas a portugal",
+        "ogTitle": "Mudanzas Internacionales Marbella | Mudanzas al Extranjero",
+        "ogDescription": "Mudanzas internacionales y mudanzas al extranjero en Marbella, Málaga y Costa del Sol. Servicio completo con documentación incluida.",
+        "twitterTitle": "Mudanzas Internacionales | Mudanzas al Extranjero",
+        "twitterDescription": "Mudanzas internacionales y mudanzas al extranjero en Marbella. Servicio completo con documentación incluida.",
+        "schemaServiceType": "Mudanzas Internacionales",
+        "schemaDescription": "Mudanzas internacionales y mudanzas al extranjero en Marbella, Málaga y Costa del Sol. Servicio completo con documentación incluida."
+      }
     },
-    "ultimaMillaCalculator": {
-      "title": "Calculadora de Última Milla",
-      "subtitle": "Calcula el precio de entrega última milla para múltiples puntos de entrega",
-      "shipmentType": "Tipo de Envío",
-      "packageSmall": "Paquete Pequeño",
-      "maxWeight": "Máximo 20 kg",
-      "weightNote": "Ajusta el peso del paquete (0-20 kg)",
-      "addDeliveryPoint": "Agregar Punto de Entrega",
-      "addressPlaceholder": "Ingresa dirección o lugar",
-      "addPoint": "Agregar Punto",
-      "minPoints": "Mínimo 5 puntos requeridos",
-      "pointsAdded": "puntos agregados",
-      "deliveryPoints": "Puntos de Entrega",
-      "pointPrice": "Precio",
-      "noPoints": "No hay puntos agregados",
-      "routeMap": "Mapa de Ruta",
-      "totalPoints": "Total de Puntos",
-      "calculationSummary": "Resumen del Cálculo",
-      "pricePerDelivery": "Precio por Envío",
-      "totalPrice": "Precio Total",
-      "priceBreakdown": "3€ + IVA (21%) = 3.63€ por envío",
-      "requestQuote": "Solicitar Presupuesto",
-      "minimumPointsNote": "Mínimo 5 puntos de entrega requeridos. Precio fijo por envío."
+    "mudanzasUrgentes": {
+      "hero": {
+        "badge": "Mudanzas Urgentes 24 Horas",
+        "title": "Mudanzas Urgentes",
+        "subtitle": "Mudanzas urgentes y mudanzas express 24 horas en Marbella, Málaga y Costa del Sol. Servicio de mudanzas urgentes disponible todos los días. Presupuesto gratis."
+      },
+      "services": {
+        "title": "Servicios de Mudanzas Urgentes",
+        "subtitle": "Mudanzas urgentes y mudanzas express 24 horas con servicio profesional inmediato",
+        "service1": {
+          "title": "Mudanzas Express 24h",
+          "description": "Mudanzas urgentes y mudanzas express 24 horas. Servicio disponible todos los días del año."
+        },
+        "service2": {
+          "title": "Respuesta Inmediata",
+          "description": "Mudanzas urgentes con respuesta inmediata. Disponibilidad 24/7 para mudanzas express."
+        },
+        "service3": {
+          "title": "Mismo Día",
+          "description": "Mudanzas urgentes con servicio el mismo día. Mudanzas express cuando más lo necesitas."
+        }
+      },
+      "benefits": {
+        "title": "Ventajas de Mudanzas Urgentes",
+        "subtitle": "Por qué elegir nuestras mudanzas urgentes",
+        "benefit1": {
+          "title": "Disponibilidad 24/7",
+          "description": "Mudanzas urgentes disponibles todos los días. Mudanzas express cuando más lo necesitas."
+        },
+        "benefit2": {
+          "title": "Respuesta Rápida",
+          "description": "Mudanzas urgentes con respuesta inmediata. Mudanzas express en el menor tiempo posible."
+        },
+        "benefit3": {
+          "title": "Servicio Completo",
+          "description": "Mudanzas urgentes con servicio completo. Mudanzas express sin comprometer la calidad."
+        },
+        "benefit4": {
+          "title": "Equipos Preparados",
+          "description": "Mudanzas urgentes con equipos siempre preparados. Mudanzas express profesionales."
+        }
+      },
+      "process": {
+        "title": "Proceso de Mudanzas Urgentes",
+        "subtitle": "Cómo trabajamos en tus mudanzas urgentes",
+        "step1": {
+          "title": "Llamada Urgente",
+          "description": "Contacta para mudanzas urgentes. Respuesta inmediata para mudanzas express."
+        },
+        "step2": {
+          "title": "Evaluación Rápida",
+          "description": "Evaluación rápida de tus necesidades para mudanzas urgentes. Presupuesto express."
+        },
+        "step3": {
+          "title": "Despliegue Inmediato",
+          "description": "Despliegue inmediato de equipos para mudanzas express. Mudanzas urgentes en marcha."
+        },
+        "step4": {
+          "title": "Entrega Rápida",
+          "description": "Entrega rápida y eficiente. Mudanzas urgentes completadas en tiempo récord."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Mudanzas Urgentes?",
+        "subtitle": "Mudanzas urgentes y mudanzas express 24 horas en Marbella, Málaga y Costa del Sol. Servicio disponible todos los días. Presupuesto gratis.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Calcular Precio Online"
+      },
+      "faqs": {
+        "title": "Preguntas Frecuentes sobre Mudanzas Urgentes",
+        "subtitle": "Resolvemos tus dudas sobre mudanzas urgentes y mudanzas express",
+        "faq1": {
+          "question": "¿Qué son las mudanzas urgentes?",
+          "answer": "Las mudanzas urgentes son servicios de mudanza express 24 horas disponibles cuando necesitas mudarte con urgencia. Mudanzas express con respuesta inmediata."
+        },
+        "faq2": {
+          "question": "¿Cuánto cuestan las mudanzas urgentes?",
+          "answer": "El precio de mudanzas urgentes puede ser ligeramente superior debido a la urgencia. Mudanzas express con precios competitivos. Solicita presupuesto para mudanzas urgentes."
+        },
+        "faq3": {
+          "question": "¿Están disponibles las mudanzas urgentes los fines de semana?",
+          "answer": "Sí, nuestras mudanzas urgentes están disponibles todos los días, incluyendo fines de semana y festivos. Mudanzas express 24/7."
+        },
+        "faq4": {
+          "question": "¿Cuánto tiempo tardan las mudanzas urgentes?",
+          "answer": "Las mudanzas urgentes pueden realizarse el mismo día o en 24 horas. Mudanzas express con tiempos de respuesta mínimos."
+        },
+        "faq5": {
+          "question": "¿Incluyen embalaje en mudanzas urgentes?",
+          "answer": "Sí, nuestras mudanzas urgentes incluyen servicio de embalaje profesional. Mudanzas express con servicio completo."
+        },
+        "faq6": {
+          "question": "¿Qué diferencia hay entre mudanzas urgentes y mudanzas normales?",
+          "answer": "Las mudanzas urgentes ofrecen disponibilidad inmediata y tiempos de respuesta más rápidos. Mudanzas express cuando más lo necesitas."
+        }
+      },
+      "seo": {
+        "title": "Mudanzas Urgentes Marbella | Mudanzas Express 24 Horas | Servicio Inmediato | PortesPro",
+        "description": "Mudanzas urgentes y mudanzas express 24 horas en Marbella, Málaga y Costa del Sol. Servicio de mudanzas urgentes disponible todos los días. Presupuesto gratis.",
+        "keywords": "mudanzas urgentes, mudanzas express, mudanzas 24 horas, mudanzas mismo día, mudanzas urgentes Marbella, mudanzas urgentes Málaga, mudanzas urgentes Costa del Sol, servicio mudanzas urgentes, empresa mudanzas urgentes, presupuesto mudanzas urgentes, cotizar mudanzas urgentes, precio mudanzas urgentes, mudanzas express 24h, mudanzas urgentes fin de semana, mudanzas urgentes domingo, mudanzas urgentes festivos",
+        "ogTitle": "Mudanzas Urgentes Marbella | Mudanzas Express 24h",
+        "ogDescription": "Mudanzas urgentes y mudanzas express 24 horas en Marbella, Málaga y Costa del Sol. Servicio disponible todos los días.",
+        "twitterTitle": "Mudanzas Urgentes | Mudanzas Express 24h",
+        "twitterDescription": "Mudanzas urgentes y mudanzas express 24 horas en Marbella. Servicio disponible todos los días.",
+        "schemaServiceType": "Mudanzas Urgentes",
+        "schemaDescription": "Mudanzas urgentes y mudanzas express 24 horas en Marbella, Málaga y Costa del Sol. Servicio disponible todos los días."
+      }
     },
     "contacto": {
       "badge": "Contacta con Nosotros",
@@ -935,5 +1752,18 @@
       "seoContent3": "Contacta con nuestra empresa de mudanzas para obtener un presupuesto mudanza personalizado. Ofrecemos mudanzas baratas, mudanzas económicas y servicio de mudanza con la máxima calidad. Solicita presupuesto mudanza gratis sin compromiso.",
       "keywords": "contacto mudanzas, presupuesto mudanza, cotizar mudanza, empresa de mudanzas, mudanzas baratas, mudanzas económicas, servicio de mudanza, empresas de mudanzas, mudanzas Marbella, mudanzas Málaga, mudanzas Costa del Sol"
     }
+  },
+  "footer": {
+    "title": "PortesPro",
+    "description": "Empresa de mudanzas profesionales en Marbella, Málaga y Costa del Sol. Servicios de portes, embalajes, guardamuebles, transporte en frío y última milla. Mudanzas baratas, económicas y rápidas con la máxima calidad.",
+    "services": "Servicios",
+    "zones": "Zonas",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados"
   }
 }

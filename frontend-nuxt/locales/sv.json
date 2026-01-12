@@ -25,7 +25,8 @@
     "onlineAssistantTooltip": "Behöver du hjälp? Skriv till oss på WhatsApp"
   },
   "breadcrumbs": {
-    "home": "Hem"
+    "home": "Hem",
+    "ultimaMilla": "Sista Milen"
   },
   "nav": {
     "mudanzas": "Flytt",
@@ -182,77 +183,240 @@
       }
     },
     "guardamuebles": {
-      "title": "Förvaringslokaler Marbella",
-      "subtitle": "Billigt, prisvärt och säkert förvar i Marbella, Málaga och Costa del Sol. Klimatstyrda lager med 24-timmars tillgång.",
-      "description": "Förvaringslokaler i Marbella från 45€/månad. Klimatstyrda lager, 24-timmars bevakning. Online förvaringsräknare. Gratis offert.",
+      "description": "Förvaringslokaler i Marbella från 35€/månad. Klimatstyrda lager, 24-timmars bevakning. Hemhämtningstjänst inkluderad. Online-åtkomst med användarnamn och lösenord. Online förvaringsräknare. Gratis offert.",
+      "hero": {
+        "badge": "Säker och Klimatstyrd Förvaring",
+        "title": "Förvaringslokaler nära dig i Marbella",
+        "subtitle": "Billigt, prisvärt och säkert förvar i Marbella, Málaga och Costa del Sol. Klimatstyrda lager med 24-timmars tillgång. Hemhämtningstjänst inkluderad. Online-åtkomst med användarnamn och lösenord för att alltid verifiera dina tillhörigheter."
+      },
+      "pickupService": {
+        "title": "Hemhämtningstjänst",
+        "subtitle": "Du behöver inte transportera dina möbler, vi hämtar dem",
+        "feature1": "Vi hämtar dina möbler och tillhörigheter hemma hos dig",
+        "feature2": "Du behöver inte transportera dem, vi hämtar dem",
+        "feature3": "Hemförvaringstjänst inkluderad",
+        "feature4": "Hemförvaring för din bekvämlighet"
+      },
+      "onlinePlatform": {
+        "title": "Online Förvaltningsplattform",
+        "subtitle": "Få tillgång till din förvaring från vilken enhet som helst",
+        "feature1": "24/7 online-åtkomst med användarnamn och lösenord",
+        "feature2": "Verifiera alltid vad du har förvarat",
+        "feature3": "Kontrollera din inventering från vilken enhet som helst",
+        "feature4": "Komplett online förvaringsförvaltning"
+      },
       "sizes": {
-        "title": "Tillgängliga Storlekar",
-        "subtitle": "Hitta det perfekta lagret för dina behov",
+        "title": "Förvaringslokaler efter Storlek",
+        "subtitle": "Från små förvaringslokaler till extra stora förvaringar. Välj den perfekta storleken för dina behov",
         "size1": {
-          "title": "Liten Förvaring",
-          "description": "Ideal för mini förvaring. Perfekt för personliga föremål och små lådor.",
-          "price": "Från 45€"
+          "metros": "1-2m²",
+          "title": "Mini Förvaring",
+          "description": "Ideal för mini lager och små förvaringslokaler. Perfekt för personliga föremål och små lådor.",
+          "price": "Från 35€"
         },
         "size2": {
-          "title": "Medium Förvaring",
-          "description": "Ideal för standard förvaring. Perfekt för tillfälliga flyttar och medellång sikt förvaring.",
-          "price": "Från 60€"
+          "metros": "3-4m²",
+          "title": "Liten Förvaring",
+          "description": "Liten förvaringslokal perfekt för studioinnehåll. Ideal för mini lager.",
+          "price": "Från 45€"
         },
         "size3": {
-          "title": "Stor Förvaring",
-          "description": "Ideal för komplett förvaring. Perfekt för stora flyttar och långsiktig förvaring.",
-          "price": "Från 90€"
+          "metros": "5-6m²",
+          "title": "Liten Förvaringslokal",
+          "description": "Liten förvaringslokal ideal för små lägenheter. 5 kvadratmeter förvaring tillgänglig.",
+          "price": "Från 60€"
         },
         "size4": {
+          "metros": "8-10m²",
+          "title": "Medium Förvaring",
+          "description": "Medium förvaring ideal för 2-3 sovrums lägenheter. 10m2 förvaring tillgänglig.",
+          "price": "Från 85€"
+        },
+        "size5": {
+          "metros": "15m²",
+          "title": "Stor Förvaring",
+          "description": "Stor förvaring perfekt för komplett 2-3 sovrums lägenhetsinnehåll.",
+          "price": "Från 120€"
+        },
+        "size6": {
+          "metros": "20m²+",
           "title": "Extra Stor Förvaring",
-          "description": "Ideal för industriell förvaring. Perfekt för företag och massförvaring.",
-          "price": "Från 150€"
+          "description": "Extra stor förvaring för hus, villor eller företagsförvaring. 20m2 förvaring tillgänglig.",
+          "price": "Från 180€"
         }
+      },
+      "types": {
+        "title": "Typer av Förvaringslokaler",
+        "subtitle": "Hitta den perfekta förvarningstypen för dina behov",
+        "type1": {
+          "title": "Mini Lager",
+          "description": "Mini lager och mini förvaringslokaler för kompakt och prisvärd förvaring."
+        },
+        "type2": {
+          "title": "Personlig Förvaring",
+          "description": "Personliga förvaringslokaler ideal för hem- och personlig användning."
+        },
+        "type3": {
+          "title": "Företagsförvaring",
+          "description": "Företagsförvaringslokaler och kommersiell förvaring med flexibel åtkomst."
+        },
+        "type4": {
+          "title": "Modulär Förvaring",
+          "description": "Modulära förvaringslokaler som anpassar sig till dina föränderliga behov."
+        },
+        "type5": {
+          "title": "Self Storage",
+          "description": "Self storage-förvaringslokaler med oberoende åtkomst och personlig förvaltning."
+        }
+      },
+      "pricing": {
+        "title": "Förvaringspriser och Tariffer",
+        "subtitle": "Transparenta förvaringspriser. Förvaringspris per månad från 35€",
+        "info1": "Förvaringspris per månad från 35€",
+        "info2": "Konkurrenskraftigt pris per kvadratmeter",
+        "info3": "Flexibla förvaringspriser enligt varaktighet",
+        "info4": "Rabatter för långsiktiga kontrakt"
       },
       "features": {
-        "title": "Funktioner",
+        "title": "Funktioner hos Våra Förvaringslokaler",
+        "subtitle": "Säker, övervakad och klimatstyrd förvaring för maximal skydd av dina tillhörigheter",
         "feature1": {
-          "title": "Klimatkontroll",
-          "description": "Klimatstyrda lager med kontrollerad temperatur och luftfuktighet."
+          "title": "Klimatstyrd Förvaring",
+          "description": "Förvaring med luftkonditionering och temperatursstyrning för att skydda dina tillhörigheter från värme och fukt."
         },
         "feature2": {
-          "title": "24/7 Säkerhet",
-          "description": "24-timmars bevakning, larm och säkerhetskameror."
+          "title": "Säker Förvaring",
+          "description": "Övervakad förvaring med 24-timmars säkerhet, larm och övervakningskameror för maximal skydd."
         },
         "feature3": {
-          "title": "Enkel Åtkomst",
-          "description": "Enkel och bekväm åtkomst till dina tillhörigheter när du behöver dem."
+          "title": "24-Timmars Förvaring",
+          "description": "24-timmars förvaring med enkel åtkomst och flexibla tider. Åtkomst tillgänglig när du behöver den."
         },
         "feature4": {
-          "title": "Försäkring Inkluderad",
-          "description": "Komplett försäkring inkluderad för att skydda dina förvarade föremål."
+          "title": "Prisvärd Förvaring",
+          "description": "Prisvärda förvaringslokaler och billig förvaring med de bästa priserna på marknaden."
+        },
+        "feature5": {
+          "title": "Tillfällig eller Långsiktig",
+          "description": "Tillfällig förvaring för renoveringar eller långsiktig förvaring. Total flexibilitet i kontrakt."
+        },
+        "feature6": {
+          "title": "Inomhus Förvaring",
+          "description": "Täckt och inomhus förvaring. Totalt skydd mot externa element och väderförhållanden."
         }
       },
+      "useCases": {
+        "title": "Tillfällig och Långsiktig Förvaring",
+        "subtitle": "Perfekt för flyttar, renoveringar, byggnation eller tillfällig förvaring. Förvaring i Marbella.",
+        "case1": {
+          "title": "Flyttförvaring",
+          "description": "Förvaring under flytt. Tillfällig förvaring under flyttprocessen. Förvaring med flytt inkluderad tillgänglig."
+        },
+        "case2": {
+          "title": "Renoveringsförvaring",
+          "description": "Renoverings- och byggförvaring. Skydda dina möbler under renoveringsarbeten."
+        },
+        "case3": {
+          "title": "Daglig Förvaring",
+          "description": "Daglig förvaring för korttids tillfällig förvaring. Perfekt för specifika behov."
+        },
+        "case4": {
+          "title": "Säsongsförvaring",
+          "description": "Sommar- och vinterförvaring. Säsongsförvaring för semesterperioder."
+        }
+      },
+      "zones": {
+        "title": "Områden där Vi Erbjuder Förvaring",
+        "subtitle": "Förvaring nära dig i hela Costa del Sol",
+        "zone1": "Marbella",
+        "zone2": "Malaga",
+        "zone3": "Costa del Sol",
+        "zone4": "Estepona",
+        "zone5": "Fuengirola",
+        "zone6": "Torremolinos",
+        "zone7": "Benalmadena",
+        "zone8": "Mijas"
+      },
+      "cta": {
+        "title": "Hyr Din Förvaringslokal Nu",
+        "subtitle": "Förvaring Marbella, Málaga och Costa del Sol. Förvaring med flytt inkluderad tillgänglig. Förvaring att hyra från 35€/månad.",
+        "button1": "Hyr Förvaring",
+        "button2": "Begär Offert"
+      },
       "faqs": {
-        "title": "Vanliga Frågor",
+        "title": "Vanliga Frågor om Förvaring",
+        "subtitle": "Vi svarar på dina frågor om förvaring i Marbella, Málaga och Costa del Sol",
         "faq1": {
-          "question": "Hur mycket kostar förvaring?",
-          "answer": "Förvaringspriset varierar beroende på storlek och förvaringslängd. Vi erbjuder förvaring från 45€/månad med rabatter för långsiktiga kontrakt."
+          "question": "Hur mycket kostar det att hyra en förvaringslokal?",
+          "answer": "Priset för att hyra förvaring varierar beroende på storlek. Mini förvaring från 35€/månad, liten förvaring från 45€/månad, medium förvaring från 85€/månad. Vi erbjuder billig förvaring och prisvärd förvaring med olika betalningsalternativ. Det månadsvisa priset inkluderar utrymmeshyra."
         },
         "faq2": {
-          "question": "Är lagren klimatstyrda?",
-          "answer": "Ja, alla våra förvaringslokaler och lager är klimatstyrda med luftkonditionering och temperatursstyrning för att skydda dina tillhörigheter från värme och fukt."
+          "question": "Vad är priset per kvadratmeter?",
+          "answer": "Priset per kvadratmeter varierar beroende på total storlek. För liten förvaring (1-4m²) är priset ungefär 10-12€/m²/månad. För medium förvaring (5-10m²) är priset ungefär 8-10€/m²/månad. För stor förvaring (15m²+) är priset ungefär 6-8€/m²/månad."
         },
         "faq3": {
-          "question": "Vilken säkerhet har förvaringslokaler?",
-          "answer": "Våra säkra förvaringslokaler inkluderar 24-timmars bevakning, larm, säkerhetskameror och kontrollerad åtkomst."
+          "question": "Erbjuder ni hemförvaringstjänst?",
+          "answer": "Ja, vi erbjuder hemförvaringstjänst. Vi hämtar dina möbler och tillhörigheter hemma hos dig, du behöver inte transportera dem. Vårt team kommer till ditt hem med lämpligt fordon och utför komplett hämtning. Hemförvaring inkluderad i tjänsten."
         },
         "faq4": {
-          "question": "Kan jag komma åt mina föremål när jag vill?",
-          "answer": "Ja, våra förvaringslokaler erbjuder 24-timmars åtkomst, 7 dagar i veckan så att du kan komma åt dina tillhörigheter när du behöver dem."
+          "question": "Kan jag verifiera mina tillhörigheter online?",
+          "answer": "Ja, med vår online förvaringsstjänst kan du komma åt ditt konto med användarnamn och lösenord för att alltid verifiera vad du har förvarat. Online förvaringsplattformen låter dig kontrollera din inventering från vilken enhet som helst, 24 timmar om dygnet."
         },
         "faq5": {
-          "question": "Inkluderar förvaringslokaler försäkring?",
-          "answer": "Ja, alla våra förvaringslokaler inkluderar komplett försäkring för att skydda dina förvarade föremål under förvaringsperioden."
+          "question": "Hur fungerar online förvaringsplattformen?",
+          "answer": "Vår online förvaringsplattform låter dig komma åt med användarnamn och lösenord för att förvalta din förvaring. Du kan verifiera din inventering, kontrollera dina tillhörigheter, se din förvaringsstatus och förvalta ditt konto. 24/7 online-åtkomst från vilken enhet som helst."
         },
         "faq6": {
-          "question": "Vad är minsta kontrakteringsstorlek?",
-          "answer": "Minsta kontrakteringsstorlek är 2m³, även om vi rekommenderar minst 3m³ för större komfort och utnyttjande av utrymme."
+          "question": "Vad är ett mini lager eller mini förvaring?",
+          "answer": "Ett mini lager eller mini förvaring är ett litet förvaringsutrymme, ideal för personliga föremål, små lådor eller tillhörigheter som inte tar mycket plats. Våra mini lager sträcker sig från 1-2m² och är perfekta för kompakt och prisvärd förvaring."
+        },
+        "faq7": {
+          "question": "Erbjuder ni företagsförvaring?",
+          "answer": "Ja, vi erbjuder företagsförvaring och kommersiell förvaring. Vår företagsförvaring inkluderar flexibel åtkomst, modulära utrymmen och online förvaltning. Perfekt för företag som behöver tillfällig eller permanent förvaring av filer, kontorsmaterial eller produkter."
+        },
+        "faq8": {
+          "question": "Kan jag hyra förvaring per dag?",
+          "answer": "Ja, vi erbjuder daglig förvaring för korttids tillfällig förvaring. Perfekt om du behöver tillfällig förvaring i några dagar eller veckor. Daglig förvaring har flexibla priser och du kan hyra den så länge du behöver."
+        },
+        "faq9": {
+          "question": "Vad är skillnaden mellan personlig och företagsförvaring?",
+          "answer": "Personlig förvaring är designad för hem- och personlig användning, medan företagsförvaring erbjuder ytterligare funktioner som flexibel åtkomst, avancerad online förvaltning och modulära utrymmen. Båda typerna inkluderar samma säkerhets- och klimatkontrollgarantier."
+        },
+        "faq10": {
+          "question": "Är förvaringslokaler modulära eller prefabricerade?",
+          "answer": "Vi erbjuder modulära förvaringslokaler som anpassar sig till dina föränderliga behov. Modulära förvaringslokaler låter dig utöka eller minska utrymmet efter behov, medan vi också har prefabricerade förvaringsalternativ för specifika behov."
+        },
+        "faq11": {
+          "question": "Erbjuder ni self storage?",
+          "answer": "Ja, vi erbjuder self storage med oberoende åtkomst och personlig förvaltning. Self storage låter dig komma åt ditt utrymme när du behöver det, med din egen nyckel och total kontroll över din förvaring."
+        },
+        "faq12": {
+          "question": "Jag behöver förvaring, hur kan jag hyra den?",
+          "answer": "Om du behöver förvaring kan du enkelt hyra den. Använd vår online-räknare för att få en offert, eller kontakta oss för en personlig konsultation. Vi erbjuder förvaring att hyra från 35€/månad med olika storlekar tillgängliga."
+        },
+        "faq13": {
+          "question": "Vilka är förvaringspriserna?",
+          "answer": "Förvaringspriserna varierar beroende på storlek och varaktighet. Mini förvaring från 35€/månad, liten förvaring från 60€/månad, medium förvaring från 85€/månad, stor förvaring från 120€/månad. Vi erbjuder rabatter för långsiktiga kontrakt. Förvaringspriserna är konkurrenskraftiga och transparenta."
+        },
+        "faq14": {
+          "question": "Inkluderar tjänsten hemhämtning?",
+          "answer": "Ja, vår förvaringsstjänst inkluderar hemhämtning. Du behöver inte transportera dina möbler, vårt team kommer till ditt hem med lämpligt fordon och utför komplett hämtning. Hemförvaringstjänst inkluderad utan extra kostnad."
+        },
+        "faq15": {
+          "question": "Kan jag komma åt min förvaring online 24 timmar?",
+          "answer": "Ja, med vår online förvaringsstjänst kan du komma åt ditt konto 24 timmar om dygnet, 7 dagar i veckan. Med användarnamn och lösenord kan du verifiera din inventering, kontrollera dina tillhörigheter och förvalta din förvaring från vilken enhet som helst med internetanslutning."
+        },
+        "faq16": {
+          "question": "Är förvaringslokaler klimatstyrda?",
+          "answer": "Ja, alla våra förvaringslokaler är klimatstyrda med luftkonditionering och temperatursstyrning för att skydda dina tillhörigheter från värme och fukt. Temperatursstyrd förvaring är ideal för känsliga föremål som fina trämöbler, konstverk eller viktiga dokument."
+        },
+        "faq17": {
+          "question": "Vilken säkerhet har förvaringslokaler?",
+          "answer": "Våra säkra förvaringslokaler inkluderar 24-timmars bevakning, larm, säkerhetskameror och kontrollerad åtkomst. Övervakad förvaring och säker förvaring garanterar maximal skydd av dina tillhörigheter. Vi erbjuder också valfri innehållsförsäkring för större lugn."
+        },
+        "faq18": {
+          "question": "Kan jag komma åt min förvaring 24 timmar?",
+          "answer": "Ja, vi erbjuder 24-timmars förvaring med enkel åtkomst enligt den valda planen. Förvaringsåtkomst är tillgänglig vid olika tider enligt dina behov. Vissa planer inkluderar obegränsad åtkomst, medan andra har specifika tider."
         }
       }
     },
@@ -451,55 +615,56 @@
       "subtitle": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter.",
       "description": "Kyltransport och kylkedja i Marbella. Kylvagn för mat, läkemedel och förgängliga produkter. Kontrollerade temperaturer. Realtidsspårning. Gratis offert.",
       "temperatures": {
-        "title": "Temperaturintervaller",
+        "title": "Transport med Kontrollerad Temperatur",
+        "subtitle": "Transport med kontrollerad temperatur för olika intervall enligt dina behov",
         "range1": {
-          "title": "Frysning",
-          "description": "Transport vid -18°C för frysta produkter och glass.",
+          "title": "Frysningstransport",
+          "description": "Transport vid -18°C för frysta produkter och glass. Transport av kyl och frysta produkter garanterad.",
           "temperature": "-18°C"
         },
         "range2": {
-          "title": "Kylt",
-          "description": "Transport mellan 2°C och 8°C för färska och kylda produkter.",
-          "temperature": "2°C - 8°C"
+          "title": "Kylvagn",
+          "description": "Transport mellan 0-4°C för färska och kylda produkter. Standard kylvagn.",
+          "temperature": "0-4°C"
         },
         "range3": {
-          "title": "Farmaceutisk",
-          "description": "Farmaceutisk transport med strikt temperatursstyrning enligt föreskrifter.",
+          "title": "Farmaceutisk Transport",
+          "description": "Transport mellan 2°C och 8°C för farmaceutiska produkter. Transport med kontrollerad temperatur enligt föreskrifter.",
           "temperature": "2°C - 8°C"
         }
       },
       "products": {
-        "title": "Produkter Vi Transporterar",
+        "title": "Kyltransport efter Produkttyp",
+        "subtitle": "Specialister på transport av kyl mat, farmaceutiska produkter och förgängliga produkter",
         "product1": {
-          "title": "Mat",
-          "description": "Färska, frysta och kylda livsmedelsprodukter."
+          "title": "Kyl Mattransport",
+          "description": "Transport av kyl mat och färska produkter. Kylvagn för supermarknader och restauranger."
         },
         "product2": {
-          "title": "Farmaceutisk",
-          "description": "Läkemedel, vacciner och farmaceutiska produkter som kräver kylkedja."
+          "title": "Kyl Lasttransport",
+          "description": "Transport av kyl last och kyl lasttransport för företag. Komplett kyllogistik."
         },
         "product3": {
-          "title": "Förgängliga",
-          "description": "Frukt, grönsaker, fisk, kött och andra förgängliga produkter."
+          "title": "Kyl Farmaceutisk Transport",
+          "description": "Kyltransport av farmaceutiska produkter och läkemedel. Garanterad kylkedja enligt föreskrifter."
         },
         "product4": {
-          "title": "Blommor",
-          "description": "Kyltransport av blommor och växter för att bibehålla deras färskhet."
+          "title": "Kyl Förgängliga Transport",
+          "description": "Transport av förgängliga produkter med kylkedja. Frukt, grönsaker, fisk och färskt kött."
+        },
+        "product5": {
+          "title": "Kyl Blomtransport",
+          "description": "Kylvagn av blommor och växter. Kontrollerad temperatur för att behålla färskhet."
+        },
+        "product6": {
+          "title": "Kyl Dryckestransport",
+          "description": "Transport av drycker och kylda flytande produkter. Specialiserad logistik i kyltransport."
         }
       },
       "coverage": {
-        "title": "Täckning",
-        "coverage1": {
-          "title": "Lokal",
-          "description": "Kyltransport i Marbella och omgivningarna."
-        },
-        "coverage2": {
-          "title": "Provinsiell",
-          "description": "Kyltransport i hela provinsen Málaga."
-        },
-        "coverage3": {
-          "title": "Nationell",
-          "description": "Kyltransport i hela Spanien med garanterad kylkedja."
+        "coverage4": {
+          "title": "Internationell Kyltransport",
+          "description": "Internationell kyltransport för Europa och Europeiska unionen med komplett dokumentation."
         }
       },
       "faqs": {
@@ -527,107 +692,419 @@
         "faq6": {
           "question": "Vad garanterar ni för kylkedjan?",
           "answer": "Vi garanterar kylkedjans upprätthållande under hela transporten med kontinuerliga temperaturkontroller, certifierade kylvagnar och dokumenterad processspårning."
+        },
+        "faq7": {
+          "question": "Erbjuder ni kylkurirservice?",
+          "answer": "Ja, vi erbjuder kylkurirservice och kylkurir för brådskande försändelser med kontrollerad temperatur. Vår kylkurirservice garanterar kylkedjan under hela resan."
+        },
+        "faq8": {
+          "question": "Kan jag skicka kylpaket?",
+          "answer": "Ja, vi erbjuder kylpaketförsändelse och kylpaketförsändelse med garanterad kylkedja. Vår kylpaketförsändelsetjänst inkluderar kontrollerad temperatur och realtidsspårning."
+        },
+        "faq9": {
+          "question": "Erbjuder ni kyltransport för privatpersoner?",
+          "answer": "Ja, vi erbjuder kyltransport för privatpersoner som behöver transportera kylprodukter. Priset för kyltransport för privatpersoner är konkurrenskraftigt och anpassat efter dina behov."
+        },
+        "faq10": {
+          "question": "Vilka typer av fordon använder ni för kyltransport?",
+          "answer": "Vi använder isoterm lastbil med kyla, frysningskyl lastbil, kyl lastbil för leverans och containrar för att behålla kyla. Vår flotta är utrustad med kylsystem för lastbilar och garanterar kylkedjan under hela transporten."
+        },
+        "faq11": {
+          "question": "Är ni ett certifierat kyltransportföretag?",
+          "answer": "Ja, vi är ett certifierat kyltransportföretag specialiserat på transport med kylkedja. Som kyltransportföretag följer vi alla livsmedels- och läkemedelssäkerhetsföreskrifter. Vi är transportföretag med kylkedja och transportföretag med kontrollerad temperatur."
+        },
+        "faq12": {
+          "question": "Erbjuder ni express kyltransport?",
+          "answer": "Ja, vi erbjuder express kyltransport för brådskande leveranser. Express kyltransport garanterar kylkedjan med snabb leverans och kontrollerad temperatur."
+        },
+        "faq13": {
+          "question": "Vad är kylkedjetransport?",
+          "answer": "Kylkedjetransport är processen att behålla produkter vid kontrollerad temperatur under hela transporten. Vår kylkedjetransporttjänst garanterar att produkter behåller sin temperatur från ursprung till destination."
+        },
+        "faq14": {
+          "question": "Transporterar ni kyl last?",
+          "answer": "Ja, vi erbjuder transport av kyl last och kyl lasttransport för företag. Vår transport av kyl lasttjänst inkluderar specialiserade fordon och garanterad kylkedja."
+        },
+        "faq15": {
+          "question": "Vad betyder transport med kontrollerad temperatur?",
+          "answer": "Transport med kontrollerad temperatur är en tjänst som behåller produkter vid en specifik temperatur under hela transporten. Vi erbjuder transport med kontrollerad temperatur och transport av kontrollerad temperatur för olika intervall beroende på produkten."
+        },
+        "faq16": {
+          "question": "Erbjuder ni försändelser med kontrollerad temperatur?",
+          "answer": "Ja, vi erbjuder försändelser med kontrollerad temperatur och försändelser med kontrollerad temperatur för alla typer av produkter. Vår tjänst garanterar temperaturen under hela försändelsprocessen."
+        },
+        "faq17": {
+          "question": "Vilka kyllogistiktjänster erbjuder ni?",
+          "answer": "Som kyllogistikföretag erbjuder vi kylvagn, kyllagring, kyldistribution och kyleverans. Vår kompletta kyllogistiktjänst inkluderar garanterad kylkedja och kontrollerad temperatur."
+        },
+        "faq18": {
+          "question": "Transporterar ni frysta produkter?",
+          "answer": "Ja, vi erbjuder transport av kyl och frysta produkter med garanterad -18°C temperatur. Vår transport av kyl och frysta produktertjänst använder frysningskyl lastbil och garanterar kylkedjan under hela processen."
         }
+      },
+      "hero": {
+        "badge": "Kylad Logistik och Kylkedja",
+        "title": "Kyl och Kyltransport",
+        "subtitle": "Kyltransportföretag i Marbella, Málaga och Costa del Sol. Kylvagn, kylvagn och kylkedjelogistik. Transport med garanterad kontrollerad temperatur. Transport av kyl och frysta produkter, transport av kyl mat och transport av kyl last."
+      },
+      "vehicleTypes": {
+        "title": "Kyltransportfordon och Utrustning",
+        "subtitle": "Specialiserad flotta för kyltransport med isotermiska fordon och containrar för att behålla kyla",
+        "vehicle1": {
+          "title": "Isoterm Lastbil med Kyla",
+          "description": "Isotermiska lastbilar med kyla för kylvagn och transport med kontrollerad temperatur. Utrustade med kylsystem för lastbilar."
+        },
+        "vehicle2": {
+          "title": "Frysningskyl Lastbil",
+          "description": "Frysningskyl lastbilar för transport av kyl och frysta produkter. Ultra-fryst transport vid -18°C garanterad."
+        },
+        "vehicle3": {
+          "title": "Kyl Lastbil för Leverans",
+          "description": "Fordon med kyla för kyleverans. Kyl lastbil för lokal leverans och kyldistribution i Marbella och Costa del Sol."
+        },
+        "vehicle4": {
+          "title": "Containrar för att Behålla Kyla",
+          "description": "Containrar för att behålla kyla under transporten. Specialiserad utrustning för kylkedjetransport."
+        }
+      },
+      "specializedServices": {
+        "title": "Specialiserade Kyltransporttjänster",
+        "subtitle": "Kylkurirservice, kylpaketförsändelse och express kyltransport för privatpersoner och företag",
+        "service1": {
+          "title": "Kylkurirservice",
+          "description": "Kylkurirservice och kylkurir för brådskande försändelser med kontrollerad temperatur."
+        },
+        "service2": {
+          "title": "Kylpaketförsändelse",
+          "description": "Kylpaketförsändelse och kylpaketförsändelse med garanterad kylkedja. Försändelser med kontrollerad temperatur."
+        },
+        "service3": {
+          "title": "Kyltransport för Privatpersoner",
+          "description": "Kyltransport för privatpersoner som behöver transportera kylprodukter. Konkurrenskraftigt kyltransportpris."
+        },
+        "service4": {
+          "title": "Express Kyltransport",
+          "description": "Express kyltransport för brådskande leveranser. Express kyltransport med garanterad kylkedja."
+        }
+      },
+      "services": {
+        "title": "Kyltransporttjänster",
+        "subtitle": "Kyltransportföretag med kompletta kyllogistik och kylkedjetransporttjänster",
+        "service1": {
+          "title": "Kylvagn",
+          "description": "Kyltransporttjänst med kylvagnar och kontrollerad temperatur",
+          "feature1": "Certifierade kylvagnar",
+          "feature2": "Kontrollerad temperatur i realtid",
+          "feature3": "GPS och temperaturövervakning",
+          "feature4": "Garanterad kylkedja"
+        },
+        "service2": {
+          "title": "Kyllagring",
+          "description": "Kylkammare och kyllagring för förgängliga produkter",
+          "feature1": "Kylkammare",
+          "feature2": "Kyllagring",
+          "feature3": "Temperaturkontroll 24/7",
+          "feature4": "Kyldistribution inkluderad"
+        },
+        "service3": {
+          "title": "Kylkedjetransport",
+          "description": "Kylkedjetransport med komplett garanti. Certifierad kylkedjetransport.",
+          "feature1": "Garanterad kylkedja",
+          "feature2": "Kontinuerlig temperaturkontroll",
+          "feature3": "Komplett dokumentation",
+          "feature4": "Kylkedjecertifiering"
+        },
+        "service4": {
+          "title": "Försändelser med Kontrollerad Temperatur",
+          "description": "Försändelser med kontrollerad temperatur och försändelser med kontrollerad temperatur för alla typer av produkter",
+          "feature1": "Garanterad kontrollerad temperatur",
+          "feature2": "Nationella och internationella försändelser",
+          "feature3": "Realtidsspårning",
+          "feature4": "Komplett dokumentation"
+        }
+      },
+      "companies": {
+        "title": "Kyltransportföretag",
+        "subtitle": "Vi är ett certifierat kyltransportföretag specialiserat på transport med kylkedja och kontrollerad temperatur",
+        "info1": "Certifierat kyltransportföretag",
+        "info2": "Kyltransportföretag med erfarenhet",
+        "info3": "Transportföretag med kylkedja",
+        "info4": "Transportföretag med kontrollerad temperatur",
+        "info5": "Specialiserade kyllogistikföretag"
+      },
+      "cta": {
+        "title": "Behöver du Kylvagn eller Kyltransport?",
+        "subtitle": "Kyltransportföretag i Marbella, Málaga och Costa del Sol. Professionell kylvagn med garanterad kylkedja. Konkurrenskraftigt kyltransportpris. Gratis offert.",
+        "button1": "Begär Kyltransport",
+        "button2": "Gratis Offert"
       }
     },
     "ultimaMilla": {
-      "title": "Sista Milen Logistik Marbella",
-      "subtitle": "Sista milen logistik i Marbella. Express leverans samma dag och 24h.",
-      "description": "Sista milen logistik i Marbella. Express leverans samma dag och 24h. Sista milen ehandel, mat och apotek. Realtidsspårning. Professionell sista milen tjänst.",
+      "hero": {
+        "badge": "Logística de Última Milla y Entrega Final",
+        "title": "Última Milla",
+        "subtitle": "Servicio última milla, logística última milla y distribución última milla en Marbella, Málaga y Costa del Sol. Entrega última milla express y mismo día. Envíos para ecommerce, tiendas online y paquetería ecommerce."
+      },
       "sectors": {
-        "title": "Sektorer",
+        "title": "Última Milla por Sector",
+        "subtitle": "Especialistas en última milla para ecommerce, alimentación, farmacia y más sectores",
         "sector1": {
-          "title": "E-handel",
-          "description": "Sista milen leverans för online butiker och marknadsplatser."
+          "title": "Última Milla Ecommerce",
+          "description": "Última milla comercio electrónico y tiendas online. Entrega última milla para ecommerce y retail online. Envíos para tiendas online y envios para ecommerce.",
+          "feature1": "Última milla tiendas online",
+          "feature2": "Última milla retail",
+          "feature3": "Entrega paquetes ecommerce",
+          "feature4": "Tracking en tiempo real"
         },
         "sector2": {
-          "title": "Mat",
-          "description": "Sista milen leverans för supermarknader och matbutiker."
+          "title": "Última Milla Alimentación",
+          "description": "Última milla supermercados y distribución alimentaria. Entrega de productos frescos y perecederos.",
+          "feature1": "Última milla supermercados",
+          "feature2": "Entrega productos frescos",
+          "feature3": "Horarios flexibles",
+          "feature4": "Cadena frío garantizada"
         },
         "sector3": {
-          "title": "Apotek",
-          "description": "Sista milen leverans för apotek och farmaceutiska produkter."
+          "title": "Última Milla Restaurantes",
+          "description": "Última milla comida a domicilio y delivery. Servicio express para restaurantes y servicios de comida.",
+          "feature1": "Última milla comida a domicilio",
+          "feature2": "Entrega express restaurantes",
+          "feature3": "Horarios ampliados",
+          "feature4": "Temperatura controlada"
         },
         "sector4": {
-          "title": "Restauranger",
-          "description": "Sista milen leverans för restauranger och hemleveranstjänster."
+          "title": "Última Milla Farmacia",
+          "description": "Última milla productos farmacéuticos y medicamentos. Entrega urgente y programada para farmacias.",
+          "feature1": "Última milla farmacia",
+          "feature2": "Entrega medicamentos",
+          "feature3": "Servicio urgente disponible",
+          "feature4": "Cumplimiento normativo"
+        },
+        "sector5": {
+          "title": "Última Milla Paquetería",
+          "description": "Última milla paquetes y mensajería. Entrega de envíos y paquetería general. Paqueteria ecommerce y paqueteria para ecommerce.",
+          "feature1": "Última milla paquetes",
+          "feature2": "Mensajería última milla",
+          "feature3": "Entrega flexible",
+          "feature4": "Seguimiento completo"
         }
       },
       "deliveryTypes": {
-        "title": "Leveranstyper",
+        "title": "Tipos de Entrega Última Milla",
+        "subtitle": "Última milla mismo día, express, urgente y programada según tus necesidades",
         "type1": {
-          "title": "Express",
-          "description": "Express leverans på kortast möjliga tid."
+          "title": "Última Milla Mismo Día",
+          "description": "Entrega última milla mismo día para urgencias"
         },
         "type2": {
-          "title": "Samma Dag",
-          "description": "Samma dag leverans för beställningar placerade före 14:00."
+          "title": "Última Milla Express",
+          "description": "Última milla express y 24 horas disponible"
         },
         "type3": {
-          "title": "Schemalagd",
-          "description": "Schemalagd leverans enligt mottagarens tillgänglighet."
+          "title": "Última Milla Programada",
+          "description": "Última milla programada con horarios flexibles"
         },
         "type4": {
-          "title": "Natt",
-          "description": "Nattleverans för större kundkomfort."
+          "title": "Última Milla Nocturna",
+          "description": "Última milla nocturna y entrega tarde disponible"
         }
       },
       "technology": {
-        "title": "Teknologi",
+        "title": "Tecnología Última Milla",
+        "subtitle": "Última milla digital con tracking, seguimiento GPS y plataforma avanzada",
         "tech1": {
-          "title": "Realtidsspårning",
-          "description": "Realtidsspårningssystem för att veta den exakta platsen för din leverans."
+          "title": "Última Milla Tracking",
+          "description": "Última milla seguimiento y tracking GPS en tiempo real. Monitoreo completo de cada entrega."
         },
         "tech2": {
-          "title": "Mobilapp",
-          "description": "Mobilapplikation för att hantera dina leveranser och ta emot realtidsmeddelanden."
+          "title": "Última Milla App",
+          "description": "Última milla digital con app móvil y plataforma web. Gestión completa desde tu dispositivo."
         },
         "tech3": {
-          "title": "Ruttsystem",
-          "description": "Intelligent ruttoptimeringssystem för mer effektiva leveranser."
+          "title": "Última Milla Sistema",
+          "description": "Última milla plataforma avanzada con integración API. Sistema completo de logística última milla."
         }
       },
       "zones": {
-        "title": "Täckningszoner",
+        "title": "Cobertura Última Milla",
+        "subtitle": "Última milla local, urbana y rural en Marbella, Málaga y toda la Costa del Sol",
         "zone1": {
-          "title": "Stadscentrum",
-          "description": "Täckning i stadscentrum i Marbella och omgivningarna."
+          "title": "Última Milla Urbana",
+          "description": "Última milla local en Marbella, Málaga y ciudades principales"
         },
         "zone2": {
-          "title": "Perifer",
-          "description": "Täckning i perifer zon och bostadsområden."
+          "title": "Última Milla Periférica",
+          "description": "Última milla en zonas periféricas y áreas residenciales"
         },
         "zone3": {
-          "title": "Landsbygd",
-          "description": "Täckning i landsbygdsområden och mer avlägsna kärnor."
+          "title": "Última Milla Rural",
+          "description": "Última milla rural y zonas menos accesibles de la Costa del Sol"
         }
       },
+      "ecommerceShipping": {
+        "title": "Envíos para Ecommerce y Tiendas Online",
+        "subtitle": "Servicio de envíos para ecommerce, tiendas online y paquetería ecommerce con última milla garantizada",
+        "service1": {
+          "title": "Envíos para Tiendas Online",
+          "description": "Envíos para tiendas online con última milla logística. Servicio de entrega última milla para tu tienda online."
+        },
+        "service2": {
+          "title": "Envíos para Ecommerce",
+          "description": "Envíos para ecommerce y envios ecommerce con logística última milla. Transporte ecommerce y paqueteria ecommerce."
+        },
+        "service3": {
+          "title": "Mensajería Ecommerce",
+          "description": "Mensajería ecommerce y mensajeria para ecommerce. Servicio de mensajería última milla para comercio electrónico."
+        },
+        "service4": {
+          "title": "Envíos Internacionales Ecommerce",
+          "description": "Envíos internacionales ecommerce con última milla. Logística internacional para tiendas online."
+        }
+      },
+      "companies": {
+        "title": "Empresas y Proveedores de Última Milla",
+        "subtitle": "Somos tu empresa de transporte ecommerce y proveedor de última milla especializado",
+        "company1": {
+          "title": "Empresas de Envío para Ecommerce",
+          "description": "Empresas de envio para ecommerce y empresas de envios para tiendas online. Servicio profesional de última milla."
+        },
+        "company2": {
+          "title": "Empresas de Transporte Ecommerce",
+          "description": "Empresas de transporte ecommerce y empresas transporte ecommerce. Logística especializada para comercio electrónico."
+        },
+        "company3": {
+          "title": "Proveedor de Última Milla",
+          "description": "Proveedor de ultima milla y proveedor ultima milla. Servicio de última milla logística profesional."
+        },
+        "company4": {
+          "title": "Empresas de Última Milla",
+          "description": "Empresas de ultima milla y empresas ultima milla. Soluciones logísticas de última milla para ecommerce."
+        }
+      },
+      "pricing": {
+        "title": "Tarifas y Precios de Envíos Ecommerce",
+        "subtitle": "Tarifas envíos ecommerce, precios envios ecommerce y tarifa plana envios ecommerce competitivos",
+        "price1": {
+          "title": "Tarifas Envíos Ecommerce",
+          "description": "Tarifas envios ecommerce y tarifas envíos ecommerce competitivas. Precios adaptados a tu volumen de envíos."
+        },
+        "price2": {
+          "title": "Precios Envíos Ecommerce",
+          "description": "Precios envios ecommerce y envios ecommerce baratos. Envíos baratos para ecommerce y envíos baratos para tienda online."
+        },
+        "price3": {
+          "title": "Tarifa Plana Envíos Ecommerce",
+          "description": "Tarifa plana envios ecommerce para múltiples envíos. Solución económica para tiendas online."
+        }
+      },
+      "concept": {
+        "title": "Concepto y Definición de Última Milla",
+        "subtitle": "Qué es la última milla, concepto de última milla y la última milla en logística",
+        "concept1": {
+          "title": "Qué es la Última Milla",
+          "description": "La última milla es la fase final de la distribución, desde el almacén hasta el cliente final. Concepto ultima milla y ultima milla que es explicado."
+        },
+        "concept2": {
+          "title": "Concepto de Última Milla",
+          "description": "Concepto de ultima milla y concepto ultima milla logistica. La última milla en logística es crucial para el éxito del ecommerce."
+        },
+        "concept3": {
+          "title": "La Última Milla en Logística",
+          "description": "La ultima milla en logistica y la última milla logística. Logística de última milla y logística de la última milla para ecommerce."
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas Servicio de Última Milla?",
+        "subtitle": "Logística última milla, distribución última milla y entrega última milla en Marbella, Málaga y Costa del Sol. Última milla ecommerce, alimentación y farmacia. Envíos para ecommerce y tiendas online.",
+        "button1": "Contratar Última Milla",
+        "button2": "Solicitar Presupuesto"
+      },
       "faqs": {
-        "title": "Vanliga Frågor",
+        "title": "Preguntas Frecuentes sobre Última Milla",
+        "subtitle": "Resolvemos tus dudas sobre última milla logística, entrega última milla, envíos para ecommerce y distribución última milla",
         "faq1": {
-          "question": "Vad är sista milen logistik?",
-          "answer": "Sista milen logistik är den sista etappen i leveransprocessen, från distributionscentret till den slutliga mottagaren. Det är den mest kritiska och kostsamme fasen i logistikedjan."
+          "question": "¿Qué es el servicio de última milla?",
+          "answer": "El servicio de última milla es la fase final de la distribución, desde el almacén o centro de distribución hasta el destino final del cliente. Ofrecemos última milla logística, última milla distribución y entrega última milla para ecommerce, alimentación, farmacia y paquetería en Marbella y Costa del Sol. La última milla logística es crucial para el éxito de las tiendas online."
         },
         "faq2": {
-          "question": "Hur mycket kostar sista milen tjänsten?",
-          "answer": "Priset för sista milen tjänsten varierar beroende på avstånd, leveranstyp (express, samma dag, schemalagd) och sektor (ehandel, mat, apotek). Begär en personlig offert utan åtagande med vår online räknare."
+          "question": "¿Cuánto tiempo tarda la entrega última milla?",
+          "answer": "Ofrecemos última milla mismo día, última milla 24 horas y última milla express para entregas urgentes. También disponemos de última milla programada con horarios flexibles, última milla fin de semana y última milla nocturna. El tiempo de entrega última milla depende del tipo de servicio contratado."
         },
         "faq3": {
-          "question": "Erbjuder ni leverans samma dag?",
-          "answer": "Ja, vi erbjuder leverans samma dag för beställningar placerade före 14:00 i stadscentrum i Marbella och omgivningarna. Vi erbjuder också express tjänst för akuta leveranser."
+          "question": "¿Qué sectores cubre el servicio de última milla?",
+          "answer": "Cubrimos última milla ecommerce y última milla comercio electrónico para tiendas online, última milla alimentación y última milla supermercados, última milla restaurantes y última milla comida a domicilio, última milla farmacia, última milla paquetería y última milla retail."
         },
         "faq4": {
-          "question": "Har ni realtidsspårning?",
-          "answer": "Ja, alla våra sista milen tjänster inkluderar realtidsspårning så att du kan känna till den exakta platsen för din leverans hela tiden via vår app eller webbplattform."
+          "question": "¿Cómo funciona el tracking de última milla?",
+          "answer": "Nuestro servicio de última milla incluye última milla tracking y última milla seguimiento en tiempo real mediante última milla GPS. Disponemos de última milla app y última milla plataforma digital para que puedas seguir tu envío en cada momento. El última milla sistema te notifica cada actualización."
         },
         "faq5": {
-          "question": "I vilka områden verkar ni?",
-          "answer": "Vi verkar i Marbella och Costa del Sol med stadscentrum, perifer och landsbygds täckning. Vi täcker bostadsområden, bostadsområden och mer avlägsna kärnor med olika leveranstider."
+          "question": "¿Cuánto cuesta el servicio de última milla?",
+          "answer": "El precio de última milla varía según la zona (última milla urbana, última milla periférica o última milla rural), tipo de entrega y urgencia. Ofrecemos última milla local en Marbella, última milla Málaga y última milla Costa del Sol. Las tarifas envíos ecommerce y precios envios ecommerce son competitivos. Solicita un presupuesto personalizado sin compromiso."
         },
         "faq6": {
-          "question": "Kan ni integrera er tjänst med mitt system?",
-          "answer": "Ja, vi erbjuder API-integration för att koppla vår sista milen tjänst till ditt hanteringssystem, online butik eller marknadsplats. Vårt tekniska team hjälper dig med implementeringen."
+          "question": "¿Hacen reparto última milla los fines de semana?",
+          "answer": "Sí, ofrecemos última milla fin de semana y última milla flexible con horarios adaptados a tus necesidades. El servicio de reparto última milla y reparto de ultima milla está disponible de lunes a domingo según el plan contratado."
+        },
+        "faq7": {
+          "question": "¿Qué diferencia hay entre última milla y mensajería tradicional?",
+          "answer": "La última milla logística se enfoca en la eficiencia y rapidez de la entrega final, con tecnología avanzada de tracking, rutas optimizadas y flexibilidad horaria. Nuestro servicio de mensajería última milla y mensajeria ecommerce combina la velocidad del delivery última milla con la profesionalidad del transporte última milla."
+        },
+        "faq8": {
+          "question": "¿Ofrecen envíos para ecommerce?",
+          "answer": "Sí, ofrecemos envíos para ecommerce y envios para tiendas online. Nuestro servicio de transporte ecommerce y paqueteria ecommerce está especializado en última milla logística para comercio electrónico. Somos empresas de envio para ecommerce y empresas de envios para tiendas online."
+        },
+        "faq9": {
+          "question": "¿Qué es la paquetería ecommerce?",
+          "answer": "La paquetería ecommerce y paqueteria para ecommerce es el servicio de envío de paquetes para tiendas online. Ofrecemos paqueteria para tiendas online, paquetería e commerce y ecommerce paqueteria con última milla garantizada. También ofrecemos paqueteria ultima milla y paqueteria de ultima milla."
+        },
+        "faq10": {
+          "question": "¿Cuáles son las tarifas envíos ecommerce?",
+          "answer": "Las tarifas envios ecommerce y tarifas envíos ecommerce varían según el volumen, distancia y tipo de entrega. Ofrecemos precios envios ecommerce competitivos, envios ecommerce baratos y tarifa plana envios ecommerce para múltiples envíos. También disponemos de envios baratos para ecommerce y envíos baratos para tienda online."
+        },
+        "faq11": {
+          "question": "¿Qué es la logística de última milla?",
+          "answer": "La logística de ultima milla y logística de última milla es la gestión del último tramo de la cadena de suministro, desde el centro de distribución hasta el cliente final. Incluye logistica ultima milla, logistica envios ecommerce y logistica de ultima milla. También abarca la logística de distribución ultima milla y la logística de la última milla."
+        },
+        "faq12": {
+          "question": "¿Son una empresa de transporte ecommerce?",
+          "answer": "Sí, somos empresas de transporte ecommerce y empresas transporte ecommerce especializadas en última milla. También somos empresas de transporte ultima milla y empresas de ultima milla. Ofrecemos transporte para ecommerce y transporte ultima milla profesional."
+        },
+        "faq13": {
+          "question": "¿Qué es un proveedor de última milla?",
+          "answer": "Un proveedor de ultima milla y proveedor ultima milla es una empresa que ofrece servicios de entrega última milla. Como proveedor última milla, ofrecemos soluciones de entrega de última milla y servicios de entrega de última milla para ecommerce y tiendas online."
+        },
+        "faq14": {
+          "question": "¿Qué es el concepto de última milla?",
+          "answer": "El concepto de ultima milla y concepto ultima milla se refiere a la fase final del proceso de distribución. El concepto ultima milla logistica incluye entregas ultima milla, entregas de ultima milla y entrega de la ultima milla. La ultima milla concepto y ultima milla definicion es crucial para entender la logística moderna."
+        },
+        "faq15": {
+          "question": "¿Qué es la distribución de última milla?",
+          "answer": "La distribucion de ultima milla y distribucion ultima milla es el proceso de entrega final de productos. Incluye distribucion de la ultima milla y operaciones de ultima milla. También abarca el proceso de ultima milla, proceso ultima milla y procesos ultima milla."
+        },
+        "faq16": {
+          "question": "¿Ofrecen soluciones logísticas para ecommerce?",
+          "answer": "Sí, ofrecemos soluciones logisticas para ecommerce y soluciones envios ecommerce. También disponemos de soluciones de ultima milla, soluciones de entrega de última milla y soluciones ultima milla. Somos especialistas en logística para tiendas online."
+        },
+        "faq17": {
+          "question": "¿Qué es la última milla en logística?",
+          "answer": "La ultima milla en logistica y última milla en logística es el último tramo del proceso de entrega. La logística de la última milla y la última milla logística son fundamentales para el éxito del ecommerce. También incluye la ultima milla logistica que es y ultima milla logistica que es."
+        },
+        "faq18": {
+          "question": "¿Qué significa última milla?",
+          "answer": "La ultima milla significado y ultima milla que es se refiere a la fase final de la distribución. La ultima milla definicion y ultima milla concepto incluyen entregas ultima milla, envios ultima milla y envios de ultima milla. También abarca la ultima milla empresa y ultima milla paqueteria."
         }
+      },
+      "seo": {
+        "title": "Última Milla Logística Marbella | Envíos para Ecommerce y Tiendas Online | PortesPro",
+        "description": "Última milla logística en Marbella, Málaga y Costa del Sol. Envíos para ecommerce, tiendas online y paquetería ecommerce. Empresas de transporte ecommerce y proveedor de última milla. Tarifas envíos ecommerce competitivas. Presupuesto gratis.",
+        "keywords": "ultima milla, última milla, ultima milla logistica, última milla logística, envios para tiendas online, envios para ecommerce, envios ecommerce, envio ecommerce, transporte ecommerce, paqueteria ecommerce, empresas de envio para ecommerce, tarifas envíos ecommerce, tarifa plana envios ecommerce, envios ecommerce baratos, ecommerce envios, transporte para ecommerce, envios baratos ecommerce, transporte ultima milla, paqueteria para ecommerce, logistica ultima milla, empresas de envios para tiendas online, empresas de transporte ecommerce, logistica envios ecommerce, logistica de ultima milla, paquetería e commerce, última milla logística, la ultima milla, envios para empresas online, servicio ultima milla, envíos baratos para tienda online, precios envios ecommerce, empresas de ultima milla, empresas ultima milla, reparto ultima milla, última milla transporte, empresas transporte ecommerce, paqueteria ultima milla, envios internacionales ecommerce, servicio de ultima milla, mensajeria ecommerce, proveedor de ultima milla, proveedor ultima milla, envios baratos para ecommerce, envios ultima milla, tarifas envios ecommerce, mensajeria para ecommerce, transporte de ultima milla, empresas de transporte ultima milla, ecommerce paqueteria, entregas ultima milla, la ultima milla en logistica, soluciones envios ecommerce, entregas de ultima milla, envios de ultima milla, empresas de paqueteria para ecommerce, reparto de ultima milla, logística de última milla, paqueteria para tiendas online, e commerce paqueteria, ultima milla en logistica, paquetería para tiendas online, mensajeria para tienda online, distribucion de ultima milla, distribucion ultima milla, mejor paqueteria para ecommerce, concepto de ultima milla, concepto ultima milla, concepto ultima milla logistica, distribucion de la ultima milla, empresas de mensajeria para tienda online, entrega de la ultima milla, envios para mi tienda online, envío de comercio electrónico, envío ecommerce, la logística de la última milla, la ultima milla logistica, la ultima milla que es, la última milla logística, logistica de distribución ultima milla, logistica de la ultima milla, logistica de ultima milla que es, logística de la última milla, logística de última milla definición, logística de última milla ejemplo, operaciones de ultima milla, paquete e commerce, paqueteria de ultima milla, paqueteria para e commerce, paqueteria tienda online, paquetería e commerce que es, paquetes de ecommerce, proceso de ultima milla, proceso ultima milla, procesos ultima milla, proveedor última milla, servicio de última milla, servicios de entrega de última milla, soluciones de entrega de última milla, soluciones de ultima milla, soluciones logisticas para ecommerce, soluciones ultima milla, tiendas online envio gratis, ultima milla concepto, ultima milla definicion, ultima milla empresa, ultima milla logistica que es, ultima milla paqueteria, ultima milla que es, ultima milla significado, ultima milla sostenible, ultimamilla, última milla en logística, última milla logística que es, última milla que es",
+        "ogTitle": "Última Milla Logística Marbella | Envíos para Ecommerce",
+        "ogDescription": "Última milla logística en Marbella, Málaga y Costa del Sol. Envíos para ecommerce, tiendas online y paquetería ecommerce. Empresas de transporte ecommerce y proveedor de última milla.",
+        "twitterTitle": "Última Milla Logística | Envíos Ecommerce",
+        "twitterDescription": "Última milla logística en Marbella. Envíos para ecommerce, tiendas online y paquetería ecommerce. Tarifas competitivas.",
+        "schemaServiceType": "Última Milla Logística",
+        "schemaDescription": "Última milla logística en Marbella. Entrega última milla express, mismo día y 24h. Envíos para ecommerce y tiendas online."
       }
     }
   },
@@ -865,6 +1342,546 @@
       "seoContent2": "Vår flytttjänst inkluderar privatflytt, företagsflytt, kontorsflytt, internationell flytt och akut flytt. Vi tillhandahåller också professionell packning, förvaring och kyltransporttjänster.",
       "seoContent3": "Kontakta vårt flyttföretag för att få en personifierad flyttoffer. Vi erbjuder billiga flytttjänster, prisvärda flyttar och flytttjänst med högsta kvalitet. Begär en gratis flyttoffer utan förpliktelse.",
       "keywords": "kontakt flytt, flyttoffer, flyttuppskattning, flyttföretag, billiga flytttjänster, prisvärda flyttar, flytttjänst, flyttföretag, flyttar Marbella, flyttar Málaga, flyttar Costa del Sol"
+    },
+    "mudanzasParticulares": {
+      "hero": {
+        "badge": "Flytt för Privatpersoner och Familjer",
+        "title": "Privatflytt",
+        "subtitle": "Privatflytt och små flyttar i Marbella, Málaga och Costa del Sol. Komplett tjänst för prisvärda privatflytt för hem och familjer. Gratis offert."
+      },
+      "services": {
+        "title": "Privatflytttjänster",
+        "subtitle": "Komplett privatflytt med professionell tjänst för ditt hem",
+        "service1": {
+          "title": "Komplett Privatflytt",
+          "description": "Privatflytt och små flyttar med komplett tjänst. Ideal för prisvärda privatflytt och billiga små flyttar."
+        },
+        "service2": {
+          "title": "Packning och Uppackning",
+          "description": "Professionell packningstjänst inkluderad i privatflytt. Komplett skydd av dina tillhörigheter."
+        },
+        "service3": {
+          "title": "Försäkring och Garanti",
+          "description": "Privatflytt med komplett försäkring och tillfredsställelsegaranti. Total trygghet i din flytt."
+        }
+      },
+      "benefits": {
+        "title": "Fördelar med Privatflytt",
+        "subtitle": "Varför välja vår privatflytt",
+        "benefit1": {
+          "title": "Konkurrenskraftiga Priser",
+          "description": "Prisvärda privatflytt och billiga små flyttar med priser från 45€."
+        },
+        "benefit2": {
+          "title": "Snabb Tjänst",
+          "description": "Privatflytt med snabb och effektiv leverans. Inga onödiga väntetider."
+        },
+        "benefit3": {
+          "title": "Totalt Skydd",
+          "description": "Privatflytt med komplett försäkring och professionell omsorg om dina tillhörigheter."
+        },
+        "benefit4": {
+          "title": "Packning Inkluderad",
+          "description": "Privatflytt med professionell packningstjänst inkluderad utan extra kostnad."
+        }
+      },
+      "process": {
+        "title": "Privatflyttprocess",
+        "subtitle": "Hur vi arbetar med din privatflytt",
+        "step1": {
+          "title": "Gratis Offert",
+          "description": "Begär offert för privatflytt utan förpliktelse. Omedelbar online-offert."
+        },
+        "step2": {
+          "title": "Planering",
+          "description": "Vi planerar din lilla flytt eller privatflytt i detalj och professionellt."
+        },
+        "step3": {
+          "title": "Packning och Lastning",
+          "description": "Professionell packning och säker lastning i privatflytt. Maximal omsorg."
+        },
+        "step4": {
+          "title": "Leverans och Uppackning",
+          "description": "Punktlig leverans och uppackning vid destination. Komplett privatflytt."
+        }
+      },
+      "cta": {
+        "title": "Behöver du Privatflytt?",
+        "subtitle": "Privatflytt och små flyttar i Marbella, Málaga och Costa del Sol. Prisvärda privatflytt med komplett tjänst. Gratis offert.",
+        "button1": "Begär Offert",
+        "button2": "Beräkna Onlinepris"
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Privatflytt",
+        "subtitle": "Vi svarar på dina frågor om privatflytt och små flyttar",
+        "faq1": {
+          "question": "Vad inkluderar privatflytt?",
+          "answer": "Privatflytt inkluderar komplett tjänst: professionell packning, lastning, säker transport, lossning och uppackning. Ideal för små flyttar och prisvärda privatflytt."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar privatflytt?",
+          "answer": "Priset för privatflytt varierar beroende på volym och avstånd. Vi erbjuder prisvärda privatflytt från 45€. Billiga små flyttar med konkurrenskraftiga priser. Begär gratis offert."
+        },
+        "faq3": {
+          "question": "Vad är en liten flytt?",
+          "answer": "En liten flytt är ideal för studior, små lägenheter eller privatflytt med få möbler. Vi erbjuder billiga små flyttar med komplett tjänst."
+        },
+        "faq4": {
+          "question": "Inkluderar privatflytt packning?",
+          "answer": "Ja, vår privatflytt inkluderar professionell packningstjänst utan extra kostnad. Komplett skydd av dina tillhörigheter i små flyttar eller privatflytt."
+        },
+        "faq5": {
+          "question": "Erbjuder ni försäkring för privatflytt?",
+          "answer": "Ja, alla våra privatflytt inkluderar komplett försäkring. Prisvärda privatflytt med totalt skydd av dina tillhörigheter."
+        },
+        "faq6": {
+          "question": "Hur lång tid tar privatflytt?",
+          "answer": "Tiden för privatflytt beror på volym. För små flyttar tar processen vanligtvis 4-6 timmar. Kompletta privatflytt kan ta 1-2 dagar."
+        }
+      },
+      "seo": {
+        "title": "Privatflytt Marbella | Små Flyttar | Prisvärda Privatflytt | PortesPro",
+        "description": "Privatflytt och små flyttar i Marbella, Málaga och Costa del Sol. Prisvärda privatflytt och billiga små flyttar med komplett tjänst. Gratis offert.",
+        "keywords": "privatflytt, små flyttar, prisvärda privatflytt, billiga små flyttar, privatflytt, flytt för privatpersoner, hemflytt, familjeflytt, husflytt, lägenhetsflytt, studieflytt, billiga flyttar, ekonomiska flyttar, privatflyttoffer, privatflyttpris, privatflyttföretag, privatflytttjänst",
+        "ogTitle": "Privatflytt Marbella | Små Flyttar",
+        "ogDescription": "Privatflytt och små flyttar i Marbella, Málaga och Costa del Sol. Prisvärda privatflytt med komplett tjänst.",
+        "twitterTitle": "Privatflytt | Små Flyttar",
+        "twitterDescription": "Privatflytt och små flyttar i Marbella. Prisvärda privatflytt med komplett tjänst.",
+        "schemaServiceType": "Privatflytt",
+        "schemaDescription": "Privatflytt och små flyttar i Marbella, Málaga och Costa del Sol. Komplett tjänst för prisvärda privatflytt."
+      }
+    },
+    "mudanzasEmpresas": {
+      "hero": {
+        "badge": "Flytt för Företag och Affärer",
+        "title": "Företagsflytt",
+        "subtitle": "Företagsflytt och företagsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt för företag. Gratis offert."
+      },
+      "services": {
+        "title": "Företagsflytttjänster",
+        "subtitle": "Företagsflytt och företagsflyttar med specialiserad professionell tjänst",
+        "service1": {
+          "title": "Företagsflytt",
+          "description": "Företagsflytt och kompletta företagsflyttar. Specialiserad tjänst för företag i alla storlekar."
+        },
+        "service2": {
+          "title": "Företagsplanering",
+          "description": "Företagsflytt med detaljerad planering för att minimera avbrott i din verksamhet."
+        },
+        "service3": {
+          "title": "Flexibla Tidscheman",
+          "description": "Företagsflytt med tidscheman anpassade efter dina behov. Även helger och nattider."
+        }
+      },
+      "benefits": {
+        "title": "Fördelar med Företagsflytt",
+        "subtitle": "Varför välja vår företagsflytt",
+        "benefit1": {
+          "title": "Inga Avbrott",
+          "description": "Företagsflytt planerade för att minimera påverkan på din företagsverksamhet."
+        },
+        "benefit2": {
+          "title": "Specialiserade Team",
+          "description": "Företagsflytt med professionella team specialiserade på företagsflytt."
+        },
+        "benefit3": {
+          "title": "Komplett Dokumentation",
+          "description": "Företagsflytt med all nödvändig dokumentation och företagsförsäkringar."
+        },
+        "benefit4": {
+          "title": "24/7 Support",
+          "description": "Företagsflytt med kontinuerlig support under hela flyttprocessen."
+        }
+      },
+      "process": {
+        "title": "Företagsflyttprocess",
+        "subtitle": "Hur vi arbetar med din företagsflytt",
+        "step1": {
+          "title": "Analys och Offert",
+          "description": "Detaljerad analys av dina behov för företagsflytt. Personifierad offert."
+        },
+        "step2": {
+          "title": "Strategisk Planering",
+          "description": "Strategisk planering av företagsflytt för att minimera avbrott."
+        },
+        "step3": {
+          "title": "Professionell Genomförande",
+          "description": "Professionell genomförande av företagsflytt med specialiserade team."
+        },
+        "step4": {
+          "title": "Installation och Verifiering",
+          "description": "Komplett installation och verifiering vid destination. Företagsflytt slutförd."
+        }
+      },
+      "cta": {
+        "title": "Behöver du Företagsflytt?",
+        "subtitle": "Företagsflytt och företagsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt. Gratis offert.",
+        "button1": "Begär Offert",
+        "button2": "Beräkna Onlinepris"
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Företagsflytt",
+        "subtitle": "Vi svarar på dina frågor om företagsflytt och företagsflyttar",
+        "faq1": {
+          "question": "Vad inkluderar företagsflytt?",
+          "answer": "Företagsflytt inkluderar komplett tjänst: strategisk planering, professionell packning, säker transport, installation och verifiering. Företagsflytt med specialiserad tjänst."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar företagsflytt?",
+          "answer": "Priset för företagsflytt varierar beroende på företagsstorlek och komplexitet. Vi erbjuder personifierade offerter för företagsflytt. Begär offert utan förpliktelse."
+        },
+        "faq3": {
+          "question": "Kan ni göra företagsflytt på natten?",
+          "answer": "Ja, vi erbjuder företagsflytt med flexibla tidscheman, inklusive nattider och helger för att minimera avbrott i företagsflytt."
+        },
+        "faq4": {
+          "question": "Vilken dokumentation behöver jag för företagsflytt?",
+          "answer": "För företagsflytt behöver du grundläggande företagsdokumentation. Vårt team hjälper dig med all nödvändig dokumentation för företagsflytt."
+        },
+        "faq5": {
+          "question": "Erbjuder ni försäkring för företagsflytt?",
+          "answer": "Ja, alla våra företagsflytt inkluderar komplett företagsförsäkring. Företagsflytt med totalt skydd av utrustning och möbler."
+        },
+        "faq6": {
+          "question": "Hur lång tid tar företagsflytt?",
+          "answer": "Tiden för företagsflytt beror på storlek. Små företagsflytt kan ta 1 dag, medan stora företagsflytt kan kräva flera dagar."
+        }
+      },
+      "seo": {
+        "title": "Företagsflytt Marbella | Företagsflytt | Kontorsflytt | PortesPro",
+        "description": "Företagsflytt och företagsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt för företag. Gratis offert.",
+        "keywords": "företagsflytt, företagsflytt, kontorsflytt, företagsflyttar, kommersiell flytt, butiksflytt, lagerflytt, företagsflytt Marbella, företagsflytt Málaga, företagsflytt Costa del Sol, företagsflytttjänst, företagsflyttföretag, företagsflyttoffer, företagsflyttpris",
+        "ogTitle": "Företagsflytt Marbella | Företagsflytt",
+        "ogDescription": "Företagsflytt och företagsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt.",
+        "twitterTitle": "Företagsflytt | Företagsflytt",
+        "twitterDescription": "Företagsflytt och företagsflyttar i Marbella. Specialiserad tjänst för kontorsflytt.",
+        "schemaServiceType": "Företagsflytt",
+        "schemaDescription": "Företagsflytt och företagsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt."
+      }
+    },
+    "mudanzasOficinas": {
+      "hero": {
+        "badge": "Professionell Kontorsflytt",
+        "title": "Kontorsflytt",
+        "subtitle": "Kontorsflytt och kontorsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt utan att störa din verksamhet. Gratis offert."
+      },
+      "services": {
+        "title": "Kontorsflytttjänster",
+        "subtitle": "Kontorsflytt och kontorsflyttar med specialiserad professionell tjänst",
+        "service1": {
+          "title": "Komplett Kontorsflytt",
+          "description": "Kontorsflytt och kontorsflyttar med komplett tjänst. Specialister på kontorsflytt."
+        },
+        "service2": {
+          "title": "Demontering och Montering",
+          "description": "Kontorsflytt med demonterings- och monteringsservice av kontorsmöbler inkluderad."
+        },
+        "service3": {
+          "title": "Utrustningsomlokalisering",
+          "description": "Kontorsflytt med professionell omlokalisering av IT-utrustning och teknik."
+        }
+      },
+      "benefits": {
+        "title": "Fördelar med Kontorsflytt",
+        "subtitle": "Varför välja vår kontorsflytt",
+        "benefit1": {
+          "title": "Inga Avbrott",
+          "description": "Kontorsflytt planerade så att din verksamhet fortsätter att fungera under flytten."
+        },
+        "benefit2": {
+          "title": "Specialiserade Team",
+          "description": "Kontorsflytt med professionella team specialiserade på kontorsflytt."
+        },
+        "benefit3": {
+          "title": "Flexibla Tidscheman",
+          "description": "Kontorsflytt med anpassade tidscheman: helger, nattider."
+        },
+        "benefit4": {
+          "title": "Komplett Installation",
+          "description": "Kontorsflytt med komplett installation av möbler och utrustning vid destination."
+        }
+      },
+      "process": {
+        "title": "Kontorsflyttprocess",
+        "subtitle": "Hur vi arbetar med din kontorsflytt",
+        "step1": {
+          "title": "Utvärdering och Offert",
+          "description": "Detaljerad utvärdering av dina behov för kontorsflytt. Personifierad offert."
+        },
+        "step2": {
+          "title": "Detaljerad Planering",
+          "description": "Detaljerad planering av kontorsflytt för att minimera avbrott."
+        },
+        "step3": {
+          "title": "Professionell Genomförande",
+          "description": "Professionell genomförande av kontorsflytt med specialiserade team."
+        },
+        "step4": {
+          "title": "Installation och Konfiguration",
+          "description": "Komplett installation och konfiguration vid destination. Kontorsflytt slutförd."
+        }
+      },
+      "cta": {
+        "title": "Behöver du Kontorsflytt?",
+        "subtitle": "Kontorsflytt och kontorsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst utan att störa din verksamhet. Gratis offert.",
+        "button1": "Begär Offert",
+        "button2": "Beräkna Onlinepris"
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Kontorsflytt",
+        "subtitle": "Vi svarar på dina frågor om kontorsflytt och kontorsflyttar",
+        "faq1": {
+          "question": "Vad inkluderar kontorsflytt?",
+          "answer": "Kontorsflytt inkluderar komplett tjänst: demontering, packning, transport, montering och installation. Kontorsflyttar med specialiserad tjänst."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar kontorsflytt?",
+          "answer": "Priset för kontorsflytt varierar beroende på kontorsstorlek. Vi erbjuder personifierade offerter för kontorsflyttar. Begär offert utan förpliktelse."
+        },
+        "faq3": {
+          "question": "Kan ni göra kontorsflytt på helger?",
+          "answer": "Ja, vi erbjuder kontorsflytt med flexibla tidscheman, inklusive helger och nattider för att inte störa din verksamhet i kontorsflyttar."
+        },
+        "faq4": {
+          "question": "Inkluderar kontorsflytt demontering och montering?",
+          "answer": "Ja, vår kontorsflytt inkluderar komplett demonterings- och monteringsservice av möbler. Kontorsflyttar med professionell installation."
+        },
+        "faq5": {
+          "question": "Vad händer med IT-utrustning i kontorsflytt?",
+          "answer": "I kontorsflytt tar våra specialister hand om säker omlokalisering av IT-utrustning. Kontorsflyttar med särskild omsorg om teknik."
+        },
+        "faq6": {
+          "question": "Hur lång tid tar kontorsflytt?",
+          "answer": "Tiden för kontorsflytt beror på storlek. Små kontorsflyttar kan ta 1 dag, medan stora kontorsflytt kan kräva 2-3 dagar."
+        }
+      },
+      "seo": {
+        "title": "Kontorsflytt Marbella | Kontorsflyttar | Specialiserad Tjänst | PortesPro",
+        "description": "Kontorsflytt och kontorsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst för kontorsflytt utan att störa din verksamhet. Gratis offert.",
+        "keywords": "kontorsflytt, kontorsflyttar, kontorsomlokalisering, kontorsflytt Marbella, kontorsflytt Málaga, kontorsflytt Costa del Sol, kontorsflytttjänst, kontorsflyttföretag, kontorsflyttoffer, kontorsflyttpris",
+        "ogTitle": "Kontorsflytt Marbella | Kontorsflyttar",
+        "ogDescription": "Kontorsflytt och kontorsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst utan att störa din verksamhet.",
+        "twitterTitle": "Kontorsflytt | Kontorsflyttar",
+        "twitterDescription": "Kontorsflytt och kontorsflyttar i Marbella. Specialiserad tjänst utan att störa din verksamhet.",
+        "schemaServiceType": "Kontorsflytt",
+        "schemaDescription": "Kontorsflytt och kontorsflyttar i Marbella, Málaga och Costa del Sol. Specialiserad tjänst utan att störa din verksamhet."
+      }
+    },
+    "mudanzasInternacionales": {
+      "hero": {
+        "badge": "Professionell Internationell Flytt",
+        "title": "Internationell Flytt",
+        "subtitle": "Internationell flytt och flytt utomlands i Marbella, Málaga och Costa del Sol. Komplett tjänst för internationell flytt med dokumentation inkluderad. Gratis offert."
+      },
+      "services": {
+        "title": "Internationella Flytttjänster",
+        "subtitle": "Internationell flytt och flytt utomlands med komplett professionell tjänst",
+        "service1": {
+          "title": "Flytt Utomlands",
+          "description": "Internationell flytt och flytt utomlands till vilken destination som helst. Komplett tjänst för internationell flytt."
+        },
+        "service2": {
+          "title": "Komplett Dokumentation",
+          "description": "Internationell flytt med all tull- och juridisk dokumentation inkluderad."
+        },
+        "service3": {
+          "title": "Internationell Försäkring",
+          "description": "Internationell flytt med komplett försäkring för flytt utomlands."
+        }
+      },
+      "benefits": {
+        "title": "Fördelar med Internationell Flytt",
+        "subtitle": "Varför välja vår internationella flytt",
+        "benefit1": {
+          "title": "Världsomfattande Täckning",
+          "description": "Internationell flytt till vilken destination som helst. Flytt utomlands med komplett täckning."
+        },
+        "benefit2": {
+          "title": "Dokumentation Inkluderad",
+          "description": "Internationell flytt med all tull- och juridisk dokumentation inkluderad utan extra kostnad."
+        },
+        "benefit3": {
+          "title": "Komplett Försäkring",
+          "description": "Internationell flytt med komplett försäkring för flytt utomlands."
+        },
+        "benefit4": {
+          "title": "24/7 Spårning",
+          "description": "Internationell flytt med komplett spårning under hela flyttprocessen utomlands."
+        }
+      },
+      "process": {
+        "title": "Internationell Flyttprocess",
+        "subtitle": "Hur vi arbetar med din internationella flytt",
+        "step1": {
+          "title": "Konsultation och Offert",
+          "description": "Inledande konsultation för internationell flytt. Detaljerad offert för flytt utomlands."
+        },
+        "step2": {
+          "title": "Dokumentation och Förfaranden",
+          "description": "Komplett dokumentationshantering för internationell flytt. Tullförfaranden inkluderade."
+        },
+        "step3": {
+          "title": "Packning och Skeppning",
+          "description": "Professionell packning och säker skeppning för flytt utomlands."
+        },
+        "step4": {
+          "title": "Transport och Leverans",
+          "description": "Säker transport och leverans vid destination. Internationell flytt slutförd."
+        }
+      },
+      "cta": {
+        "title": "Behöver du Internationell Flytt?",
+        "subtitle": "Internationell flytt och flytt utomlands i Marbella, Málaga och Costa del Sol. Komplett tjänst med dokumentation inkluderad. Gratis offert.",
+        "button1": "Begär Offert",
+        "button2": "Beräkna Onlinepris"
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Internationell Flytt",
+        "subtitle": "Vi svarar på dina frågor om internationell flytt och flytt utomlands",
+        "faq1": {
+          "question": "Vad inkluderar internationell flytt?",
+          "answer": "Internationell flytt inkluderar komplett tjänst: packning, tull dokumentation, säker transport, internationell försäkring och leverans vid destination. Flytt utomlands med professionell tjänst."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar internationell flytt?",
+          "answer": "Priset för internationell flytt varierar beroende på destination och volym. Flytt utomlands med konkurrenskraftiga priser. Begär personifierad offert för internationell flytt."
+        },
+        "faq3": {
+          "question": "Vilken dokumentation behöver jag för internationell flytt?",
+          "answer": "För internationell flytt behöver du grundläggande dokumentation. Vi hanterar all tull dokumentation för flytt utomlands."
+        },
+        "faq4": {
+          "question": "Hur lång tid tar internationell flytt?",
+          "answer": "Tiden för internationell flytt beror på destination. Flytt utomlands inom Europa tar vanligtvis 7-14 dagar. Internationell flytt till andra kontinenter kan ta 3-6 veckor."
+        },
+        "faq5": {
+          "question": "Erbjuder ni försäkring för internationell flytt?",
+          "answer": "Ja, alla våra internationella flyttar inkluderar komplett försäkring. Flytt utomlands med totalt skydd under hela resan."
+        },
+        "faq6": {
+          "question": "Till vilka länder gör ni internationell flytt?",
+          "answer": "Vi erbjuder internationell flytt till vilken världsomfattande destination som helst. Flytt utomlands inom och utanför Europa. Kontrollera tillgänglighet för internationell flytt till din destination."
+        }
+      },
+      "seo": {
+        "title": "Internationell Flytt Marbella | Flytt Utomlands | Komplett Tjänst | PortesPro",
+        "description": "Internationell flytt och flytt utomlands i Marbella, Málaga och Costa del Sol. Komplett tjänst för internationell flytt med dokumentation inkluderad. Gratis offert.",
+        "keywords": "internationell flytt, flytt utomlands, flytt utanför Spanien, flytt Europa, internationell flytt priser, internationell flytt Marbella, internationell flytt Málaga, internationell flytt Costa del Sol, internationell flytttjänst, internationellt flyttföretag, internationell flyttoffer, internationell flyttpris",
+        "ogTitle": "Internationell Flytt Marbella | Flytt Utomlands",
+        "ogDescription": "Internationell flytt och flytt utomlands i Marbella, Málaga och Costa del Sol. Komplett tjänst med dokumentation inkluderad.",
+        "twitterTitle": "Internationell Flytt | Flytt Utomlands",
+        "twitterDescription": "Internationell flytt och flytt utomlands i Marbella. Komplett tjänst med dokumentation inkluderad.",
+        "schemaServiceType": "Internationell Flytt",
+        "schemaDescription": "Internationell flytt och flytt utomlands i Marbella, Málaga och Costa del Sol. Komplett tjänst med dokumentation inkluderad."
+      }
+    },
+    "mudanzasUrgentes": {
+      "hero": {
+        "badge": "Akut Flytt 24 Timmar",
+        "title": "Akut Flytt",
+        "subtitle": "Akut flytt och expressflytt 24 timmar i Marbella, Málaga och Costa del Sol. Akut flytttjänst tillgänglig varje dag. Gratis offert."
+      },
+      "services": {
+        "title": "Akut Flytttjänster",
+        "subtitle": "Akut flytt och expressflytt 24 timmar med omedelbar professionell tjänst",
+        "service1": {
+          "title": "Expressflytt 24h",
+          "description": "Akut flytt och expressflytt 24 timmar. Tjänst tillgänglig varje dag på året."
+        },
+        "service2": {
+          "title": "Omedelbart Svar",
+          "description": "Akut flytt med omedelbart svar. 24/7 tillgänglighet för expressflytt."
+        },
+        "service3": {
+          "title": "Samma Dag",
+          "description": "Akut flytt med tjänst samma dag. Expressflytt när du behöver det mest."
+        }
+      },
+      "benefits": {
+        "title": "Fördelar med Akut Flytt",
+        "subtitle": "Varför välja vår akut flytt",
+        "benefit1": {
+          "title": "24/7 Tillgänglighet",
+          "description": "Akut flytt tillgänglig varje dag. Expressflytt när du behöver det mest."
+        },
+        "benefit2": {
+          "title": "Snabb Respons",
+          "description": "Akut flytt med omedelbart svar. Expressflytt på kortast möjliga tid."
+        },
+        "benefit3": {
+          "title": "Komplett Tjänst",
+          "description": "Akut flytt med komplett tjänst. Expressflytt utan att kompromissa med kvaliteten."
+        },
+        "benefit4": {
+          "title": "Förberedda Team",
+          "description": "Akut flytt med alltid förberedda team. Professionell expressflytt."
+        }
+      },
+      "process": {
+        "title": "Akut Flyttprocess",
+        "subtitle": "Hur vi arbetar med din akut flytt",
+        "step1": {
+          "title": "Akut Samtal",
+          "description": "Kontakta för akut flytt. Omedelbart svar för expressflytt."
+        },
+        "step2": {
+          "title": "Snabb Utvärdering",
+          "description": "Snabb utvärdering av dina behov för akut flytt. Express offert."
+        },
+        "step3": {
+          "title": "Omedelbar Utsläppning",
+          "description": "Omedelbar utsläppning av team för expressflytt. Akut flytt på gång."
+        },
+        "step4": {
+          "title": "Snabb Leverans",
+          "description": "Snabb och effektiv leverans. Akut flytt slutförd på rekordtid."
+        }
+      },
+      "cta": {
+        "title": "Behöver du Akut Flytt?",
+        "subtitle": "Akut flytt och expressflytt 24 timmar i Marbella, Málaga och Costa del Sol. Tjänst tillgänglig varje dag. Gratis offert.",
+        "button1": "Begär Offert",
+        "button2": "Beräkna Onlinepris"
+      },
+      "faqs": {
+        "title": "Vanliga Frågor om Akut Flytt",
+        "subtitle": "Vi svarar på dina frågor om akut flytt och expressflytt",
+        "faq1": {
+          "question": "Vad är akut flytt?",
+          "answer": "Akut flytt är expressflytt 24 timmar tjänster tillgängliga när du behöver flytta akut. Expressflytt med omedelbart svar."
+        },
+        "faq2": {
+          "question": "Hur mycket kostar akut flytt?",
+          "answer": "Priset för akut flytt kan vara något högre på grund av brådskande. Expressflytt med konkurrenskraftiga priser. Begär offert för akut flytt."
+        },
+        "faq3": {
+          "question": "Är akut flytt tillgänglig på helger?",
+          "answer": "Ja, vår akut flytt är tillgänglig varje dag, inklusive helger och helgdagar. Expressflytt 24/7."
+        },
+        "faq4": {
+          "question": "Hur lång tid tar akut flytt?",
+          "answer": "Akut flytt kan göras samma dag eller inom 24 timmar. Expressflytt med minsta svarstider."
+        },
+        "faq5": {
+          "question": "Inkluderar akut flytt packning?",
+          "answer": "Ja, vår akut flytt inkluderar professionell packningstjänst. Expressflytt med komplett tjänst."
+        },
+        "faq6": {
+          "question": "Vad är skillnaden mellan akut flytt och normal flytt?",
+          "answer": "Akut flytt erbjuder omedelbar tillgänglighet och snabbare svarstider. Expressflytt när du behöver det mest."
+        }
+      },
+      "seo": {
+        "title": "Akut Flytt Marbella | Expressflytt 24 Timmar | Omedelbar Tjänst | PortesPro",
+        "description": "Akut flytt och expressflytt 24 timmar i Marbella, Málaga och Costa del Sol. Akut flytttjänst tillgänglig varje dag. Gratis offert.",
+        "keywords": "akut flytt, expressflytt, 24 timmar flytt, samma dag flytt, akut flytt Marbella, akut flytt Málaga, akut flytt Costa del Sol, akut flytttjänst, akut flyttföretag, akut flyttoffer, akut flyttpris, expressflytt 24h",
+        "ogTitle": "Akut Flytt Marbella | Expressflytt 24h",
+        "ogDescription": "Akut flytt och expressflytt 24 timmar i Marbella, Málaga och Costa del Sol. Tjänst tillgänglig varje dag.",
+        "twitterTitle": "Akut Flytt | Expressflytt 24h",
+        "twitterDescription": "Akut flytt och expressflytt 24 timmar i Marbella. Tjänst tillgänglig varje dag.",
+        "schemaServiceType": "Akut Flytt",
+        "schemaDescription": "Akut flytt och expressflytt 24 timmar i Marbella, Málaga och Costa del Sol. Tjänst tillgänglig varje dag."
+      }
     }
   }
 }

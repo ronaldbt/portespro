@@ -13,13 +13,13 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
             <span class="inline-block bg-white text-teal-700 px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm border border-slate-200">
-              Almacenamiento Seguro y Climatizado
+              {{ $t('pages.guardamuebles.hero.badge') }}
             </span>
             <h1 class="text-5xl md:text-8xl font-black text-slate-950 leading-[0.9] tracking-tighter mb-8">
-              Guardamuebles y Trasteros Marbella
+              {{ $t('pages.guardamuebles.hero.title') }}
             </h1>
             <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
-              Guardamuebles y trasteros barato, económico y seguro en Marbella, Málaga y Costa del Sol. Almacenes climatizados con acceso 24 horas.
+              {{ $t('pages.guardamuebles.hero.subtitle') }}
             </p>
           </div>
 
@@ -29,19 +29,85 @@
         </div>
       </section>
 
+      <!-- Pickup Service Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.guardamuebles.pickupService.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.guardamuebles.pickupService.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                v-for="(feature, idx) in pickupFeatures"
+                :key="idx"
+                class="p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl transition-all"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p class="text-slate-700 font-medium text-lg">{{ feature }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Online Platform Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.guardamuebles.onlinePlatform.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.guardamuebles.onlinePlatform.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                v-for="(feature, idx) in onlineFeatures"
+                :key="idx"
+                class="p-8 rounded-[2.5rem] border border-slate-100 bg-white hover:shadow-xl transition-all"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <p class="text-slate-700 font-medium text-lg">{{ feature }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Sizes Section -->
       <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Guardamuebles y Trasteros por Tamaño
+              {{ $t('pages.guardamuebles.sizes.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Desde guardamuebles y trasteros pequeño hasta extra grande. Elige el tamaño perfecto para tus necesidades
+              {{ $t('pages.guardamuebles.sizes.subtitle') }}
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <div
               v-for="(size, idx) in tamanos"
               :key="idx"
@@ -57,15 +123,69 @@
         </div>
       </section>
 
+      <!-- Types Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.guardamuebles.types.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.guardamuebles.types.subtitle') }}
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+              v-for="(type, idx) in types"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="type.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ type.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ type.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.guardamuebles.pricing.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.guardamuebles.pricing.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                v-for="(info, idx) in pricingInfo"
+                :key="idx"
+                class="p-8 rounded-2xl border border-slate-100 bg-slate-50 text-center"
+              >
+                <p class="text-slate-700 font-medium text-lg">{{ info }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Features Section -->
       <section class="py-24 bg-slate-50">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Características de Nuestros Guardamuebles y Trasteros
+              {{ $t('pages.guardamuebles.features.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Guardamuebles y trasteros seguro, vigilado y climatizado para la máxima protección de tus pertenencias
+              {{ $t('pages.guardamuebles.features.subtitle') }}
             </p>
           </div>
 
@@ -90,22 +210,48 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Guardamuebles y Trasteros Temporal y de Largo Plazo
+              {{ $t('pages.guardamuebles.useCases.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Perfecto para mudanzas, reformas, obras o almacenamiento temporal. Guardamuebles y trasteros en Marbella.
+              {{ $t('pages.guardamuebles.useCases.subtitle') }}
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div
               v-for="(useCase, idx) in useCases"
               :key="idx"
               class="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-xl transition-all"
             >
-              <div class="text-5xl font-black text-teal-600 mb-4">{{ useCase.number }}</div>
+              <div class="text-5xl font-black text-teal-600 mb-4">{{ idx + 1 }}</div>
               <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ useCase.title }}</h3>
               <p class="text-slate-500 leading-relaxed font-medium">{{ useCase.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Zones Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.guardamuebles.zones.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.guardamuebles.zones.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div
+                v-for="(zone, idx) in zones"
+                :key="idx"
+                class="bg-white p-6 rounded-2xl border border-slate-100 text-center hover:bg-teal-50 transition-all"
+              >
+                <p class="font-black text-slate-900 text-lg">{{ zone }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -118,23 +264,23 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">
-              Reserva tu Guardamuebles o Trastero Ahora
+              {{ $t('pages.guardamuebles.cta.title') }}
             </h2>
             <p class="text-xl text-slate-300 mb-12 font-medium">
-              Guardamuebles y trasteros Marbella, Málaga y Costa del Sol. Guardamuebles con mudanza incluido disponible.
+              {{ $t('pages.guardamuebles.cta.subtitle') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <NuxtLink
-                to="/"
+              <button
+                @click="scrollToCalc"
                 class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Ver Disponibilidad
-              </NuxtLink>
+                {{ $t('pages.guardamuebles.cta.button1') }}
+              </button>
               <button
                 @click="scrollToCalc"
                 class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Solicitar Presupuesto
+                {{ $t('pages.guardamuebles.cta.button2') }}
               </button>
             </div>
           </div>
@@ -146,10 +292,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Preguntas Frecuentes sobre Guardamuebles y Trasteros
+              {{ $t('pages.guardamuebles.faqs.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Resolvemos tus dudas sobre guardamuebles y trasteros en Marbella, Málaga y Costa del Sol
+              {{ $t('pages.guardamuebles.faqs.subtitle') }}
             </p>
           </div>
 
@@ -204,8 +350,10 @@
 </template>
 
 <script setup>
-import { ref, h } from 'vue'
+import { ref, h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const lang = ref('es')
 
 const scrollToCalc = () => {
@@ -219,121 +367,36 @@ const siteUrl = 'https://portespro.es'
 const currentUrl = `${siteUrl}/guardamuebles`
 const defaultImage = `${siteUrl}/og-image.jpg`
 
-useHead({
-  title: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes | Climatizados | PortesPro',
+useHead(() => ({
+  title: `${t('pages.guardamuebles.hero.title')} | PortesPro`,
   meta: [
     {
       name: 'description',
-      content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online. Guardamuebles barato y económico en Marbella, Málaga y Costa del Sol.'
+      content: t('pages.guardamuebles.description')
     },
     {
       name: 'keywords',
-      content: 'guardamuebles marbella, trasteros marbella, guardamuebles barato, guardamuebles económico, guardamuebles climatizado, guardamuebles vigilado, guardamuebles 24 horas, trasteros barato, almacenes marbella'
+      content: 'guardamuebles marbella, trasteros marbella, guardamuebles cerca de mi, trasteros cerca de mi, guardamuebles precios, precio trastero, alquilar trastero, guardamuebles online, trasteros online, servicio guardamuebles, trasteros a domicilio, mini almacenes, trasteros particulares, guardamuebles precio mes, precio trastero metro cuadrado, trasteros baratos, guardamuebles barato, empresas de trasteros, trasteros para empresas, guardamuebles con mudanza'
     },
     // Open Graph
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: currentUrl },
-    { property: 'og:title', content: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes | Climatizados' },
-    { property: 'og:description', content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h. Calculadora de guardamuebles online.' },
+    { property: 'og:title', content: `${t('pages.guardamuebles.hero.title')} | PortesPro` },
+    { property: 'og:description', content: t('pages.guardamuebles.description') },
     { property: 'og:image', content: defaultImage },
     { property: 'og:site_name', content: 'PortesPro' },
     { property: 'og:locale', content: 'es_ES' },
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:url', content: currentUrl },
-    { name: 'twitter:title', content: 'Guardamuebles y Trasteros Marbella | Desde 45€/mes' },
-    { name: 'twitter:description', content: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h.' },
+    { name: 'twitter:title', content: `${t('pages.guardamuebles.hero.title')} | PortesPro` },
+    { name: 'twitter:description', content: t('pages.guardamuebles.description') },
     { name: 'twitter:image', content: defaultImage }
   ],
   link: [
     { rel: 'canonical', href: currentUrl }
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        serviceType: 'Guardamuebles y Trasteros',
-        provider: {
-          '@type': 'LocalBusiness',
-          name: 'PortesPro',
-          url: siteUrl
-        },
-        areaServed: {
-          '@type': 'City',
-          name: ['Marbella', 'Málaga', 'Costa del Sol']
-        },
-        description: 'Guardamuebles y trasteros en Marbella desde 45€/mes. Almacenes climatizados, vigilados 24h.',
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'EUR',
-          price: '45',
-          priceSpecification: {
-            '@type': 'UnitPriceSpecification',
-            priceCurrency: 'EUR',
-            price: '45',
-            unitText: 'mes'
-          }
-        }
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Inicio',
-            item: siteUrl
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Guardamuebles y Trasteros',
-            item: currentUrl
-          }
-        ]
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: '¿Cuánto cuesta un guardamuebles o trastero en Marbella?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'El precio de guardamuebles y trasteros Marbella varía según el tamaño. Guardamuebles pequeño (5m²) desde 45€/mes, guardamuebles mediano (10m²) desde 85€/mes, guardamuebles grande (15m²) desde 120€/mes.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Los guardamuebles y trasteros están climatizados?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Qué seguridad tienen los guardamuebles y trasteros?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado.'
-            }
-          }
-        ]
-      })
-    }
   ]
-})
+}))
 
 // Iconos
 const IconTemperature = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -361,123 +424,275 @@ const IconKey = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curren
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z' })
 ])
 
-const tamanos = [
-  {
-    metros: '5m²',
-    title: 'Guardamuebles Pequeño',
-    desc: 'Ideal para guardamuebles mini. Perfecto para objetos personales y cajas pequeñas.',
-    precio: 'Desde 45€'
-  },
-  {
-    metros: '10m²',
-    title: 'Guardamuebles Mediano',
-    desc: 'Guardamuebles tamaño mediano. Ideal para el contenido de un estudio o apartamento pequeño.',
-    precio: 'Desde 85€'
-  },
-  {
-    metros: '15m²',
-    title: 'Guardamuebles Grande',
-    desc: 'Guardamuebles grande perfecto para el contenido de un piso completo de 2-3 habitaciones.',
-    precio: 'Desde 120€'
-  },
-  {
-    metros: '20m²+',
-    title: 'Guardamuebles Extra Grande',
-    desc: 'Guardamuebles extra grande para casas, chalets o almacenamiento de negocios.',
-    precio: 'Desde 180€'
-  }
-]
+const IconBox = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' })
+])
 
-const features = [
+const IconHome = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' })
+])
+
+const IconBuilding = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' })
+])
+
+const IconPuzzle = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z' })
+])
+
+const IconStorage = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4' })
+])
+
+// Pickup Service Features
+const pickupFeatures = computed(() => [
+  t('pages.guardamuebles.pickupService.feature1'),
+  t('pages.guardamuebles.pickupService.feature2'),
+  t('pages.guardamuebles.pickupService.feature3'),
+  t('pages.guardamuebles.pickupService.feature4')
+])
+
+// Online Platform Features
+const onlineFeatures = computed(() => [
+  t('pages.guardamuebles.onlinePlatform.feature1'),
+  t('pages.guardamuebles.onlinePlatform.feature2'),
+  t('pages.guardamuebles.onlinePlatform.feature3'),
+  t('pages.guardamuebles.onlinePlatform.feature4')
+])
+
+// Tamaños
+const tamanos = computed(() => [
+  {
+    metros: t('pages.guardamuebles.sizes.size1.metros'),
+    title: t('pages.guardamuebles.sizes.size1.title'),
+    desc: t('pages.guardamuebles.sizes.size1.description'),
+    precio: t('pages.guardamuebles.sizes.size1.price')
+  },
+  {
+    metros: t('pages.guardamuebles.sizes.size2.metros'),
+    title: t('pages.guardamuebles.sizes.size2.title'),
+    desc: t('pages.guardamuebles.sizes.size2.description'),
+    precio: t('pages.guardamuebles.sizes.size2.price')
+  },
+  {
+    metros: t('pages.guardamuebles.sizes.size3.metros'),
+    title: t('pages.guardamuebles.sizes.size3.title'),
+    desc: t('pages.guardamuebles.sizes.size3.description'),
+    precio: t('pages.guardamuebles.sizes.size3.price')
+  },
+  {
+    metros: t('pages.guardamuebles.sizes.size4.metros'),
+    title: t('pages.guardamuebles.sizes.size4.title'),
+    desc: t('pages.guardamuebles.sizes.size4.description'),
+    precio: t('pages.guardamuebles.sizes.size4.price')
+  },
+  {
+    metros: t('pages.guardamuebles.sizes.size5.metros'),
+    title: t('pages.guardamuebles.sizes.size5.title'),
+    desc: t('pages.guardamuebles.sizes.size5.description'),
+    precio: t('pages.guardamuebles.sizes.size5.price')
+  },
+  {
+    metros: t('pages.guardamuebles.sizes.size6.metros'),
+    title: t('pages.guardamuebles.sizes.size6.title'),
+    desc: t('pages.guardamuebles.sizes.size6.description'),
+    precio: t('pages.guardamuebles.sizes.size6.price')
+  }
+])
+
+// Types
+const types = computed(() => [
+  {
+    icon: IconBox,
+    title: t('pages.guardamuebles.types.type1.title'),
+    description: t('pages.guardamuebles.types.type1.description')
+  },
+  {
+    icon: IconHome,
+    title: t('pages.guardamuebles.types.type2.title'),
+    description: t('pages.guardamuebles.types.type2.description')
+  },
+  {
+    icon: IconBuilding,
+    title: t('pages.guardamuebles.types.type3.title'),
+    description: t('pages.guardamuebles.types.type3.description')
+  },
+  {
+    icon: IconPuzzle,
+    title: t('pages.guardamuebles.types.type4.title'),
+    description: t('pages.guardamuebles.types.type4.description')
+  },
+  {
+    icon: IconStorage,
+    title: t('pages.guardamuebles.types.type5.title'),
+    description: t('pages.guardamuebles.types.type5.description')
+  }
+])
+
+// Pricing Info
+const pricingInfo = computed(() => [
+  t('pages.guardamuebles.pricing.info1'),
+  t('pages.guardamuebles.pricing.info2'),
+  t('pages.guardamuebles.pricing.info3'),
+  t('pages.guardamuebles.pricing.info4')
+])
+
+// Features
+const features = computed(() => [
   {
     icon: IconTemperature,
-    title: 'Guardamuebles Climatizado',
-    desc: 'Guardamuebles con aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad.'
+    title: t('pages.guardamuebles.features.feature1.title'),
+    desc: t('pages.guardamuebles.features.feature1.description')
   },
   {
     icon: IconShield,
-    title: 'Guardamuebles Seguro',
-    desc: 'Guardamuebles vigilado con seguridad 24 horas, alarma y cámaras de vigilancia para máxima protección.'
-  },
-  {
-    icon: IconLock,
-    title: 'Acceso Fácil',
-    desc: 'Guardamuebles con acceso fácil y horarios flexibles. Acceso 24 horas disponible según el plan elegido.'
-  },
-  {
-    icon: IconCamera,
-    title: 'Vigilancia 24h',
-    desc: 'Guardamuebles con cámaras y sistema de seguridad avanzado. Tu almacén siempre protegido.'
+    title: t('pages.guardamuebles.features.feature2.title'),
+    desc: t('pages.guardamuebles.features.feature2.description')
   },
   {
     icon: IconClock,
-    title: 'Temporal o Largo Plazo',
-    desc: 'Guardamuebles temporal para reformas o guardamuebles largo plazo. Flexibilidad total en contratos.'
+    title: t('pages.guardamuebles.features.feature3.title'),
+    desc: t('pages.guardamuebles.features.feature3.description')
   },
   {
     icon: IconKey,
-    title: 'Guardamuebles Interior',
-    desc: 'Guardamuebles cubierto e interior. Protección total contra elementos externos y condiciones climáticas.'
+    title: t('pages.guardamuebles.features.feature4.title'),
+    desc: t('pages.guardamuebles.features.feature4.description')
+  },
+  {
+    icon: IconLock,
+    title: t('pages.guardamuebles.features.feature5.title'),
+    desc: t('pages.guardamuebles.features.feature5.description')
+  },
+  {
+    icon: IconCamera,
+    title: t('pages.guardamuebles.features.feature6.title'),
+    desc: t('pages.guardamuebles.features.feature6.description')
   }
-]
+])
 
-const useCases = [
+// Use Cases
+const useCases = computed(() => [
   {
-    number: '01',
-    title: 'Guardamuebles Mudanza',
-    desc: 'Guardamuebles mientras mudanza. Almacenamiento temporal durante el proceso de traslado.'
+    title: t('pages.guardamuebles.useCases.case1.title'),
+    desc: t('pages.guardamuebles.useCases.case1.description')
   },
   {
-    number: '02',
-    title: 'Guardamuebles Reforma',
-    desc: 'Guardamuebles reforma y obras. Protege tus muebles durante las obras de renovación.'
+    title: t('pages.guardamuebles.useCases.case2.title'),
+    desc: t('pages.guardamuebles.useCases.case2.description')
   },
   {
-    number: '03',
-    title: 'Guardamuebles Verano',
-    desc: 'Guardamuebles verano e invierno. Almacenamiento estacional para temporadas vacacionales.'
+    title: t('pages.guardamuebles.useCases.case3.title'),
+    desc: t('pages.guardamuebles.useCases.case3.description')
+  },
+  {
+    title: t('pages.guardamuebles.useCases.case4.title'),
+    desc: t('pages.guardamuebles.useCases.case4.description')
   }
-]
+])
 
-const faqs = ref([
+// Zones
+const zones = computed(() => [
+  t('pages.guardamuebles.zones.zone1'),
+  t('pages.guardamuebles.zones.zone2'),
+  t('pages.guardamuebles.zones.zone3'),
+  t('pages.guardamuebles.zones.zone4'),
+  t('pages.guardamuebles.zones.zone5'),
+  t('pages.guardamuebles.zones.zone6'),
+  t('pages.guardamuebles.zones.zone7'),
+  t('pages.guardamuebles.zones.zone8')
+])
+
+// FAQs
+const faqs = computed(() => [
   {
-    question: '¿Cuánto cuesta un guardamuebles o trastero en Marbella?',
-    answer: 'El precio de guardamuebles y trasteros Marbella varía según el tamaño. Guardamuebles pequeño (5m²) desde 45€/mes, guardamuebles mediano (10m²) desde 85€/mes, guardamuebles grande (15m²) desde 120€/mes. Ofrecemos guardamuebles y trasteros barato y económico con diferentes opciones de pago. El precio mensual incluye el alquiler del espacio.',
+    question: t('pages.guardamuebles.faqs.faq1.question'),
+    answer: t('pages.guardamuebles.faqs.faq1.answer'),
     open: false
   },
   {
-    question: '¿Los guardamuebles y trasteros están climatizados?',
-    answer: 'Sí, todos nuestros guardamuebles y trasteros climatizado tienen aire acondicionado y temperatura controlada para proteger tus pertenencias del calor y la humedad. El guardamuebles temperatura controlada es ideal para objetos sensibles como muebles de madera fina, obras de arte o documentos importantes.',
+    question: t('pages.guardamuebles.faqs.faq2.question'),
+    answer: t('pages.guardamuebles.faqs.faq2.answer'),
     open: false
   },
   {
-    question: '¿Qué seguridad tienen los guardamuebles y trasteros?',
-    answer: 'Nuestros guardamuebles y trasteros seguro incluyen vigilancia 24 horas, alarma, cámaras de seguridad y acceso controlado. El guardamuebles vigilado y guardamuebles con seguridad garantizan la máxima protección de tus pertenencias. También ofrecemos seguro de contenido opcional para mayor tranquilidad.',
+    question: t('pages.guardamuebles.faqs.faq3.question'),
+    answer: t('pages.guardamuebles.faqs.faq3.answer'),
     open: false
   },
   {
-    question: '¿Puedo acceder a mi guardamuebles o trastero 24 horas?',
-    answer: 'Sí, ofrecemos guardamuebles y trasteros 24 horas con acceso fácil según el plan elegido. El guardamuebles acceso está disponible en diferentes horarios según tus necesidades. Algunos planes incluyen acceso ilimitado, mientras que otros tienen horarios específicos.',
+    question: t('pages.guardamuebles.faqs.faq4.question'),
+    answer: t('pages.guardamuebles.faqs.faq4.answer'),
     open: false
   },
   {
-    question: '¿Cuánto tiempo puedo alquilar un guardamuebles o trastero?',
-    answer: 'Ofrecemos guardamuebles y trasteros temporal para corto plazo (mínimo 1 mes) y guardamuebles largo plazo con descuentos. Perfecto para guardamuebles reforma, guardamuebles obras o guardamuebles mientras mudanza. Los contratos son flexibles y puedes cancelar con un mes de aviso.',
+    question: t('pages.guardamuebles.faqs.faq5.question'),
+    answer: t('pages.guardamuebles.faqs.faq5.answer'),
     open: false
   },
   {
-    question: '¿Qué tamaño de guardamuebles o trastero necesito?',
-    answer: 'Para un estudio pequeño: guardamuebles 5m². Para un piso de 2-3 habitaciones: guardamuebles 10-15m². Para una casa completa: guardamuebles 20m² o más. Nuestro guardamuebles tamaño se adapta a tus necesidades. Puedes usar nuestra calculadora online para estimar el volumen necesario.',
+    question: t('pages.guardamuebles.faqs.faq6.question'),
+    answer: t('pages.guardamuebles.faqs.faq6.answer'),
     open: false
   },
   {
-    question: '¿Incluyen seguro en el guardamuebles o trastero?',
-    answer: 'Sí, ofrecemos guardamuebles y trasteros con seguro opcional que cubre robo, incendio y daños. El guardamuebles seguro garantiza tranquilidad total durante el almacenamiento. El seguro básico está incluido, y puedes contratar seguro premium para objetos de mayor valor.',
+    question: t('pages.guardamuebles.faqs.faq7.question'),
+    answer: t('pages.guardamuebles.faqs.faq7.answer'),
     open: false
   },
   {
-    question: '¿Qué diferencia hay entre guardamuebles y trastero?',
-    answer: 'Guardamuebles y trasteros son términos similares. Los guardamuebles suelen ser espacios más grandes y profesionales con servicios adicionales como climatización y seguridad avanzada. Los trasteros suelen ser espacios más pequeños y básicos. Nosotros ofrecemos ambos servicios con las mismas garantías de seguridad y calidad.',
+    question: t('pages.guardamuebles.faqs.faq8.question'),
+    answer: t('pages.guardamuebles.faqs.faq8.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq9.question'),
+    answer: t('pages.guardamuebles.faqs.faq9.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq10.question'),
+    answer: t('pages.guardamuebles.faqs.faq10.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq11.question'),
+    answer: t('pages.guardamuebles.faqs.faq11.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq12.question'),
+    answer: t('pages.guardamuebles.faqs.faq12.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq13.question'),
+    answer: t('pages.guardamuebles.faqs.faq13.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq14.question'),
+    answer: t('pages.guardamuebles.faqs.faq14.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq15.question'),
+    answer: t('pages.guardamuebles.faqs.faq15.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq16.question'),
+    answer: t('pages.guardamuebles.faqs.faq16.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq17.question'),
+    answer: t('pages.guardamuebles.faqs.faq17.answer'),
+    open: false
+  },
+  {
+    question: t('pages.guardamuebles.faqs.faq18.question'),
+    answer: t('pages.guardamuebles.faqs.faq18.answer'),
     open: false
   }
 ])
@@ -546,4 +761,3 @@ const faqs = ref([
   animation: float-2 30s infinite linear;
 }
 </style>
-

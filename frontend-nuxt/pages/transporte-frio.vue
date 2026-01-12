@@ -13,13 +13,13 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
             <span class="inline-block bg-white text-teal-700 px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm border border-slate-200">
-              Logística Refrigerada y Cadena de Frío
+              {{ $t('pages.transporteFrio.hero.badge') }}
             </span>
             <h1 class="text-5xl md:text-8xl font-black text-slate-950 leading-[0.9] tracking-tighter mb-8">
-              Transporte en Frío
+              {{ $t('pages.transporteFrio.hero.title') }}
             </h1>
             <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
-              Transporte refrigerado, transporte frigorífico y logística de cadena frío en Marbella, Málaga y Costa del Sol. Temperatura controlada garantizada.
+              {{ $t('pages.transporteFrio.hero.subtitle') }}
             </p>
           </div>
 
@@ -29,15 +29,71 @@
         </div>
       </section>
 
+      <!-- Vehicle Types Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.transporteFrio.vehicleTypes.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.transporteFrio.vehicleTypes.subtitle') }}
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div
+              v-for="(vehicle, idx) in vehicleTypes"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="vehicle.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ vehicle.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ vehicle.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specialized Services Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.transporteFrio.specializedServices.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.transporteFrio.specializedServices.subtitle') }}
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div
+              v-for="(service, idx) in specializedServices"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="service.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ service.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ service.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Temperature Types Section -->
       <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Transporte por Temperatura
+              {{ $t('pages.transporteFrio.temperatures.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Transporte frío controlado para diferentes rangos de temperatura según tus necesidades
+              {{ $t('pages.transporteFrio.temperatures.subtitle') }}
             </p>
           </div>
 
@@ -47,17 +103,9 @@
               :key="idx"
               class="p-10 rounded-[2.5rem] border-2 border-slate-100 bg-white hover:border-teal-600 hover:shadow-2xl hover:shadow-teal-100/40 transition-all group"
             >
-              <div class="text-5xl font-black text-teal-600 mb-4">{{ temp.grados }}</div>
+              <div class="text-5xl font-black text-teal-600 mb-4">{{ temp.temperature }}</div>
               <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ temp.title }}</h3>
-              <p class="text-slate-500 leading-relaxed font-medium mb-6">{{ temp.desc }}</p>
-              <ul class="space-y-2">
-                <li v-for="(producto, i) in temp.productos" :key="i" class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-slate-600 font-medium text-sm">{{ producto }}</span>
-                </li>
-              </ul>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ temp.description }}</p>
             </div>
           </div>
         </div>
@@ -68,10 +116,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Transporte Frío por Tipo de Producto
+              {{ $t('pages.transporteFrio.products.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Especialistas en transporte de alimentos, productos farmacéuticos y perecederos
+              {{ $t('pages.transporteFrio.products.subtitle') }}
             </p>
           </div>
 
@@ -85,7 +133,7 @@
                 <component :is="producto.icon" class="w-8 h-8 text-white" />
               </div>
               <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ producto.title }}</h3>
-              <p class="text-slate-500 leading-relaxed font-medium">{{ producto.desc }}</p>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ producto.description }}</p>
             </div>
           </div>
         </div>
@@ -96,22 +144,22 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Servicios de Transporte Frío
+              {{ $t('pages.transporteFrio.services.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Logística frío completa: transporte, almacenaje y distribución refrigerada
+              {{ $t('pages.transporteFrio.services.subtitle') }}
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div
               v-for="(service, idx) in servicios"
               :key="idx"
               class="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-xl transition-all"
             >
-              <div class="text-5xl font-black text-teal-600 mb-4">{{ service.number }}</div>
+              <div class="text-5xl font-black text-teal-600 mb-4">{{ idx + 1 }}</div>
               <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ service.title }}</h3>
-              <p class="text-slate-500 leading-relaxed font-medium mb-6">{{ service.desc }}</p>
+              <p class="text-slate-500 leading-relaxed font-medium mb-6">{{ service.description }}</p>
               <ul class="space-y-3">
                 <li v-for="(feature, i) in service.features" :key="i" class="flex items-start gap-3">
                   <svg class="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,19 +173,45 @@
         </div>
       </section>
 
-      <!-- Coverage Section -->
+      <!-- Companies Section -->
       <section class="py-24 bg-slate-50">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Cobertura de Transporte Frío
+              {{ $t('pages.transporteFrio.companies.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Transporte frío local, provincial, interprovincial, nacional e internacional
+              {{ $t('pages.transporteFrio.companies.subtitle') }}
             </p>
           </div>
 
-          <div class="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                v-for="(info, idx) in companiesInfo"
+                :key="idx"
+                class="p-8 rounded-2xl border border-slate-100 bg-white text-center hover:shadow-xl transition-all"
+              >
+                <p class="text-slate-700 font-medium text-lg">{{ info }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coverage Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.transporteFrio.coverage.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.transporteFrio.coverage.subtitle') }}
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div
               v-for="(zona, idx) in zonas"
               :key="idx"
@@ -145,7 +219,7 @@
             >
               <div class="text-3xl font-black text-teal-600 mb-4">{{ zona.icon }}</div>
               <h3 class="text-xl font-black text-slate-900 mb-2 tracking-tight">{{ zona.title }}</h3>
-              <p class="text-slate-500 text-sm font-medium">{{ zona.desc }}</p>
+              <p class="text-slate-500 text-sm font-medium">{{ zona.description }}</p>
             </div>
           </div>
         </div>
@@ -158,23 +232,23 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">
-              ¿Necesitas Transporte Refrigerado?
+              {{ $t('pages.transporteFrio.cta.title') }}
             </h2>
             <p class="text-xl text-slate-300 mb-12 font-medium">
-              Empresa transporte frío en Marbella, Málaga y Costa del Sol. Servicio refrigerado profesional con cadena frío garantizada.
+              {{ $t('pages.transporteFrio.cta.subtitle') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <NuxtLink
-                to="/"
+              <button
+                @click="scrollToCalc"
                 class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Solicitar Transporte Frío
-              </NuxtLink>
+                {{ $t('pages.transporteFrio.cta.button1') }}
+              </button>
               <button
                 @click="scrollToCalc"
                 class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Presupuesto Gratis
+                {{ $t('pages.transporteFrio.cta.button2') }}
               </button>
             </div>
           </div>
@@ -186,10 +260,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Preguntas Frecuentes sobre Transporte en Frío
+              {{ $t('pages.transporteFrio.faqs.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Resolvemos tus dudas sobre transporte refrigerado, cadena frío y logística frío en Marbella y Costa del Sol
+              {{ $t('pages.transporteFrio.faqs.subtitle') }}
             </p>
           </div>
 
@@ -244,8 +318,10 @@
 </template>
 
 <script setup>
-import { ref, h } from 'vue'
+import { ref, h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const lang = ref('es')
 
 const scrollToCalc = () => {
@@ -259,114 +335,52 @@ const siteUrl = 'https://portespro.es'
 const currentUrl = `${siteUrl}/transporte-frio`
 const defaultImage = `${siteUrl}/og-image.jpg`
 
-useHead({
-  title: 'Transporte en Frío Marbella | Cadena Frío Garantizada | PortesPro',
+useHead(() => ({
+  title: t('pages.transporteFrio.seo.title'),
   meta: [
     {
       name: 'description',
-      content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperatura controlada garantizada. Transporte frío local, provincial y nacional.'
+      content: t('pages.transporteFrio.seo.description')
     },
     {
       name: 'keywords',
-      content: 'transporte frío marbella, transporte refrigerado, cadena frío, transporte frigorífico, transporte temperatura controlada, transporte alimentos, transporte farmacéutico, logística frío'
+      content: t('pages.transporteFrio.seo.keywords')
     },
     // Open Graph
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: currentUrl },
-    { property: 'og:title', content: 'Transporte en Frío Marbella | Cadena Frío Garantizada' },
-    { property: 'og:description', content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos. Temperatura controlada garantizada.' },
+    { property: 'og:title', content: t('pages.transporteFrio.seo.title') },
+    { property: 'og:description', content: t('pages.transporteFrio.seo.description') },
     { property: 'og:image', content: defaultImage },
     { property: 'og:site_name', content: 'PortesPro' },
     { property: 'og:locale', content: 'es_ES' },
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:url', content: currentUrl },
-    { name: 'twitter:title', content: 'Transporte en Frío Marbella | Cadena Frío Garantizada' },
-    { name: 'twitter:description', content: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.' },
+    { name: 'twitter:title', content: t('pages.transporteFrio.seo.title') },
+    { name: 'twitter:description', content: t('pages.transporteFrio.seo.description') },
     { name: 'twitter:image', content: defaultImage }
   ],
   link: [
     { rel: 'canonical', href: currentUrl }
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        serviceType: 'Transporte en Frío',
-        provider: {
-          '@type': 'LocalBusiness',
-          name: 'PortesPro',
-          url: siteUrl
-        },
-        areaServed: {
-          '@type': 'City',
-          name: ['Marbella', 'Málaga', 'Costa del Sol']
-        },
-        description: 'Transporte en frío y cadena frío en Marbella. Transporte refrigerado para alimentos, productos farmacéuticos y perecederos.'
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Inicio',
-            item: siteUrl
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Transporte en Frío',
-            item: currentUrl
-          }
-        ]
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: '¿Qué temperatura mantiene el transporte en frío?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Nuestro servicio de transporte en frío mantiene diferentes rangos de temperatura según el producto: transporte congelado a -18°C para congelados, transporte refrigerado a 0-4°C para productos frescos, y transporte temperatura controlada a 2-8°C para productos farmacéuticos.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Qué productos pueden transportarse en frío?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Transportamos productos perecederos como alimentos frescos, pescado, carne, lácteos, frutas y verduras. También ofrecemos transporte frío para productos farmacéuticos, medicamentos, flores, bebidas y helados.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Cómo garantizan la cadena de frío?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Garantizamos la cadena frío con vehículos frigoríficos equipados con sistemas de temperatura controlada, monitoreo en tiempo real y registro de temperatura.'
-            }
-          }
-        ]
-      })
-    }
   ]
-})
+}))
 
 // Iconos
+const IconTruck = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' })
+])
+
+const IconBox = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' })
+])
+
 const IconSnowflake = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' })
+])
+
+const IconPackage = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' })
 ])
 
 const IconFood = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -385,165 +399,282 @@ const IconFish = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curre
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' })
 ])
 
-const IconTruck = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
-  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' })
-])
-
 const IconWarehouse = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' })
 ])
 
-const temperaturas = [
-  {
-    grados: '-18°C',
-    title: 'Transporte Congelación',
-    desc: 'Transporte ultracongelado para productos congelados y helados.',
-    productos: [
-      'Helados',
-      'Congelados',
-      'Productos ultracongelados',
-      'Alimentos congelados'
-    ]
-  },
-  {
-    grados: '0-4°C',
-    title: 'Transporte Refrigerado',
-    desc: 'Transporte refrigerado estándar para productos frescos y perecederos.',
-    productos: [
-      'Productos frescos',
-      'Lácteos',
-      'Carnes',
-      'Pescado'
-    ]
-  },
-  {
-    grados: '2-8°C',
-    title: 'Transporte Farmacéutico',
-    desc: 'Transporte frío controlado para medicamentos y productos farmacéuticos.',
-    productos: [
-      'Medicamentos',
-      'Productos farmacéuticos',
-      'Vacunas',
-      'Productos sanitarios'
-    ]
-  }
-]
+const IconZap = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M13 10V3L4 14h7v7l9-11h-7z' })
+])
 
-const productos = [
+// Vehicle Types
+const vehicleTypes = computed(() => [
   {
-    icon: IconFood,
-    title: 'Transporte Frío Alimentos',
-    desc: 'Transporte alimentos y productos frescos. Logística refrigerada para supermercados y restaurantes.'
+    icon: IconTruck,
+    title: t('pages.transporteFrio.vehicleTypes.vehicle1.title'),
+    description: t('pages.transporteFrio.vehicleTypes.vehicle1.description')
   },
   {
-    icon: IconFish,
-    title: 'Transporte Frío Pescado',
-    desc: 'Transporte pescado y mariscos frescos. Cadena frío garantizada desde el puerto hasta destino.'
+    icon: IconSnowflake,
+    title: t('pages.transporteFrio.vehicleTypes.vehicle2.title'),
+    description: t('pages.transporteFrio.vehicleTypes.vehicle2.description')
   },
   {
+    icon: IconTruck,
+    title: t('pages.transporteFrio.vehicleTypes.vehicle3.title'),
+    description: t('pages.transporteFrio.vehicleTypes.vehicle3.description')
+  },
+  {
+    icon: IconBox,
+    title: t('pages.transporteFrio.vehicleTypes.vehicle4.title'),
+    description: t('pages.transporteFrio.vehicleTypes.vehicle4.description')
+  }
+])
+
+// Specialized Services
+const specializedServices = computed(() => [
+  {
+    icon: IconPackage,
+    title: t('pages.transporteFrio.specializedServices.service1.title'),
+    description: t('pages.transporteFrio.specializedServices.service1.description')
+  },
+  {
+    icon: IconBox,
+    title: t('pages.transporteFrio.specializedServices.service2.title'),
+    description: t('pages.transporteFrio.specializedServices.service2.description')
+  },
+  {
+    icon: IconTruck,
+    title: t('pages.transporteFrio.specializedServices.service3.title'),
+    description: t('pages.transporteFrio.specializedServices.service3.description')
+  },
+  {
+    icon: IconZap,
+    title: t('pages.transporteFrio.specializedServices.service4.title'),
+    description: t('pages.transporteFrio.specializedServices.service4.description')
+  }
+])
+
+// Temperaturas
+const temperaturas = computed(() => [
+  {
+    temperature: t('pages.transporteFrio.temperatures.range1.temperature'),
+    title: t('pages.transporteFrio.temperatures.range1.title'),
+    description: t('pages.transporteFrio.temperatures.range1.description')
+  },
+  {
+    temperature: t('pages.transporteFrio.temperatures.range2.temperature'),
+    title: t('pages.transporteFrio.temperatures.range2.title'),
+    description: t('pages.transporteFrio.temperatures.range2.description')
+  },
+  {
+    temperature: t('pages.transporteFrio.temperatures.range3.temperature'),
+    title: t('pages.transporteFrio.temperatures.range3.title'),
+    description: t('pages.transporteFrio.temperatures.range3.description')
+  }
+])
+
+// Productos
+const productos = computed(() => [
+  {
     icon: IconFood,
-    title: 'Transporte Frío Carne',
-    desc: 'Transporte carne y productos cárnicos. Temperatura controlada para máxima frescura.'
+    title: t('pages.transporteFrio.products.product1.title'),
+    description: t('pages.transporteFrio.products.product1.description')
+  },
+  {
+    icon: IconTruck,
+    title: t('pages.transporteFrio.products.product2.title'),
+    description: t('pages.transporteFrio.products.product2.description')
   },
   {
     icon: IconPill,
-    title: 'Transporte Frío Farmacéutico',
-    desc: 'Transporte frío productos farmacéuticos y medicamentos. Cumplimiento normativo garantizado.'
-  },
-  {
-    icon: IconFlower,
-    title: 'Transporte Frío Flores',
-    desc: 'Transporte flores y plantas. Temperatura controlada para mantener la frescura.'
+    title: t('pages.transporteFrio.products.product3.title'),
+    description: t('pages.transporteFrio.products.product3.description')
   },
   {
     icon: IconFood,
-    title: 'Transporte Frío Bebidas',
-    desc: 'Transporte bebidas y productos líquidos refrigerados. Logística especializada.'
-  }
-]
-
-const servicios = [
+    title: t('pages.transporteFrio.products.product4.title'),
+    description: t('pages.transporteFrio.products.product4.description')
+  },
   {
-    number: '01',
-    title: 'Transporte Refrigerado',
-    desc: 'Servicio de transporte frío con vehículos frigoríficos y temperatura controlada',
+    icon: IconFlower,
+    title: t('pages.transporteFrio.products.product5.title'),
+    description: t('pages.transporteFrio.products.product5.description')
+  },
+  {
+    icon: IconFood,
+    title: t('pages.transporteFrio.products.product6.title'),
+    description: t('pages.transporteFrio.products.product6.description')
+  }
+])
+
+// Servicios
+const servicios = computed(() => [
+  {
+    title: t('pages.transporteFrio.services.service1.title'),
+    description: t('pages.transporteFrio.services.service1.description'),
     features: [
-      'Vehículos frigoríficos certificados',
-      'Temperatura controlada en tiempo real',
-      'Monitoreo GPS y temperatura',
-      'Cadena frío garantizada'
+      t('pages.transporteFrio.services.service1.feature1'),
+      t('pages.transporteFrio.services.service1.feature2'),
+      t('pages.transporteFrio.services.service1.feature3'),
+      t('pages.transporteFrio.services.service1.feature4')
     ]
   },
   {
-    number: '02',
-    title: 'Almacenaje Frío',
-    desc: 'Cámaras frío y almacenaje refrigerado para productos perecederos',
+    title: t('pages.transporteFrio.services.service2.title'),
+    description: t('pages.transporteFrio.services.service2.description'),
     features: [
-      'Cámaras refrigeración',
-      'Almacenaje refrigerado',
-      'Control de temperatura 24/7',
-      'Distribución frío incluida'
+      t('pages.transporteFrio.services.service2.feature1'),
+      t('pages.transporteFrio.services.service2.feature2'),
+      t('pages.transporteFrio.services.service2.feature3'),
+      t('pages.transporteFrio.services.service2.feature4')
+    ]
+  },
+  {
+    title: t('pages.transporteFrio.services.service3.title'),
+    description: t('pages.transporteFrio.services.service3.description'),
+    features: [
+      t('pages.transporteFrio.services.service3.feature1'),
+      t('pages.transporteFrio.services.service3.feature2'),
+      t('pages.transporteFrio.services.service3.feature3'),
+      t('pages.transporteFrio.services.service3.feature4')
+    ]
+  },
+  {
+    title: t('pages.transporteFrio.services.service4.title'),
+    description: t('pages.transporteFrio.services.service4.description'),
+    features: [
+      t('pages.transporteFrio.services.service4.feature1'),
+      t('pages.transporteFrio.services.service4.feature2'),
+      t('pages.transporteFrio.services.service4.feature3'),
+      t('pages.transporteFrio.services.service4.feature4')
     ]
   }
-]
+])
 
-const zonas = [
+// Companies Info
+const companiesInfo = computed(() => [
+  t('pages.transporteFrio.companies.info1'),
+  t('pages.transporteFrio.companies.info2'),
+  t('pages.transporteFrio.companies.info3'),
+  t('pages.transporteFrio.companies.info4'),
+  t('pages.transporteFrio.companies.info5')
+])
+
+// Zonas
+const zonas = computed(() => [
   {
     icon: '📍',
-    title: 'Transporte Frío Local',
-    desc: 'Marbella, Málaga, Costa del Sol'
+    title: t('pages.transporteFrio.coverage.coverage1.title'),
+    description: t('pages.transporteFrio.coverage.coverage1.description')
   },
   {
     icon: '🚚',
-    title: 'Transporte Frío Provincial',
-    desc: 'Toda la provincia de Málaga'
+    title: t('pages.transporteFrio.coverage.coverage2.title'),
+    description: t('pages.transporteFrio.coverage.coverage2.description')
   },
   {
     icon: '🌍',
-    title: 'Transporte Frío Nacional',
-    desc: 'Toda España peninsular'
+    title: t('pages.transporteFrio.coverage.coverage3.title'),
+    description: t('pages.transporteFrio.coverage.coverage3.description')
   },
   {
     icon: '✈️',
-    title: 'Transporte Frío Internacional',
-    desc: 'Europa y Unión Europea'
+    title: t('pages.transporteFrio.coverage.coverage4.title'),
+    description: t('pages.transporteFrio.coverage.coverage4.description')
   }
-]
+])
 
-const faqs = ref([
+// FAQs
+const faqs = computed(() => [
   {
-    question: '¿Qué temperatura mantiene el transporte en frío?',
-    answer: 'Nuestro servicio de transporte en frío mantiene diferentes rangos de temperatura según el producto: transporte congelado a -18°C para congelados, transporte refrigerado a 0-4°C para productos frescos, y transporte temperatura controlada a 2-8°C para productos farmacéuticos. El transporte cadena frío está garantizado durante todo el trayecto.',
+    question: t('pages.transporteFrio.faqs.faq1.question'),
+    answer: t('pages.transporteFrio.faqs.faq1.answer'),
     open: false
   },
   {
-    question: '¿Qué productos pueden transportarse en frío?',
-    answer: 'Transportamos productos perecederos como alimentos frescos, pescado, carne, lácteos, frutas y verduras. También ofrecemos transporte frío para productos farmacéuticos, medicamentos, flores, bebidas y helados. El transporte refrigerado es ideal para cualquier producto que requiera cadena frío.',
+    question: t('pages.transporteFrio.faqs.faq2.question'),
+    answer: t('pages.transporteFrio.faqs.faq2.answer'),
     open: false
   },
   {
-    question: '¿Cuánto cuesta el transporte en frío?',
-    answer: 'El precio del transporte en frío varía según la distancia, temperatura requerida y tipo de producto. Ofrecemos transporte frío local en Marbella y Málaga, transporte frío provincial en Costa del Sol, transporte frío interprovincial y transporte frío nacional. Solicita un presupuesto personalizado sin compromiso.',
+    question: t('pages.transporteFrio.faqs.faq3.question'),
+    answer: t('pages.transporteFrio.faqs.faq3.answer'),
     open: false
   },
   {
-    question: '¿Cómo garantizan la cadena de frío?',
-    answer: 'Garantizamos la cadena frío con vehículos frigoríficos equipados con sistemas de temperatura controlada, monitoreo en tiempo real y registro de temperatura. El transporte cadena frío está certificado y cumple con todas las normativas de seguridad alimentaria y farmacéutica.',
+    question: t('pages.transporteFrio.faqs.faq4.question'),
+    answer: t('pages.transporteFrio.faqs.faq4.answer'),
     open: false
   },
   {
-    question: '¿Hacen transporte en frío internacional?',
-    answer: 'Sí, ofrecemos transporte frío internacional para productos que requieren cadena frío. El transporte refrigerado internacional incluye documentación aduanera, certificados sanitarios y seguimiento completo. Cubrimos rutas internacionales con garantía de temperatura controlada.',
+    question: t('pages.transporteFrio.faqs.faq5.question'),
+    answer: t('pages.transporteFrio.faqs.faq5.answer'),
     open: false
   },
   {
-    question: '¿Qué diferencia hay entre transporte frío y transporte refrigerado?',
-    answer: 'El transporte frío generalmente se refiere a temperaturas bajo cero (congelación), mientras que el transporte refrigerado mantiene temperaturas positivas (0-4°C). Ambos servicios garantizan la cadena frío y están disponibles según las necesidades de tu producto.',
+    question: t('pages.transporteFrio.faqs.faq6.question'),
+    answer: t('pages.transporteFrio.faqs.faq6.answer'),
     open: false
   },
   {
-    question: '¿Ofrecen almacenaje en frío además del transporte?',
-    answer: 'Sí, además del transporte en frío, ofrecemos almacenaje frío y almacenaje refrigerado en cámaras frío y cámaras refrigeración. El servicio completo incluye almacenaje, distribución frío y reparto refrigerado para máxima comodidad.',
+    question: t('pages.transporteFrio.faqs.faq7.question'),
+    answer: t('pages.transporteFrio.faqs.faq7.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq8.question'),
+    answer: t('pages.transporteFrio.faqs.faq8.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq9.question'),
+    answer: t('pages.transporteFrio.faqs.faq9.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq10.question'),
+    answer: t('pages.transporteFrio.faqs.faq10.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq11.question'),
+    answer: t('pages.transporteFrio.faqs.faq11.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq12.question'),
+    answer: t('pages.transporteFrio.faqs.faq12.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq13.question'),
+    answer: t('pages.transporteFrio.faqs.faq13.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq14.question'),
+    answer: t('pages.transporteFrio.faqs.faq14.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq15.question'),
+    answer: t('pages.transporteFrio.faqs.faq15.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq16.question'),
+    answer: t('pages.transporteFrio.faqs.faq16.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq17.question'),
+    answer: t('pages.transporteFrio.faqs.faq17.answer'),
+    open: false
+  },
+  {
+    question: t('pages.transporteFrio.faqs.faq18.question'),
+    answer: t('pages.transporteFrio.faqs.faq18.answer'),
     open: false
   }
 ])
@@ -570,14 +701,6 @@ const faqs = ref([
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-out;
-}
-
-.animate-slide-up {
-  animation: slide-up 0.8s ease-out 0.3s both;
 }
 
 @keyframes float-1 {
@@ -608,6 +731,10 @@ const faqs = ref([
   animation: fade-in 1s ease-out;
 }
 
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out 0.3s both;
+}
+
 .animate-float-1 {
   animation: float-1 25s infinite linear;
 }
@@ -616,4 +743,3 @@ const faqs = ref([
   animation: float-2 30s infinite linear;
 }
 </style>
-
