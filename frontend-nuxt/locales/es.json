@@ -325,76 +325,192 @@
       }
     },
     "embalajes": {
-      "title": "Embalaje Profesional Marbella",
-      "subtitle": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.",
-      "description": "Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles. Presupuesto gratis sin compromiso.",
-      "services": {
-        "title": "Servicios de Embalaje",
-        "service1": {
-          "title": "Embalaje Completo",
-          "description": "Embalaje completo de toda la vivienda con todos los materiales incluidos."
+      "description": "Servicio de embalaje profesional para mudanzas en Marbella. Embalaje completo a domicilio con materiales incluidos. Embalaje de muebles, electrodomésticos y objetos frágiles. Presupuesto gratis.",
+      "hero": {
+        "badge": "Servicio de Embalaje Profesional",
+        "title": "Embalaje Profesional para Mudanzas en Marbella",
+        "subtitle": "Servicio de embalaje profesional a domicilio en Marbella y Costa del Sol. Nuestro equipo de expertos acude a tu domicilio con todos los materiales de embalaje profesionales incluidos y realiza el embalaje completo de tu mudanza. Embalaje cuidadoso y seguro para muebles, electrodomésticos y objetos frágiles."
+      },
+      "types": {
+        "title": "Tipos de Embalaje que Ofrecemos",
+        "subtitle": "Servicio de embalaje profesional adaptado a tus necesidades de mudanza",
+        "type1": {
+          "title": "Embalaje Completo para Mudanzas",
+          "description": "Servicio de embalaje profesional completo para toda tu mudanza. Nuestro equipo realiza el embalaje de todos tus objetos con materiales profesionales incluidos."
         },
-        "service2": {
+        "type2": {
           "title": "Embalaje Parcial",
-          "description": "Embalaje solo de objetos frágiles o específicos que necesiten protección especial."
+          "description": "Embalaje personalizado solo para objetos frágiles y delicados que necesitan protección especial durante la mudanza."
         },
-        "service3": {
-          "title": "Embalaje de Objetos Frágiles",
-          "description": "Embalaje especializado para cristales, porcelana, obras de arte y antigüedades."
+        "type3": {
+          "title": "Embalaje de Muebles",
+          "description": "Embalaje profesional de muebles grandes y pequeños. Utilizamos mantas protección, film estirable y fundas especiales para proteger tus muebles durante el transporte."
         },
-        "service4": {
+        "type4": {
           "title": "Embalaje de Electrodomésticos",
-          "description": "Embalaje profesional de neveras, lavadoras, televisores y otros electrodomésticos."
+          "description": "Embalaje seguro de neveras, lavadoras, televisores y otros electrodomésticos con materiales específicos para evitar daños."
+        },
+        "type5": {
+          "title": "Embalaje de Objetos Frágiles",
+          "description": "Embalaje especializado para cristales, porcelana, obras de arte y antigüedades con protección multicapa personalizada."
         }
       },
       "materials": {
-        "title": "Materiales Incluidos",
+        "title": "Materiales Profesionales que Utilizamos",
+        "subtitle": "Materiales de embalaje profesional incluidos en nuestro servicio",
         "material1": {
           "title": "Cajas de Cartón",
-          "description": "Cajas de cartón resistentes en diferentes tamaños para todo tipo de objetos."
+          "description": "Cajas de cartón para mudanzas de diferentes tamaños: simple, doble y triple. Materiales profesionales incluidos en el servicio de embalaje."
         },
         "material2": {
           "title": "Papel Burbuja",
-          "description": "Papel burbuja y plástico burbuja para protección de objetos frágiles."
+          "description": "Papel burbuja y plástico burbuja para protección de objetos frágiles, cristales, porcelana y vajillas."
         },
         "material3": {
           "title": "Film Estirable",
-          "description": "Film plástico estirable para proteger muebles y objetos grandes."
+          "description": "Film plástico transparente y film protección para envolver muebles, electrodomésticos y objetos voluminosos."
         },
         "material4": {
-          "title": "Mantas de Protección",
-          "description": "Mantas especiales para proteger muebles y electrodomésticos durante el transporte."
+          "title": "Cinta Embalaje",
+          "description": "Cinta adhesiva, cinta carrocero y cinta papel de alta resistencia para sellar cajas de forma segura."
         },
         "material5": {
-          "title": "Separadores y Esquineras",
-          "description": "Separadores de cartón y esquineras de protección para cristales y espejos."
+          "title": "Mantas Protección",
+          "description": "Mantas mudanza y mantas muebles para proteger sofás, mesas, armarios y muebles grandes durante el transporte."
+        },
+        "material6": {
+          "title": "Fundas y Esquineras",
+          "description": "Fundas muebles, fundas colchones, fundas cama y esquineras cartón para protección adicional de esquinas y cantos."
         }
       },
+      "services": {
+        "title": "Servicios de Embalaje",
+        "subtitle": "Embalaje profesional incluido, completo o parcial según tus necesidades",
+        "service1": {
+          "title": "Embalaje Completo",
+          "description": "Servicio de embalaje profesional completo incluido en tu mudanza",
+          "feature1": "Embalaje de todos tus objetos",
+          "feature2": "Materiales incluidos sin coste adicional",
+          "feature3": "Protección multicapa personalizada",
+          "feature4": "Embalaje cuidadoso y seguro"
+        },
+        "service2": {
+          "title": "Embalaje Parcial",
+          "description": "Embalaje personalizado solo para objetos frágiles y delicados",
+          "feature1": "Embalaje de frágiles y obras de arte",
+          "feature2": "Embalaje de electrodomésticos",
+          "feature3": "Embalaje de muebles grandes",
+          "feature4": "A medida según tus necesidades"
+        },
+        "service3": {
+          "title": "Embalaje de Muebles",
+          "description": "Embalaje profesional de muebles para mudanzas",
+          "feature1": "Embalaje de muebles grandes y pequeños",
+          "feature2": "Mantas protección especiales",
+          "feature3": "Film estirable para protección",
+          "feature4": "Fundas personalizadas"
+        },
+        "service4": {
+          "title": "Embalaje de Electrodomésticos",
+          "description": "Embalaje seguro de electrodomésticos para mudanzas",
+          "feature1": "Neveras y frigoríficos",
+          "feature2": "Lavadoras y secadoras",
+          "feature3": "Televisores y pantallas",
+          "feature4": "Protección específica por tipo"
+        }
+      },
+      "process": {
+        "title": "Proceso de Embalaje Profesional",
+        "subtitle": "Cómo trabajamos para garantizar el embalaje cuidadoso y seguro de tus pertenencias",
+        "step1": {
+          "title": "Evaluación Inicial",
+          "description": "Nuestro equipo evalúa tus objetos y determina los materiales necesarios para un embalaje profesional."
+        },
+        "step2": {
+          "title": "Preparación de Materiales",
+          "description": "Preparamos todos los materiales de embalaje profesional necesarios: cajas, papel burbuja, film y mantas."
+        },
+        "step3": {
+          "title": "Embalaje Cuidadoso",
+          "description": "Realizamos el embalaje profesional de cada objeto con técnicas especializadas según su tipo y fragilidad."
+        },
+        "step4": {
+          "title": "Protección Adicional para Frágiles",
+          "description": "Aplicamos protección multicapa adicional para objetos frágiles, cristales y obras de arte."
+        },
+        "step5": {
+          "title": "Verificación Final",
+          "description": "Verificamos que todo esté correctamente embalado y protegido para el transporte seguro."
+        }
+      },
+      "zones": {
+        "title": "Zonas donde Ofrecemos Embalaje Profesional",
+        "subtitle": "Servicio de embalaje a domicilio en toda la Costa del Sol",
+        "zone1": "Marbella",
+        "zone2": "Costa del Sol",
+        "zone3": "Málaga",
+        "zone4": "Estepona",
+        "zone5": "Fuengirola",
+        "zone6": "Torremolinos",
+        "zone7": "Benalmádena",
+        "zone8": "Mijas"
+      },
+      "cta": {
+        "title": "¿Necesitas Servicio de Embalaje Profesional para tu Mudanza?",
+        "subtitle": "Contrata nuestro servicio de embalaje profesional para mudanzas en Marbella. Embalaje completo o parcial según tus necesidades. Nuestro equipo acude a tu domicilio con todos los materiales de embalaje incluidos sin coste adicional.",
+        "button1": "Solicitar Presupuesto",
+        "button2": "Ver Servicios"
+      },
       "faqs": {
-        "title": "Preguntas Frecuentes",
+        "title": "Preguntas Frecuentes sobre Embalajes",
+        "subtitle": "Resolvemos tus dudas sobre nuestro servicio de embalaje profesional para mudanzas",
         "faq1": {
           "question": "¿Qué incluye el servicio de embalaje profesional?",
           "answer": "Nuestro servicio de embalaje profesional incluye que nuestros expertos vayan a tu domicilio con todos los materiales necesarios (cajas de cartón, papel burbuja, film plástico, mantas protección) y realicen el embalaje completo de tus objetos. No necesitas comprar nada, nosotros traemos el material y hacemos el trabajo."
         },
         "faq2": {
-          "question": "¿Cuánto cuesta el servicio de embalaje?",
-          "answer": "El precio del servicio de embalaje profesional varía según el tipo de mudanza y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles. Solicita un presupuesto personalizado sin compromiso."
+          "question": "¿Cuánto cuesta el servicio de embalaje para mudanzas?",
+          "answer": "El precio del servicio de embalaje profesional para mudanzas varía según el tipo de vivienda y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles. Solicita un presupuesto personalizado sin compromiso."
         },
         "faq3": {
           "question": "¿Incluyen el embalaje en el precio de la mudanza?",
           "answer": "Sí, ofrecemos embalaje incluido sin coste adicional en nuestros paquetes de mudanza completa. Nuestro equipo profesional acude a tu domicilio con todos los materiales y realiza el embalaje completo. También puedes contratar embalaje profesional completo o embalaje parcial solo para objetos frágiles."
         },
         "faq4": {
+          "question": "¿Hacen embalaje de muebles grandes?",
+          "answer": "Sí, ofrecemos servicio de embalaje profesional de muebles grandes y pequeños. Utilizamos mantas protección especiales, film estirable y fundas personalizadas para proteger tus muebles durante el transporte de la mudanza."
+        },
+        "faq5": {
+          "question": "¿Ofrecen embalaje de electrodomésticos?",
+          "answer": "Sí, realizamos embalaje profesional de electrodomésticos como neveras, frigoríficos, lavadoras, secadoras, televisores y otros. Utilizamos materiales específicos y técnicas especializadas para cada tipo de electrodoméstico."
+        },
+        "faq6": {
           "question": "¿Cómo embalan objetos frágiles como cristales y porcelana?",
           "answer": "Nuestro servicio de embalaje profesional para objetos frágiles incluye protección multicapa específica: papel burbuja o plástico burbuja, separadores cartón y esquineras protección. Nuestros expertos conocen las técnicas adecuadas para proteger cristales, porcelana, vajillas y obras de arte durante el transporte."
         },
-        "faq5": {
+        "faq7": {
           "question": "¿Tienen que venir a mi casa para hacer el embalaje?",
           "answer": "Sí, nuestro servicio de embalaje profesional se realiza en tu domicilio. Nuestro equipo acude con todos los materiales necesarios (cajas, papel burbuja, film, mantas) y realiza el embalaje completo in situ. No necesitas comprar ni preparar nada, nosotros nos encargamos de todo."
         },
-        "faq6": {
+        "faq8": {
           "question": "¿Qué tipo de embalaje hacen para electrodomésticos?",
           "answer": "Para electrodomésticos como neveras, frigoríficos y lavadoras, nuestro servicio de embalaje profesional incluye fundas protección especiales, film estirable y mantas muebles. Protegemos cada electrodoméstico con materiales específicos para evitar daños durante el transporte."
+        },
+        "faq9": {
+          "question": "¿Puedo contratar solo el servicio de embalaje sin mudanza?",
+          "answer": "Sí, puedes contratar nuestro servicio de embalaje profesional de forma independiente. Nuestro equipo acude a tu domicilio con todos los materiales y realiza el embalaje completo. Ideal si necesitas embalar para una mudanza que harás tú mismo o para almacenamiento."
+        },
+        "faq10": {
+          "question": "¿Ofrecen embalaje a domicilio en Marbella?",
+          "answer": "Sí, ofrecemos servicio de embalaje profesional a domicilio en Marbella, Costa del Sol, Málaga y toda la provincia. Nuestro equipo acude a tu domicilio con todos los materiales de embalaje incluidos y realiza el trabajo in situ."
+        },
+        "faq11": {
+          "question": "¿Qué materiales de embalaje utilizan?",
+          "answer": "Utilizamos materiales de embalaje profesionales de primera calidad: cajas de cartón resistentes, papel burbuja, film estirable, mantas protección, cinta adhesiva de alta resistencia y fundas especiales. Todos los materiales están incluidos en el servicio sin coste adicional."
+        },
+        "faq12": {
+          "question": "¿Cuánto tiempo tarda el servicio de embalaje?",
+          "answer": "El tiempo de embalaje profesional depende del tamaño de la vivienda y cantidad de objetos. Para un estudio puede ser de 2-3 horas, para un piso mediano de 4-6 horas, y para una casa grande puede requerir un día completo. Te damos una estimación precisa en el presupuesto."
         }
       }
     },

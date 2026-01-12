@@ -257,76 +257,192 @@
       }
     },
     "embalajes": {
-      "title": "Professional Packing Marbella",
-      "subtitle": "Professional packing service in Marbella. Complete packing service for moves with materials included.",
-      "description": "Professional packing service in Marbella. Complete packing service for moves with materials included. Careful packing for fragile items. Free quote.",
-      "services": {
-        "title": "Packing Services",
-        "service1": {
-          "title": "Complete Packing",
-          "description": "Complete packing of the entire home with all materials included."
+      "description": "Professional packing service for moves in Marbella. Complete packing at home with materials included. Packing of furniture, appliances and fragile items. Free quote.",
+      "hero": {
+        "badge": "Professional Packing Service",
+        "title": "Professional Packing for Moves in Marbella",
+        "subtitle": "Professional packing service at home in Marbella and Costa del Sol. Our team of experts comes to your home with all professional packing materials included and performs complete packing of your move. Careful and safe packing for furniture, appliances and fragile items."
+      },
+      "types": {
+        "title": "Types of Packing We Offer",
+        "subtitle": "Professional packing service adapted to your moving needs",
+        "type1": {
+          "title": "Complete Packing for Moves",
+          "description": "Complete professional packing service for your entire move. Our team performs packing of all your items with professional materials included."
         },
-        "service2": {
+        "type2": {
           "title": "Partial Packing",
-          "description": "Packing only fragile or specific items that need special protection."
+          "description": "Customized packing only for fragile and delicate items that need special protection during the move."
         },
-        "service3": {
-          "title": "Fragile Items Packing",
-          "description": "Specialized packing for glass, porcelain, artwork and antiques."
+        "type3": {
+          "title": "Furniture Packing",
+          "description": "Professional packing of large and small furniture. We use protection blankets, stretch film and special covers to protect your furniture during transport."
         },
-        "service4": {
+        "type4": {
           "title": "Appliances Packing",
-          "description": "Professional packing of refrigerators, washing machines, televisions and other appliances."
+          "description": "Safe packing of refrigerators, washing machines, televisions and other appliances with specific materials to prevent damage."
+        },
+        "type5": {
+          "title": "Fragile Items Packing",
+          "description": "Specialized packing for glass, porcelain, artwork and antiques with customized multi-layer protection."
         }
       },
       "materials": {
-        "title": "Materials Included",
+        "title": "Professional Materials We Use",
+        "subtitle": "Professional packing materials included in our service",
         "material1": {
           "title": "Cardboard Boxes",
-          "description": "Resistant cardboard boxes in different sizes for all types of items."
+          "description": "Cardboard boxes for moves in different sizes: single, double and triple. Professional materials included in the packing service."
         },
         "material2": {
           "title": "Bubble Wrap",
-          "description": "Bubble wrap and bubble plastic for protection of fragile items."
+          "description": "Bubble wrap and bubble plastic for protection of fragile items, glass, porcelain and tableware."
         },
         "material3": {
           "title": "Stretch Film",
-          "description": "Plastic stretch film to protect furniture and large items."
+          "description": "Transparent plastic film and protection film to wrap furniture, appliances and bulky items."
         },
         "material4": {
-          "title": "Protection Blankets",
-          "description": "Special blankets to protect furniture and appliances during transport."
+          "title": "Packing Tape",
+          "description": "Adhesive tape, car tape and high-strength paper tape to securely seal boxes."
         },
         "material5": {
-          "title": "Separators and Corner Protectors",
-          "description": "Cardboard separators and corner protectors for glass and mirrors."
+          "title": "Protection Blankets",
+          "description": "Moving blankets and furniture blankets to protect sofas, tables, wardrobes and large furniture during transport."
+        },
+        "material6": {
+          "title": "Covers and Corner Protectors",
+          "description": "Furniture covers, mattress covers, bed covers and cardboard corner protectors for additional protection of corners and edges."
         }
       },
+      "services": {
+        "title": "Packing Services",
+        "subtitle": "Professional packing included, complete or partial according to your needs",
+        "service1": {
+          "title": "Complete Packing",
+          "description": "Complete professional packing service included in your move",
+          "feature1": "Packing of all your items",
+          "feature2": "Materials included at no additional cost",
+          "feature3": "Customized multi-layer protection",
+          "feature4": "Careful and safe packing"
+        },
+        "service2": {
+          "title": "Partial Packing",
+          "description": "Customized packing only for fragile and delicate items",
+          "feature1": "Packing of fragile items and artwork",
+          "feature2": "Packing of appliances",
+          "feature3": "Packing of large furniture",
+          "feature4": "Customized according to your needs"
+        },
+        "service3": {
+          "title": "Furniture Packing",
+          "description": "Professional furniture packing for moves",
+          "feature1": "Packing of large and small furniture",
+          "feature2": "Special protection blankets",
+          "feature3": "Stretch film for protection",
+          "feature4": "Customized covers"
+        },
+        "service4": {
+          "title": "Appliances Packing",
+          "description": "Safe appliance packing for moves",
+          "feature1": "Refrigerators and freezers",
+          "feature2": "Washing machines and dryers",
+          "feature3": "Televisions and screens",
+          "feature4": "Specific protection by type"
+        }
+      },
+      "process": {
+        "title": "Professional Packing Process",
+        "subtitle": "How we work to ensure careful and safe packing of your belongings",
+        "step1": {
+          "title": "Initial Assessment",
+          "description": "Our team evaluates your items and determines the materials needed for professional packing."
+        },
+        "step2": {
+          "title": "Material Preparation",
+          "description": "We prepare all necessary professional packing materials: boxes, bubble wrap, film and blankets."
+        },
+        "step3": {
+          "title": "Careful Packing",
+          "description": "We perform professional packing of each item with specialized techniques according to its type and fragility."
+        },
+        "step4": {
+          "title": "Additional Protection for Fragile Items",
+          "description": "We apply additional multi-layer protection for fragile items, glass and artwork."
+        },
+        "step5": {
+          "title": "Final Verification",
+          "description": "We verify that everything is correctly packed and protected for safe transport."
+        }
+      },
+      "zones": {
+        "title": "Areas where We Offer Professional Packing",
+        "subtitle": "Home packing service throughout the Costa del Sol",
+        "zone1": "Marbella",
+        "zone2": "Costa del Sol",
+        "zone3": "Malaga",
+        "zone4": "Estepona",
+        "zone5": "Fuengirola",
+        "zone6": "Torremolinos",
+        "zone7": "Benalmadena",
+        "zone8": "Mijas"
+      },
+      "cta": {
+        "title": "Do You Need Professional Packing Service for Your Move?",
+        "subtitle": "Hire our professional packing service for moves in Marbella. Complete or partial packing according to your needs. Our team comes to your home with all packing materials included at no additional cost.",
+        "button1": "Request Quote",
+        "button2": "View Services"
+      },
       "faqs": {
-        "title": "Frequently Asked Questions",
+        "title": "Frequently Asked Questions about Packing",
+        "subtitle": "We answer your questions about our professional packing service for moves",
         "faq1": {
           "question": "What does the professional packing service include?",
           "answer": "Our professional packing service includes our experts coming to your home with all necessary materials (cardboard boxes, bubble wrap, plastic film, protection blankets) and performing complete packing of your items. You don't need to buy anything, we bring the materials and do the work."
         },
         "faq2": {
-          "question": "How much does the packing service cost?",
-          "answer": "The price of the professional packing service varies according to the type of move and number of items. We offer complete packing included in complete moves at no additional cost, or partial packing only for fragile items. Request a personalized quote without commitment."
+          "question": "How much does the packing service for moves cost?",
+          "answer": "The price of the professional packing service for moves varies according to the type of home and number of items. We offer complete packing included in complete moves at no additional cost, or partial packing only for fragile items. Request a personalized quote without commitment."
         },
         "faq3": {
           "question": "Is packing included in the moving price?",
           "answer": "Yes, we offer packing included at no additional cost in our complete move packages. Our professional team comes to your home with all materials and performs complete packing. You can also hire complete professional packing or partial packing only for fragile items."
         },
         "faq4": {
+          "question": "Do you pack large furniture?",
+          "answer": "Yes, we offer professional packing service for large and small furniture. We use special protection blankets, stretch film and customized covers to protect your furniture during move transport."
+        },
+        "faq5": {
+          "question": "Do you offer appliance packing?",
+          "answer": "Yes, we perform professional packing of appliances such as refrigerators, freezers, washing machines, dryers, televisions and others. We use specific materials and specialized techniques for each type of appliance."
+        },
+        "faq6": {
           "question": "How do you pack fragile items like glass and porcelain?",
           "answer": "Our professional packing service for fragile items includes specific multi-layer protection: bubble wrap or bubble plastic, cardboard separators and corner protectors. Our experts know the proper techniques to protect glass, porcelain, tableware and artwork during transport."
         },
-        "faq5": {
+        "faq7": {
           "question": "Do they have to come to my house to do the packing?",
           "answer": "Yes, our professional packing service is performed at your home. Our team comes with all necessary materials (boxes, bubble wrap, film, blankets) and performs complete packing on site. You don't need to buy or prepare anything, we take care of everything."
         },
-        "faq6": {
+        "faq8": {
           "question": "What type of packing do you do for appliances?",
           "answer": "For appliances like refrigerators, freezers and washing machines, our professional packing service includes special protection covers, stretch film and furniture blankets. We protect each appliance with specific materials to prevent damage during transport."
+        },
+        "faq9": {
+          "question": "Can I hire only the packing service without moving?",
+          "answer": "Yes, you can hire our professional packing service independently. Our team comes to your home with all materials and performs complete packing. Ideal if you need to pack for a move you will do yourself or for storage."
+        },
+        "faq10": {
+          "question": "Do you offer home packing service in Marbella?",
+          "answer": "Yes, we offer professional packing service at home in Marbella, Costa del Sol, Malaga and throughout the province. Our team comes to your home with all packing materials included and performs the work on site."
+        },
+        "faq11": {
+          "question": "What packing materials do you use?",
+          "answer": "We use first-quality professional packing materials: resistant cardboard boxes, bubble wrap, stretch film, protection blankets, high-strength adhesive tape and special covers. All materials are included in the service at no additional cost."
+        },
+        "faq12": {
+          "question": "How long does the packing service take?",
+          "answer": "Professional packing time depends on the size of the home and number of items. For a studio it can be 2-3 hours, for a medium apartment 4-6 hours, and for a large house it may require a full day. We give you an accurate estimate in the quote."
         }
       }
     },

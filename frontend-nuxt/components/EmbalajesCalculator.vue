@@ -211,8 +211,7 @@ const objetosEspeciales = [
 // Tipos de servicio
 const tiposServicio = [
   { id: 'completo', name: 'Embalaje Completo', desc: 'Todo incluido', factor: 1.0 },
-  { id: 'parcial', name: 'Embalaje Parcial', desc: 'Solo frágiles', factor: 0.6 },
-  { id: 'solo-materiales', name: 'Solo Materiales', desc: 'Sin mano de obra', factor: 0.3 }
+  { id: 'parcial', name: 'Embalaje Parcial', desc: 'Solo frágiles', factor: 0.6 }
 ]
 
 // Funciones

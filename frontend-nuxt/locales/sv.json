@@ -257,76 +257,192 @@
       }
     },
     "embalajes": {
-      "title": "Professionell Inpackning Marbella",
-      "subtitle": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat.",
-      "description": "Professionell inpackningstjänst i Marbella. Komplett inpackning för flyttar med material inkluderat. Omsorgsfull inpackning för bräckliga föremål. Gratis offert.",
-      "services": {
-        "title": "Inpackningstjänster",
-        "service1": {
-          "title": "Komplett Inpackning",
-          "description": "Komplett inpackning av hela hemmet med alla material inkluderade."
+      "description": "Professionell inpackningstjänst för flyttar i Marbella. Komplett inpackning hemma med material inkluderat. Inpackning av möbler, vitvaror och bräckliga föremål. Gratis offert.",
+      "hero": {
+        "badge": "Professionell Inpackningstjänst",
+        "title": "Professionell Inpackning för Flyttar i Marbella",
+        "subtitle": "Professionell inpackningstjänst hemma i Marbella och Costa del Sol. Vårt team av experter kommer till ditt hem med alla professionella inpackningsmaterial inkluderade och utför komplett inpackning av din flytt. Omsorgsfull och säker inpackning för möbler, vitvaror och bräckliga föremål."
+      },
+      "types": {
+        "title": "Typer av Inpackning Vi Erbjuder",
+        "subtitle": "Professionell inpackningstjänst anpassad efter dina flyttbehov",
+        "type1": {
+          "title": "Komplett Inpackning för Flyttar",
+          "description": "Komplett professionell inpackningstjänst för hela din flytt. Vårt team utför inpackning av alla dina föremål med professionella material inkluderade."
         },
-        "service2": {
+        "type2": {
           "title": "Delvis Inpackning",
-          "description": "Inpackning endast av bräckliga eller specifika föremål som behöver särskilt skydd."
+          "description": "Anpassad inpackning endast för bräckliga och känsliga föremål som behöver särskilt skydd under flytten."
         },
-        "service3": {
+        "type3": {
+          "title": "Möbelinpackning",
+          "description": "Professionell inpackning av stora och små möbler. Vi använder skyddsfiltar, sträckfolie och specialfodral för att skydda dina möbler under transporten."
+        },
+        "type4": {
+          "title": "Vitvaruinpackning",
+          "description": "Säker inpackning av kylskåp, tvättmaskiner, tv-apparater och andra vitvaror med specifika material för att förhindra skador."
+        },
+        "type5": {
           "title": "Inpackning av Bräckliga Föremål",
-          "description": "Specialiserad inpackning för glas, porslin, konstverk och antikviteter."
-        },
-        "service4": {
-          "title": "Inpackning av Vitvaror",
-          "description": "Professionell inpackning av kylskåp, tvättmaskiner, tv-apparater och andra vitvaror."
+          "description": "Specialiserad inpackning för glas, porslin, konstverk och antikviteter med anpassat flerskiktskydd."
         }
       },
       "materials": {
-        "title": "Inkluderade Material",
+        "title": "Professionella Material Vi Använder",
+        "subtitle": "Professionella inpackningsmaterial inkluderade i vår tjänst",
         "material1": {
           "title": "Kartonglådor",
-          "description": "Motståndskraftiga kartonglådor i olika storlekar för alla typer av föremål."
+          "description": "Kartonglådor för flyttar i olika storlekar: enkel, dubbel och trippel. Professionella material inkluderade i inpackningstjänsten."
         },
         "material2": {
           "title": "Bubblplast",
-          "description": "Bubblplast och bubblplast för skydd av bräckliga föremål."
+          "description": "Bubblplast och bubblplast för skydd av bräckliga föremål, glas, porslin och porslin."
         },
         "material3": {
           "title": "Sträckfolie",
-          "description": "Plastisk sträckfolie för att skydda möbler och stora föremål."
+          "description": "Transparent plastfilm och skyddsfilm för att svepa möbler, vitvaror och stora föremål."
         },
         "material4": {
-          "title": "Skyddsfiltar",
-          "description": "Specialfiltar för att skydda möbler och vitvaror under transporten."
+          "title": "Inpackningstejp",
+          "description": "Limtejp, biltejp och högstyrkepapperstejp för att säkert försegla lådor."
         },
         "material5": {
-          "title": "Separatorer och Hörnskydd",
-          "description": "Kartongseparatorer och hörnskydd för glas och speglar."
+          "title": "Skyddsfiltar",
+          "description": "Flyttfiltar och möbelfiltar för att skydda soffor, bord, garderober och stora möbler under transporten."
+        },
+        "material6": {
+          "title": "Fodral och Hörnskydd",
+          "description": "Möbelfodral, madrassfodral, sängfodral och kartonghörnskydd för ytterligare skydd av hörn och kanter."
         }
       },
+      "services": {
+        "title": "Inpackningstjänster",
+        "subtitle": "Professionell inpackning inkluderad, komplett eller delvis enligt dina behov",
+        "service1": {
+          "title": "Komplett Inpackning",
+          "description": "Komplett professionell inpackningstjänst inkluderad i din flytt",
+          "feature1": "Inpackning av alla dina föremål",
+          "feature2": "Material inkluderade utan extra kostnad",
+          "feature3": "Anpassat flerskiktskydd",
+          "feature4": "Omsorgsfull och säker inpackning"
+        },
+        "service2": {
+          "title": "Delvis Inpackning",
+          "description": "Anpassad inpackning endast för bräckliga och känsliga föremål",
+          "feature1": "Inpackning av bräckliga föremål och konstverk",
+          "feature2": "Inpackning av vitvaror",
+          "feature3": "Inpackning av stora möbler",
+          "feature4": "Anpassat enligt dina behov"
+        },
+        "service3": {
+          "title": "Möbelinpackning",
+          "description": "Professionell möbelinpackning för flyttar",
+          "feature1": "Inpackning av stora och små möbler",
+          "feature2": "Specialskyddsfiltar",
+          "feature3": "Sträckfolie för skydd",
+          "feature4": "Anpassade fodral"
+        },
+        "service4": {
+          "title": "Vitvaruinpackning",
+          "description": "Säker vitvaruinpackning för flyttar",
+          "feature1": "Kylskåp och frysar",
+          "feature2": "Tvättmaskiner och torktumlare",
+          "feature3": "Tv-apparater och skärmar",
+          "feature4": "Specifikt skydd per typ"
+        }
+      },
+      "process": {
+        "title": "Professionell Inpackningsprocess",
+        "subtitle": "Hur vi arbetar för att säkerställa omsorgsfull och säker inpackning av dina tillhörigheter",
+        "step1": {
+          "title": "Inledande Bedömning",
+          "description": "Vårt team utvärderar dina föremål och bestämmer materialen som behövs för professionell inpackning."
+        },
+        "step2": {
+          "title": "Materialförberedelse",
+          "description": "Vi förbereder alla nödvändiga professionella inpackningsmaterial: lådor, bubblplast, film och filtar."
+        },
+        "step3": {
+          "title": "Omsorgsfull Inpackning",
+          "description": "Vi utför professionell inpackning av varje föremål med specialiserade tekniker enligt dess typ och bräcklighet."
+        },
+        "step4": {
+          "title": "Ytterligare Skydd för Bräckliga Föremål",
+          "description": "Vi applicerar ytterligare flerskiktskydd för bräckliga föremål, glas och konstverk."
+        },
+        "step5": {
+          "title": "Slutlig Verifiering",
+          "description": "Vi verifierar att allt är korrekt inpackat och skyddat för säker transport."
+        }
+      },
+      "zones": {
+        "title": "Områden där Vi Erbjuder Professionell Inpackning",
+        "subtitle": "Hemma inpackningstjänst i hela Costa del Sol",
+        "zone1": "Marbella",
+        "zone2": "Costa del Sol",
+        "zone3": "Malaga",
+        "zone4": "Estepona",
+        "zone5": "Fuengirola",
+        "zone6": "Torremolinos",
+        "zone7": "Benalmadena",
+        "zone8": "Mijas"
+      },
+      "cta": {
+        "title": "Behöver Du Professionell Inpackningstjänst för Din Flytt?",
+        "subtitle": "Hyr vår professionella inpackningstjänst för flyttar i Marbella. Komplett eller delvis inpackning enligt dina behov. Vårt team kommer till ditt hem med alla inpackningsmaterial inkluderade utan extra kostnad.",
+        "button1": "Begär Offert",
+        "button2": "Visa Tjänster"
+      },
       "faqs": {
-        "title": "Vanliga Frågor",
+        "title": "Vanliga Frågor om Inpackning",
+        "subtitle": "Vi svarar på dina frågor om vår professionella inpackningstjänst för flyttar",
         "faq1": {
           "question": "Vad inkluderar den professionella inpackningstjänsten?",
           "answer": "Vår professionella inpackningstjänst inkluderar att våra experter kommer till ditt hem med alla nödvändiga material (kartonglådor, bubblplast, plastfilm, skyddsfiltar) och utför komplett inpackning av dina föremål. Du behöver inte köpa något, vi tar med materialet och gör jobbet."
         },
         "faq2": {
-          "question": "Hur mycket kostar inpackningstjänsten?",
-          "answer": "Priset för den professionella inpackningstjänsten varierar beroende på typ av flytt och antal föremål. Vi erbjuder komplett inpackning inkluderad i kompletta flyttar utan extra kostnad, eller delvis inpackning endast för bräckliga föremål. Begär en personlig offert utan åtagande."
+          "question": "Hur mycket kostar inpackningstjänsten för flyttar?",
+          "answer": "Priset för den professionella inpackningstjänsten för flyttar varierar beroende på typ av hem och antal föremål. Vi erbjuder komplett inpackning inkluderad i kompletta flyttar utan extra kostnad, eller delvis inpackning endast för bräckliga föremål. Begär en personlig offert utan åtagande."
         },
         "faq3": {
           "question": "Inkluderar ni inpackning i flyttpriset?",
           "answer": "Ja, vi erbjuder inpackning inkluderad utan extra kostnad i våra kompletta flyttpaket. Vårt professionella team kommer till ditt hem med alla material och utför komplett inpackning. Du kan också hyra komplett professionell inpackning eller delvis inpackning endast för bräckliga föremål."
         },
         "faq4": {
+          "question": "Gör ni inpackning av stora möbler?",
+          "answer": "Ja, vi erbjuder professionell inpackningstjänst för stora och små möbler. Vi använder specialskyddsfiltar, sträckfolie och anpassade fodral för att skydda dina möbler under flytttransporten."
+        },
+        "faq5": {
+          "question": "Erbjuder ni vitvaruinpackning?",
+          "answer": "Ja, vi utför professionell inpackning av vitvaror som kylskåp, frysar, tvättmaskiner, torktumlare, tv-apparater och andra. Vi använder specifika material och specialiserade tekniker för varje typ av vitvaror."
+        },
+        "faq6": {
           "question": "Hur packar ni bräckliga föremål som glas och porslin?",
           "answer": "Vår professionella inpackningstjänst för bräckliga föremål inkluderar specifik flerskiktskydd: bubblplast eller bubblplast, kartongseparatorer och hörnskydd. Våra experter känner till de lämpliga teknikerna för att skydda glas, porslin, porslin och konstverk under transporten."
         },
-        "faq5": {
+        "faq7": {
           "question": "Måste de komma till mitt hem för att göra inpackningen?",
           "answer": "Ja, vår professionella inpackningstjänst utförs i ditt hem. Vårt team kommer med alla nödvändiga material (lådor, bubblplast, film, filtar) och utför komplett inpackning på plats. Du behöver inte köpa eller förbereda något, vi tar hand om allt."
         },
-        "faq6": {
+        "faq8": {
           "question": "Vilken typ av inpackning gör ni för vitvaror?",
           "answer": "För vitvaror som kylskåp, frysar och tvättmaskiner inkluderar vår professionella inpackningstjänst specialskyddsfodral, sträckfolie och möbelfiltar. Vi skyddar varje vitvaror med specifika material för att förhindra skador under transporten."
+        },
+        "faq9": {
+          "question": "Kan jag hyra endast inpackningstjänsten utan flytt?",
+          "answer": "Ja, du kan hyra vår professionella inpackningstjänst oberoende. Vårt team kommer till ditt hem med alla material och utför komplett inpackning. Ideal om du behöver packa för en flytt du gör själv eller för lagring."
+        },
+        "faq10": {
+          "question": "Erbjuder ni hemma inpackningstjänst i Marbella?",
+          "answer": "Ja, vi erbjuder professionell inpackningstjänst hemma i Marbella, Costa del Sol, Malaga och i hela provinsen. Vårt team kommer till ditt hem med alla inpackningsmaterial inkluderade och utför arbetet på plats."
+        },
+        "faq11": {
+          "question": "Vilka inpackningsmaterial använder ni?",
+          "answer": "Vi använder förstklassiga professionella inpackningsmaterial: motståndskraftiga kartonglådor, bubblplast, sträckfolie, skyddsfiltar, högstyrke limtejp och specialfodral. Alla material är inkluderade i tjänsten utan extra kostnad."
+        },
+        "faq12": {
+          "question": "Hur lång tid tar inpackningstjänsten?",
+          "answer": "Professionell inpackningstid beror på hemstorleken och antal föremål. För en studio kan det vara 2-3 timmar, för en medelstor lägenhet 4-6 timmar, och för ett stort hus kan det kräva en hel dag. Vi ger dig en exakt uppskattning i offerten."
         }
       }
     },

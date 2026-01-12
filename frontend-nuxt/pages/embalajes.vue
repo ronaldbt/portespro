@@ -13,13 +13,13 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="text-center mb-16 animate-fade-in max-w-4xl mx-auto">
             <span class="inline-block bg-white text-teal-700 px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm border border-slate-200">
-              Servicio de Embalaje Profesional
+              {{ $t('pages.embalajes.hero.badge') }}
             </span>
             <h1 class="text-5xl md:text-8xl font-black text-slate-950 leading-[0.9] tracking-tighter mb-8">
-              Embalaje Profesional
+              {{ $t('pages.embalajes.hero.title') }}
             </h1>
             <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
-              Servicio de embalaje profesional en Marbella y Costa del Sol. Nuestro equipo acude a tu domicilio con todos los materiales y realiza el embalaje completo.
+              {{ $t('pages.embalajes.hero.subtitle') }}
             </p>
           </div>
 
@@ -29,15 +29,43 @@
         </div>
       </section>
 
-      <!-- Features Section -->
+      <!-- Types Section -->
       <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Materiales de Embalaje Profesional
+              {{ $t('pages.embalajes.types.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Protección máxima para tus pertenencias con materiales de embalaje de primera calidad
+              {{ $t('pages.embalajes.types.subtitle') }}
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div
+              v-for="(type, idx) in types"
+              :key="idx"
+              class="p-10 rounded-[2.5rem] border border-slate-100 bg-white shadow-sm hover:shadow-2xl hover:shadow-teal-100/40 transition-all group hover:-translate-y-2"
+            >
+              <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-md">
+                <component :is="type.icon" class="w-8 h-8 text-white" />
+              </div>
+              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ type.title }}</h3>
+              <p class="text-slate-500 leading-relaxed font-medium">{{ type.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.embalajes.materials.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.embalajes.materials.subtitle') }}
             </p>
           </div>
 
@@ -58,22 +86,22 @@
       </section>
 
       <!-- Services Section -->
-      <section class="py-24 bg-slate-50">
+      <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Servicios de Embalaje
+              {{ $t('pages.embalajes.services.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Embalaje profesional incluido, completo o parcial según tus necesidades
+              {{ $t('pages.embalajes.services.subtitle') }}
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <div
               v-for="(service, idx) in servicios"
               :key="idx"
-              class="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all"
+              class="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all"
             >
               <div class="text-5xl font-black text-teal-600 mb-4">{{ service.number }}</div>
               <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight">{{ service.title }}</h3>
@@ -91,6 +119,62 @@
         </div>
       </section>
 
+      <!-- Process Section -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.embalajes.process.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.embalajes.process.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-5 gap-6">
+              <div
+                v-for="(step, idx) in processSteps"
+                :key="idx"
+                class="text-center"
+              >
+                <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center text-white text-3xl font-black mb-4 mx-auto shadow-lg">
+                  {{ idx + 1 }}
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">{{ step.title }}</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">{{ step.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Zones Section -->
+      <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
+              {{ $t('pages.embalajes.zones.title') }}
+            </h2>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+              {{ $t('pages.embalajes.zones.subtitle') }}
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div
+                v-for="(zone, idx) in zones"
+                :key="idx"
+                class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center hover:bg-teal-50 transition-all"
+              >
+                <p class="font-black text-slate-900 text-lg">{{ zone }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- CTA Section -->
       <section id="hero-calculator" class="relative py-24 bg-slate-900 text-white overflow-hidden">
         <div class="absolute top-0 right-0 w-full h-full bg-teal-600/[0.05] -skew-y-3 origin-top-right -z-10" />
@@ -98,24 +182,24 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">
-              ¿Necesitas Materiales de Embalaje?
+              {{ $t('pages.embalajes.cta.title') }}
             </h2>
             <p class="text-xl text-slate-300 mb-12 font-medium">
-              Compra o alquila cajas de cartón, papel burbuja, film plástico y más materiales de embalaje profesionales
+              {{ $t('pages.embalajes.cta.subtitle') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <NuxtLink
-                to="/"
-                class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
-              >
-                Comprar Materiales
-              </NuxtLink>
               <button
                 @click="scrollToCalc"
+                class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
+              >
+                {{ $t('pages.embalajes.cta.button1') }}
+              </button>
+              <NuxtLink
+                to="/"
                 class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all hover:scale-105"
               >
-                Solicitar Presupuesto
-              </button>
+                {{ $t('pages.embalajes.cta.button2') }}
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -126,10 +210,10 @@
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tighter">
-              Preguntas Frecuentes sobre Embalajes
+              {{ $t('pages.embalajes.faqs.title') }}
             </h2>
             <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
-              Resolvemos tus dudas sobre materiales de embalaje y servicios de embalaje profesional
+              {{ $t('pages.embalajes.faqs.subtitle') }}
             </p>
           </div>
 
@@ -184,8 +268,10 @@
 </template>
 
 <script setup>
-import { ref, h } from 'vue'
+import { ref, h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const lang = ref('es')
 
 const scrollToCalc = () => {
@@ -199,110 +285,36 @@ const siteUrl = 'https://portespro.es'
 const currentUrl = `${siteUrl}/embalajes`
 const defaultImage = `${siteUrl}/og-image.jpg`
 
-useHead({
-  title: 'Embalaje Profesional Marbella | Servicio Completo con Materiales | PortesPro',
+useHead(() => ({
+  title: `${t('pages.embalajes.hero.title')} | PortesPro`,
   meta: [
     {
       name: 'description',
-      content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles. Presupuesto gratis sin compromiso.'
+      content: t('pages.embalajes.description')
     },
     {
       name: 'keywords',
-      content: 'embalaje profesional marbella, servicio embalaje, embalaje mudanza, embalaje completo, embalaje cuidadoso, embalaje frágiles, materiales embalaje, cajas embalaje, papel burbuja'
+      content: 'embalaje profesional marbella, embalaje para mudanzas, embalaje mudanza, servicio embalaje profesional, embalaje completo, embalaje parcial, embalaje muebles, embalaje electrodomésticos, embalaje a domicilio, embalaje costa del sol'
     },
     // Open Graph
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: currentUrl },
-    { property: 'og:title', content: 'Embalaje Profesional Marbella | Servicio Completo con Materiales' },
-    { property: 'og:description', content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos. Embalaje cuidadoso para objetos frágiles.' },
+    { property: 'og:title', content: `${t('pages.embalajes.hero.title')} | PortesPro` },
+    { property: 'og:description', content: t('pages.embalajes.description') },
     { property: 'og:image', content: defaultImage },
     { property: 'og:site_name', content: 'PortesPro' },
     { property: 'og:locale', content: 'es_ES' },
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:url', content: currentUrl },
-    { name: 'twitter:title', content: 'Embalaje Profesional Marbella | Servicio Completo' },
-    { name: 'twitter:description', content: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.' },
+    { name: 'twitter:title', content: `${t('pages.embalajes.hero.title')} | PortesPro` },
+    { name: 'twitter:description', content: t('pages.embalajes.description') },
     { name: 'twitter:image', content: defaultImage }
   ],
   link: [
     { rel: 'canonical', href: currentUrl }
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        serviceType: 'Embalaje Profesional',
-        provider: {
-          '@type': 'LocalBusiness',
-          name: 'PortesPro',
-          url: siteUrl
-        },
-        areaServed: {
-          '@type': 'City',
-          name: ['Marbella', 'Málaga', 'Costa del Sol']
-        },
-        description: 'Servicio de embalaje profesional en Marbella. Embalaje completo de mudanzas con materiales incluidos.'
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Inicio',
-            item: siteUrl
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Embalajes',
-            item: currentUrl
-          }
-        ]
-      })
-    },
-    {
-      type: 'application/ld+json',
-      children: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: '¿Qué incluye el servicio de embalaje profesional?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Nuestro servicio de embalaje profesional incluye que nuestros expertos vayan a tu domicilio con todos los materiales necesarios (cajas de cartón, papel burbuja, film plástico, mantas protección) y realicen el embalaje completo de tus objetos.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Cuánto cuesta el servicio de embalaje?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'El precio del servicio de embalaje profesional varía según el tipo de mudanza y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: '¿Tienen que venir a mi casa para hacer el embalaje?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Sí, nuestro servicio de embalaje profesional se realiza en tu domicilio. Nuestro equipo acude con todos los materiales necesarios y realiza el embalaje completo in situ.'
-            }
-          }
-        ]
-      })
-    }
   ]
-})
+}))
 
 // Iconos
 const IconBox = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -329,109 +341,221 @@ const IconTape = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'curre
   h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' })
 ])
 
-const materiales = [
+const IconFurniture = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' })
+])
+
+const IconFragile = () => h('svg', { class: 'w-8 h-8', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' }, [
+  h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z' })
+])
+
+// Types
+const types = computed(() => [
   {
-    icon: IconBox,
-    title: 'Cajas de Cartón',
-    desc: 'Cajas de cartón mudanza de diferentes tamaños: simple, doble y triple. Cajas embalaje baratas y económicas para mudanzas.'
+    icon: IconPackage,
+    title: t('pages.embalajes.types.type1.title'),
+    description: t('pages.embalajes.types.type1.description')
   },
   {
-    icon: IconBubble,
-    title: 'Papel Burbuja',
-    desc: 'Papel burbuja y plástico burbuja para protección de objetos frágiles, cristales, porcelana y vajillas.'
+    icon: IconFragile,
+    title: t('pages.embalajes.types.type2.title'),
+    description: t('pages.embalajes.types.type2.description')
+  },
+  {
+    icon: IconFurniture,
+    title: t('pages.embalajes.types.type3.title'),
+    description: t('pages.embalajes.types.type3.description')
   },
   {
     icon: IconShield,
-    title: 'Film Estirable',
-    desc: 'Film plástico transparente y film protección para envolver muebles, electrodomésticos y objetos voluminosos.'
+    title: t('pages.embalajes.types.type4.title'),
+    description: t('pages.embalajes.types.type4.description')
+  },
+  {
+    icon: IconBubble,
+    title: t('pages.embalajes.types.type5.title'),
+    description: t('pages.embalajes.types.type5.description')
+  }
+])
+
+// Materiales
+const materiales = computed(() => [
+  {
+    icon: IconBox,
+    title: t('pages.embalajes.materials.material1.title'),
+    desc: t('pages.embalajes.materials.material1.description')
+  },
+  {
+    icon: IconBubble,
+    title: t('pages.embalajes.materials.material2.title'),
+    desc: t('pages.embalajes.materials.material2.description')
+  },
+  {
+    icon: IconShield,
+    title: t('pages.embalajes.materials.material3.title'),
+    desc: t('pages.embalajes.materials.material3.description')
   },
   {
     icon: IconTape,
-    title: 'Cinta Embalaje',
-    desc: 'Cinta adhesiva, cinta carrocero y cinta papel de alta resistencia para sellar cajas de forma segura.'
+    title: t('pages.embalajes.materials.material4.title'),
+    desc: t('pages.embalajes.materials.material4.description')
   },
   {
     icon: IconPackage,
-    title: 'Mantas Protección',
-    desc: 'Mantas mudanza y mantas muebles para proteger sofás, mesas, armarios y muebles grandes durante el transporte.'
+    title: t('pages.embalajes.materials.material5.title'),
+    desc: t('pages.embalajes.materials.material5.description')
   },
   {
     icon: IconRuler,
-    title: 'Fundas y Esquineras',
-    desc: 'Fundas muebles, fundas colchones, fundas cama y esquineras cartón para protección adicional de esquinas y cantos.'
+    title: t('pages.embalajes.materials.material6.title'),
+    desc: t('pages.embalajes.materials.material6.description')
   }
-]
+])
 
-const servicios = [
+// Servicios
+const servicios = computed(() => [
   {
     number: '01',
-    title: 'Embalaje Completo',
-    desc: 'Servicio de embalaje profesional completo incluido en tu mudanza',
+    title: t('pages.embalajes.services.service1.title'),
+    desc: t('pages.embalajes.services.service1.description'),
     features: [
-      'Embalaje de todos tus objetos',
-      'Materiales incluidos sin coste adicional',
-      'Protección multicapa personalizada',
-      'Embalaje cuidadoso y seguro'
+      t('pages.embalajes.services.service1.feature1'),
+      t('pages.embalajes.services.service1.feature2'),
+      t('pages.embalajes.services.service1.feature3'),
+      t('pages.embalajes.services.service1.feature4')
     ]
   },
   {
     number: '02',
-    title: 'Embalaje Parcial',
-    desc: 'Embalaje personalizado solo para objetos frágiles y delicados',
+    title: t('pages.embalajes.services.service2.title'),
+    desc: t('pages.embalajes.services.service2.description'),
     features: [
-      'Embalaje de frágiles y obras de arte',
-      'Embalaje de electrodomésticos',
-      'Embalaje de muebles grandes',
-      'A medida según tus necesidades'
+      t('pages.embalajes.services.service2.feature1'),
+      t('pages.embalajes.services.service2.feature2'),
+      t('pages.embalajes.services.service2.feature3'),
+      t('pages.embalajes.services.service2.feature4')
     ]
   },
   {
     number: '03',
-    title: 'Venta de Materiales',
-    desc: 'Compra o alquila materiales de embalaje online o en nuestras instalaciones',
+    title: t('pages.embalajes.services.service3.title'),
+    desc: t('pages.embalajes.services.service3.description'),
     features: [
-      'Cajas mudanza baratas',
-      'Material embalaje económico',
-      'Compra online o presencial',
-      'Alquiler de cajas disponibles'
+      t('pages.embalajes.services.service3.feature1'),
+      t('pages.embalajes.services.service3.feature2'),
+      t('pages.embalajes.services.service3.feature3'),
+      t('pages.embalajes.services.service3.feature4')
+    ]
+  },
+  {
+    number: '04',
+    title: t('pages.embalajes.services.service4.title'),
+    desc: t('pages.embalajes.services.service4.description'),
+    features: [
+      t('pages.embalajes.services.service4.feature1'),
+      t('pages.embalajes.services.service4.feature2'),
+      t('pages.embalajes.services.service4.feature3'),
+      t('pages.embalajes.services.service4.feature4')
     ]
   }
-]
+])
 
-const faqs = ref([
+// Process Steps
+const processSteps = computed(() => [
   {
-    question: '¿Qué incluye el servicio de embalaje profesional?',
-    answer: 'Nuestro servicio de embalaje profesional incluye que nuestros expertos vayan a tu domicilio con todos los materiales necesarios (cajas de cartón, papel burbuja, film plástico, mantas protección) y realicen el embalaje completo de tus objetos. No necesitas comprar nada, nosotros traemos el material y hacemos el trabajo.',
+    title: t('pages.embalajes.process.step1.title'),
+    description: t('pages.embalajes.process.step1.description')
+  },
+  {
+    title: t('pages.embalajes.process.step2.title'),
+    description: t('pages.embalajes.process.step2.description')
+  },
+  {
+    title: t('pages.embalajes.process.step3.title'),
+    description: t('pages.embalajes.process.step3.description')
+  },
+  {
+    title: t('pages.embalajes.process.step4.title'),
+    description: t('pages.embalajes.process.step4.description')
+  },
+  {
+    title: t('pages.embalajes.process.step5.title'),
+    description: t('pages.embalajes.process.step5.description')
+  }
+])
+
+// Zones
+const zones = computed(() => [
+  t('pages.embalajes.zones.zone1'),
+  t('pages.embalajes.zones.zone2'),
+  t('pages.embalajes.zones.zone3'),
+  t('pages.embalajes.zones.zone4'),
+  t('pages.embalajes.zones.zone5'),
+  t('pages.embalajes.zones.zone6'),
+  t('pages.embalajes.zones.zone7'),
+  t('pages.embalajes.zones.zone8')
+])
+
+// FAQs
+const faqs = computed(() => [
+  {
+    question: t('pages.embalajes.faqs.faq1.question'),
+    answer: t('pages.embalajes.faqs.faq1.answer'),
     open: false
   },
   {
-    question: '¿Cuánto cuesta el servicio de embalaje?',
-    answer: 'El precio del servicio de embalaje profesional varía según el tipo de mudanza y cantidad de objetos. Ofrecemos embalaje completo incluido en mudanzas completas sin coste adicional, o embalaje parcial solo para objetos frágiles. Solicita un presupuesto personalizado sin compromiso.',
+    question: t('pages.embalajes.faqs.faq2.question'),
+    answer: t('pages.embalajes.faqs.faq2.answer'),
     open: false
   },
   {
-    question: '¿Incluyen el embalaje en el precio de la mudanza?',
-    answer: 'Sí, ofrecemos embalaje incluido sin coste adicional en nuestros paquetes de mudanza completa. Nuestro equipo profesional acude a tu domicilio con todos los materiales y realiza el embalaje completo. También puedes contratar embalaje profesional completo o embalaje parcial solo para objetos frágiles.',
+    question: t('pages.embalajes.faqs.faq3.question'),
+    answer: t('pages.embalajes.faqs.faq3.answer'),
     open: false
   },
   {
-    question: '¿Cómo embalan objetos frágiles como cristales y porcelana?',
-    answer: 'Nuestro servicio de embalaje profesional para objetos frágiles incluye protección multicapa específica: papel burbuja o plástico burbuja, separadores cartón y esquineras protección. Nuestros expertos conocen las técnicas adecuadas para proteger cristales, porcelana, vajillas y obras de arte durante el transporte.',
+    question: t('pages.embalajes.faqs.faq4.question'),
+    answer: t('pages.embalajes.faqs.faq4.answer'),
     open: false
   },
   {
-    question: '¿Tienen que venir a mi casa para hacer el embalaje?',
-    answer: 'Sí, nuestro servicio de embalaje profesional se realiza en tu domicilio. Nuestro equipo acude con todos los materiales necesarios (cajas, papel burbuja, film, mantas) y realiza el embalaje completo in situ. No necesitas comprar ni preparar nada, nosotros nos encargamos de todo.',
+    question: t('pages.embalajes.faqs.faq5.question'),
+    answer: t('pages.embalajes.faqs.faq5.answer'),
     open: false
   },
   {
-    question: '¿Qué tipo de embalaje hacen para electrodomésticos?',
-    answer: 'Para electrodomésticos como neveras, frigoríficos y lavadoras, nuestro servicio de embalaje profesional incluye fundas protección especiales, film estirable y mantas muebles. Protegemos cada electrodoméstico con materiales específicos para evitar daños durante el transporte.',
+    question: t('pages.embalajes.faqs.faq6.question'),
+    answer: t('pages.embalajes.faqs.faq6.answer'),
     open: false
   },
   {
-    question: '¿Puedo contratar solo el servicio de embalaje sin mudanza?',
-    answer: 'Sí, puedes contratar nuestro servicio de embalaje profesional de forma independiente. Nuestro equipo acude a tu domicilio con todos los materiales y realiza el embalaje completo. Ideal si necesitas embalar para una mudanza que harás tú mismo o para almacenamiento.',
+    question: t('pages.embalajes.faqs.faq7.question'),
+    answer: t('pages.embalajes.faqs.faq7.answer'),
+    open: false
+  },
+  {
+    question: t('pages.embalajes.faqs.faq8.question'),
+    answer: t('pages.embalajes.faqs.faq8.answer'),
+    open: false
+  },
+  {
+    question: t('pages.embalajes.faqs.faq9.question'),
+    answer: t('pages.embalajes.faqs.faq9.answer'),
+    open: false
+  },
+  {
+    question: t('pages.embalajes.faqs.faq10.question'),
+    answer: t('pages.embalajes.faqs.faq10.answer'),
+    open: false
+  },
+  {
+    question: t('pages.embalajes.faqs.faq11.question'),
+    answer: t('pages.embalajes.faqs.faq11.answer'),
+    open: false
+  },
+  {
+    question: t('pages.embalajes.faqs.faq12.question'),
+    answer: t('pages.embalajes.faqs.faq12.answer'),
     open: false
   }
 ])
@@ -485,4 +609,3 @@ const faqs = ref([
   animation: float-2 30s infinite linear;
 }
 </style>
-
