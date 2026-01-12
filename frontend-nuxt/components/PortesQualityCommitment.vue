@@ -6,8 +6,8 @@
         
         <div class="lg:col-span-2">
           <h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">
-            Nuestra obsesión: <br />
-            <span class="text-teal-400">La Perfección en el Trato.</span>
+            {{ $t('components.quality.title') }} <br />
+            <span class="text-teal-400">{{ $t('components.quality.titleHighlight') }}</span>
           </h2>
           <div class="grid sm:grid-cols-2 gap-8">
             <div class="flex gap-4">
@@ -17,8 +17,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-bold mb-2">Seguro a Todo Riesgo</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Pólizas exclusivas para objetos de valor y antigüedades sin letra pequeña.</p>
+                <h4 class="text-white font-bold mb-2">{{ $t('components.quality.insuranceTitle') }}</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">{{ $t('components.quality.insuranceDesc') }}</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -28,8 +28,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-bold mb-2">Eficiencia Digital</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Inventarios en la nube para que sepa dónde está cada caja en todo momento.</p>
+                <h4 class="text-white font-bold mb-2">{{ $t('components.quality.digitalTitle') }}</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">{{ $t('components.quality.digitalDesc') }}</p>
               </div>
             </div>
           </div>
@@ -39,12 +39,12 @@
           <svg class="text-teal-600 mb-6 w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
           </svg>
-          <h3 class="text-2xl font-black text-slate-950 mb-4 tracking-tight">Cuidado Artesanal</h3>
+          <h3 class="text-2xl font-black text-slate-950 mb-4 tracking-tight">{{ $t('components.quality.artisanTitle') }}</h3>
           <p class="text-slate-600 mb-8 font-medium leading-relaxed">
-            Tratamos sus pertenencias como si fueran obras de arte. Nuestros operarios son formados en el manejo de materiales nobles y montajes complejos.
+            {{ $t('components.quality.artisanDesc') }}
           </p>
           <button class="w-full bg-slate-900 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-teal-600 transition-colors">
-            Conoce al equipo
+            {{ $t('components.quality.ctaButton') }}
           </button>
         </div>
 

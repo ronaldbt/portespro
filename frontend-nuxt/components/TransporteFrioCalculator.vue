@@ -160,7 +160,7 @@
           </button>
 
           <p class="text-[10px] text-slate-400 text-center">
-            * Precio estimado. Presupuesto final tras inspección.
+            {{ $t('components.transporteFrioCalculator.estimatedPriceNote') }}
           </p>
         </div>
       </div>

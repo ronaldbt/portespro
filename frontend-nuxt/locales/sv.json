@@ -162,6 +162,22 @@
         "faq8": {
           "question": "Vilka garantier har flytterna?",
           "answer": "Alla våra flyttar inkluderar komplett försäkring för att skydda dina tillhörigheter under transporten. Dessutom erbjuder vi nöjdhetsgaranti och ansvarsförsäkring. Vårt team består av certifierade professionella med år av erfarenhet. Om någon skada inträffar täcker vår försäkring de transporterade föremålen enligt våra villkor."
+        },
+        "faq9": {
+          "question": "Hur mycket kostar en liten flytt?",
+          "answer": "Priset på en liten flytt varierar beroende på avstånd och volym. För billiga små flyttar i Marbella och Costa del Sol börjar priserna från 200€ för studior eller små lägenheter. Använd vår online-räknare för att få det ungefärliga priset för liten flytt eller begär en gratis personlig offert."
+        },
+        "faq10": {
+          "question": "Hur fungerar frakt- och flytttjänsten?",
+          "answer": "Vår frakt- och flytttjänst erbjuder billig transport och billig frakt för privatpersoner och företag. Vi arbetar med lastbilar för flyttar i olika storlekar enligt dina behov. Ekonomisk frakt inkluderar lös möbeltransport, möbelöverföring och komplett flytttransporttjänst. Kontakta oss för att citera din frakt eller billig transport."
+        },
+        "faq11": {
+          "question": "Erbjuder ni nationella och internationella flyttar?",
+          "answer": "Ja, vi erbjuder både nationella och internationella flyttar. För nationella flyttar arbetar vi i hela Spanien med konkurrenskraftiga priser. I internationella flyttar hanterar vi nödvändig dokumentation och koordinerar möbelöverföring till vilket land som helst. Begär en offert för nationella flyttpriser eller internationella flyttpriser enligt din destination."
+        },
+        "faq12": {
+          "question": "Vad är flyttpriset per timme?",
+          "answer": "Flyttpriset per timme beror på typen av tjänst. För små lokala flyttar kan flyttpriset per timme vara mellan 25€ och 40€ per timme. För företagsflyttar eller kontorsflyttar kan priset variera. Det ungefärliga flyttpriset beror på volym och avstånd. Vår online-räknare ger dig ett ungefärligt flyttpris, eller du kan begära en detaljerad offert med exakt flyttpris per timme."
         }
       }
     },
@@ -625,6 +641,17 @@
         "role": "Möbeltransport",
         "content": "Punktlig och mycket effektiv. Teamet hanterade allt med omsorg. Rekommenderas starkt."
       }
+    },
+    "quality": {
+      "title": "Vår obsession:",
+      "titleHighlight": "Perfektion i service.",
+      "insuranceTitle": "Allriskförsäkring",
+      "insuranceDesc": "Exklusiva försäkringar för värdefulla föremål och antikviteter utan finstilta texter.",
+      "digitalTitle": "Digital Effektivitet",
+      "digitalDesc": "Molnbaserade inventarielistor så att du vet var varje låda finns när som helst.",
+      "artisanTitle": "Hantverksomsorg",
+      "artisanDesc": "Vi behandlar dina tillhörigheter som om de vore konstverk. Våra operatörer är utbildade i hantering av ädla material och komplexa monteringar.",
+      "ctaButton": "Träffa teamet"
     },
     "guardamueblesCalculator": {
       "title": "Förvaringsräknare",

@@ -162,6 +162,22 @@
         "faq8": {
           "question": "What guarantees do the moves have?",
           "answer": "All our moves include complete insurance to protect your belongings during transport. In addition, we offer satisfaction guarantee and civil liability. Our team consists of certified professionals with years of experience. If any damage occurs, our insurance policy covers the transported items according to our conditions."
+        },
+        "faq9": {
+          "question": "How much does a small move cost?",
+          "answer": "The price of a small move varies according to distance and volume. For cheap small moves in Marbella and Costa del Sol, prices start from 200€ for studios or small apartments. Use our online calculator to get the approximate small move price or request a free personalized quote."
+        },
+        "faq10": {
+          "question": "How does the freight and moving service work?",
+          "answer": "Our freight and moving service offers cheap transport and cheap freight for individuals and businesses. We work with trucks for moves of different sizes according to your needs. Economical freight includes loose furniture transport, furniture transfer and complete moving transport service. Contact us to quote your freight or cheap transport."
+        },
+        "faq11": {
+          "question": "Do you offer national and international moves?",
+          "answer": "Yes, we offer both national and international moves. For national moves, we work throughout Spain with competitive prices. In international moves, we handle the necessary documentation and coordinate furniture transfer to any country. Request a quote for national move prices or international move prices according to your destination."
+        },
+        "faq12": {
+          "question": "What is the moving price per hour?",
+          "answer": "The moving price per hour depends on the type of service. For small local moves, the moving price per hour can be between 25€ and 40€ per hour. For business moves or office moves, the price may vary. The approximate moving price depends on volume and distance. Our online calculator will give you an approximate moving price, or you can request a detailed quote with exact moving price per hour."
         }
       }
     },
@@ -625,6 +641,17 @@
         "role": "Furniture Transport",
         "content": "Punctual and very efficient. The team handled everything with care. Highly recommended."
       }
+    },
+    "quality": {
+      "title": "Our obsession:",
+      "titleHighlight": "Perfection in Service.",
+      "insuranceTitle": "All-Risk Insurance",
+      "insuranceDesc": "Exclusive policies for valuable items and antiques with no fine print.",
+      "digitalTitle": "Digital Efficiency",
+      "digitalDesc": "Cloud inventories so you know where every box is at all times.",
+      "artisanTitle": "Artisanal Care",
+      "artisanDesc": "We treat your belongings as if they were works of art. Our operators are trained in handling noble materials and complex assemblies.",
+      "ctaButton": "Meet the team"
     },
     "guardamueblesCalculator": {
       "title": "Storage Calculator",
